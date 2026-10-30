@@ -4,10 +4,10 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase: 1B (feasibility, GUI spike verified)
-- Last merged task: F0-3 Fabric mod scaffold ([PR #1](https://github.com/devtalh/perde/pull/1), main `9712e2a`)
-- Last completed task: F1B-1 MCEF dependency + GUI smoke test ([PR #2](https://github.com/devtalh/perde/pull/2), pending merge)
-- Next task: F1B-2 world quad rendering (separate task, not started)
+- Phase: 1B (F1B-2 world rendering and disconnect cleanup verified)
+- Last merged task: F1B-1 MCEF dependency + GUI smoke test ([PR #2](https://github.com/devtalh/perde/pull/2), main `77f3596`)
+- Last completed task: F1B-2 on `spike/f1b-2-world-quad`, [PR #3](https://github.com/devtalh/perde/pull/3), pending review/merge. Build/server, rendering/media and corrected disconnect/rejoin checks passed.
+- Next task: F1B-3 Sodium + Iris test and feasibility report
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -22,6 +22,23 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F1B-2 - Fixed MCEF world quad and JavaScript media controls
+- Branch / PR: `spike/f1b-2-world-quad`, [PR #3](https://github.com/devtalh/perde/pull/3) targeting `main`; implementation/evidence commit `48f7b51` pushed, completion verification recorded in this follow-up.
+- Status: done (pending PR review/merge)
+- What changed: development-only place/remove/play/pause/seek commands, one fixed 4 x 2.25 block screen and one 1280x720 browser. Uses 26.2's vanilla map rendering path (`COLLECT_SUBMITS`, `submitCustomGeometry`, `RenderTypes.text`) with a live, non-owning texture bridge, full-bright light coordinates, depth testing and back-face culling. All implementation changes remain in the client spike package. Added source research, F2 evidence, audio output measurements and a reproducible local media fixture. No common code, SPEC, AGENTS, dependency or world-data changes.
+- How it was verified (2026-10-30, Europe/Istanbul):
+  - Prerequisite: `gh pr view 2` confirmed MERGED at `77f3596`; clean local main matched origin. JDK/javac 25.0.4 available. Notion project hub and Linear LEA-182 read before implementation.
+  - `.\gradlew.bat genSources --console=plain`: passed in 1m 1s; exact Minecraft/Fabric/MCEF APIs inspected.
+  - `.\gradlew.bat build --console=plain --warning-mode all`: initial corrected code passed in 4s; completion pass ran the build again successfully in 9s, 7 actionable tasks (7 up-to-date), `test NO-SOURCE`.
+  - `.\gradlew.bat runServer --console=plain`: 44 mods, MCEF/JCEF absent, bound to 127.0.0.1; `Done (0.348s)!` at 17:02:04, console stop at 17:02:28, `BUILD SUCCESSFUL in 39s`.
+  - Main/common reference search for client Minecraft, Blaze3D, MCEF/JCEF and spike references: no matches. Exact command/output are in the feasibility notes.
+  - `.\gradlew.bat runClient --console=plain`: creative world under `run/saves/`; default YouTube page live and correctly oriented. F2 evidence: [day](feasibility/screenshots/f1b-2-day.png), [occlusion](feasibility/screenshots/f1b-2-occlusion.png), [night](feasibility/screenshots/f1b-2-night.png), [back](feasibility/screenshots/f1b-2-back.png). Originals remain in `run/screenshots/`; copied without editing.
+  - JavaScript pause stopped the visible video and JCEF audio output (0/19 nonzero peak samples); play resumed video and audio (19/19 nonzero). Local readonly media fixture confirmed exactly `time=60.00`, paused, with an advancing page heartbeat: [F2 seek evidence](feasibility/screenshots/f1b-2-seek-60.png). No-video play/pause/seek caused no observed error or crash. Browser replacement closed the old browser before creation. Remove visibly removed the quad and logged `world browser closed (removed)` at 17:17:55.
+  - First startup exposed premature texture registration; fixed by deferring construction/registration to `CLIENT_STARTED`, then rendering tests passed. First disconnect exposed off-thread GPU cleanup; callback now schedules on the client thread and tick cleanup checks all active/pending state. Final build passed after that fix.
+  - Corrected disconnect/rejoin test run by Talha, then audited by Codex in `run/logs/latest.log` and `debug.log`: browser created at 18:12:16; `[18:12:33] [Render thread/INFO] (perde) Perde spike: world browser closed (disconnect).`; rejoined at 18:12:41; no new browser creation after rejoin; left at 18:13:05. Talha explicitly confirmed that no spike screen remained after rejoining. No Perde exception or new crash report. Codex sent no game input during this completion pass and changed no code. Exact log lines are in the feasibility notes; the read-only/manual-test path did not require a new F2 screenshot.
+- Not done / left for next task: no remaining F1B-2 checks. Review/merge PR #3, then F1B-3 Sodium + Iris test and feasibility report. No F1B-3 work started.
+- Known issues / risks: Sodium/Iris deliberately not installed or tested. Vanilla world fog/lightmap color effects remain. Browser security/autoplay and OSHI/dev-auth/Chromium diagnostics from F1B-1 remain. Audio was verified through the JCEF Windows render-session meter, not physical headphone listening. Details and provenance are in [F1B notes](feasibility/F1B-notes.md).
 
 ### F1B-1 - MCEF Modern client-only dependency + GUI smoke test
 - Branch / PR: `spike/f1b-1-mcef-gui`, [PR #2](https://github.com/devtalh/perde/pull/2) targeting `main`
