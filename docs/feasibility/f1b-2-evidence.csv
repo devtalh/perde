@@ -1,0 +1,6 @@
+evidence,original,copy,sha256,byte_identical
+day,run/screenshots/2026-10-30_17.06.35.png,docs/feasibility/screenshots/f1b-2-day.png,8438b9d2ba72dfdffe8e6011dab1668a8bd4607cd6a637e85262dbf7a5689499,True
+occlusion,run/screenshots/2026-10-30_17.08.40.png,docs/feasibility/screenshots/f1b-2-occlusion.png,ad2b20c910605ce234e233dba26f158890910676faa09f9e8251da5a681c187c,True
+night,run/screenshots/2026-10-30_17.10.07.png,docs/feasibility/screenshots/f1b-2-night.png,8e43b7348914f117b978a407f63e037e431ba68bebf388dbc85178a28f47420f,True
+back,run/screenshots/2026-10-30_17.10.50.png,docs/feasibility/screenshots/f1b-2-back.png,e2ce9211522d6c0fb7c5dd5b8915a179997e8ba7fe52782a3f185b007bf5a6d8,True
+seek-60,run/screenshots/2026-10-30_17.15.11.png,docs/feasibility/screenshots/f1b-2-seek-60.png,59011c98ecc95e38eec854d128a4f3b64608bb1976e0a2c6e137159b39830b9d,True
