@@ -9,6 +9,12 @@ base {
     archivesName = project.archives_base_name
 }
 
+// Opt-in feasibility profiles. Loom 26.x localRuntime is not published or bundled.
+def compatProfile = providers.gradleProperty('perde.compat').getOrElse('')
+if (!(compatProfile in ['', 'sodium', 'iris', 'full'])) {
+    throw new GradleException('perde.compat must be sodium, iris or full (omit for vanilla).')
+}
+
 loom {
     splitEnvironmentSourceSets()
 
@@ -27,6 +33,17 @@ loom {
 }
 
 repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = 'ModrinthCompat'
+                url = 'https://api.modrinth.com/maven'
+            }
+        }
+        filter {
+            includeGroup 'maven.modrinth'
+        }
+    }
     maven {
         name = 'MCEFModern'
         url = 'https://maven.dimaskama.net/releases'
@@ -43,6 +60,23 @@ dependencies {
     clientImplementation "net.dimaskama:mcef-modern:${project.mcef_version}"
     // MCEF publishes JCEF as a runtime dependency; the spike also calls its FPS API.
     clientCompileOnly "me.friwi:jcef-api:${project.jcef_api_version}"
+
+    // Immutable Modrinth version IDs select the exact MC 26.2 Fabric jars.
+    if (compatProfile) {
+        localRuntime 'maven.modrinth:sodium:xJZxADzI' // 0.9.2
+        localRuntime 'maven.modrinth:sodium-extra:kGXOsmfx' // 0.9.4
+        localRuntime 'maven.modrinth:reeses-sodium-options:nnz8j4Hu' // 2.2.4
+    }
+    if (compatProfile in ['iris', 'full']) {
+        localRuntime 'maven.modrinth:iris:gxZWWnKH' // 1.11.4
+    }
+    if (compatProfile == 'full') {
+        localRuntime 'maven.modrinth:entityculling:RWjup6Jf' // 1.11.2
+        localRuntime 'maven.modrinth:moreculling:D5oVCouK' // 1.8.1
+        localRuntime 'maven.modrinth:cloth-config:Nv3xnWXd' // 26.2.155, required by MoreCulling
+        localRuntime 'maven.modrinth:lithium:f7vZ0VWU' // 0.25.3
+        localRuntime 'maven.modrinth:distanthorizons:aAow4a9f' // 3.3.3
+    }
 }
 
 processResources {

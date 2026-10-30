@@ -1,5 +1,9 @@
 # F1B feasibility notes
 
+## F1B-3 completed feasibility evidence (2026-10-30)
+
+See the [Phase 1B report](F1B-report.md) for exact versions, all four verified configurations, 31 unchanged F2 screenshots, vanilla/full FPS and working-set tables, source research and GO-with-conditions recommendation. Default build/server isolation passed. Physical Escape was respected; completion resumed only after Talha's instruction and used separate Gradle clients while preserving his AFK server client. AWT remains unexplained; the full run also exposed a DH teardown SQL error. [Retained diagnostic excerpts](f1b-3-diagnostics.md) keep those failures visible. Phase 1B complete, awaiting GO/NO-GO decision by Talha and Claude. No later phase started.
+
 ## F1B-1: client GUI (2026-10-30)
 
 Scope: disposable GUI spike under `io.github.devtalh.perde.client.spike`. No world rendering, blocks, packets or configuration. F1B-2 is a separate task.

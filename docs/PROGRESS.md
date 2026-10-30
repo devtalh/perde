@@ -4,10 +4,10 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase: 1B (F1B-2 world rendering and disconnect cleanup verified)
-- Last merged task: F1B-1 MCEF dependency + GUI smoke test ([PR #2](https://github.com/devtalh/perde/pull/2), main `77f3596`)
-- Last completed task: F1B-2 on `spike/f1b-2-world-quad`, [PR #3](https://github.com/devtalh/perde/pull/3), pending review/merge. Build/server, rendering/media and corrected disconnect/rejoin checks passed.
-- Next task: F1B-3 Sodium + Iris test and feasibility report
+- Phase 1B complete, awaiting GO/NO-GO decision by Talha and Claude
+- Last merged task: F1B-2 world rendering and disconnect cleanup, [PR #3](https://github.com/devtalh/perde/pull/3), main `7ac575a` (verified with git log and gh).
+- Current task: F1B-3 verified on `spike/f1b-3-compat`, [PR #4](https://github.com/devtalh/perde/pull/4). All four configurations and default build/server checked; recommendation GO-with-conditions.
+- Next task: await Talha and Claude's decision. No later phase started.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -22,6 +22,19 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F1B-3 - Render-mod compatibility and Phase 1B report
+- Branch / PR: `spike/f1b-3-compat`, [PR #4](https://github.com/devtalh/perde/pull/4). Checkpoint commits pushed with passing CI; completion evidence follows on the same branch.
+- Status: done (feasibility verification complete; final GO/NO-GO decision belongs to Talha and Claude)
+- What changed: opt-in `perde.compat=sodium|iris|full` development profiles using Loom 26.x `localRuntime`, restricted Modrinth Maven and immutable version IDs for all eight exact pack jars. Full adds MoreCulling's required Cloth Config 26.2.155. No compat dependencies with the property omitted; no metadata, common code, SPEC or AGENTS changes.
+- How it was verified (2026-10-30, Europe/Istanbul): clean main at merged `7ac575a`, JDK/javac 25.0.4; Notion hub, Linear F1B task and LEA-185 read. Exact Modrinth API file/version/game-version checks passed for all eight jars. Full localRuntime resolution passed; all nine resolved compat/Cloth Config jars match upstream SHA-512. Initial default build passed in 3s; handoff build passed in 9s (7 tasks up-to-date, test NO-SOURCE). Default runServer loaded 44 mods without MCEF/compat, bound 127.0.0.1:25565, reached `Done (0.431s)!` at 18:29:56, stopped via console 18:30:25, `BUILD SUCCESSFUL in 47s`. Default runtimeClasspath and jar-entry searches found no compat/MCEF/JCEF artifacts. First commit `583e431` pushed, GitHub CI passed. Complementary Reimagined r5.9.3 stays only in ignored `run/shaderpacks/`.
+  - Initial checkpoint: same creative world/default YouTube URL tested in Sodium and Iris shaders OFF; all render/media checks passed. Shader ON render/pause/seek passed before interruption. F2 originals copied unchanged with provenance/hash CSV. Completion evidence below closes the interrupted checks; see [report](feasibility/F1B-report.md).
+  - Vanilla F3 snapshots, no screen toward/away: 381/552 FPS; one playing screen: 427/397 FPS. Ten-sample Get-Process working-set means (MiB), no screen Java/JCEF: 1741.91/98.55; one screen: 1810.81/727.16. Rough single snapshots, not a benchmark; exact method/limitations and raw CSV in report.
+  - Physical Escape stopped Computer Use at approximately 18:55. No UI call or game input followed until Talha explicitly resumed work. Read-only logs show disconnect at 18:55:40 and quit at 18:55:42. The initial full launch reached only the title screen, then quit normally at 18:58:04; it was not counted as world verification.
+- Completion verification (23:10-23:46): Talha resumed work while keeping his server-connected Minecraft open. Every Computer Use target excluded that window; only separate Gradle clients were controlled/closed. Resumed Iris shader-on pause/play passed with changing-frame proof. Full loaded 73 mods, default Complementary HIGH, active DH renderer, then passed live page, orientation, stone occlusion, night, back face, pause, seek 60 visible jump and resumed play. No renderer change needed. Full FPS no screen toward/away 132/98; one screen 114/116. Full working-set means no screen Java/JCEF 3208.00/98.93 MiB (3 helpers); one screen 3925.47/754.27 MiB (7 helpers). Report explains background AFK game, LOD work, elapsed time and autoplay confounders. Total evidence: 31 unchanged F2 copies with hash provenance, 40 raw memory samples.
+  - Default completion build passed in 2s, 7 tasks up-to-date, test NO-SOURCE. Default runtimeClasspath rechecked, no compat/MCEF/JCEF; jar and metadata remain isolated. Final agents-free default server: 44 mods, 127.0.0.1, `Done (0.324s)!` at 23:44:50, console stop 23:46:34, all dimensions saved, `BUILD SUCCESSFUL in 1m 58s`. An earlier extra server run had closed stdin; repo-only diagnostic guards/normal shutdown-hook recovery are documented in the report, followed by this independent console-stop test.
+- Not done / left: final decision/review by Talha and Claude. No Phase 1A/2 work. All requested F1B-3 game/build/server checks are verified. Raw logs under `build/f1b-3-verification/`; scene fixture, downloads and temporary diagnostics remain under ignored `run/` only. The earlier 18:58 title-only launch is not counted as the full world test.
+- Known issues / risks: ImmediatelyFast SPEC mismatch preserved without editing SPEC. Shader tint/contrast remains readable but requires acceptance. Future oversized block-entity culling bounds/opt-outs need Phase 2 testing. AWT prefixes remain unexplained despite console/default/direct-handler/JVM tracing attempts; resumed Iris and full world exit each emitted three prefixes, no stack captured. Full also logged a DH regen-queue closed SQLite statement during shutdown, with stack retained in [diagnostics](feasibility/f1b-3-diagnostics.md); worlds saved and Gradle exited normally, but no harmlessness/data-integrity claim is made. LEA-185 browser security, per-client ads/autoplay and existing OSHI/dev-auth/Chromium diagnostics remain. [Final report](feasibility/F1B-report.md) recommends GO-with-conditions and lists decision conditions. Linear shared field-notes tool returned `Tool get_agent_context not found`; normal issue tools worked.
 
 ### F1B-2 - Fixed MCEF world quad and JavaScript media controls
 - Branch / PR: `spike/f1b-2-world-quad`, [PR #3](https://github.com/devtalh/perde/pull/3) targeting `main`; implementation/evidence commit `48f7b51` pushed, completion verification recorded in this follow-up.
