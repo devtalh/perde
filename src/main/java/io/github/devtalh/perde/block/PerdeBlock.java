@@ -1,6 +1,10 @@
 package io.github.devtalh.perde.block;
 
 import com.mojang.serialization.MapCodec;
+import io.github.devtalh.perde.net.PerdeServerNetworking;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.LivingEntity;
@@ -42,5 +46,12 @@ public final class PerdeBlock extends BaseEntityBlock {
         if (!level.isClientSide() && placer instanceof Player player && level.getBlockEntity(pos) instanceof PerdeBlockEntity entity) {
             entity.setScreenState(entity.screenState().withOwner(player.getUUID(), player.getPlainTextName()));
         }
+    }
+
+    @Override protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
+        if (player instanceof ServerPlayer serverPlayer && level.getBlockEntity(pos) instanceof PerdeBlockEntity entity) {
+            PerdeServerNetworking.openPanel(serverPlayer, entity);
+        }
+        return InteractionResult.SUCCESS;
     }
 }

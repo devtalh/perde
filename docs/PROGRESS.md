@@ -6,7 +6,7 @@ This is the handoff point between Codex sessions and accounts: the next session 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude). Phase 1A (skeleton) starts.
 - Last merged task: F1B-3 render-mod compatibility and feasibility report, [PR #4](https://github.com/devtalh/perde/pull/4), main `7c4da6c`.
-- Phase 1A: F1A-1 done; F1A-2 networking next on `feat/f1a-skeleton`. Single draft PR will collect all four overnight sub-tasks. No Phase 2 work.
+- Phase 1A: F1A-1 and F1A-2 done; F1A-3 GUI/placeholder next on `feat/f1a-skeleton`. Single draft PR will collect all four overnight sub-tasks. No Phase 2 work.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -22,8 +22,16 @@ Newest first. Format:
 - Known issues / risks:
 ```
 
+### F1A-2 - Networking and authoritative control decisions
+- Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5) (draft).
+- Status: done
+- What changed: server-only right-click OpenPanel snapshot/permission flags; SetUrl, SetGeometry, CenterScreen, SetAccessMode, AddAllowedPlayer, RemoveAllowedPlayer payloads. Typed Fabric server-thread handlers validate panel dimension/position, loaded chunk, BE existence, eye-to-block distance <=8, control/admin rights, URL/geometry/mode/name/cap. Server resolves exact online names or vanilla offline UUIDs. Successful edits call the BE setter and vanilla sync. Rejections use translated action-bar messages; rolling rate limit silently drops beyond 10 accepted requests/player/second. Disconnect cleans session/rate entries.
+- Verification: exact MC 26.2/Fabric networking 6.3.4 sources inspected. Build SUCCESSFUL in 6s, 9 tasks, 32 JUnit invocations (11 added), zero failures/errors. Default dedicated server 44 mods without MCEF, 127.0.0.1:25570, Done (0.435s), console stop/all dimensions saved, BUILD SUCCESSFUL in 16s. Diff checked.
+- Left: F1A-3 client payload receiver/GUI/render; F1A-4 real two-client matrix. No client UI is expected in this intermediate commit.
+- Decisions / risks: packets additionally require the last server-opened panel's position/dimension; see report. Offline names retain vanilla case-sensitive offline UUID identity. Shared-state sync remains vanilla only. Existing diagnostics unchanged.
+
 ### F1A-1 - Block, block entity, recipe and server state
-- Branch / PR: `feat/f1a-skeleton`, one overnight draft PR to main (link follows after first push).
+- Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5) (draft).
 - Status: done
 - What changed: horizontal Perde block faces the placer, BlockItem in Functional Blocks, block entity registration, recipe/unlock, loot and pickaxe tag, original 16x16 copper/dark textures and 26.2 models. Immutable plain-Java ScreenState validates URL/geometry/volume/allowed players; plain-Java permissions cover owner/operator/access modes. All state fields saved with ValueInput/ValueOutput and synced through vanilla BE packets/update tags. Added JUnit 5. Server dev runDir isolated to run/server for safe port-25570 boot checks.
 - Verification: prerequisites main contains 3092995 and 7c4da6c; Java/javac 25.0.4; Notion hub and LEA-189..192 read. Exact Minecraft/Fabric sources verified. Initial build SUCCESSFUL in 21s; final build SUCCESSFUL in 4s, 9 tasks, 21 JUnit invocations, zero failures/errors. Dedicated server 44 mods, no MCEF, 127.0.0.1:25570, Done (2.302s), console stop saved all dimensions, Gradle SUCCESSFUL in 49s. Creative real right-click placement facing and destroy/collect loot checked; F2 originals and hashes in [Phase 1A report](phase1a/F1A-report.md).
