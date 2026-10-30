@@ -6,7 +6,7 @@ This is the handoff point between Codex sessions and accounts: the next session 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude). Phase 1A (skeleton) starts.
 - Last merged task: F1B-3 render-mod compatibility and feasibility report, [PR #4](https://github.com/devtalh/perde/pull/4), main `7c4da6c`.
-- Phase 1A: F1A-1 and F1A-2 done; F1A-3 GUI/placeholder next on `feat/f1a-skeleton`. Single draft PR will collect all four overnight sub-tasks. No Phase 2 work.
+- Phase 1A: F1A-1, F1A-2 and F1A-3 done; F1A-4 two-client integration next on `feat/f1a-skeleton`. Single draft PR will collect all four overnight sub-tasks. No Phase 2 work.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -21,6 +21,14 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F1A-3 - Control/access GUI and placeholder renderer
+- Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5) (draft).
+- Status: done
+- What changed: client-only server-payload receiver; URL validation/Open; width/height and X/Y sliders with exact sixteenth values and release-only sends; default 16:9 width-driven lock; Center; disabled Phase 5 placement control/tooltip; conditional gear; paged 32-player access list/add/remove/mode screen; disabled watch-only controls. Open panels poll vanilla-synced BE snapshots. All new texts en_us/tr_tr. Placeholder BER uses immutable extracted geometry/text, the verified submitCustomGeometry/RenderTypes.text path, full-bright/depth/back-face behavior, wrapped URL. Plain-Java rectangle geometry has cardinal-direction tests.
+- Verification: build SUCCESSFUL in 5s, 9 tasks, 34 JUnit invocations, zero failures/errors; language parity 39 keys. Singleplayer real placement/OpenPanel; URL, width 8 x locked height 4.5, X/Y offsets, Center, independent height with lock off and restored lock, access screen/return all exercised. Three unchanged F2 copies with SHA-256 provenance in [report](phase1a/F1A-report.md). Physical arrow automation was inconclusive; keyboard-release path source-reviewed only. Initial focus-rebuild issue was corrected and a fresh client used for final UI checks. Spike package has no diff.
+- Left: F1A-4 stable Player1/Player2 dev configs, survival recipe, dedicated two-client permission/sync/persistence/drop matrix, spike regression, final isolation/report/PR-ready checks.
+- Decisions / risks: MC 26.2 has no vanilla BE AABB override. shouldRenderOffScreen registers a global renderer; custom shouldRender computes the full rectangle/block union and 48-block distance. No culling-mod code added; real Entity Culling/MoreCulling testing remains Phase 2/LEA-187. BER hosting of the proven submission path is supported in 26.2 and documented. Existing F1B risks persist.
 
 ### F1A-2 - Networking and authoritative control decisions
 - Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5) (draft).
