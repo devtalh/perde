@@ -1,8 +1,8 @@
 # F1B feasibility notes
 
-## F1B-3 handoff (partial, 2026-10-30)
+## F1B-3 completed feasibility evidence (2026-10-30)
 
-See the [partial Phase 1B report](F1B-report.md) for exact compatibility versions, source research, completed matrix cells, F2 proof, vanilla working-set/FPS data and remaining acceptance checks. Default build/server and Sodium/Iris shaders-OFF checks passed. Shader-ON render/pause/seek checks passed; final play and full-pack world/performance checks are pending. Physical Escape stopped Computer Use, after which no further game input was sent. Talha took over and requested continuation later. Do not treat this as Phase 1B completion or a final GO recommendation.
+See the [Phase 1B report](F1B-report.md) for exact versions, all four verified configurations, 31 unchanged F2 screenshots, vanilla/full FPS and working-set tables, source research and GO-with-conditions recommendation. Default build/server isolation passed. Physical Escape was respected; completion resumed only after Talha's instruction and used separate Gradle clients while preserving his AFK server client. AWT remains unexplained; the full run also exposed a DH teardown SQL error. [Retained diagnostic excerpts](f1b-3-diagnostics.md) keep those failures visible. Phase 1B complete, awaiting GO/NO-GO decision by Talha and Claude. No later phase started.
 
 ## F1B-1: client GUI (2026-10-30)
 
