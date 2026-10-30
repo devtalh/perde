@@ -4,10 +4,10 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase: 1B (F1B-2 world rendering and disconnect cleanup verified)
-- Last merged task: F1B-1 MCEF dependency + GUI smoke test ([PR #2](https://github.com/devtalh/perde/pull/2), main `77f3596`)
-- Last completed task: F1B-2 on `spike/f1b-2-world-quad`, [PR #3](https://github.com/devtalh/perde/pull/3), pending review/merge. Build/server, rendering/media and corrected disconnect/rejoin checks passed.
-- Next task: F1B-3 Sodium + Iris test and feasibility report
+- Phase: 1B (F1B-3 compatibility verification in progress)
+- Last merged task: F1B-2 world rendering and disconnect cleanup, [PR #3](https://github.com/devtalh/perde/pull/3), main `7ac575a` (verified with git log and gh).
+- Current task: F1B-3 on `spike/f1b-3-compat`; not complete until all four game configurations and final checks are verified.
+- Next task: finish F1B-3, then await Talha and Claude's GO/NO-GO decision.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -22,6 +22,14 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F1B-3 - Render-mod compatibility and Phase 1B report
+- Branch / PR: `spike/f1b-3-compat`, PR pending.
+- Status: partial (in progress)
+- What changed: opt-in `perde.compat=sodium|iris|full` development profiles using Loom 26.x `localRuntime`, restricted Modrinth Maven and immutable version IDs for all eight exact pack jars. Full adds MoreCulling's required Cloth Config 26.2.155. No compat dependencies with the property omitted; no metadata, common code, SPEC or AGENTS changes.
+- How it was verified (2026-10-30, Europe/Istanbul): clean main at merged `7ac575a`, JDK/javac 25.0.4; Notion hub, Linear F1B task and LEA-185 read. Exact Modrinth API file/version/game-version checks passed for all eight jars. Full localRuntime dependency resolution passed. Initial default build passed in 3s (7 tasks, test NO-SOURCE). Default runServer loaded 44 mods without MCEF/compat, bound 127.0.0.1:25565, reached `Done (0.431s)!` at 18:29:56, stopped via console 18:30:25, `BUILD SUCCESSFUL in 47s`. Default runtimeClasspath and jar-entry searches found no compat/MCEF/JCEF artifacts. Complementary Reimagined r5.9.3 downloaded only to ignored `run/shaderpacks/`.
+- Not done / left: all game matrix checks, vanilla/full performance and working-set snapshots, AWT investigation, culling research, final feasibility report, final build/diff review, push/PR/CI.
+- Known issues / risks: immediatelyFast in SPEC/old Linear text is stale for this task; user's exact eight-mod list takes precedence. No ImmediatelyFast is installed. Existing OSHI warnings remain. Linear shared field-notes tool returned `Tool get_agent_context not found`; normal issue tools worked.
 
 ### F1B-2 - Fixed MCEF world quad and JavaScript media controls
 - Branch / PR: `spike/f1b-2-world-quad`, [PR #3](https://github.com/devtalh/perde/pull/3) targeting `main`; implementation/evidence commit `48f7b51` pushed, completion verification recorded in this follow-up.
