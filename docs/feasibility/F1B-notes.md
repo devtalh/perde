@@ -163,15 +163,15 @@ The bridge and MCEF remain client-render-thread resources. This is a fixed one-b
 
 ### Verification
 
-Status: **partial**. World rendering and media control are proven, but the final active-browser disconnect retest after a cleanup fix has not passed yet. This is not an impossible-rendering/NO-GO result.
+Status: **done** (pending PR review/merge). World rendering, media control and the corrected active-browser disconnect cleanup passed. Talha ran the final disconnect/rejoin test and explicitly confirmed that the spike screen was gone after rejoining; Codex audited the logs without sending game input. No code changed during the completion pass. Sodium/Iris compatibility and the overall Phase 1B GO decision remain F1B-3 work.
 
 All Gradle commands used repository-local `GRADLE_USER_HOME` as above. Final code build:
 
 ```text
 .\gradlew.bat build --console=plain --warning-mode all
 > Task :test NO-SOURCE
-BUILD SUCCESSFUL in 4s
-7 actionable tasks: 3 executed, 4 up-to-date
+BUILD SUCCESSFUL in 9s
+7 actionable tasks: 7 up-to-date
 ```
 
 Dedicated server (`.\gradlew.bat runServer --console=plain`), 44 loaded mods with neither MCEF nor JCEF:
@@ -221,12 +221,25 @@ Every image below was captured with Minecraft F2, then copied byte-for-byte from
 | [Back](screenshots/f1b-2-back.png) | `2026-10-30_17.10.50.png` | Reverse face culled; coordinates/turn described above |
 | [Seek 60](screenshots/f1b-2-seek-60.png) | `2026-10-30_17.15.11.png` | Readonly media clock at exactly 60.00 seconds |
 
-#### Disconnect finding and outstanding verification
+#### Disconnect finding and completed verification
 
 The first Save and Quit at 17:18:34 returned to the title screen but did not produce a browser-close log. The browser was eventually closed by `CLIENT_STOPPING` at 17:20:28. Inspection of the exact Fabric networking `6.3.4+2989c6a09e` source establishes that `ConnectionMixin.channelInactive` can invoke `ClientPlayNetworkAddon.invokeDisconnectEvent` directly on a Netty thread. MCEF `close()` closes GPU resources; Minecraft's `GlStateManager._deleteTexture` asserts the render thread. The old callback cleared placement before that off-thread cleanup, also preventing the old tick guard from recovering. This is an implementation bug, not a limitation of world rendering.
 
-The callback now uses `client.execute(() -> close("disconnect"))`. The tick fallback checks browser, pending URL and placement, so active resources cannot be skipped merely because placement is absent. The 4-second final build above includes this fix. Source reference: [exact Fabric networking sources](https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-networking-api-v1/6.3.4+2989c6a09e/fabric-networking-api-v1-6.3.4+2989c6a09e-sources.jar), plus the pinned MCEF source and Loom-generated `GlStateManager.java`.
+The callback now uses `client.execute(() -> close("disconnect"))`. The tick fallback checks browser, pending URL and placement, so active resources cannot be skipped merely because placement is absent. The initial corrected build passed in 4s; the completion pass repeated the build successfully in 9s as shown above. Source reference: [exact Fabric networking sources](https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-networking-api-v1/6.3.4+2989c6a09e/fabric-networking-api-v1-6.3.4+2989c6a09e-sources.jar), plus the pinned MCEF source and Loom-generated `GlStateManager.java`.
 
-**Remaining:** with the corrected client, place a browser, Save and Quit, verify the close log on the Render thread, then rejoin and verify no screen persists. The corrected client was launched and built successfully. During the retest, Talha accidentally pressed physical Escape; Computer Use continued rejecting input even after his clarification. No further app input was sent after the persistent stop. The current dev client remains open. Do not mark F1B-2 done or start F1B-3 until this retest passes.
+The corrected client remained available after the earlier accidental Computer Use stop. Talha completed the active-browser test himself. Codex read `run/logs/latest.log` and checked `debug.log`, confirming this sequence on 2026-10-30 (Europe/Istanbul):
 
-Logs are preserved under ignored `build/f1b-2-verification/`: `server.log`, `build.log`, `client-before-disconnect-fix.log`, `initial-startup-crash.txt`. Existing OSHI performance-counter, dev-auth/Realms and Chromium registry/media diagnostics were observed. No additional gameplay crash occurred after the startup fix. No clean-upstream-log claim is made.
+```text
+[18:12:16] [Render thread/INFO] (perde) Perde spike: world browser created at 1280x720, requested 30 fps.
+[18:12:16] [Render thread/INFO] (Minecraft) [System] [CHAT] Spike screen placed (4 x 2.25 blocks, 1280 x 720).
+[18:12:33] [Render thread/INFO] (perde) Perde spike: world browser closed (disconnect).
+[18:12:33] [Server thread/INFO] (Minecraft) Player921 lost connection: Disconnected
+[18:12:41] [Server thread/INFO] (Minecraft) Player921 joined the game
+[18:13:05] [Server thread/INFO] (Minecraft) Player921 lost connection: Disconnected
+```
+
+The close is explicitly on the **Render thread**, not a Netty/IO thread. There is no new `world browser created` line after the 18:12:41 rejoin, through the later leave and the end of the audited log. Talha explicitly confirmed that the spike screen was completely absent after rejoining. No Perde error/exception or new crash report accompanied the test. The only file in `run/crash-reports/` remains the already documented 17:02:44 startup failure; existing dev-account profile-key HTTP 401 errors are unrelated to Perde.
+
+This completion used the requested read-only path for a test already run by Talha. No game input was sent, no game run was restarted, and no substitute rejoin screenshot was created. The earlier five F2 proofs remain unchanged. No F1B-2 verification remains; next task is **F1B-3 Sodium + Iris test and feasibility report**, after review/merge of PR #3.
+
+Logs are preserved under ignored `build/f1b-2-verification/`: `server.log`, `build.log`, `build-final.log`, `client-before-disconnect-fix.log`, `client-final-disconnect.log`, `initial-startup-crash.txt`. Existing OSHI performance-counter, dev-auth/Realms and Chromium registry/media diagnostics were observed. No additional gameplay crash occurred after the startup fix. No clean-upstream-log claim is made.
