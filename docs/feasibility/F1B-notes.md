@@ -1,5 +1,9 @@
 # F1B feasibility notes
 
+## F1B-3 handoff (partial, 2026-10-30)
+
+See the [partial Phase 1B report](F1B-report.md) for exact compatibility versions, source research, completed matrix cells, F2 proof, vanilla working-set/FPS data and remaining acceptance checks. Default build/server and Sodium/Iris shaders-OFF checks passed. Shader-ON render/pause/seek checks passed; final play and full-pack world/performance checks are pending. Physical Escape stopped Computer Use, after which no further game input was sent. Talha took over and requested continuation later. Do not treat this as Phase 1B completion or a final GO recommendation.
+
 ## F1B-1: client GUI (2026-10-30)
 
 Scope: disposable GUI spike under `io.github.devtalh.perde.client.spike`. No world rendering, blocks, packets or configuration. F1B-2 is a separate task.
