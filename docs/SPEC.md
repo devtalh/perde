@@ -23,7 +23,8 @@ Target: KuzCraft, a small private server (Talha + cousins).
 | Browser engine | MCEF Modern (Modrinth `mcef-modern`, source github.com/DimasKama/mcef-modern, LGPL-2.1), client only |
 
 Server: offline-mode with EasyAuth, ~125 mods based on the "Simply Crafted" pack. Already has C2ME, Lithium, Distant Horizons, Simple Voice Chat.
-Clients: Sodium, Iris (shaders), ImmediatelyFast, Entity Culling and more. Rendering code must work with these.
+Clients (exact render mods in the pack, verified in F1B-3): Sodium 0.9.2, Sodium Extra 0.9.4, Reese's Sodium Options 2.2.4, Iris 1.11.4 (shader: Complementary Reimagined), Entity Culling 1.11.2, MoreCulling 1.8.1, Lithium 0.25.3, Distant Horizons 3.3.3. ImmediatelyFast is NOT in the pack. Rendering code must work with these; use `-Pperde.compat=sodium|iris|full` to test against them in dev.
+Player hardware: Talha 32 GB RAM, cousins 16 GB RAM.
 
 ### 2.1 Verified MCEF Modern facts (read from source on 2026-10-30)
 
@@ -62,7 +63,7 @@ The server never streams video. It only stores state. Per screen (block entity):
 | `accessMode` | `OWNER_ONLY`, `SELECTED`, `EVERYONE` |
 | `allowedPlayers` | UUID list for `SELECTED` |
 
-State is saved to block entity NBT and sent to nearby clients via custom payloads whenever it changes.
+State is saved to block entity NBT. Server-to-client state sync uses the vanilla block entity data sync (update tag / block update), so clients that load the chunk later also get the current state. Client-to-server control actions use Fabric custom payloads. (Lead decision 2026-10-31: this replaces "custom payloads for state sync"; same behaviour, fewer moving parts.)
 Every control packet is permission-checked on the server. Never trust the client.
 Note: the server is offline-mode, so UUIDs are offline UUIDs derived from player names. That is acceptable.
 
@@ -71,6 +72,9 @@ Note: the server is offline-mode, so UUIDs are offline UUIDs derived from player
 - The Chromium frame is drawn as a texture on a plane in front of the block (BlockEntityRenderer or whatever 26.x requires).
 - Browser frame rate limited (default 30 fps). Not rendered and browser closed beyond render distance (default 48 blocks, config).
 - Fixed browser resolution independent of screen size (default 1280x720, config).
+- Render method (proven in Phase 1B, keep it): vanilla dynamic-texture path, i.e. immutable placement extracted in `LevelExtractionEvents.END_EXTRACTION`, drawn in `LevelRenderEvents.COLLECT_SUBMITS` via `submitCustomGeometry` with `RenderTypes.text`, a non-owning texture bridge to MCEF's live `GpuTextureView`, full-bright light, depth test, back face culled. Shader packs tint it slightly; accepted.
+- Memory: one browser costs about 650-750 MB (JCEF helper processes). Default limit: **1 active browser per client** (the nearest screen in range); configurable later for stronger PCs.
+- Culling: the screen is larger than its block, so the block entity render bounds must cover the whole screen (Entity Culling / MoreCulling, Linear LEA-187).
 
 ### 3.4 Video sync
 - Inject JavaScript into the page, find the first/active `<video>` element.
@@ -122,7 +126,7 @@ Note: the server is offline-mode, so UUIDs are offline UUIDs derived from player
 | 6 | Deploy to KuzCraft (after backup) |
 | 7 | Radio (see section 7) |
 
-If Phase 1B fails, do NOT start 1A. Stop and report.
+Phase 1B result (2026-10-31): **GO**, decided by Talha and Claude based on docs/feasibility/F1B-report.md.
 
 ## 7. Phase 7: Radio (after all screen phases)
 "Radio" works like a Discord music bot but plays into a **Simple Voice Chat group**.

@@ -4,10 +4,9 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase 1B complete, awaiting GO/NO-GO decision by Talha and Claude
-- Last merged task: F1B-2 world rendering and disconnect cleanup, [PR #3](https://github.com/devtalh/perde/pull/3), main `7ac575a` (verified with git log and gh).
-- Current task: F1B-3 verified on `spike/f1b-3-compat`, [PR #4](https://github.com/devtalh/perde/pull/4). All four configurations and default build/server checked; recommendation GO-with-conditions.
-- Next task: await Talha and Claude's decision. No later phase started.
+- Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude). Phase 1A (skeleton) starts.
+- Last merged task: F1B-3 render-mod compatibility and feasibility report, [PR #4](https://github.com/devtalh/perde/pull/4), main `7c4da6c`.
+- Next task: F1A-1 block, block entity, recipe and server state (see the Phase 1A overnight prompt; branch `feat/f1a-skeleton`).
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -98,6 +97,7 @@ Newest first. Format:
 - Loom `1.17-SNAPSHOT` follows the verified 26.2 upstream reference but is mutable.
 
 ## Decisions log (short; full rationale lives in Notion)
+- 2026-10-31: Phase 1B GO. Keep the F1B-2 render path. Default 1 active browser per client (cousins have 16 GB RAM). State sync S2C via vanilla block entity sync; C2S controls via custom payloads.
 - 2026-10-30: Codex accounts are used sequentially, never in parallel. Order: Phase 0, then 1B (feasibility), then 1A only if 1B succeeds.
 - 2026-10-30: Radio feature added as Phase 7 (after screen phases). Command root `/radyo`. Separate jar `perde-radyo`.
 - 2026-10-30: Target Minecraft 26.2 confirmed. Repo public, license MIT, recipe confirmed.
