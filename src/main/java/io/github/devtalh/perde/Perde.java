@@ -1,6 +1,7 @@
 package io.github.devtalh.perde;
 
 import net.fabricmc.api.ModInitializer;
+import io.github.devtalh.perde.registry.PerdeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,6 +10,7 @@ public class Perde implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        PerdeRegistry.initialize();
         LOGGER.info("Perde initialized.");
     }
 }

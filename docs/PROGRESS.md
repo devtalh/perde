@@ -6,7 +6,7 @@ This is the handoff point between Codex sessions and accounts: the next session 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude). Phase 1A (skeleton) starts.
 - Last merged task: F1B-3 render-mod compatibility and feasibility report, [PR #4](https://github.com/devtalh/perde/pull/4), main `7c4da6c`.
-- Next task: F1A-1 block, block entity, recipe and server state (see the Phase 1A overnight prompt; branch `feat/f1a-skeleton`).
+- Phase 1A: F1A-1 done; F1A-2 networking next on `feat/f1a-skeleton`. Single draft PR will collect all four overnight sub-tasks. No Phase 2 work.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -21,6 +21,14 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F1A-1 - Block, block entity, recipe and server state
+- Branch / PR: `feat/f1a-skeleton`, one overnight draft PR to main (link follows after first push).
+- Status: done
+- What changed: horizontal Perde block faces the placer, BlockItem in Functional Blocks, block entity registration, recipe/unlock, loot and pickaxe tag, original 16x16 copper/dark textures and 26.2 models. Immutable plain-Java ScreenState validates URL/geometry/volume/allowed players; plain-Java permissions cover owner/operator/access modes. All state fields saved with ValueInput/ValueOutput and synced through vanilla BE packets/update tags. Added JUnit 5. Server dev runDir isolated to run/server for safe port-25570 boot checks.
+- Verification: prerequisites main contains 3092995 and 7c4da6c; Java/javac 25.0.4; Notion hub and LEA-189..192 read. Exact Minecraft/Fabric sources verified. Initial build SUCCESSFUL in 21s; final build SUCCESSFUL in 4s, 9 tasks, 21 JUnit invocations, zero failures/errors. Dedicated server 44 mods, no MCEF, 127.0.0.1:25570, Done (2.302s), console stop saved all dimensions, Gradle SUCCESSFUL in 49s. Creative real right-click placement facing and destroy/collect loot checked; F2 originals and hashes in [Phase 1A report](phase1a/F1A-report.md).
+- Left: F1A-2 packets/server gates; F1A-3 panel/placeholder renderer; F1A-4 two-client survival/persistence/integration matrix. Survival mining and crafting are explicitly left to F1A-4.
+- Known issues / decisions: task-specific 0.5 minimum height and placer-facing rule take precedence over older SPEC wording; 16:9 helper quantizes derived height to 1/16. SPEC/AGENTS/spike unchanged. Existing OSHI and Realms diagnostics persist. See report Decisions for review. Only own PID 40156 (repo DLI) was controlled; Talha's AFK game was excluded.
 
 ### F1B-3 - Render-mod compatibility and Phase 1B report
 - Branch / PR: `spike/f1b-3-compat`, [PR #4](https://github.com/devtalh/perde/pull/4). Checkpoint commits pushed with passing CI; completion evidence follows on the same branch.
