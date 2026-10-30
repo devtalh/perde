@@ -26,10 +26,23 @@ loom {
     }
 }
 
+repositories {
+    maven {
+        name = 'MCEFModern'
+        url = 'https://maven.dimaskama.net/releases'
+        content {
+            includeGroup 'net.dimaskama'
+        }
+    }
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    clientImplementation "net.dimaskama:mcef-modern:${project.mcef_version}"
+    // MCEF publishes JCEF as a runtime dependency; the spike also calls its FPS API.
+    clientCompileOnly "me.friwi:jcef-api:${project.jcef_api_version}"
 }
 
 processResources {

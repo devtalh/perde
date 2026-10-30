@@ -4,10 +4,10 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase: 0 (prep)
-- Last merged task: none
-- Last completed task: F0-3 Fabric mod scaffold (branch `chore/f0-3-scaffold`, pending merge)
-- Next task: F1B-1 MCEF dependency + GUI smoke test
+- Phase: 1B (feasibility, GUI spike verified)
+- Last merged task: F0-3 Fabric mod scaffold ([PR #1](https://github.com/devtalh/perde/pull/1), main `9712e2a`)
+- Last completed task: F1B-1 MCEF dependency + GUI smoke test ([PR #2](https://github.com/devtalh/perde/pull/2), pending merge)
+- Next task: F1B-2 world quad rendering (separate task, not started)
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -22,6 +22,21 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F1B-1 - MCEF Modern client-only dependency + GUI smoke test
+- Branch / PR: `spike/f1b-1-mcef-gui`, [PR #2](https://github.com/devtalh/perde/pull/2) targeting `main`
+- Status: done (game interaction and audio confirmed by Talha after taking over input; pending PR review/merge)
+- What changed: pinned MCEF `0.3.3+mc26.2.jcef146.0.10` as a client dependency, verified from Maven metadata, the published sources and upstream commit df61843. Added optional `suggests` metadata, a missing-MCEF warning/disabled command, asynchronous initialization, and dev-only `/perde-spike gui [url]`. The disposable spike Screen draws the live 26.2 texture view, forwards input/cursors, requests 30 fps and closes the browser in `removed()`. Added [feasibility notes](feasibility/F1B-notes.md) and [F2 YouTube evidence](feasibility/screenshots/f1b-1-youtube.png). Main Java code, SPEC and AGENTS are unchanged.
+- How it was verified (2026-10-30, Europe/Istanbul):
+  - F0-3 merge verified with `gh pr list --state all --head chore/f0-3-scaffold` and matching local/remote main `9712e2a`. JDK/javac 25.0.4 available.
+  - `.\gradlew.bat build --console=plain --warning-mode all`: passed (first build 20s, final build 9s; `test NO-SOURCE`). No Gradle warnings in the final build.
+  - `.\gradlew.bat runServer --console=plain`: common init at 16:41:45, `Done (0.421s)!` at 16:41:48, console `stop` at 16:42:10, `BUILD SUCCESSFUL in 37s`. MCEF/JCEF absent from the loaded mods, server log and `runtimeClasspath` dependency report. Server remains repo-local and bound to 127.0.0.1.
+  - `rg -n '^import .*mcef|^import org\.cef' src/main src/client`: three matches, all in `src/client/.../spike` (Screen lines 7-8, client bridge line 4). No common MCEF imports or references.
+  - `.\gradlew.bat runClient --console=plain`: native first-time install stayed in `run/config/mcef-modern/`; async init completed at 16:43:35. Codex entered the local creative world, submitted the default command and observed YouTube playing. Talha then tested and confirmed playback with sound, clicks, scroll, typing and Esc. Browser creation at 16:43:47 (1280x720, 30 fps requested), closure independently logged at 16:45:09. No crash observed. Computer Use stopped on Talha's physical Esc; game input remained with him.
+  - F2 `run/screenshots/2026-10-30_16.44.08.png` copied byte-for-byte to `docs/feasibility/screenshots/f1b-1-youtube.png`; matching SHA-256 `f9aa0bd58439ecb72e62d037a57264aa9eb908a0f30dd5f248ced725381fe559`. Loading screenshot not available because initialization finished before the command opened the Screen.
+  - Final review: `git diff --cached --check` passed; common Java reference search returned no MCEF/JCEF/spike matches. Jar inspection confirms spike classes are packaged and MCEF/JCEF are not bundled. Implementation committed as `6838f37` and pushed; PR opened without merging.
+- Not done / left for next task: F1B-2 world quad rendering; F1B-3 Sodium/Iris checks and overall GO/NO-GO decision. Missing-MCEF client and failure/loading UI were source-reviewed, not separately exercised at runtime. No world/block/network/config changes.
+- Known issues / risks: four bare AWT exception prefixes appeared in Gradle stdout without details/stack traces or observed functional failure; cause unresolved. Upstream JCEF SemVer, Chromium registry/media/preload warnings and existing OSHI/dev-auth errors remain. Upstream enables autoplay and `--disable-web-security`; no browser hardening is claimed. Details and evidence in the feasibility notes.
 
 ### F0-3 - Fabric mod scaffold
 - Branch / PR: [`chore/f0-3-scaffold` targeting `main`](https://github.com/devtalh/perde/compare/main...chore/f0-3-scaffold)

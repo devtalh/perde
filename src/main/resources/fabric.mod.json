@@ -15,6 +15,9 @@
     "main": ["io.github.devtalh.perde.Perde"],
     "client": ["io.github.devtalh.perde.client.PerdeClient"]
   },
+  "suggests": {
+    "mcef-modern": "0.3.3+mc26.2.jcef146.0.10"
+  },
   "depends": {
     "minecraft": "26.2",
     "fabricloader": ">=0.19.5",
