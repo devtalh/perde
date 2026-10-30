@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+.gradle-user-home/
+build/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+out/
+
+# Development game data
+run/
+
+# Operating systems
+.DS_Store
+Thumbs.db

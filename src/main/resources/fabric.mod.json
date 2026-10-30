@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "perde",
+  "version": "${version}",
+  "name": "Perde",
+  "description": "Shared in-world web and video screens for Minecraft.",
+  "authors": ["devtalh"],
+  "contact": {
+    "sources": "https://github.com/devtalh/perde",
+    "issues": "https://github.com/devtalh/perde/issues"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["io.github.devtalh.perde.Perde"],
+    "client": ["io.github.devtalh.perde.client.PerdeClient"]
+  },
+  "depends": {
+    "minecraft": "26.2",
+    "fabricloader": ">=0.19.5",
+    "fabric-api": "*",
+    "java": ">=25"
+  }
+}
