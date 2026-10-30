@@ -94,7 +94,7 @@ Source context: the [Iris 26.2 ShaderKey](https://github.com/IrisShaders/Iris/bl
 
 ## Build, server and completion gate
 
-All Gradle commands used `.\gradlew.bat` with repository-local `GRADLE_USER_HOME=.gradle-user-home`. Default build passed initially in 3s and at the handoff in **9s**, 7 actionable tasks all up-to-date, `test NO-SOURCE`. The first pushed commit's [CI run passed](https://github.com/devtalh/perde/actions/runs/41081460229). Final evidence commit CI must still be checked.
+All Gradle commands used `.\gradlew.bat` with repository-local `GRADLE_USER_HOME=.gradle-user-home`. Default build passed initially in 3s and at the handoff in **9s**, 7 actionable tasks all up-to-date, `test NO-SOURCE`. The [evidence checkpoint CI passed](https://github.com/devtalh/perde/actions/runs/41086848871) at `4f757c1`. [PR #4](https://github.com/devtalh/perde/pull/4) is draft; completion checks remain required after the missing game tests.
 
 Dedicated server, default property omitted, 44 loaded mods, no MCEF/JCEF or compatibility mods:
 
