@@ -24,7 +24,7 @@ Newest first. Format:
 ```
 
 ### F1B-2 - Fixed MCEF world quad and JavaScript media controls
-- Branch / PR: `spike/f1b-2-world-quad`, [compare with main](https://github.com/devtalh/perde/compare/main...spike/f1b-2-world-quad)
+- Branch / PR: `spike/f1b-2-world-quad`, [draft PR #3](https://github.com/devtalh/perde/pull/3) targeting `main`; implementation/evidence commit `48f7b51` pushed.
 - Status: partial (final disconnect retest pending; do not mark done yet)
 - What changed: development-only place/remove/play/pause/seek commands, one fixed 4 x 2.25 block screen and one 1280x720 browser. Uses 26.2's vanilla map rendering path (`COLLECT_SUBMITS`, `submitCustomGeometry`, `RenderTypes.text`) with a live, non-owning texture bridge, full-bright light coordinates, depth testing and back-face culling. All implementation changes remain in the client spike package. Added source research, F2 evidence, audio output measurements and a reproducible local media fixture. No common code, SPEC, AGENTS, dependency or world-data changes.
 - How it was verified (2026-10-30, Europe/Istanbul):
