@@ -32,6 +32,19 @@ final class McefCompatibility {
         browser.getMethod("setWindowlessFrameRate", int.class);
         browser.getMethod("loadURL", String.class);
         browser.getMethod("getURL");
+        browser.getMethod("getFrameIdentifiers");
+        browser.getMethod("getFrameByIdentifier", String.class);
+        Class<?> frame = Class.forName("org.cef.browser.CefFrame", false, loader);
+        frame.getMethod("executeJavaScript", String.class, String.class, int.class);
+        frame.getMethod("getIdentifier");
+        frame.getMethod("isValid");
+        frame.getMethod("dispose");
+        Class<?> router = Class.forName("org.cef.browser.CefMessageRouter", false, loader);
+        Class<?> handler = Class.forName("org.cef.handler.CefMessageRouterHandler", false, loader);
+        router.getMethod("create", handler);
+        router.getMethod("dispose");
+        client.getMethod("addMessageRouter", router);
+        client.getMethod("removeMessageRouter", router);
     }
 
     static RuntimeException incompatible(Throwable cause) {

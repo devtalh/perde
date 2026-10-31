@@ -1,0 +1,18 @@
+client2-full.txt
+[22:43:57] [ForkJoinPool.commonPool-worker-1/INFO] (perde-f2-probe) Test Chromium audio: --mute-audio
+[22:44:00] [Render thread/INFO] (perde-f2-probe) Test client master volume: 0.0
+[22:44:00] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[22:44:26] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[22:44:26] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=]
+[22:44:28] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=YE7VzlLtp-4]
+[22:44:30] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=YE7VzlLtp-4&themeRefresh=1]
+[22:44:32] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=YE7VzlLtp-4]
+[22:46:30] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[22:46:30] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+BUILD SUCCESSFUL in 2m 59s
+server-full.txt
+[22:43:40] [Server thread/INFO] (Minecraft) Starting Minecraft server on 127.0.0.1:25570
+[22:43:41] [Server thread/INFO] (Minecraft) Done (1.049s)! For help, type "help"
+[22:43:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[22:46:34] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+BUILD SUCCESSFUL in 3m 9s

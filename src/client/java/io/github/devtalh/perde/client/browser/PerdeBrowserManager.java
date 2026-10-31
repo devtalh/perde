@@ -6,6 +6,7 @@ import io.github.devtalh.perde.block.PerdeBlock;
 import io.github.devtalh.perde.block.PerdeBlockEntity;
 import io.github.devtalh.perde.screen.ScreenGeometry;
 import io.github.devtalh.perde.screen.ScreenState;
+import io.github.devtalh.perde.client.net.ClientPlaybackClock;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientBlockEntityEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLevelEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
@@ -107,6 +108,10 @@ public final class PerdeBrowserManager {
                 Perde.LOGGER.info("Perde browser: created at {}, 1280x720, 30 fps, unfocused, active=1/{}.",
                         active.getBlockPos(), BrowserSelection.MAX_ACTIVE_BROWSERS);
             } catch (RuntimeException | LinkageError exception) { fail(exception); }
+        }
+        if (open) {
+            try { backend.sync(active.screenState().playback(), ClientPlaybackClock.ready() ? ClientPlaybackClock.serverNowMs() : null); }
+            catch (RuntimeException | LinkageError exception) { fail(exception); }
         }
     }
 

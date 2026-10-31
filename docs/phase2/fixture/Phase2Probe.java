@@ -37,6 +37,10 @@ public final class Phase2Probe implements ClientModInitializer {
     private int ticks;
     private String lastAudit = "";
     private boolean soundConfigured;
+    private int syncSamples;
+    private long nextSyncSample;
+    private long syncIntervalNanos = 1_000_000_000L;
+    private BlockPos syncPos;
 
     @Override public void onInitializeClient() {
         try { if (Files.exists(commandFile)) previous = Files.readString(commandFile); }
@@ -58,6 +62,12 @@ public final class Phase2Probe implements ClientModInitializer {
                     lastAudit = audit;
                     LOG.info("Native browser audit {}", audit);
                 }
+            }
+            if (ticks % 5 == 0 && Boolean.getBoolean("perde.testMuted") && FabricLoader.getInstance().isModLoaded("mcef-modern")) muteManagedMedia();
+            if (syncSamples > 0 && System.nanoTime() >= nextSyncSample) {
+                syncSamples--;
+                nextSyncSample = System.nanoTime() + syncIntervalNanos;
+                sampleSync(client, syncPos);
             }
             if (walkTicks > 0 && --walkTicks == 0) {
                 client.options.keyUp.setDown(false);
@@ -89,7 +99,29 @@ public final class Phase2Probe implements ClientModInitializer {
                 if (client.level == null || client.player == null || client.gameMode == null) throw new IllegalStateException("Join a world first");
                 switch (action) {
                     case "policy" -> runPolicyProbe(args[2]);
+                    case "sync-sample" -> sampleSync(client, pos(args));
+                    case "sync-record" -> {
+                        syncPos = pos(args);
+                        syncSamples = Integer.parseInt(args[5]);
+                        syncIntervalNanos = (args.length > 6 ? Long.parseLong(args[6]) : 1000) * 1_000_000L;
+                        if (syncIntervalNanos < 50_000_000 || syncIntervalNanos > 1_000_000_000) throw new IllegalArgumentException("50..1000 ms interval only");
+                        if (syncSamples < 1 || syncSamples > 300) throw new IllegalArgumentException("1..300 samples only");
+                        nextSyncSample = 0;
+                    }
                     case "evaluate" -> evaluate(args[2], args[3]);
+                    case "frame-evaluate" -> {
+                        var source = (org.cef.browser.CefBrowser) managedBrowser();
+                        var identifiers = source.getFrameIdentifiers();
+                        if (identifiers == null) throw new IllegalStateException("Native frames are not ready");
+                        for (String id : identifiers) {
+                            var frame = source.getFrameByIdentifier(id);
+                            if (frame == null) continue;
+                            try {
+                                LOG.info("F3-2 frame id={} url={}", id, frame.getURL());
+                                if (frame.getURL().startsWith(args[2])) frame.executeJavaScript(args[3], frame.getURL(), 0);
+                            } finally { frame.dispose(); }
+                        }
+                    }
                     case "devtools" -> devTools(args[2], args[3], args[4]);
                     case "raw-url" -> ClientPlayNetworking.send(new PerdePayloads.SetUrl(pos(args), args[5]));
                     case "chat-audit" -> auditChat(client);
@@ -125,6 +157,7 @@ public final class Phase2Probe implements ClientModInitializer {
                         Button button = panel.children().stream().filter(Button.class::isInstance).map(Button.class::cast)
                                 .filter(candidate -> candidate.getMessage().getString().equals(Component.translatable(key).getString())).findFirst().orElseThrow();
                         if (!button.active) throw new IllegalStateException("Playback button is disabled");
+                        LOG.info("F3-2 panel control action={} localMs={}", args[2], System.currentTimeMillis());
                         button.onPress(new MouseButtonInfo(0, 0));
                     }
                     case "panel-audit" -> {
@@ -205,6 +238,50 @@ public final class Phase2Probe implements ClientModInitializer {
     }
 
     private static double number(String[] args, int index) { return Double.parseDouble(args[index]); }
+
+    private static void muteManagedMedia() throws Exception {
+        Object managed;
+        try { managed = managedBrowser(); }
+        catch (IllegalStateException absent) {
+            if (absent.getMessage().equals("No managed Perde browser")) return;
+            throw absent;
+        }
+        var source = (org.cef.browser.CefBrowser) managed;
+        var identifiers = source.getFrameIdentifiers();
+        // Chromium has no native frame list yet during asynchronous browser creation.
+        if (identifiers == null) return;
+        for (String id : identifiers) {
+            var frame = source.getFrameByIdentifier(id);
+            if (frame == null) continue;
+            try { frame.executeJavaScript("document.querySelectorAll('video,audio').forEach(v=>{v.muted=true;v.volume=0;});", frame.getURL(), 0); }
+            finally { frame.dispose(); }
+        }
+    }
+
+    private static void sampleSync(Minecraft client, BlockPos pos) throws Exception {
+        if (!FabricLoader.getInstance().isDevelopmentEnvironment()) throw new IllegalStateException("Development only");
+        Object browser = managedBrowser();
+        Object tools = Class.forName("org.cef.browser.CefBrowser").getMethod("getDevToolsClient").invoke(browser);
+        String expression = "(() => {const v=document.querySelector('video'); return {now:Date.now(),url:location.href,video:!!v,"
+                + "time:v?.currentTime, duration:Number.isFinite(v?.duration)?v.duration:null,paused:v?.paused,ready:v?.readyState,"
+                + "ad:!!document.querySelector('.ad-showing'),muted:v?.muted,volume:v?.volume};})()";
+        var parameters = new com.google.gson.JsonObject();
+        parameters.addProperty("expression", expression);
+        parameters.addProperty("returnByValue", true);
+        var future = (java.util.concurrent.CompletableFuture<?>) tools.getClass()
+                .getMethod("executeDevToolsMethod", String.class, String.class).invoke(tools, "Runtime.evaluate", parameters.toString());
+        future.orTimeout(5, java.util.concurrent.TimeUnit.SECONDS).whenComplete((value, failure) -> client.execute(() -> {
+            if (failure != null) { LOG.error("F3-2 sample failed", failure); return; }
+            if (client.level == null || !(client.level.getBlockEntity(pos) instanceof PerdeBlockEntity entity)) return;
+            var result = com.google.gson.JsonParser.parseString(value.toString()).getAsJsonObject();
+            var media = result.getAsJsonObject("result").getAsJsonObject("value");
+            long now = System.currentTimeMillis();
+            long serverNow = io.github.devtalh.perde.client.net.ClientPlaybackClock.serverNowMs();
+            long target = entity.screenState().playback().current(serverNow + media.get("now").getAsLong() - now);
+            LOG.info("F3-2 sample player={} targetMs={} playing={} media={}", client.player.getPlainTextName(), target,
+                    entity.screenState().playing(), media);
+        }));
+    }
 
     private static void auditChat(Minecraft client) throws Exception {
         var chat = client.gui.hud.getChat();

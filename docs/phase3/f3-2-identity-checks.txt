@@ -1,0 +1,12 @@
+{'tests': 296, 'failures': 0, 'errors': 0, 'skipped': 0}
+Fresh build: SUCCESSFUL in 8s, 9/9 executed
+Fresh MCEF-free windowless server: [22:41:19] [Server thread/INFO] (Minecraft) Done (0.853s)! For help, type "help"
+Fresh/integration servers saved all dimensions and Gradle succeeded; all clients exited normally; native registries zero
+Guard reloads on both same-video late joins: zero; real different-ID History and document changes restored the server URL
+Five metadata-only codec probes, one unchanged F2/site; no content downloads/recordings; no consent/login/paywall/age gate bypass
+Three temporary test domains removed; defaults/common/spec/agents/build unchanged; jar contains no bundled natives or fixture
+Initial too-early aim excluded; fixture mute null-frame-list root cause corrected and freshly verified; late sample windows contain no fixture failures
+Live criterion (f): deferred to LEA-200 (codecs)
+Late goal <1500 ms not met: accepted by Talha as buffering constraint; proposed F3-5 seek-ahead compensation, not implemented
+{'run': 'first', 'entryMs': 1793474975976, 'readyMs': 1793474980983, 'stableMs': 1793474990039, 'entryToReadyMs': 5007, 'readyToStableMs': 9056, 'stableDriftMs': -181.0, 'guardReloads': 0}
+{'run': 'second', 'entryMs': 1793475520236, 'readyMs': 1793475523074, 'stableMs': 1793475527416, 'entryToReadyMs': 2838, 'readyToStableMs': 4342, 'stableDriftMs': -293.4060000000027, 'guardReloads': 0}

@@ -4,10 +4,11 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase 3: **F3-1 complete, PR awaiting review** (LEA-196), branch `feat/f3-1-playback-state`, [PR #9](https://github.com/devtalh/perde/pull/9), from merged main `5e8fbd8`. Authoritative playback, panel controls and server clock delivered. Fresh build: 240 tests pass. MCEF-free server, two-client controls/permissions, max 8 ms skew, chunk reload and restart persistence passed. Evidence checkpoint `f986025` CI green ([run 67](https://github.com/devtalh/perde/actions/runs/41229769492)); final docs-only head must pass CI before ready. [Report](phase3/F3-1-report.md). Do not merge.
+- Phase 3: **F3-2 done, (f) deferred to LEA-200 (codecs)** (LEA-197), `feat/f3-2-sync-engine`, [PR #10](https://github.com/devtalh/perde/pull/10). Current build: **296 tests pass**. Identity guard ignores housekeeping, real ID changes restore server URL. Late runs: entry->ready **5.007/2.838 s**, ready->stable **9.056/4.342 s**, **0 same-video guard reloads**. The <1.5 s goal was missed and explicitly accepted by Talha as a buffering constraint. Five metadata-only codec probes complete. [Report](phase3/F3-2-report.md). Ready after final-head CI; do not merge.
+- Phase 3: **F3-1 merged**, [PR #9](https://github.com/devtalh/perde/pull/9), main `a326147`, confirmed 2026-10-31 before F3-2. [Report](phase3/F3-1-report.md) retains its historical pre-merge status.
 - Phase 2: **merged**, [PR #8](https://github.com/devtalh/perde/pull/8), main `5e8fbd8`, confirmed 2026-10-31. [Phase 2 report](phase2/F2-report.md).
 - Phase 1B: **GO** (decided by Talha and Claude).
-- Next: **F3-2**, apply playback to browser/video. No F3-2 work in this branch.
+- Next: depends on the **LEA-200 decision**. F3-5 seek-ahead compensation is a proposal only; no next phase started.
 - Confirmed Minecraft 26.2, Fabric API 0.161.0+26.2, Java 25 and pinned MCEF 26.2 client build.
 
 ## Task log
@@ -22,6 +23,18 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F3-2 - Client browser playback sync (LEA-197)
+- Branch / PR: `feat/f3-2-sync-engine`, from main `a326147`; [PR #10](https://github.com/devtalh/perde/pull/10). Identity checkpoint `03877b2` passed CI; final head must also pass before ready. No merge.
+- Status: **done with (f) deferred to LEA-200 (codecs)**, lead decisions 2026-10-31. Talha subsequently approved documenting the missed 1.5 s late-start goal as a buffering constraint and marking ready after remaining checks.
+- What changed: client-only active-browser 500 ms per-frame JCEF sync/private bounded router, pure seek/transport/live/end/exempt decisions and debounce; committed-page guard now uses canonical media identity. YouTube route/host variants map to video ID; housekeeping query/fragment ignored. Other pages use normalized host/path. IDN/DNS alias handling is tested. Common/server/SPEC/AGENTS/defaults/build unchanged.
+- Current verification: Java 25.0.4; repo/Notion/LEA-197/LEA-200 and pinned sources read. Field-notes endpoint unavailable. Fresh build SUCCESSFUL in 8s, 9 tasks executed, **296 tests, zero failures/errors/skips**. No test weakened. Lookalikes, IDN, URL variants and identity guard tested; original live-media tests retained. Jar/common isolation and Git diff checked.
+- Late join re-runs: first (aqz-KE-bpKQ) entry->ready>=3 **5.007 s**, ready->stable drift<1500 **9.056 s**; second (YE7VzlLtp-4, observed 480p) **2.838 s / 4.342 s**. **0 same-video guard reloads** in both. Goal <1.5 s not achieved; native rebuffering after seek, advancing target and required 2 s cooldown cause further corrections. Explicitly accepted by Talha as a documented constraint. **Seek-ahead compensation proposed for F3-5, not implemented**. All 180 samples/run retained.
+- Guard: pp/si/t/feature/list/index/fragment changes retained without reload. Different video IDs through History and full navigation restored the authoritative URL, native result observed.
+- Codec impact: five sites measured metadata-only, one unchanged F2/site. Vimeo did not advance, HLS/DASH/MP4 requests, UI Player error; Dailymotion showed Browser not compatible with geo.dailymotion.com frame; diziwatch/Dizilla normal controls loaded four.pichive.online media but ready stayed 0; Dizipal observed inline MP4 errors 4/no supported streams. Actual stream codecs not over-inferred from capability probes. H.264/AAC false, VP9/AV1/Opus true. No bypass or fixes. Three domains added only to run/ config, then removed. [Table/metadata/provenance](phase3/F3-2-report.md).
+- Original supported-media evidence retained: 121-sample/client YouTube median/max drift P1 57.451/76.941 ms, P2 56.906/68.353 ms; controls 101..601 ms; no-video, malformed native query rejection, cross-origin exact 2 s/pause, 5.009 s end clamp and rejected-play retry passed.
+- Runtime/cleanup: current MCEF-free windowless --nogui dedicated server on 127.0.0.1:25570 boots to Done and stops normally/all dimensions saved; clients exit successfully/native zero. A fixture-only initial null-frame-list error and one too-early aim were diagnosed/disclosed; muter corrected and fresh startup verified. No errors during late-measurement windows. All data under run/, audio muted, no Computer Use/focus switching/unrelated processes.
+- Left / risks: final-head CI/review only for F3-2; (f) **deferred to LEA-200**, not failed. Next task depends on that decision. Buffering constraint and existing ads/native-browser limits remain; F3-5 proposal only. [Report](phase3/F3-2-report.md).
 
 ### F3-1 - Authoritative playback, panel controls and server clock (LEA-196)
 - Branch / PR: `feat/f3-1-playback-state`, from main `5e8fbd8`; [PR #9](https://github.com/devtalh/perde/pull/9). Commits: `3a0bd65` implementation, `3d139a8` lifecycle correction, `f986025` acceptance evidence. Evidence head CI green ([run 67](https://github.com/devtalh/perde/actions/runs/41229769492)); final docs-only head must pass CI before ready. Do not merge.
