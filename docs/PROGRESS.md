@@ -4,10 +4,11 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
+- F2-3 (LEA-194/187/188): **partial, validation in progress**, branch `feat/f2-3-validation` from merged F2-2/main `bb6f68e`. Full profile + Complementary real-screen orientation/occlusion/night/back/culling/switching passed; 10/10 save-quit/rejoin cycles passed, native 0/1, no reproduced AWT prefix/DH SQL/Perde browser failure. Spike removed; fresh build passes 197 tests. Remaining: post-removal MCEF-free server, two-client URL/allowlist checks and smoke, PR/latest-head CI. [Phase 2 report](phase2/F2-report.md). No Phase 3 work.
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
-- Last merged task: F2-1, [PR #6](https://github.com/devtalh/perde/pull/6), main `6b75980`; merge confirmed through GitHub and origin/main on 2026-10-31.
-- F2-2 (LEA-185): **done under the lead-approved trusted-site boundary**, branch `feat/f2-2-browser-policy`, [PR #7](https://github.com/devtalh/perde/pull/7). 197 fresh tests/build pass; console/join/approval/live remove-restore/redirect/YouTube/spike checks complete; final MCEF-free windowless server passed. The native WebSocket bypass remains an accepted residual risk, not a repaired network filter. No canary repeat. SPEC unchanged; proposal and evidence in the [report](phase2/F2-2-report.md). Ready after latest-head CI; never merge in this task.
-- Next task after F2-2 completion: **F2-3 full-pack validation, culling, spike removal**. Do not start it during the F2-2 handoff.
+- Last merged task: F2-2, [PR #7](https://github.com/devtalh/perde/pull/7), main `bb6f68e`; merge confirmed through GitHub and local history on 2026-10-31 before F2-3.
+- F2-2 (LEA-185): **merged under the lead-approved trusted-site boundary**. 197 tests/build and the MCEF-free windowless server passed. Native WebSocket bypass remains an accepted residual risk, not a repaired network filter. No canary repeat. [Report](phase2/F2-2-report.md).
+- Active task: **F2-3 full-pack validation, culling, spike removal**. Next after completion: Phase 3 planning by Claude.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -22,6 +23,14 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F2-3 - Full-profile validation and feasibility spike removal (LEA-194, LEA-187, LEA-188)
+- Branch / PR: `feat/f2-3-validation`, from main `bb6f68e`; PR pending. PR #7 merge was confirmed through GitHub and local history before branching.
+- Status: partial (2026-10-31, Europe/Istanbul), runtime validation continuing.
+- What changed: removed all five spike classes/commands and their registration. Preserved eager asynchronous MCEF engine initialization in the guarded client-only backend. Kept compat profiles and all historical docs fixtures; updated fixture READMEs. Opt-in Phase 2 fixture now supports Player2, silent Chromium startup, actual all-client native registry audit and safe helper-process exit handling.
+- Verification: full profile + Complementary r5.9.3/HIGH real-screen live/upright/stone/night/back-face/offset source-offscreen/source-behind-wall and nearest-one switching passed. No culling fix required. 10 save-quit/rejoin cycles passed with native 0 on leave/1 on return and ready/playing video; helper means cycles 1/5/10 = 784.44/747.24/806.16 MiB. Full JVM exit successful in 22m 17s, 0 bare AWT exception prefixes, 0 SQL exception lines, 0 Perde browser failures. Fresh post-removal build SUCCESSFUL in 10s, all 9 tasks executed, 197 tests, zero failures/errors/skips. Default jar/common import isolation, 57-key language parity, 17 unchanged F2 hash pairs and Git diff checked. [Report](phase2/F2-report.md).
+- Not done / left: MCEF-free windowless dedicated server, two plain clients showing initial/changed YouTube and live allowlist remove/add, post-removal client smoke, branch push/PR/CI. Phase 2 is not complete yet.
+- Known issues / risks: accepted WebSocket/DNS/upstream security boundary, ads/autoplay, shader tint and shared Chromium memory remain. Earlier AWT/DH failures were not reproduced, not fixed. Initial fixture package/overlapping-script/helper-exit orchestration failures are documented honestly and corrected; no product test or policy was weakened. SPEC/AGENTS unchanged.
 
 ### F2-2 - Browser navigation/privacy and lead-approved trusted-site follow-up (LEA-185)
 - Branch / PR: `feat/f2-2-browser-policy`, [PR #7](https://github.com/devtalh/perde/pull/7), targeting main. Implementation checkpoints `bdc33b7`, `33755ba`, `98b7396`; ready after latest-head CI, do not merge.

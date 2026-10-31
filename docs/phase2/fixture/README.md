@@ -15,7 +15,7 @@ For an actual missing-MCEF runtime (compilation still uses the declared client A
 .\gradlew.bat -I docs/phase2/fixture/probe.init.gradle '-Pperde.testWithoutMcef' runClient --console=plain
 ```
 
-The queue script refuses input unless exactly one live repository DLI process has the F2 fixture and Player1 identity. Do not launch multiple Player1 fixture clients. Commands are processed on the client thread; wait for each action's log before sending a dependent action. `load` accepts an existing world folder name, never an external path. The fixture assumes `pauseOnLostFocus:false` in the repository dev options if the game window is unfocused.
+The queue script refuses input unless exactly one live repository DLI process has the F2 fixture and selected player identity (Player1 by default). Do not launch duplicate fixture clients for the same identity. Commands are processed on the client thread; wait for each action's observed result before sending a dependent action. Only one orchestration script may write a client's queue at a time. `load` accepts an existing world folder name, never an external path. The fixture assumes `pauseOnLostFocus:false` in the repository dev options if the game window is unfocused.
 
 ```powershell
 .\docs\phase2\fixture\Send-Probe.ps1 -Action load -Values 'New World'
@@ -38,7 +38,7 @@ Memory sampling writes `run/phase2-verification/memory.csv`; create that directo
 
 Talha authorized the resumed client checks; (a)-(e) and the final allowlist follow-up are complete. The historical WebSocket canary demonstrated a native callback bypass. The explicit lead decision accepts an operator-managed trusted-site boundary; these helpers do not prove network isolation. Do not repeat the local canary. See the F2-2 report for residual risk and current acceptance.
 
-Use one managed Perde screen showing `https://example.com`, close the panel, and issue each probe separately. `policy` refuses non-development environments and non-public starting pages. It selects the manager's own browser by identity; it cannot target the spike or another mod. The native audit covers both the shared MCEF client (spike) and the dedicated Perde client.
+Use one managed Perde screen showing `https://example.com`, close the panel, and issue each probe separately. `policy` refuses non-development environments and non-public starting pages. It selects the manager's own browser by identity; it cannot target another mod. The native audit reads every live client in JCEF's actual registry, including a private client still closing after a selection change. The feasibility spike and its commands were removed in F2-3; `docs/feasibility/` remains historical evidence.
 
 ```powershell
 .\docs\phase2\fixture\Send-Probe.ps1 -Action policy -Values file
@@ -59,7 +59,7 @@ Inspect `Perde browser blocked [...]` entries after each action. `issued probe` 
 
 ## Follow-up fixture controls and silent testing
 
-The opt-in init script sets perde.testMuted=true. On the first tick, the fixture saves only this repository test client's Minecraft master volume as 0. Chromium media volume is separate; before opening audible pages, the final run installed a test-only Page.enable + Page.addScriptToEvaluateOnNewDocument media-mute script and verified it on a quiet page, then observed muted=true/volume=0 during playback. This is not production security code and does not mute other apps.
+The opt-in init script sets perde.testMuted=true. On the first tick, the fixture saves only this repository test client's Minecraft master volume as 0. In F2-3 a fixture-only Mixin appends Chromium's `--mute-audio` argument at the pinned MCEF builder call, before the engine or any browser is created. The Mixin is skipped when MCEF is absent. The log must contain `Test Chromium audio: --mute-audio`; helper command lines provide independent verification. This only affects the test JVM and is never bundled in Perde. Media probes additionally set video volume=0/muted=true. Earlier F2-2 used Page.enable + Page.addScriptToEvaluateOnNewDocument on a quiet page before video navigation; that historical method is retained in its report.
 
 `connect` takes 127.0.0.1:port and uses normal ConnectScreen; it refuses non-loopback hosts and an already joined world. `chat-audit` inspects actual chat components and logs RunCommand values. Example:
 
@@ -69,3 +69,16 @@ The opt-in init script sets perde.testMuted=true. On the first tick, the fixture
 ```
 
 Allow example.com with the real operator command before the managed-screen examples above. Until the S2C list arrives, no public managed main page may load. Never treat a queued command as an observed result.
+
+## Two focus-free clients
+
+The init script supports both `runClient` (Player1, `run/`) and `runClient2` (Player2, `run/client2/`). Launch separately without switching window focus. Each has its own command queue, logs, screenshots, MCEF cache and native processes. For Player2:
+
+```powershell
+.\gradlew.bat -I docs/phase2/fixture/probe.init.gradle runClient2 --console=plain
+.\docs\phase2\fixture\Send-Probe.ps1 -Player Player2 -Action connect -Values '127.0.0.1:25570'
+.\docs\phase2\fixture\Send-Probe.ps1 -Player Player2 -Action status -Values @('300','120','300')
+.\docs\phase2\fixture\Send-Probe.ps1 -Player Player2 -Action f2
+```
+
+Use the real server console for positioning Player2. Check both actual native page results and saved screen state for URL/allowlist changes. This fixture does not synchronize video playback.

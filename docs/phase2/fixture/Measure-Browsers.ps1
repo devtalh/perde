@@ -1,7 +1,7 @@
 param([Parameter(Mandatory)][string]$Stage)
 $ErrorActionPreference = 'Stop'
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../../..')).Path
-$clients = @(Get-CimInstance Win32_Process | Where-Object {
+$clients = @(Get-CimInstance Win32_Process -Filter "Name='java.exe'" | Where-Object {
     $_.Name -eq 'java.exe' -and $_.CommandLine.Contains($repoRoot, [StringComparison]::OrdinalIgnoreCase) -and
     $_.CommandLine.Contains('net.fabricmc.devlaunchinjector.Main') -and $_.CommandLine.Contains('phase2-probe') -and
     $_.CommandLine.Contains('--username Player1')
@@ -10,8 +10,9 @@ if ($clients.Count -ne 1) { throw 'Expected exactly one repository F2-1 client.'
 $clientPid = $clients[0].ProcessId
 $rows = for ($sample = 1; $sample -le 10; $sample++) {
     # CIM uses backslashes; normalize before checking the repository-owned native path.
-    $helpers = @(Get-CimInstance Win32_Process | Where-Object {
+    $helpers = @(Get-CimInstance Win32_Process -Filter "Name='jcef_helper.exe' AND ParentProcessId=$clientPid" | Where-Object {
         $_.Name -eq 'jcef_helper.exe' -and $_.ParentProcessId -eq $clientPid -and
+        $_.ExecutablePath -and
         $_.ExecutablePath.Replace('\','/').StartsWith(($repoRoot.Replace('\','/') + '/run/config/mcef-modern/'), [StringComparison]::OrdinalIgnoreCase)
     })
     $total = 0L

@@ -1,5 +1,7 @@
 # F1B-2 reproducible media fixture
 
+Historical procedure for the F1B-2 revision. F2-3 removed all `/perde-spike` commands, and F2-2 intentionally blocks loopback pages. The commands below no longer run on current Perde. Keep this fixture as the original feasibility record; use the [Phase 2 fixture](../../phase2/fixture/README.md) with a trusted public HTTP(S) page for current real-screen checks. Do not relax the production URL policy to reuse the old loopback test.
+
 This HTTP page makes orientation, live page updates and exact video time visible on the world quad. Its JavaScript only reads media state. The first video starts paused; native controls remain available. `empty.html` contains no video or JavaScript.
 
 From the repository root, copy the fixture sources into the ignored Gradle run directory and generate the test media with an existing FFmpeg installation:

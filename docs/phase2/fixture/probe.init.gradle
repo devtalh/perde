@@ -7,7 +7,7 @@ allprojects {
         }
         def probeCompile = tasks.register('compilePhase2Probe', JavaCompile) {
             dependsOn tasks.named('clientClasses')
-            source = files('docs/phase2/fixture/Phase2Probe.java')
+            source = fileTree('docs/phase2/fixture') { include '*.java' }
             classpath = sourceSets.client.runtimeClasspath
             destinationDirectory = layout.projectDirectory.dir('run/phase2-probe/classes')
             javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(25) }
@@ -20,12 +20,14 @@ allprojects {
             destinationDirectory = layout.projectDirectory.dir('run/phase2-probe')
             from probeCompile
             from('docs/phase2/fixture/fabric.mod.json')
+            from('docs/phase2/fixture/perde-f2-probe.mixins.json')
         }
-        tasks.named('runClient').configure {
-            dependsOn probeJar
-            jvmArgs '-Dperde.testMuted=true'
-            jvmArgs '-Dfabric.addMods=' + layout.projectDirectory.file('run/phase2-probe/perde-f2-probe.jar').asFile.absolutePath
-            // Keep the fixture ticking while the only test window is unfocused.
+        ['runClient', 'runClient2'].each { taskName ->
+            tasks.named(taskName).configure {
+                dependsOn probeJar
+                jvmArgs '-Dperde.testMuted=true'
+                jvmArgs '-Dfabric.addMods=' + layout.projectDirectory.file('run/phase2-probe/perde-f2-probe.jar').asFile.absolutePath
+            }
         }
     }
 }

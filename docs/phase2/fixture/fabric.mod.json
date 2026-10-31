@@ -2,8 +2,9 @@
   "schemaVersion": 1,
   "id": "perde_f2_probe",
   "version": "1.0.0",
-  "name": "Perde F2-1 integration fixture",
+  "name": "Perde Phase 2 integration fixture",
   "environment": "client",
   "entrypoints": {"client": ["io.github.devtalh.perde.client.test.Phase2Probe"]},
+  "mixins": ["perde-f2-probe.mixins.json"],
   "depends": {"perde": "*", "fabric-api": "*"}
 }

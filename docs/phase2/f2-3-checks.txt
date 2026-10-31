@@ -1,0 +1,9 @@
+Tests: {'tests': 197, 'failures': 0, 'errors': 0, 'skipped': 0}
+Jar: perde-0.1.0-SNAPSHOT.jar
+Jar SHA256: 115ab93d0a94c04ed7893a180c0389e05d9179240aa925fd5649bccf2a1baf99
+No bundled MCEF/JCEF/compat/spike/fixture classes or nested jars.
+Common imports isolated.
+Language keys: 57 each, exact parity.
+SPEC/AGENTS unchanged.
+Unmodified F2 source/evidence hash pairs: 17
+Default runtimeClasspath: no MCEF/JCEF/compat dependencies.

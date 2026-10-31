@@ -1,0 +1,411 @@
+[19:37:51] [main/INFO] (FabricLoader) Loading 74 mods:
+[19:38:25] [ForkJoinPool.commonPool-worker-1/INFO] (perde-f2-probe) Test Chromium audio: --mute-audio
+[19:38:31] [Render thread/INFO] (Iris) Profile: HIGH (+0 options changed by user)
+[19:38:33] [Render thread/INFO] (Iris) Using shaderpack: ComplementaryReimagined_r5.9.3.zip
+[19:38:33] [Render thread/INFO] (perde-f2-probe) Test client master volume: 0.0
+[19:38:34] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:38:44] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:38:49] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:38:52] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com]
+[19:39:50] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:39:51] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:39:52] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:40:04] [Render thread/INFO] (perde-f2-probe) Action equip completed
+[19:40:06] [Render thread/INFO] (perde-f2-probe) Action place completed
+[19:40:32] [Render thread/INFO] (perde-f2-probe) Action open completed
+[19:40:52] [Render thread/INFO] (perde-f2-probe) Action geometry completed
+[19:40:59] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[19:40:59] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:40:59] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=]
+[19:41:10] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=about:blank]
+[19:41:12] [Render thread/INFO] (perde-f2-probe) Action close completed
+[19:41:12] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:42:13] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:42:17] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:42:19] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=146 status=perde.browser.loading thread=Render thread
+[19:42:19] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:42:19] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:42:19] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:42:41] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:43:02] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:43:24] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:43:24] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result full-live-1: {"result":{"type":"string","value":"{\"url\":\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\"title\":\"Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster) - YouTube\",\"video\":[{\"time\":26.126257,\"paused\":false,\"ready\":4}]}"}}
+[19:43:42] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:45:00] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:45:05] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:45:06] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:45:11] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:45:12] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:45:13] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:45:15] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:45:17] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:45:37] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:45:37] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:45:38] [Render thread/INFO] (perde-f2-probe) Action open completed
+[19:45:39] [Render thread/INFO] (perde-f2-probe) Action geometry completed
+[19:45:39] [Render thread/INFO] (perde-f2-probe) Action close completed
+[19:45:40] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:45:41] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:45:43] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(294.5, 120.0, 296.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=6.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=146 status=perde.browser.loading thread=Render thread
+[19:45:43] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:45:43] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:45:43] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:45:45] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:47:04] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:47:05] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:47:07] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:47:08] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:47:10] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:47:11] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:47:12] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:47:13] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:47:14] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:47:14] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result full-live-2: {"result":{"type":"string","value":"{\"url\":\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\"time\":185.714008,\"paused\":false,\"ready\":4}"}}
+[19:48:30] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=OMOGaugKpzs]
+[19:48:41] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:48:42] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:48:48] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:48:50] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:48:51] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:48:55] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:48:59] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:49:00] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:49:02] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:49:03] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:49:05] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:49:12] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:49:28] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:49:30] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:49:31] [Render thread/INFO] (perde-f2-probe) Action open completed
+[19:49:32] [Render thread/INFO] (perde-f2-probe) Action geometry completed
+[19:49:32] [Render thread/INFO] (perde-f2-probe) Action close completed
+[19:49:33] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:49:33] [Server thread/INFO] (perde) Perde allowlist added: example.com (9 domains).
+[19:49:33] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:49:33] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:49:34] [Render thread/INFO] (perde-f2-probe) Action equip completed
+[19:49:34] [Render thread/INFO] (perde-f2-probe) Action place completed
+[19:49:35] [Render thread/INFO] (perde-f2-probe) Action open completed
+[19:49:35] [Render thread/INFO] (perde-f2-probe) Action geometry completed
+[19:49:36] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[19:49:36] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (nearer screen selected), active=0/1.
+[19:49:36] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=320, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:49:37] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=about:blank]
+[19:49:37] [Render thread/INFO] (perde-f2-probe) Action close completed
+[19:49:38] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://example.com/]
+[19:49:39] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:49:39] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=320, y=120, z=300} (nearer screen selected), active=0/1.
+[19:49:39] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:49:40] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=]
+[19:49:41] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:49:42] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:49:47] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:49:49] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:49:53] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:49:53] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result two-a-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":4.680071,"paused":false,"ready":4,"volume":0}}}
+[19:49:53] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:49:54] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(302.5, 120.0, 288.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://example.com, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.inactive thread=Render thread
+[19:49:54] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:49:54] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:49:54] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:50:07] [Render thread/INFO] (perde-f2-probe) Action walk completed
+[19:50:10] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (nearer screen selected), active=0/1.
+[19:50:10] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=320, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:50:11] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=4 url=]
+[19:50:11] [Render thread/INFO] (perde-f2-probe) Walk finished at (317.782251424277, 120.0, 288.5)
+[19:50:13] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=4 url=https://example.com/]
+[19:50:42] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:50:49] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(318.0380975266891, 120.0, 288.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.inactive thread=Render thread
+[19:50:49] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=4 url=https://example.com/]
+[19:50:49] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:50:49] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:50:50] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(318.0380975266891, 120.0, 288.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://example.com, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=152 status=perde.browser.loading thread=Render thread
+[19:50:50] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=4 url=https://example.com/]
+[19:50:50] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:50:50] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:50:54] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:51:36] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(318.0380975266891, 120.0, 288.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.inactive thread=Render thread
+[19:51:36] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=4 url=https://example.com/]
+[19:51:36] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:51:36] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:51:37] [Render thread/INFO] (perde-f2-probe) Action command completed
+[19:51:37] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=320, y=120, z=300} (nearer screen selected), active=0/1.
+[19:51:37] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:51:38] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:51:42] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:51:43] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:51:43] [Render thread/ERROR] (perde-f2-probe) F2-1 fixture failed
+[19:51:43] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:51:43] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:51:45] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:51:46] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:51:46] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:51:46] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=]
+[19:51:57] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=about:blank]
+[19:51:58] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:52:04] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:52:05] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-1-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}}}
+[19:52:11] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:52:13] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-1-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":0,"ready":0,"paused":false,"volume":0,"muted":true}}}
+[19:52:18] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:52:18] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:52:20] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-1-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1"}}}
+[19:52:29] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:52:29] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-1-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1","time":1.805427,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:52:33] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=198 status=perde.browser.loading thread=Render thread
+[19:52:33] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:52:33] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:52:33] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:52:33] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:53:29] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[19:53:32] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=198 status=perde.browser.loading thread=Render thread
+[19:53:32] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:53:32] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:53:32] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:53:35] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:53:41] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:53:41] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:53:41] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:53:42] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:53:42] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:53:43] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:53:43] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:53:44] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=7 url=]
+[19:53:47] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=7 url=about:blank]
+[19:53:48] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=7 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:53:49] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:53:49] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-1-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":0,"ready":0,"paused":false,"volume":0,"muted":true}}}
+[19:53:55] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:53:58] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-1-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1"}}}
+[19:53:58] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=7 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:54:03] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:54:03] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-1-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1","time":1.333814,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:54:06] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=244 status=perde.browser.loading thread=Render thread
+[19:54:06] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=7 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:54:06] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:54:06] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:54:08] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=7 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:54:39] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:54:46] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=244 status=perde.browser.loading thread=Render thread
+[19:54:46] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=7 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:54:46] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:54:46] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:54:47] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:54:49] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:54:49] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:54:49] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:54:50] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:54:50] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:54:51] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:54:51] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:54:52] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=8 url=about:blank]
+[19:54:54] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=8 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:54:57] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:54:57] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-2-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":0,"ready":0,"paused":false,"volume":0,"muted":true}}}
+[19:55:05] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:55:06] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-2-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":7.75162,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:55:09] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=8 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:55:11] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=296 status=perde.browser.loading thread=Render thread
+[19:55:11] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=8 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:55:11] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:55:11] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:55:14] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=296 status=perde.browser.loading thread=Render thread
+[19:55:14] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=8 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:55:14] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:55:14] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:55:18] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:55:23] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:55:23] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:55:24] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:55:24] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:55:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:55:26] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:55:26] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:55:26] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=9 url=]
+[19:55:30] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=9 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:55:32] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:55:32] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-3-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":0,"ready":0,"paused":false,"volume":0,"muted":true}}}
+[19:55:38] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:55:38] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-3-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":0,"ready":0,"paused":false,"volume":0,"muted":true}}}
+[19:55:40] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=9 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:55:42] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:55:43] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-3-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1","time":0,"ready":0,"paused":false,"volume":0,"muted":true}}}
+[19:55:46] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:55:46] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-3-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1","time":1.803566,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:55:47] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=9 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:55:48] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=345 status=perde.browser.loading thread=Render thread
+[19:55:48] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=9 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:55:48] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:55:48] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:55:48] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=345 status=perde.browser.loading thread=Render thread
+[19:55:48] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=9 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:55:48] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:55:48] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:55:51] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:55:58] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:55:58] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:55:58] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:55:58] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:55:59] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:55:59] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:55:59] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:56:00] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=10 url=]
+[19:56:02] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=10 url=about:blank]
+[19:56:03] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=10 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:56:04] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:56:04] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-4-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}}}
+[19:56:08] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:56:08] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-4-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":2.863574,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:56:11] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=10 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:56:13] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=383 status=perde.browser.loading thread=Render thread
+[19:56:13] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=10 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:56:13] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:56:13] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:56:20] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=383 status=perde.browser.loading thread=Render thread
+[19:56:20] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=10 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:56:20] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:56:20] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:56:23] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:56:24] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:56:24] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:56:24] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:56:25] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:56:26] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:56:26] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:56:26] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:56:27] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=11 url=about:blank]
+[19:56:28] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=11 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:56:29] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:56:29] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-5-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}}}
+[19:56:31] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:56:32] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-5-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":1.340037,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:56:33] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=422 status=perde.browser.loading thread=Render thread
+[19:56:33] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=11 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:56:33] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:56:33] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:56:33] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=11 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:56:38] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=11 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:05] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:58:07] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=422 status=perde.browser.loading thread=Render thread
+[19:58:07] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=11 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:07] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:58:07] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:58:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:58:13] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:58:13] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:58:13] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:58:14] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:58:14] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:58:15] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:58:15] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:58:15] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=12 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:18] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:58:18] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-6-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":0,"ready":0,"paused":false,"volume":0,"muted":true}}}
+[19:58:20] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:58:21] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-6-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":1.810793,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:58:21] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=460 status=perde.browser.loading thread=Render thread
+[19:58:21] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=12 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:58:21] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:58:21] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:58:21] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=12 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:58:23] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=460 status=perde.browser.loading thread=Render thread
+[19:58:23] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=12 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:58:23] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:58:23] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:58:24] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:58:25] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:58:25] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:58:25] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=12 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:28] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:58:28] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:58:29] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:58:29] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:58:29] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:58:30] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=13 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:32] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:58:32] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-7-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":0,"ready":0,"paused":false,"volume":0,"muted":true}}}
+[19:58:34] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:58:34] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-7-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1"}}}
+[19:58:34] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=13 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:58:36] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:58:36] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-7-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1","time":1.027592,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:58:37] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=556 status=perde.browser.loading thread=Render thread
+[19:58:37] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=13 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:37] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:58:37] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:58:37] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=13 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:38] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=556 status=perde.browser.loading thread=Render thread
+[19:58:38] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=13 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:38] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:58:38] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:58:39] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:58:44] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:58:44] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:58:44] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:58:45] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:58:45] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:58:46] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:58:46] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:58:47] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=14 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:49] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:58:49] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-8-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":0,"ready":1,"paused":false,"volume":0,"muted":true}}}
+[19:58:51] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:58:51] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-8-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1"}}}
+[19:58:52] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=14 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:58:53] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:58:53] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-8-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1","time":1.186114,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:58:54] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=14 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:54] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=600 status=perde.browser.loading thread=Render thread
+[19:58:54] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=14 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:54] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:58:54] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:58:54] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=600 status=perde.browser.loading thread=Render thread
+[19:58:54] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=14 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:58:54] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:58:54] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:58:55] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:59:01] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:59:01] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:59:01] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:59:01] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:59:02] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:59:02] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:59:02] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:59:03] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=15 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:59:05] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:59:05] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-9-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":0,"ready":0,"paused":false,"volume":0,"muted":true}}}
+[19:59:06] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:59:07] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-9-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":1.840086,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:59:07] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=15 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:59:07] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=638 status=perde.browser.loading thread=Render thread
+[19:59:07] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=15 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:59:07] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:59:07] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:59:08] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=638 status=perde.browser.loading thread=Render thread
+[19:59:08] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=15 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:59:08] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:59:08] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:59:08] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:59:15] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (block removed/unloaded), active=0/1.
+[19:59:15] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[19:59:15] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[19:59:15] [Render thread/INFO] (perde-f2-probe) Action load completed
+[19:59:16] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:59:16] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[19:59:16] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[19:59:17] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=16 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:59:18] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:59:18] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-10-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}}}
+[19:59:20] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[19:59:20] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result soak-10-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":1.280075,"ready":4,"paused":false,"volume":0,"muted":true}}}
+[19:59:21] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=16 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:59:21] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(300.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=686 status=perde.browser.loading thread=Render thread
+[19:59:21] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=16 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[19:59:21] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[19:59:21] [Render thread/INFO] (perde-f2-probe) Action status completed
+[19:59:23] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=16 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[19:59:29] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[19:59:54] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[19:59:54] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (client stopping), active=0/1.
+[19:59:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+BUILD SUCCESSFUL in 22m 17s

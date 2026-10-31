@@ -21,6 +21,16 @@ final class McefBrowserBackend implements BrowserBackend {
     private MCEFBrowser browser;
     private CefClient client;
     private Session session;
+
+    McefBrowserBackend() {
+        // Preserve eager asynchronous engine startup after removing the feasibility entrypoint.
+        // Lazy engine initialization is a separate Phase 4 decision.
+        MCEFApi.getInstanceFuture().whenComplete((api, failure) -> {
+            if (failure == null) Perde.LOGGER.info("Perde: MCEF initialization completed.");
+            else Perde.LOGGER.error("Perde: MCEF initialization failed. Browser features are unavailable.", failure);
+        });
+    }
+
     private static final class Session {
         volatile String desiredUrl;
         volatile boolean configured, closed;

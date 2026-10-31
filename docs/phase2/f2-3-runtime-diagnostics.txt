@@ -1,0 +1,24 @@
+Completed full-profile client stdout/stderr, 2026-10-31 19:37:53-19:59:59 Europe/Istanbul.
+AWT bare exception prefix lines: 0
+java.sql.SQLException lines: 0
+Perde browser failure log lines: 0
+Fixture failure log lines (interrupted orchestration, outside accepted soak): 1
+Maximum observed native browser count (one-second/explicit status samples): 1
+
+[19:59:54] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[19:59:54] [AWT-EventQueue-0/INFO] (Minecraft) [STDOUT]: shutdown on Thread[#92,AWT-EventQueue-0,6,InnocuousForkJoinWorkerThreadGroup]
+[19:59:54] [Server thread/INFO] (Minecraft) Stopping server
+[19:59:54] [Server thread/INFO] (Minecraft) Saving players
+[19:59:54] [Server thread/INFO] (Minecraft) Saving worlds
+[19:59:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[19:59:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[19:59:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[19:59:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:59:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:59:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:59:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:59:59] [Render thread/INFO] (AbstractDhRepo) Closing all [3] databases...
+[19:59:59] [Render thread/INFO] (ChunkBuilder) Stopping worker threads
+
+BUILD SUCCESSFUL in 22m 17s
+10 actionable tasks: 3 executed, 7 up-to-date
