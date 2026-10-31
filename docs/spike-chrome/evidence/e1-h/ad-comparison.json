@@ -1,0 +1,7 @@
+{
+  "start": "2026-10-31T23:29:47.2307109+03:00",
+  "end": "2026-10-31T23:30:04.368739+03:00",
+  "note": "No Fetch interception enabled. Separate fresh navigations, not a deterministic ad auction.",
+  "blockedRequestCount": 0,
+  "blocked": []
+}

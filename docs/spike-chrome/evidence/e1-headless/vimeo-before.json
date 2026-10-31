@@ -1,0 +1,48 @@
+[
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 3.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://vimeo.com/76979871",
+          "title": "The New Vimeo Player (You Know, For Videos)",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "navigation": {
+    "frameId": "557C0B44FE2874D45AD265D56562BC5D",
+    "loaderId": "0D7D658C45EDF235B4CF2F8CDE4DAFA2",
+    "isDownload": false
+  },
+  "scroll": {},
+  "frames": [
+    {
+      "result": {
+        "type": "object",
+        "value": {
+          "origin": "https://example.org",
+          "binding": "function"
+        }
+      }
+    },
+    {
+      "result": {
+        "type": "object",
+        "value": {
+          "origin": "https://example.com",
+          "binding": "function"
+        }
+      }
+    }
+  ],
+  "fetchEnable": {},
+  "fetchDisable": {},
+  "fetchProbe": {
+    "result": {
+      "type": "object",
+      "value": {
+        "blocked": true,
+        "error": "Failed to fetch"
+      }
+    }
+  },
+  "type": {},
+  "deny-notifications": {},
+  "deny-camera": {},
+  "deny-microphone": {},
+  "permissionReadback": {
+    "result": {
+      "type": "object",
+      "value": [
+        {
+          "name": "geolocation",
+          "state": "denied"
+        },
+        {
+          "name": "microphone",
+          "state": "denied"
+        },
+        {
+          "name": "camera",
+          "state": "denied"
+        },
+        {
+          "name": "notifications",
+          "state": "denied"
+        }
+      ]
+    }
+  },
+  "scrollReadback": {
+    "result": {
+      "type": "number",
+      "value": 400.0,
+      "description": "400"
+    }
+  },
+  "deny-geolocation": {},
+  "inputReadback": {
+    "result": {
+      "type": "object",
+      "value": {
+        "typed": "Perde CDP 25",
+        "clicks": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tests": 296.0,
+  "build": "SUCCESSFUL in 10s, 9 tasks executed",
+  "nativeControls": "click/type/scroll, OOPIF, bindings, Fetch, denied permissions and popup readbacks passed; see control.json per final engine",
+  "java": "25.0.4",
+  "skips": 0.0,
+  "isolationE2": true,
+  "isolationE1": true,
+  "errors": 0.0,
+  "memorySamples": 240,
+  "failures": 0.0,
+  "memoryPoints": 24,
+  "soakCases": [
+    "final-e1-h-memory",
+    "mem-e1-o",
+    "mem-e2-h",
+    "mem-e2-o"
+  ]
+}

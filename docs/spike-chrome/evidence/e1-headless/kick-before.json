@@ -1,0 +1,1395 @@
+[
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 13.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 12.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 18.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://kick.com/",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": [
+            {
+              "tag": "DIV",
+              "id": "cbb",
+              "cls": "cbb",
+              "label": "",
+              "rect": {
+                "x": 954.0,
+                "y": 1.0,
+                "w": 15.0,
+                "h": 15.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 29.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 6.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://kick.com/",
+          "title": "KICK",
+          "visibility": "visible",
+          "gates": {
+            "consent": true,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 6.193197,
+              "duration": null,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 1920.0,
+              "height": 1080.0,
+              "src": "",
+              "error": null
+            }
+          ],
+          "frames": [
+            {
+              "src": "",
+              "rect": {
+                "x": 296.0,
+                "y": 776.234375,
+                "w": 970.0,
+                "h": 90.0
+              }
+            },
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "https://9990fe30341b785f0149e42f84dadc3c.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "https://gum.criteo.com/syncframe",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fkick.com%2F&title=KICK&referrer=&muid=NA&sid=NA&version=6&preview=false&__shared_params__[version]=basil",
+              "rect": {
+                "x": 0.0,
+                "y": 720.0,
+                "w": 1280.0,
+                "h": 1.0
+              }
+            },
+            {
+              "src": "https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "https://google-bidout-d.openx.net/w/1.0/pd",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            }
+          ],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest size-10 text-base leading-none",
+              "label": "Collapse sidebar",
+              "rect": {
+                "x": 12.0,
+                "y": 10.0,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] [&_svg]:fill-current state-layer text-surface-fg-default bg-transparent disabled:bg-transparent size-8 text-sm leading-none",
+              "label": "Aramayı temizle",
+              "rect": {
+                "x": 745.7999877929688,
+                "y": 14.800000190734863,
+                "w": 30.4000244140625,
+                "h": 30.400001525878906
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "radix-_R_vgljluiv5ubtb_",
+              "cls": "group flex size-9 shrink-0 items-center justify-center rounded state-layer",
+              "label": "",
+              "rect": {
+                "x": 1049.265625,
+                "y": 12.0,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-surface text-surface-onSurface bg-transparent disabled:bg-transparent h-9 px-(--edge-spacing-md) text-(length:--edge-typography-body-font-size-sm) leading-(--edge-typography-body-lineHeight-sm) gap-(--edge-spacing-sm)",
+              "label": "Giriş Yap",
+              "rect": {
+                "x": 1093.265625,
+                "y": 12.0,
+                "w": 76.171875,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-base bg-primary-base text-primary-onPrimary [&_svg]:fill-current focus-visible:bg-green-500 disabled:bg-disabled-base h-9 px-(--edge-spacing-md) text-(length:--edge-typography-body-font-size-sm) leading-(--edge-typography-body-lineHeight-sm) gap-(--edge-spacing-sm)",
+              "label": "Kaydol",
+              "rect": {
+                "x": 1177.4375,
+                "y": 12.0,
+                "w": 62.5625,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest py-2 text-base h-12 w-full justify-start gap-x-4 px-4",
+              "label": "Takip Edilen Kanallar",
+              "rect": {
+                "x": 8.0,
+                "y": 156.0,
+                "w": 240.0,
+                "h": 48.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "Rammus53\nPUBG: Battlegrounds\n11,5 B",
+              "rect": {
+                "x": 12.0,
+                "y": 309.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "Hazretiyasuo\nLeague of Legends\n1,9 B",
+              "rect": {
+                "x": 12.0,
+                "y": 361.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "leylunehar\nLeague of Legends\n491",
+              "rect": {
+                "x": 12.0,
+                "y": 413.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "ismailemre\nIRL\n228",
+              "rect": {
+                "x": 12.0,
+                "y": 465.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "cigdemt\nIRL\n570",
+              "rect": {
+                "x": 12.0,
+                "y": 517.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "Efes\nGarry's Mod\n440",
+              "rect": {
+                "x": 12.0,
+                "y": 569.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "BeceriksizRomeo\nSadece Sohbet\n299",
+              "rect": {
+                "x": 12.0,
+                "y": 621.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "Talimera\nCounter-Strike 2\n287",
+              "rect": {
+                "x": 12.0,
+                "y": 673.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "Rooki3tv\nCounter-Strike 2\n231",
+              "rect": {
+                "x": 12.0,
+                "y": 725.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "FoxKatherine\nSadece Sohbet\n86",
+              "rect": {
+                "x": 12.0,
+                "y": 777.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center justify-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight bg-transparent text-surface-fg-subtle [&_svg]:fill-current data-[state=active]:text-white p-0! focus-visible:underline underline-offset-2 disabled:opacity-30 px-3 py-1.5 text-sm",
+              "label": "Daha Az",
+              "rect": {
+                "x": 175.59375,
+                "y": 833.0,
+                "w": 68.40625,
+                "h": 20.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-(--edge-spacing-md) whitespace-nowrap rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) ring-0 transition-all focus-visible:ring-0 outline-2 outline-transparent outline-offset-2 focus-visible:outline-focusLight active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] [&_svg]:fill-current cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 state-layer-surface text-surface-onSurface isolate overflow-hidden bg-[rgba(11,11,12,0.64)] backdrop-blur-[8px] shadow-[inset_4px_4px_14px_-2px_rgba(255,255,255,0.12),inset_-4px_-4px_14px_-2px_rgba(0,0,0,0.40),0_12px_36px_-8px_rgba(0,0,0,0.55)] before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-[inherit] before:content-[''] before:bg-[linear-gradient(135deg,rgba(255,255,255,0.18)_0%,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0)_0%)] size-9 text-base",
+              "label": "Sesi Aç",
+              "rect": {
+                "x": 866.671875,
+                "y": 76.0,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] state-layer-inverse bg-brand-bg-default text-brand-fg-default [&_svg]:fill-current focus-visible:bg-kick-voltGreen-150 text-xs size-5 rounded-full lg:size-6 absolute right-0 bottom-0",
+              "label": "Takip Et",
+              "rect": {
+                "x": 360.0,
+                "y": 314.234375,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "Türkçe",
+              "rect": {
+                "x": 712.0,
+                "y": 314.234375,
+                "w": 61.625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group flex shrink-0 items-center justify-center px-1 py-3 outline-hidden",
+              "label": "Go to featured livestream 1",
+              "rect": {
+                "x": 396.0,
+                "y": 344.234375,
+                "w": 56.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group flex shrink-0 items-center justify-center px-1 py-3 outline-hidden",
+              "label": "Go to featured livestream 2",
+              "rect": {
+                "x": 452.0,
+                "y": 344.234375,
+                "w": 16.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group flex shrink-0 items-center justify-center px-1 py-3 outline-hidden",
+              "label": "Go to featured livestream 3",
+              "rect": {
+                "x": 468.0,
+                "y": 344.234375,
+                "w": 16.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group flex shrink-0 items-center justify-center px-1 py-3 outline-hidden",
+              "label": "Go to featured livestream 4",
+              "rect": {
+                "x": 484.0,
+                "y": 344.234375,
+                "w": 16.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group flex shrink-0 items-center justify-center px-1 py-3 outline-hidden",
+              "label": "Go to featured livestream 5",
+              "rect": {
+                "x": 500.0,
+                "y": 344.234375,
+                "w": 16.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group flex shrink-0 items-center justify-center px-1 py-3 outline-hidden",
+              "label": "Go to featured livestream 6",
+              "rect": {
+                "x": 516.0,
+                "y": 344.234375,
+                "w": 16.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group flex shrink-0 items-center justify-center px-1 py-3 outline-hidden",
+              "label": "Go to featured livestream 7",
+              "rect": {
+                "x": 532.0,
+                "y": 344.234375,
+                "w": 16.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group flex shrink-0 items-center justify-center px-1 py-3 outline-hidden",
+              "label": "Go to featured livestream 8",
+              "rect": {
+                "x": 548.0,
+                "y": 344.234375,
+                "w": 16.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group flex shrink-0 items-center justify-center px-1 py-3 outline-hidden",
+              "label": "Go to featured livestream 9",
+              "rect": {
+                "x": 564.0,
+                "y": 344.234375,
+                "w": 16.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-(--edge-spacing-md) whitespace-nowrap rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) ring-0 transition-all focus-visible:ring-0 outline-2 outline-transparent outline-offset-2 focus-visible:outline-focusLight active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] [&_svg]:fill-current cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 state-layer-surface text-surface-onSurface bg-transparent disabled:bg-transparent size-9 text-base",
+              "label": "Go to previous featured livestream",
+              "rect": {
+                "x": 810.671875,
+                "y": 342.234375,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-(--edge-spacing-md) whitespace-nowrap rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) ring-0 transition-all focus-visible:ring-0 outline-2 outline-transparent outline-offset-2 focus-visible:outline-focusLight active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] [&_svg]:fill-current cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 state-layer-surface text-surface-onSurface bg-transparent disabled:bg-transparent size-9 text-base",
+              "label": "Go to next featured livestream",
+              "rect": {
+                "x": 850.671875,
+                "y": 342.234375,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center font-(--edge-font-weight-semiBold) box-border transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-surface text-surface-onSurface disabled:bg-transparent h-12 px-(--edge-spacing-lg) gap-(--edge-spacing-md) relative w-full justify-start rounded-lg text-lg isolate overflow-hidden bg-[rgba(11,11,12,0.64)] backdrop-blur-sm shadow-[inset_4px_4px_14px_-2px_rgba(255,255,255,0.12),inset_-4px_-4px_14px_-2px_rgba(0,0,0,0.40),0_12px_36px_-8px_rgba(0,0,0,0.55)] ring-1 ring-white/5 ring-inset before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:content-[''] before:bg-[linear-gradient(135deg,rgba(255,255,255,0.18)_0%,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0)_0%)]",
+              "label": "Sohbeti gizle",
+              "rect": {
+                "x": 947.671875,
+                "y": 77.0,
+                "w": 271.328125,
+                "h": 48.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "RAMMUSUNSOLDASSAGI",
+              "rect": {
+                "x": 975.046875,
+                "y": -406.0,
+                "w": 176.125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "bvrcu",
+              "rect": {
+                "x": 998.421875,
+                "y": -342.0,
+                "w": 39.28125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Bombaci61",
+              "rect": {
+                "x": 975.046875,
+                "y": -310.0,
+                "w": 74.875,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "baytekine53",
+              "rect": {
+                "x": 1045.171875,
+                "y": -278.0,
+                "w": 85.578125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "ENsss61",
+              "rect": {
+                "x": 975.046875,
+                "y": -181.0,
+                "w": 57.828125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "RagnarLdbrok",
+              "rect": {
+                "x": 998.421875,
+                "y": -149.0,
+                "w": 96.5,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "w-full min-w-0 shrink-0 truncate text-left text-xs font-medium text-white/40 cursor-default",
+              "label": "SipoXD: SADIÇLAR SELAMUN ALEYKÜM SADIÇLAR isimli kullanıcıya yanıt veriyor",
+              "rect": {
+                "x": 951.671875,
+                "y": -117.0,
+                "w": 263.328125,
+                "h": 16.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "ErenQuantumXD",
+              "rect": {
+                "x": 1021.796875,
+                "y": -101.0,
+                "w": 114.421875,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "ts_erenn",
+              "rect": {
+                "x": 998.421875,
+                "y": -48.0,
+                "w": 59.0,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Nazlimu53",
+              "rect": {
+                "x": 1021.796875,
+                "y": -16.0,
+                "w": 73.65625,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "SipoXD",
+              "rect": {
+                "x": 1045.171875,
+                "y": 16.0,
+                "w": 50.421875,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Efe5577",
+              "rect": {
+                "x": 975.046875,
+                "y": 69.0,
+                "w": 56.09375,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Mehmet0160",
+              "rect": {
+                "x": 975.046875,
+                "y": 101.0,
+                "w": 90.359375,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "ClascM",
+              "rect": {
+                "x": 975.046875,
+                "y": 133.0,
+                "w": 51.40625,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Emrresp",
+              "rect": {
+                "x": 951.671875,
+                "y": 165.0,
+                "w": 57.453125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "SaBenHamsi34",
+              "rect": {
+                "x": 998.421875,
+                "y": 197.0,
+                "w": 105.125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "HuseyinBeyAgee29",
+              "rect": {
+                "x": 998.421875,
+                "y": 229.0,
+                "w": 134.453125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "zetriy",
+              "rect": {
+                "x": 998.421875,
+                "y": 282.0,
+                "w": 39.203125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "FINDIK53",
+              "rect": {
+                "x": 998.421875,
+                "y": 314.0,
+                "w": 64.6875,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "ts_erenn",
+              "rect": {
+                "x": 998.421875,
+                "y": 367.0,
+                "w": 59.0,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "333,3 B\nGrand Theft Auto V (GTA)\nShooter\nAction\nOpen World",
+              "rect": {
+                "x": 296.0,
+                "y": 486.234375,
+                "w": 103.5,
+                "h": 218.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "281,7 B\nSadece Sohbet\nIRL\nCasual",
+              "rect": {
+                "x": 415.5,
+                "y": 486.234375,
+                "w": 103.5,
+                "h": 218.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "121,7 B\nIRL\nAdventure",
+              "rect": {
+                "x": 535.0,
+                "y": 486.234375,
+                "w": 103.5,
+                "h": 218.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "106,6 B\nLeague of Legends\nMOBA\nAction",
+              "rect": {
+                "x": 654.5,
+                "y": 486.234375,
+                "w": 103.5,
+                "h": 218.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "28,5 B\nMinecraft\nAdventure\nMMO\nSurvival\nOpen World",
+              "rect": {
+                "x": 774.0,
+                "y": 486.234375,
+                "w": 103.5,
+                "h": 218.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "27,6 B\nVALORANT\nShooter\nFPS",
+              "rect": {
+                "x": 893.5,
+                "y": 486.234375,
+                "w": 103.5,
+                "h": 218.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "22,3 B\nCounter-Strike 2\nShooter\nTactical",
+              "rect": {
+                "x": 1013.0,
+                "y": 486.234375,
+                "w": 103.5,
+                "h": 218.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "22,2 B\nOyunlar ve Demo Sürümleri\nAdventure Game\nFighting\nAction\nPuzzle",
+              "rect": {
+                "x": 1132.5,
+                "y": 486.234375,
+                "w": 103.5,
+                "h": 218.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "15,7 B\nEA Sports FC 27\nSport\nSimulator",
+              "rect": {
+                "x": 296.0,
+                "y": 704.234375,
+                "w": 103.5,
+                "h": 12.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "15 B\nCall of Duty: Modern Warfare 4\nAction\nShooter\nWarfare",
+              "rect": {
+                "x": 415.5,
+                "y": 704.234375,
+                "w": 103.5,
+                "h": 12.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "14,9 B\nPUBG: Battlegrounds\nShooter\nFPS\nIndie Game\nAction",
+              "rect": {
+                "x": 535.0,
+                "y": 704.234375,
+                "w": 103.5,
+                "h": 12.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "group/card relative flex w-full shrink-0 grow-0 rounded-lg pt-3 group-data-[layout=adaptive]/grid:below-sm:pt-0 [--category-active:0] motion-safe:focus-visible:[--category-active:1] motion-safe:has-[:focus-visible]:[--category-active:1] motion-safe:betterhover:hover:[--category-active:1] group-data-[layout=adaptive]/grid:below-sm:[--category-active:0]! gap-1 group-data-[layout=adaptive]/grid:below-sm:gap-2 sm:h-auto! group-data-[layout=adaptive]/grid:below-sm:h-20 flex-col group-data-[layout=adaptive]/grid:below-sm:flex-row items-start group-data-[layout=adaptive]/grid:below-sm:items-center group-data-[open=true]:bg-[linear-gradient(180deg,#393939_0%,#171717_99.78%)] group-data-[open=true]:p-2",
+              "label": "12,5 B\nRed Dead Redemption II\nAction",
+              "rect": {
+                "x": 654.5,
+                "y": 704.234375,
+                "w": 103.5,
+                "h": 12.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-surface bg-transparent disabled:bg-transparent h-9 px-(--edge-spacing-md) text-(length:--edge-typography-body-font-size-sm) leading-(--edge-typography-body-lineHeight-sm) gap-(--edge-spacing-sm) font-semibold text-surface-fg-subtle",
+              "label": "Daha fazla göster",
+              "rect": {
+                "x": 698.859375,
+                "y": 712.234375,
+                "w": 134.296875,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "Türkçe",
+              "rect": {
+                "x": 354.0,
+                "y": 1131.671875,
+                "w": 61.625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "Türkçe",
+              "rect": {
+                "x": 593.0,
+                "y": 1131.671875,
+                "w": 61.625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "Türkçe",
+              "rect": {
+                "x": 832.0,
+                "y": 1131.671875,
+                "w": 61.625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "18+",
+              "rect": {
+                "x": 897.625,
+                "y": 1131.671875,
+                "w": 39.625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "Türkçe",
+              "rect": {
+                "x": 1071.0,
+                "y": 1131.671875,
+                "w": 61.625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "Türkçe",
+              "rect": {
+                "x": 1310.0,
+                "y": 1131.671875,
+                "w": 61.625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "Türkçe",
+              "rect": {
+                "x": 1549.0,
+                "y": 1131.671875,
+                "w": 61.625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "Türkçe",
+              "rect": {
+                "x": 1788.0,
+                "y": 1131.671875,
+                "w": 61.625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "absolute inset-y-0 z-10 flex w-12 items-center justify-center text-surface-fg-subtle active:text-surface-fg-default betterhover:hover:text-surface-fg-default outline-2 outline-offset-4 outline-transparent focus-visible:outline-focusLight right-0 bg-linear-to-l via-25% to-transparent pointer-events-none from-surface-bg-lowest via-surface-bg-lowest/80 opacity-0 transition-[color,opacity] duration-200 motion-reduce:transition-none betterhover:group-hover/stream-carousel:pointer-events-auto betterhover:group-hover/stream-carousel:opacity-100 group-has-[:focus-visible]/stream-carousel:pointer-events-auto group-has-[:focus-visible]/stream-carousel:opacity-100 disabled:cursor-wait",
+              "label": "Sonraki",
+              "rect": {
+                "x": 1188.0,
+                "y": 942.234375,
+                "w": 48.0,
+                "h": 225.4375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center justify-center rounded box-border relative betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight bg-transparent [&_svg]:fill-current data-[state=active]:text-white p-0! focus-visible:underline underline-offset-2 disabled:opacity-30 px-3 py-2 text-sm font-normal text-surface-fg-subtle transition-colors hover:text-surface-fg-default",
+              "label": "Gizlilik Tercihleriniz",
+              "rect": {
+                "x": 776.0,
+                "y": 2218.671875,
+                "w": 127.3125,
+                "h": 20.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center rounded-(--edge-radius-sm) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-surface bg-transparent disabled:bg-transparent gap-(--edge-spacing-sm) h-6 w-full justify-start px-0 text-left text-sm font-normal text-surface-fg-subtle hover:!bg-none hover:text-surface-fg-default focus:!bg-none active:!bg-none",
+              "label": "Geri bildirim ver",
+              "rect": {
+                "x": 1016.0,
+                "y": 2216.671875,
+                "w": 220.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] bg-neutral-bg-default/20 focus-visible:outline-surface-fg-decorative text-white [&_svg]:fill-current focus-visible:bg-neutral-bg-default/40 disabled:opacity-30 size-10 text-base leading-none",
+              "label": "",
+              "rect": {
+                "x": 296.0,
+                "y": 2427.671875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] bg-neutral-bg-default/20 focus-visible:outline-surface-fg-decorative text-white [&_svg]:fill-current focus-visible:bg-neutral-bg-default/40 disabled:opacity-30 size-10 text-base leading-none",
+              "label": "",
+              "rect": {
+                "x": 344.0,
+                "y": 2427.671875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] bg-neutral-bg-default/20 focus-visible:outline-surface-fg-decorative text-white [&_svg]:fill-current focus-visible:bg-neutral-bg-default/40 disabled:opacity-30 size-10 text-base leading-none",
+              "label": "",
+              "rect": {
+                "x": 392.0,
+                "y": 2427.671875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] bg-neutral-bg-default/20 focus-visible:outline-surface-fg-decorative text-white [&_svg]:fill-current focus-visible:bg-neutral-bg-default/40 disabled:opacity-30 size-10 text-base leading-none",
+              "label": "",
+              "rect": {
+                "x": 440.0,
+                "y": 2427.671875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] bg-neutral-bg-default/20 focus-visible:outline-surface-fg-decorative text-white [&_svg]:fill-current focus-visible:bg-neutral-bg-default/40 disabled:opacity-30 size-10 text-base leading-none",
+              "label": "",
+              "rect": {
+                "x": 296.0,
+                "y": 2475.671875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-surface bg-secondary-base text-secondary-onSecondary [&_svg]:fill-current focus-visible:bg-secondary-base disabled:bg-disabled-base h-9 px-(--edge-spacing-md) text-(length:--edge-typography-body-font-size-sm) leading-(--edge-typography-body-lineHeight-sm) gap-(--edge-spacing-sm)",
+              "label": "Tümünü temizle",
+              "rect": {
+                "x": 1155.828125,
+                "y": 40.0,
+                "w": 124.171875,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "onetrust-pc-btn-handler",
+              "cls": "",
+              "label": "Cookie Settings, Opens the preference center dialog",
+              "rect": {
+                "x": 836.34375,
+                "y": 645.6953125,
+                "w": 125.0,
+                "h": 41.609375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "onetrust-accept-btn-handler",
+              "cls": "",
+              "label": "Accept All Cookies",
+              "rect": {
+                "x": 978.84375,
+                "y": 645.6953125,
+                "w": 143.0,
+                "h": 41.609375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon",
+              "label": "Close",
+              "rect": {
+                "x": 1226.0,
+                "y": 644.0,
+                "w": 44.0,
+                "h": 44.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 26.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 25.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 17.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 28.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 16.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+    "contextId": 27.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  }
+]

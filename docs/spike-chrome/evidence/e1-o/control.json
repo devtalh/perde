@@ -1,0 +1,86 @@
+{
+  "permissionReadback": {
+    "result": {
+      "type": "object",
+      "value": [
+        {
+          "name": "geolocation",
+          "state": "denied"
+        },
+        {
+          "name": "microphone",
+          "state": "denied"
+        },
+        {
+          "name": "camera",
+          "state": "denied"
+        },
+        {
+          "name": "notifications",
+          "state": "denied"
+        }
+      ]
+    }
+  },
+  "type": {},
+  "fetchEnable": {},
+  "deny-microphone": {},
+  "frames": [
+    {
+      "result": {
+        "type": "object",
+        "value": {
+          "origin": "https://example.com",
+          "binding": "function"
+        }
+      }
+    },
+    {
+      "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+    },
+    {
+      "result": {
+        "type": "object",
+        "value": {
+          "origin": "https://example.org",
+          "binding": "function"
+        }
+      }
+    }
+  ],
+  "fetchDisable": {},
+  "deny-geolocation": {},
+  "scroll": {},
+  "scrollReadback": {
+    "result": {
+      "type": "number",
+      "value": 400.0,
+      "description": "400"
+    }
+  },
+  "fetchProbe": {
+    "result": {
+      "type": "object",
+      "value": {
+        "blocked": true,
+        "error": "Failed to fetch"
+      }
+    }
+  },
+  "navigation": {
+    "frameId": "0A8546EE3A927FC6B5615D2E567C77D2",
+    "loaderId": "A93ED0FE9E900247E6C0A3B57A9A6E8F",
+    "isDownload": false
+  },
+  "deny-camera": {},
+  "deny-notifications": {},
+  "inputReadback": {
+    "result": {
+      "type": "object",
+      "value": {
+        "typed": "Perde CDP 25",
+        "clicks": "1"
+      }
+    }
+  }
+}

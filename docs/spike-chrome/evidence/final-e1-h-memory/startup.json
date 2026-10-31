@@ -1,0 +1,61 @@
+{
+  "id": "final-e1-h-memory",
+  "pid": 48800,
+  "startupMs": 1496.3995,
+  "mode": "headless",
+  "version": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/156.0.8078.74",
+    "revision": "@d331de35ca8ab1358c7a17e4bd41627d55eaef51",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "jsVersion": "15.6.75.25"
+  },
+  "snapshot": {
+    "processes": [
+      {
+        "pid": 48800,
+        "cpuMs": 906.25
+      },
+      {
+        "pid": 41120,
+        "cpuMs": 15.625
+      },
+      {
+        "pid": 38208,
+        "cpuMs": 31.25
+      },
+      {
+        "pid": 33204,
+        "cpuMs": 31.25
+      },
+      {
+        "pid": 21460,
+        "cpuMs": 62.5
+      },
+      {
+        "pid": 23220,
+        "cpuMs": 62.5
+      },
+      {
+        "pid": 19048,
+        "cpuMs": 62.5
+      },
+      {
+        "pid": 22844,
+        "cpuMs": 640.625
+      },
+      {
+        "pid": 28620,
+        "cpuMs": 140.625
+      },
+      {
+        "pid": 43052,
+        "cpuMs": 390.625
+      }
+    ],
+    "chromeCpuMs": 2343.75,
+    "javaCpuMs": 640.625,
+    "javaPid": 35092
+  },
+  "profile": "run\\chrome-spike\\final-e1-h-memory\\profile-ef85b718-c751-408b-8448-c240f2d611c8"
+}

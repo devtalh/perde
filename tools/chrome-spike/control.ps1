@@ -30,4 +30,10 @@ $results.fetchProbe=E $Id "fetch('https://pagead2.googlesyndication.com/pagead/j
 $results.fetchDisable=D $Id 'Fetch.disable'
 if($Popup){$results.popup=E $Id "(()=>{window.open('about:blank','spike-popup');return 'requested'})()";Start-Sleep -Seconds 1;$results.targets=D $Id 'Target.getTargets' @{} -Browser}
 Save "$dir/control.json" $results
+if($results.inputReadback.result.value.typed -ne 'Perde CDP 25' -or $results.inputReadback.result.value.clicks -ne '1'){throw 'CDP click/type verification failed'}
+if($results.scrollReadback.result.value -lt 300){throw 'CDP scroll verification failed'}
+if(@($results.permissionReadback.result.value | Where-Object state -ne 'denied').Count -gt 0){throw 'Permission denial verification failed'}
+if(-not $results.fetchProbe.result.value.blocked){throw 'Fetch block verification failed'}
+if(@($results.frames | Where-Object {$_.result.value.origin -eq 'https://example.com' -and $_.result.value.binding -eq 'function'}).Count -eq 0){throw 'OOPIF binding verification failed'}
+if($Popup -and @($results.targets.targetInfos | Where-Object type -eq 'page').Count -ne 1){throw 'Popup target remained open'}
 $results | ConvertTo-Json -Depth 7

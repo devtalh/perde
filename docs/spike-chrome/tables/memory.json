@@ -1,0 +1,1254 @@
+[
+  {
+    "id": "final-e1-h-memory",
+    "engineMode": "E1 headless",
+    "point": "blank",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 615.1015625,
+      "max": 623.015625
+    },
+    "chromePrivateBytes": {
+      "mean": 319.682421875,
+      "max": 323.7890625
+    },
+    "javaWorkingSetBytes": {
+      "mean": 81.315234375,
+      "max": 83.7421875
+    },
+    "javaPrivateBytes": {
+      "mean": 624.076953125,
+      "max": 626.55859375
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 84.052734375,
+      "max": 84.09375
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.83359375,
+      "max": 65.859375
+    },
+    "combinedWorkingSet": {
+      "mean": 696.416796875,
+      "max": 706.7578125
+    },
+    "combinedPrivate": {
+      "mean": 943.759375,
+      "max": 950.34765625
+    },
+    "chromeProcessCount": {
+      "mean": 10.9,
+      "max": 11.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "final-e1-h-memory",
+    "engineMode": "E1 headless",
+    "point": "youtube720-60s",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1156.683203125,
+      "max": 1162.54296875
+    },
+    "chromePrivateBytes": {
+      "mean": 838.033203125,
+      "max": 842.84765625
+    },
+    "javaWorkingSetBytes": {
+      "mean": 516.369140625,
+      "max": 520.50390625
+    },
+    "javaPrivateBytes": {
+      "mean": 646.43203125,
+      "max": 649.62109375
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.27734375,
+      "max": 83.27734375
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.1796875,
+      "max": 65.1796875
+    },
+    "combinedWorkingSet": {
+      "mean": 1673.05234375,
+      "max": 1680.10546875
+    },
+    "combinedPrivate": {
+      "mean": 1484.465234375,
+      "max": 1490.390625
+    },
+    "chromeProcessCount": {
+      "mean": 12.0,
+      "max": 12.0
+    },
+    "playing720Samples": 10,
+    "soakPassed": true
+  },
+  {
+    "id": "final-e1-h-memory",
+    "engineMode": "E1 headless",
+    "point": "dizi-failed-no-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1095.482421875,
+      "max": 1095.6640625
+    },
+    "chromePrivateBytes": {
+      "mean": 899.30234375,
+      "max": 900.0390625
+    },
+    "javaWorkingSetBytes": {
+      "mean": 528.082421875,
+      "max": 528.625
+    },
+    "javaPrivateBytes": {
+      "mean": 655.398046875,
+      "max": 655.91015625
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.275,
+      "max": 83.2890625
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.151171875,
+      "max": 65.17578125
+    },
+    "combinedWorkingSet": {
+      "mean": 1623.56484375,
+      "max": 1624.05078125
+    },
+    "combinedPrivate": {
+      "mean": 1554.700390625,
+      "max": 1555.48046875
+    },
+    "chromeProcessCount": {
+      "mean": 12.0,
+      "max": 12.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "final-e1-h-memory",
+    "engineMode": "E1 headless",
+    "point": "dizi-without-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1111.9203125,
+      "max": 1135.80078125
+    },
+    "chromePrivateBytes": {
+      "mean": 937.128515625,
+      "max": 967.1875
+    },
+    "javaWorkingSetBytes": {
+      "mean": 529.038671875,
+      "max": 529.390625
+    },
+    "javaPrivateBytes": {
+      "mean": 650.209765625,
+      "max": 650.64453125
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.24375,
+      "max": 83.2578125
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.096484375,
+      "max": 65.12109375
+    },
+    "combinedWorkingSet": {
+      "mean": 1640.958984375,
+      "max": 1664.125
+    },
+    "combinedPrivate": {
+      "mean": 1587.33828125,
+      "max": 1616.68359375
+    },
+    "chromeProcessCount": {
+      "mean": 12.0,
+      "max": 12.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "final-e1-h-memory",
+    "engineMode": "E1 headless",
+    "point": "dizi-with-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1011.721875,
+      "max": 1018.6796875
+    },
+    "chromePrivateBytes": {
+      "mean": 873.075,
+      "max": 883.09765625
+    },
+    "javaWorkingSetBytes": {
+      "mean": 533.978515625,
+      "max": 534.03515625
+    },
+    "javaPrivateBytes": {
+      "mean": 654.681640625,
+      "max": 654.90234375
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.41953125,
+      "max": 83.43359375
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.155078125,
+      "max": 65.1796875
+    },
+    "combinedWorkingSet": {
+      "mean": 1545.700390625,
+      "max": 1552.5859375
+    },
+    "combinedPrivate": {
+      "mean": 1527.756640625,
+      "max": 1538.0
+    },
+    "chromeProcessCount": {
+      "mean": 12.0,
+      "max": 12.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "final-e1-h-memory",
+    "engineMode": "E1 headless",
+    "point": "returned-blank",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1006.693359375,
+      "max": 1011.76953125
+    },
+    "chromePrivateBytes": {
+      "mean": 832.6296875,
+      "max": 835.109375
+    },
+    "javaWorkingSetBytes": {
+      "mean": 533.86796875,
+      "max": 533.91796875
+    },
+    "javaPrivateBytes": {
+      "mean": 654.72734375,
+      "max": 654.77734375
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.41953125,
+      "max": 83.43359375
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.155078125,
+      "max": 65.1796875
+    },
+    "combinedWorkingSet": {
+      "mean": 1540.561328125,
+      "max": 1545.625
+    },
+    "combinedPrivate": {
+      "mean": 1487.35703125,
+      "max": 1489.82421875
+    },
+    "chromeProcessCount": {
+      "mean": 13.0,
+      "max": 13.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e1-o",
+    "engineMode": "E1 off-screen",
+    "point": "blank",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 605.855859375,
+      "max": 645.90234375
+    },
+    "chromePrivateBytes": {
+      "mean": 327.731640625,
+      "max": 345.27734375
+    },
+    "javaWorkingSetBytes": {
+      "mean": 452.947265625,
+      "max": 455.2890625
+    },
+    "javaPrivateBytes": {
+      "mean": 632.133984375,
+      "max": 634.6796875
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.707421875,
+      "max": 83.99609375
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.521875,
+      "max": 65.76171875
+    },
+    "combinedWorkingSet": {
+      "mean": 1058.803125,
+      "max": 1098.60546875
+    },
+    "combinedPrivate": {
+      "mean": 959.865625,
+      "max": 977.16796875
+    },
+    "chromeProcessCount": {
+      "mean": 10.4,
+      "max": 11.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e1-o",
+    "engineMode": "E1 off-screen",
+    "point": "youtube720-60s",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1865.794921875,
+      "max": 1888.73046875
+    },
+    "chromePrivateBytes": {
+      "mean": 1539.688671875,
+      "max": 1566.39453125
+    },
+    "javaWorkingSetBytes": {
+      "mean": 515.034375,
+      "max": 517.4375
+    },
+    "javaPrivateBytes": {
+      "mean": 638.380078125,
+      "max": 641.2734375
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.150390625,
+      "max": 83.16796875
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.063671875,
+      "max": 65.09375
+    },
+    "combinedWorkingSet": {
+      "mean": 2380.829296875,
+      "max": 2403.13671875
+    },
+    "combinedPrivate": {
+      "mean": 2178.06875,
+      "max": 2203.54296875
+    },
+    "chromeProcessCount": {
+      "mean": 13.0,
+      "max": 13.0
+    },
+    "playing720Samples": 10,
+    "soakPassed": true
+  },
+  {
+    "id": "mem-e1-o",
+    "engineMode": "E1 off-screen",
+    "point": "dizi-failed-no-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1312.828125,
+      "max": 1313.921875
+    },
+    "chromePrivateBytes": {
+      "mean": 1043.259765625,
+      "max": 1045.0
+    },
+    "javaWorkingSetBytes": {
+      "mean": 518.19609375,
+      "max": 518.34765625
+    },
+    "javaPrivateBytes": {
+      "mean": 640.28203125,
+      "max": 640.8671875
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.15703125,
+      "max": 83.16796875
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.047265625,
+      "max": 65.06640625
+    },
+    "combinedWorkingSet": {
+      "mean": 1831.02421875,
+      "max": 1832.17578125
+    },
+    "combinedPrivate": {
+      "mean": 1683.541796875,
+      "max": 1685.23046875
+    },
+    "chromeProcessCount": {
+      "mean": 13.0,
+      "max": 13.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e1-o",
+    "engineMode": "E1 off-screen",
+    "point": "dizi-without-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1033.415234375,
+      "max": 1037.5390625
+    },
+    "chromePrivateBytes": {
+      "mean": 825.71484375,
+      "max": 830.37109375
+    },
+    "javaWorkingSetBytes": {
+      "mean": 524.064453125,
+      "max": 524.37890625
+    },
+    "javaPrivateBytes": {
+      "mean": 649.4109375,
+      "max": 649.77734375
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.36484375,
+      "max": 83.37890625
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.076953125,
+      "max": 65.1015625
+    },
+    "combinedWorkingSet": {
+      "mean": 1557.4796875,
+      "max": 1561.3984375
+    },
+    "combinedPrivate": {
+      "mean": 1475.12578125,
+      "max": 1479.46875
+    },
+    "chromeProcessCount": {
+      "mean": 12.0,
+      "max": 12.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e1-o",
+    "engineMode": "E1 off-screen",
+    "point": "dizi-with-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1348.7375,
+      "max": 1352.00390625
+    },
+    "chromePrivateBytes": {
+      "mean": 986.6609375,
+      "max": 990.29296875
+    },
+    "javaWorkingSetBytes": {
+      "mean": 520.601171875,
+      "max": 520.6796875
+    },
+    "javaPrivateBytes": {
+      "mean": 648.2953125,
+      "max": 648.578125
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.37265625,
+      "max": 83.38671875
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.108203125,
+      "max": 65.1328125
+    },
+    "combinedWorkingSet": {
+      "mean": 1869.338671875,
+      "max": 1872.54296875
+    },
+    "combinedPrivate": {
+      "mean": 1634.95625,
+      "max": 1638.296875
+    },
+    "chromeProcessCount": {
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e1-o",
+    "engineMode": "E1 off-screen",
+    "point": "returned-blank",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1128.693359375,
+      "max": 1131.59375
+    },
+    "chromePrivateBytes": {
+      "mean": 876.993359375,
+      "max": 881.02734375
+    },
+    "javaWorkingSetBytes": {
+      "mean": 515.1546875,
+      "max": 515.24609375
+    },
+    "javaPrivateBytes": {
+      "mean": 637.289453125,
+      "max": 637.36328125
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.3203125,
+      "max": 83.34375
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.098046875,
+      "max": 65.16015625
+    },
+    "combinedWorkingSet": {
+      "mean": 1643.848046875,
+      "max": 1646.73828125
+    },
+    "combinedPrivate": {
+      "mean": 1514.2828125,
+      "max": 1518.30859375
+    },
+    "chromeProcessCount": {
+      "mean": 14.0,
+      "max": 14.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-h",
+    "engineMode": "E2 headless",
+    "point": "blank",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 624.749609375,
+      "max": 641.328125
+    },
+    "chromePrivateBytes": {
+      "mean": 332.608203125,
+      "max": 350.95703125
+    },
+    "javaWorkingSetBytes": {
+      "mean": 526.424609375,
+      "max": 526.984375
+    },
+    "javaPrivateBytes": {
+      "mean": 651.727734375,
+      "max": 652.2890625
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.965625,
+      "max": 84.01953125
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.74921875,
+      "max": 65.77734375
+    },
+    "combinedWorkingSet": {
+      "mean": 1151.17421875,
+      "max": 1167.6171875
+    },
+    "combinedPrivate": {
+      "mean": 984.3359375,
+      "max": 1002.52734375
+    },
+    "chromeProcessCount": {
+      "mean": 11.9,
+      "max": 12.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-h",
+    "engineMode": "E2 headless",
+    "point": "youtube720-60s",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1366.69140625,
+      "max": 1397.58203125
+    },
+    "chromePrivateBytes": {
+      "mean": 958.267578125,
+      "max": 1003.37109375
+    },
+    "javaWorkingSetBytes": {
+      "mean": 530.481640625,
+      "max": 533.41796875
+    },
+    "javaPrivateBytes": {
+      "mean": 652.440234375,
+      "max": 655.59765625
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.165625,
+      "max": 83.1796875
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.04609375,
+      "max": 65.07421875
+    },
+    "combinedWorkingSet": {
+      "mean": 1897.173046875,
+      "max": 1928.66015625
+    },
+    "combinedPrivate": {
+      "mean": 1610.7078125,
+      "max": 1656.38671875
+    },
+    "chromeProcessCount": {
+      "mean": 14.0,
+      "max": 14.0
+    },
+    "playing720Samples": 10,
+    "soakPassed": true
+  },
+  {
+    "id": "mem-e2-h",
+    "engineMode": "E2 headless",
+    "point": "dizi-failed-no-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1616.28359375,
+      "max": 1623.75
+    },
+    "chromePrivateBytes": {
+      "mean": 1173.667578125,
+      "max": 1181.59765625
+    },
+    "javaWorkingSetBytes": {
+      "mean": 525.87109375,
+      "max": 525.8828125
+    },
+    "javaPrivateBytes": {
+      "mean": 647.0703125,
+      "max": 647.08203125
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.15390625,
+      "max": 83.16796875
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.01484375,
+      "max": 65.04296875
+    },
+    "combinedWorkingSet": {
+      "mean": 2142.1546875,
+      "max": 2149.6171875
+    },
+    "combinedPrivate": {
+      "mean": 1820.737890625,
+      "max": 1828.6796875
+    },
+    "chromeProcessCount": {
+      "mean": 14.0,
+      "max": 14.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-h",
+    "engineMode": "E2 headless",
+    "point": "dizi-without-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1516.064453125,
+      "max": 1518.390625
+    },
+    "chromePrivateBytes": {
+      "mean": 1085.65625,
+      "max": 1088.2890625
+    },
+    "javaWorkingSetBytes": {
+      "mean": 531.169921875,
+      "max": 531.25390625
+    },
+    "javaPrivateBytes": {
+      "mean": 652.750390625,
+      "max": 653.0625
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.12265625,
+      "max": 83.13671875
+    },
+    "bridgePrivateBytes": {
+      "mean": 64.96015625,
+      "max": 64.98828125
+    },
+    "combinedWorkingSet": {
+      "mean": 2047.234375,
+      "max": 2049.421875
+    },
+    "combinedPrivate": {
+      "mean": 1738.406640625,
+      "max": 1740.86328125
+    },
+    "chromeProcessCount": {
+      "mean": 14.0,
+      "max": 14.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-h",
+    "engineMode": "E2 headless",
+    "point": "dizi-with-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1424.590625,
+      "max": 1426.94921875
+    },
+    "chromePrivateBytes": {
+      "mean": 1035.176171875,
+      "max": 1037.9296875
+    },
+    "javaWorkingSetBytes": {
+      "mean": 530.03828125,
+      "max": 531.0390625
+    },
+    "javaPrivateBytes": {
+      "mean": 651.671484375,
+      "max": 653.3515625
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.30234375,
+      "max": 83.3203125
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.05,
+      "max": 65.109375
+    },
+    "combinedWorkingSet": {
+      "mean": 1954.62890625,
+      "max": 1956.8671875
+    },
+    "combinedPrivate": {
+      "mean": 1686.84765625,
+      "max": 1689.31640625
+    },
+    "chromeProcessCount": {
+      "mean": 14.0,
+      "max": 14.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-h",
+    "engineMode": "E2 headless",
+    "point": "returned-blank",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1489.53046875,
+      "max": 1501.9921875
+    },
+    "chromePrivateBytes": {
+      "mean": 1053.460546875,
+      "max": 1066.515625
+    },
+    "javaWorkingSetBytes": {
+      "mean": 531.0390625,
+      "max": 531.0390625
+    },
+    "javaPrivateBytes": {
+      "mean": 653.3515625,
+      "max": 653.3515625
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.30625,
+      "max": 83.3203125
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.08125,
+      "max": 65.109375
+    },
+    "combinedWorkingSet": {
+      "mean": 2020.56953125,
+      "max": 2033.03125
+    },
+    "combinedPrivate": {
+      "mean": 1706.812109375,
+      "max": 1719.8671875
+    },
+    "chromeProcessCount": {
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-o",
+    "engineMode": "E2 off-screen",
+    "point": "blank",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 640.825,
+      "max": 652.83984375
+    },
+    "chromePrivateBytes": {
+      "mean": 345.4546875,
+      "max": 355.90234375
+    },
+    "javaWorkingSetBytes": {
+      "mean": 531.78203125,
+      "max": 532.984375
+    },
+    "javaPrivateBytes": {
+      "mean": 654.183984375,
+      "max": 655.43359375
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 84.11328125,
+      "max": 84.16796875
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.9234375,
+      "max": 65.9453125
+    },
+    "combinedWorkingSet": {
+      "mean": 1172.60703125,
+      "max": 1184.14453125
+    },
+    "combinedPrivate": {
+      "mean": 999.638671875,
+      "max": 1009.57421875
+    },
+    "chromeProcessCount": {
+      "mean": 11.9,
+      "max": 12.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-o",
+    "engineMode": "E2 off-screen",
+    "point": "youtube720-60s",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1547.2625,
+      "max": 1577.2578125
+    },
+    "chromePrivateBytes": {
+      "mean": 1119.7296875,
+      "max": 1158.58203125
+    },
+    "javaWorkingSetBytes": {
+      "mean": 536.169921875,
+      "max": 539.94921875
+    },
+    "javaPrivateBytes": {
+      "mean": 657.90859375,
+      "max": 661.5703125
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.3453125,
+      "max": 83.359375
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.252734375,
+      "max": 65.27734375
+    },
+    "combinedWorkingSet": {
+      "mean": 2083.432421875,
+      "max": 2115.41796875
+    },
+    "combinedPrivate": {
+      "mean": 1777.63828125,
+      "max": 1820.15234375
+    },
+    "chromeProcessCount": {
+      "mean": 14.0,
+      "max": 14.0
+    },
+    "playing720Samples": 10,
+    "soakPassed": true
+  },
+  {
+    "id": "mem-e2-o",
+    "engineMode": "E2 off-screen",
+    "point": "dizi-failed-no-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1662.204296875,
+      "max": 1662.6484375
+    },
+    "chromePrivateBytes": {
+      "mean": 1129.982421875,
+      "max": 1130.51171875
+    },
+    "javaWorkingSetBytes": {
+      "mean": 535.0125,
+      "max": 535.140625
+    },
+    "javaPrivateBytes": {
+      "mean": 657.32421875,
+      "max": 658.05859375
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.353125,
+      "max": 83.3671875
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.221484375,
+      "max": 65.24609375
+    },
+    "combinedWorkingSet": {
+      "mean": 2197.216796875,
+      "max": 2197.7890625
+    },
+    "combinedPrivate": {
+      "mean": 1787.306640625,
+      "max": 1788.5703125
+    },
+    "chromeProcessCount": {
+      "mean": 16.0,
+      "max": 16.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-o",
+    "engineMode": "E2 off-screen",
+    "point": "dizi-without-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1594.876171875,
+      "max": 1599.10546875
+    },
+    "chromePrivateBytes": {
+      "mean": 1111.717578125,
+      "max": 1116.01953125
+    },
+    "javaWorkingSetBytes": {
+      "mean": 536.3671875,
+      "max": 536.3671875
+    },
+    "javaPrivateBytes": {
+      "mean": 658.93359375,
+      "max": 658.93359375
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.321875,
+      "max": 83.3359375
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.166796875,
+      "max": 65.19140625
+    },
+    "combinedWorkingSet": {
+      "mean": 2131.243359375,
+      "max": 2135.47265625
+    },
+    "combinedPrivate": {
+      "mean": 1770.651171875,
+      "max": 1774.953125
+    },
+    "chromeProcessCount": {
+      "mean": 15.0,
+      "max": 15.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-o",
+    "engineMode": "E2 off-screen",
+    "point": "dizi-with-extension",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1391.637890625,
+      "max": 1393.60546875
+    },
+    "chromePrivateBytes": {
+      "mean": 953.35078125,
+      "max": 955.2109375
+    },
+    "javaWorkingSetBytes": {
+      "mean": 536.61484375,
+      "max": 536.62109375
+    },
+    "javaPrivateBytes": {
+      "mean": 663.08671875,
+      "max": 663.09765625
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.5,
+      "max": 83.515625
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.225390625,
+      "max": 65.25
+    },
+    "combinedWorkingSet": {
+      "mean": 1928.252734375,
+      "max": 1930.2265625
+    },
+    "combinedPrivate": {
+      "mean": 1616.4375,
+      "max": 1618.30859375
+    },
+    "chromeProcessCount": {
+      "mean": 15.0,
+      "max": 15.0
+    },
+    "playing720Samples": 0
+  },
+  {
+    "id": "mem-e2-o",
+    "engineMode": "E2 off-screen",
+    "point": "returned-blank",
+    "count": 10,
+    "processTypes": [
+      "browser",
+      "crashpad utility",
+      "extension renderer",
+      "GPU",
+      "network",
+      "renderer",
+      "utility"
+    ],
+    "chromeWorkingSetBytes": {
+      "mean": 1438.06796875,
+      "max": 1448.6953125
+    },
+    "chromePrivateBytes": {
+      "mean": 942.912109375,
+      "max": 953.6796875
+    },
+    "javaWorkingSetBytes": {
+      "mean": 536.608203125,
+      "max": 536.62890625
+    },
+    "javaPrivateBytes": {
+      "mean": 663.073046875,
+      "max": 663.09765625
+    },
+    "bridgeWorkingSetBytes": {
+      "mean": 83.5015625,
+      "max": 83.515625
+    },
+    "bridgePrivateBytes": {
+      "mean": 65.225390625,
+      "max": 65.25
+    },
+    "combinedWorkingSet": {
+      "mean": 1974.676171875,
+      "max": 1985.30078125
+    },
+    "combinedPrivate": {
+      "mean": 1605.98515625,
+      "max": 1616.75
+    },
+    "chromeProcessCount": {
+      "mean": 17.0,
+      "max": 17.0
+    },
+    "playing720Samples": 0
+  }
+]

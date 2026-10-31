@@ -1,0 +1,46 @@
+{
+  "chromeWorkingSetBytes": {
+    "maxMiB": 652.83984375,
+    "meanMiB": 640.825
+  },
+  "chromePrivateBytes": {
+    "maxMiB": 355.90234375,
+    "meanMiB": 345.4546875
+  },
+  "chromePlusJavaWorkingSetBytes": {
+    "maxMiB": 1184.14453125,
+    "meanMiB": 1172.60703125
+  },
+  "point": "blank",
+  "bridgePrivateBytes": {
+    "maxMiB": 65.9453125,
+    "meanMiB": 65.9234375
+  },
+  "processTypes": [
+    "browser",
+    "crashpad utility",
+    "extension renderer",
+    "GPU",
+    "network",
+    "renderer",
+    "utility"
+  ],
+  "javaWorkingSetBytes": {
+    "maxMiB": 532.984375,
+    "meanMiB": 531.78203125
+  },
+  "bridgeWorkingSetBytes": {
+    "maxMiB": 84.16796875,
+    "meanMiB": 84.11328125
+  },
+  "javaPrivateBytes": {
+    "maxMiB": 655.43359375,
+    "meanMiB": 654.183984375
+  },
+  "id": "mem-e2-o",
+  "chromePlusJavaPrivateBytes": {
+    "maxMiB": 1009.57421875,
+    "meanMiB": 999.638671875
+  },
+  "count": 10
+}

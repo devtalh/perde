@@ -1,4 +1,4 @@
-param([string]$Id,[string]$Site,[string]$Url,[int]$Wait=10)
+param([string]$Id,[string]$Site,[string]$Url,[int]$Wait=10,[int]$Attempts=7)
 . $PSScriptRoot/common.ps1
 $dir="run/chrome-spike/$Id"
 Save "$dir/$Site-navigation.json" (D $Id 'Page.navigate' @{url=$Url})
@@ -6,7 +6,7 @@ Start-Sleep -Seconds $Wait
 $samples=@(Media $Id)
 Save "$dir/$Site-initial.json" $samples
 $actions=@()
-for($attempt=0;$attempt -lt 7;$attempt++){
+for($attempt=0;$attempt -lt $Attempts;$attempt++){
     $samples=@(Media $Id)
     $values=@($samples | Where-Object { $_.result.result.value } | ForEach-Object { [pscustomobject]@{session=$_.session;contextId=$_.contextId;v=$_.result.result.value} })
     if(@($values | Where-Object {$_.v.gates.challenge -or $_.v.gates.login -or $_.v.gates.age}).Count -gt 0){break}

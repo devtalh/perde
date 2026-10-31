@@ -1,0 +1,326 @@
+[
+  {
+    "session": "906646149AA197E8B935E9A0A88B6857",
+    "contextId": 2.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "80C6EBC4541C272472FFDE7D03029457",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "694806E560C1F7C2E5F34C018B4F3F8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "E8691F2244E24A4F3A6C5AE128B1206D",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "DDE0140348949F487CFF008182FDD8D6",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "5C2D123F0B83A472A97466FF3A9D52A1",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "694806E560C1F7C2E5F34C018B4F3F8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "80C6EBC4541C272472FFDE7D03029457",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "694806E560C1F7C2E5F34C018B4F3F8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "123E85A26F60DC30FD91A7C7E2109D71",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "7D5B2D5850ED435A646607463828E2DD",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "282151E34E025A5D80249FDC17DC8BE9",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+          "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 4.5027,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 800.0,
+              "height": 50.0,
+              "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 4.2403,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 400.0,
+              "height": 40.0,
+              "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 4.5029,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 800.0,
+              "height": 50.0,
+              "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 4.2402,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 400.0,
+              "height": 40.0,
+              "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+              "error": null
+            }
+          ],
+          "frames": [
+            {
+              "src": "https://dizipalorijinal20.com/api/embed.php",
+              "rect": {
+                "x": 144.5,
+                "y": 41.34375,
+                "w": 976.0,
+                "h": 549.0
+              }
+            }
+          ],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 1118.5,
+                "y": 20.5,
+                "w": 14.0,
+                "h": 16.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "bp-stab",
+              "label": "1. Sezon",
+              "rect": {
+                "x": 144.5,
+                "y": 911.9375,
+                "w": 78.6875,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "bp-stab active",
+              "label": "2. Sezon",
+              "rect": {
+                "x": 229.1875,
+                "y": 911.9375,
+                "w": 78.6875,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "adx-sticky-close",
+              "label": "×",
+              "rect": {
+                "x": 1231.0,
+                "y": 643.75,
+                "w": 26.0,
+                "h": 26.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "session": "9C70B3E7D664BC745028AC4213BEC44E",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 3.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [
+            {
+              "src": "https://formationfeed.net/i",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 976.0,
+                "h": 549.0
+              }
+            }
+          ],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "221AD506AF6598ABD1E0FECF2DA22099",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "2B3D4BBBBBEA1C0AC60E5CF2875D7260",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "7944E7108A7CFC0804666D3647A85046",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "B9E4055E04A3DDE32F02405BBBC293D3",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "8E4EB8CC0F2A021BC2682E2397957FF1",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "267094E15E2F1DFA56D81D56E0B1B70B",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "C8351EED8614FCD1AFE6CB4C0AF8CBA8",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "B9E4055E04A3DDE32F02405BBBC293D3",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "870EFFA7F7E6EA8778CE9AE8367F47C4",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "2FEF1228AAD3EAC617C9606083FD652D",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "4B829796A1DCB0C79BECBAEC4D6BBDD5",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "906646149AA197E8B935E9A0A88B6857",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://formationfeed.net/i?redacted",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 1.0,
+                "h": 1.0
+              }
+            }
+          ],
+          "controls": []
+        }
+      }
+    }
+  }
+]

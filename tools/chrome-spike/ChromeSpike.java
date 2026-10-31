@@ -70,12 +70,27 @@ public final class ChromeSpike {
             var targets=Json.obj(cdp.call("Target.getTargets",Map.of(),null));
             for(Object t:(List<?>)targets.get("targetInfos")){var tm=Json.obj(t);if(Json.str(tm,"type").equals("page")){String target=Json.str(tm,"targetId");for(int n=0;n<100&&page==null;n++)Thread.sleep(50);if(page==null){page=Json.str(Json.obj(cdp.call("Target.attachToTarget",map("targetId",target,"flatten",true),null)),"sessionId");configure(page);}break;}}
             if(page==null)throw new IOException("No page");Thread.sleep(500);
+            cdp.call("Browser.setDownloadBehavior",map("behavior","deny"),null);
+            for(String permission:List.of("geolocation","microphone","camera","notifications"))cdp.call("Browser.setPermission",map("permission",map("name",permission),"setting","denied"),null);
             cdp.call("Emulation.setDeviceMetricsOverride",map("width",1280,"height",720,"deviceScaleFactor",1,"mobile",false),page);
             Object result=map("id",id,"pid",pid,"startupMs",(System.nanoTime()-begin)/1e6,"mode",config.get("mode"),"version",cdp.call("Browser.getVersion",Map.of(),null),"snapshot",snapshot(),"profile",ROOT.relativize(profile).toString());save(dir.resolve("startup.json"),result);log("startup",result);return result;
         }
         void configure(String s)throws Exception{if(!sessions.add(s))return;try{cdp.call("Runtime.enable",Map.of(),s);cdp.call("Runtime.addBinding",map("name","perdeSpike"),s);cdp.call("Page.enable",Map.of(),s);cdp.call("Page.addScriptToEvaluateOnNewDocument",map("source",MUTE),s);cdp.call("Network.enable",Map.of(),s);cdp.call("Log.enable",Map.of(),s);cdp.call("Media.enable",Map.of(),s);cdp.call("Target.setAutoAttach",map("autoAttach",true,"waitForDebuggerOnStart",true,"flatten",true),s);}finally{cdp.call("Runtime.runIfWaitingForDebugger",Map.of(),s);}}
         void event(Map<String,Object> m){String method=Json.str(m,"method"),s=Json.str(m,"sessionId");var p=Json.obj(m.get("params"));
-            if(method.equals("Target.attachedToTarget")){String child=Json.str(p,"sessionId");var info=Json.obj(p.get("targetInfo"));log(method,p);WORK.submit(()->{try{if(Json.str(info,"type").equals("page")&&page==null)page=child;if(Json.str(info,"type").equals("page")||Json.str(info,"type").equals("iframe")){if(Json.str(info,"type").equals("page")&&page!=null&&!page.equals(child)){cdp.call("Target.closeTarget",map("targetId",info.get("targetId")),null);log("popupClosed",info);return;}configure(child);}else cdp.call("Runtime.runIfWaitingForDebugger",Map.of(),child);}catch(Exception ex){log("attachError",ex.toString());}});}
+            if(method.equals("Target.attachedToTarget")){
+                String child=Json.str(p,"sessionId");var info=Json.obj(p.get("targetInfo"));log(method,p);
+                WORK.submit(()->{try{
+                    if(Json.str(info,"type").equals("page")&&page==null)page=child;
+                    if(Json.str(info,"type").equals("page")||Json.str(info,"type").equals("iframe")){
+                        if(Json.str(info,"type").equals("page")&&page!=null&&!page.equals(child)){
+                            // Resume creation before closing: a paused popup can otherwise stall its opener.
+                            cdp.call("Runtime.runIfWaitingForDebugger",Map.of(),child);Thread.sleep(100);
+                            cdp.call("Target.closeTarget",map("targetId",info.get("targetId")),null);log("popupClosed",info);return;
+                        }
+                        configure(child);
+                    }else cdp.call("Runtime.runIfWaitingForDebugger",Map.of(),child);
+                }catch(Exception ex){log("attachError",ex.toString());}});
+            }
             else if(method.equals("Runtime.executionContextCreated")){var c=Json.obj(p.get("context"));if(Boolean.TRUE.equals(Json.obj(c.get("auxData")).get("isDefault")))contexts.put(s+":"+c.get("id"),map("session",s,"context",c));}
             else if(method.equals("Runtime.executionContextDestroyed"))contexts.remove(s+":"+p.get("executionContextId"));
             else if(method.equals("Runtime.executionContextsCleared"))contexts.entrySet().removeIf(e->Json.str(e.getValue(),"session").equals(s));
@@ -91,13 +106,30 @@ public final class ChromeSpike {
         Object stream(Map<String,Object> q)throws Exception{int seconds=((Number)q.getOrDefault("seconds",15)).intValue();if(seconds<1||seconds>60)throw new IllegalArgumentException("1..60s");String name=Json.str(q,"name");if(!name.matches("[a-zA-Z0-9_-]+"))throw new IllegalArgumentException("Invalid stream name");var capture=new Stream(dir,name);Object before=snapshot();long start=System.nanoTime();stream=capture;
             try{cdp.call("Page.startScreencast",map("format","jpeg","quality",q.getOrDefault("quality",80),"maxWidth",q.getOrDefault("width",1280),"maxHeight",q.getOrDefault("height",720),"everyNthFrame",1),page);Thread.sleep(seconds*1000L);}finally{cdp.call("Page.stopScreencast",Map.of(),page);stream=null;}
             Thread.sleep(300);Object result=capture.finish((System.nanoTime()-start)/1e9,before,snapshot());save(dir.resolve(name+"-summary.json"),result);log("stream",result);return result;}
-        synchronized Object close()throws Exception{if(closing)return Map.of();closing=true;remember();if(cdp!=null&&root!=null&&root.isAlive())try{cdp.call("Browser.close",Map.of(),null);}catch(Exception ignored){}for(int n=0;n<30&&owned.stream().anyMatch(ProcessHandle::isAlive);n++){remember();Thread.sleep(100);}for(var p:owned)if(p.isAlive())p.destroy();Thread.sleep(300);for(var p:owned)if(p.isAlive())p.destroyForcibly();Thread.sleep(500);var result=map("ownedPids",owned.stream().map(ProcessHandle::pid).toList(),"remaining",owned.stream().filter(ProcessHandle::isAlive).map(ProcessHandle::pid).toList());log("cleanup",result);save(dir.resolve("cleanup.json"),result);if(cdp!=null)cdp.close();events.close();return result;}
+        synchronized Object close()throws Exception{
+            if(closing)return Map.of();closing=true;remember();
+            if(cdp!=null&&root!=null&&root.isAlive())try{cdp.call("Browser.close",Map.of(),null);}catch(Exception ignored){}
+            for(int n=0;n<30&&owned.stream().anyMatch(ProcessHandle::isAlive);n++){remember();Thread.sleep(100);}
+            for(var p:owned)if(p.isAlive())p.destroy();Thread.sleep(300);
+            for(var p:owned)if(p.isAlive())p.destroyForcibly();Thread.sleep(500);
+            if(cdp!=null)cdp.close();
+            if(bridge!=null&&!bridge.waitFor(3,TimeUnit.SECONDS)){bridge.destroy();bridge.waitFor(2,TimeUnit.SECONDS);}
+            var result=map("ownedPids",owned.stream().map(ProcessHandle::pid).toList(),"remaining",owned.stream().filter(ProcessHandle::isAlive).map(ProcessHandle::pid).toList(),"bridgePid",bridge==null?null:bridge.pid(),"bridgeRemaining",bridge!=null&&bridge.isAlive());
+            log("cleanup",result);save(dir.resolve("cleanup.json"),result);events.close();return result;
+        }
     }
     static final class Cdp implements WebSocket.Listener,AutoCloseable {
         final Engine engine;final Map<Long,CompletableFuture<Object>> pending=new ConcurrentHashMap<>();final AtomicLong ids=new AtomicLong();final StringBuilder buffer=new StringBuilder();WebSocket ws;Socket pipe;CompletableFuture<WebSocket> sends=CompletableFuture.completedFuture(null);
         Cdp(URI uri,Engine e){engine=e;ws=HTTP.newWebSocketBuilder().connectTimeout(Duration.ofSeconds(8)).buildAsync(uri,this).join();}
-        Cdp(int port,Engine e)throws IOException{engine=e;pipe=new Socket(InetAddress.getLoopbackAddress(),port);WORK.submit(()->{try{var in=pipe.getInputStream();var b=new ByteArrayOutputStream();int n;while((n=in.read())>=0){if(n==0){receive(b.toString(java.nio.charset.StandardCharsets.UTF_8));b.reset();}else b.write(n);}}catch(Exception ex){pending.values().forEach(f->f.completeExceptionally(ex));}});}
-        synchronized void transmit(String data){if(pipe!=null){try{var out=pipe.getOutputStream();out.write(data.getBytes(java.nio.charset.StandardCharsets.UTF_8));out.write(0);out.flush();}catch(IOException ex){throw new UncheckedIOException(ex);}}else sends=sends.handle((v,t)->null).thenCompose(v->ws.sendText(data,true));}
+        Cdp(int port,Engine e)throws IOException{
+            engine=e;pipe=new Socket(InetAddress.getLoopbackAddress(),port);pipe.setTcpNoDelay(true);
+            WORK.submit(()->{try{
+                var in=new BufferedInputStream(pipe.getInputStream(),65536);var message=new ByteArrayOutputStream();byte[] chunk=new byte[65536];int length;
+                while((length=in.read(chunk))>=0){int begin=0;for(int n=0;n<length;n++)if(chunk[n]==0){message.write(chunk,begin,n-begin);receive(message.toString(java.nio.charset.StandardCharsets.UTF_8));message.reset();begin=n+1;}message.write(chunk,begin,length-begin);}
+                pending.values().forEach(f->f.completeExceptionally(new EOFException("CDP pipe closed")));
+            }catch(Exception ex){pending.values().forEach(f->f.completeExceptionally(ex));}});
+        }
+        synchronized void transmit(String data){if(pipe!=null){try{var out=pipe.getOutputStream();out.write((data+'\0').getBytes(java.nio.charset.StandardCharsets.UTF_8));out.flush();}catch(IOException ex){throw new UncheckedIOException(ex);}}else sends=sends.handle((v,t)->null).thenCompose(v->ws.sendText(data,true));}
         void send(String method,Map<String,Object> params,String session){var m=map("id",ids.incrementAndGet(),"method",method,"params",params);if(session!=null&&!session.isEmpty())m.put("sessionId",session);transmit(Json.write(m));}
         Object call(String method,Map<String,Object> params,String session)throws Exception{long id=ids.incrementAndGet();var f=new CompletableFuture<Object>();pending.put(id,f);var m=map("id",id,"method",method,"params",params);if(session!=null&&!session.isEmpty())m.put("sessionId",session);transmit(Json.write(m));try{return f.get(20,TimeUnit.SECONDS);}catch(Exception ex){engine.log("commandFailure",map("method",method,"session",session,"error",ex.toString()));throw ex;}finally{pending.remove(id);}}
         public void onOpen(WebSocket w){w.request(1);}

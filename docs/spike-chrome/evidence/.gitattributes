@@ -1,0 +1,7 @@
+# Keep published evidence byte hashes stable across checkouts.
+* -text
+*.json diff
+*.jsonl diff
+*.csv diff
+*.txt diff
+*.png -diff

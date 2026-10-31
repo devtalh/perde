@@ -1,0 +1,11 @@
+{
+  "extensions": [
+    {
+      "id": "gphegpfnhpagigdooakiaeooaphgiaje",
+      "name": "uBlock Origin Lite",
+      "version": "2026.1026.1812",
+      "path": "<repo>\\run\\chrome-spike\\ubol",
+      "enabled": true
+    }
+  ]
+}

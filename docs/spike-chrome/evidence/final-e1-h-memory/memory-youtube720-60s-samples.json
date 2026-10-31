@@ -1,0 +1,1122 @@
+[
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:10.0620781+03:00",
+    "chromePrivateBytes": 872665088.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 535085056,
+    "chromePlusJavaWorkingSetBytes": 1740623872.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 68382720,
+        "workingSetBytes": 178855936,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18300928,
+        "workingSetBytes": 47558656,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 275845120,
+        "workingSetBytes": 352669696,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 383352832,
+        "workingSetBytes": 323317760,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 87.286748,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 676061184,
+    "chromePlusJavaPrivateBytes": 1548726272.0,
+    "sample": 0,
+    "chromeWorkingSetBytes": 1205538816.0,
+    "bridgePrivateBytes": 68345856
+  },
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:11.5343026+03:00",
+    "chromePrivateBytes": 880553984.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 537817088,
+    "chromePlusJavaWorkingSetBytes": 1751199744.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 71475200,
+        "workingSetBytes": 181907456,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18300928,
+        "workingSetBytes": 47558656,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 275881984,
+        "workingSetBytes": 352710656,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 388112384,
+        "workingSetBytes": 328069120,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 88.756808,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 675500032,
+    "chromePlusJavaPrivateBytes": 1556054016.0,
+    "sample": 1,
+    "chromeWorkingSetBytes": 1213382656.0,
+    "bridgePrivateBytes": 68345856
+  },
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:12.972949+03:00",
+    "chromePrivateBytes": 879554560.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 542547968,
+    "chromePlusJavaWorkingSetBytes": 1756651520.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 70381568,
+        "workingSetBytes": 180838400,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18264064,
+        "workingSetBytes": 47501312,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 275968000,
+        "workingSetBytes": 352800768,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 388157440,
+        "workingSetBytes": 329826304,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 90.197764,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 679309312,
+    "chromePlusJavaPrivateBytes": 1558863872.0,
+    "sample": 2,
+    "chromeWorkingSetBytes": 1214103552.0,
+    "bridgePrivateBytes": 68345856
+  },
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:14.4373116+03:00",
+    "chromePrivateBytes": 883085312.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 540958720,
+    "chromePlusJavaWorkingSetBytes": 1757667328.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 72364032,
+        "workingSetBytes": 182161408,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18292736,
+        "workingSetBytes": 47546368,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 277422080,
+        "workingSetBytes": 353976320,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 388222976,
+        "workingSetBytes": 329887744,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 91.664782,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 675991552,
+    "chromePlusJavaPrivateBytes": 1559076864.0,
+    "sample": 3,
+    "chromeWorkingSetBytes": 1216708608.0,
+    "bridgePrivateBytes": 68345856
+  },
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:15.8936697+03:00",
+    "chromePrivateBytes": 877858816.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 545624064,
+    "chromePlusJavaWorkingSetBytes": 1759535104.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 68202496,
+        "workingSetBytes": 178630656,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18305024,
+        "workingSetBytes": 47640576,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 277884928,
+        "workingSetBytes": 354582528,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 386682880,
+        "workingSetBytes": 329920512,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 93.114055,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 680800256,
+    "chromePlusJavaPrivateBytes": 1558659072.0,
+    "sample": 4,
+    "chromeWorkingSetBytes": 1213911040.0,
+    "bridgePrivateBytes": 68345856
+  },
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:17.430786+03:00",
+    "chromePrivateBytes": 878624768.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 544903168,
+    "chromePlusJavaWorkingSetBytes": 1759330304.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 69677056,
+        "workingSetBytes": 180142080,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18292736,
+        "workingSetBytes": 47529984,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 278331392,
+        "workingSetBytes": 354861056,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 385540096,
+        "workingSetBytes": 328757248,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 94.654894,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 680169472,
+    "chromePlusJavaPrivateBytes": 1558794240.0,
+    "sample": 5,
+    "chromeWorkingSetBytes": 1214427136.0,
+    "bridgePrivateBytes": 68345856
+  },
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:18.9084254+03:00",
+    "chromePrivateBytes": 871579648.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 540246016,
+    "chromePlusJavaWorkingSetBytes": 1743872000.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 69689344,
+        "workingSetBytes": 180154368,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18292736,
+        "workingSetBytes": 47529984,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 274382848,
+        "workingSetBytes": 350801920,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 382431232,
+        "workingSetBytes": 322002944,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 96.128529,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 676302848,
+    "chromePlusJavaPrivateBytes": 1547882496.0,
+    "sample": 6,
+    "chromeWorkingSetBytes": 1203625984.0,
+    "bridgePrivateBytes": 68345856
+  },
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:20.3599423+03:00",
+    "chromePrivateBytes": 878764032.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 545787904,
+    "chromePlusJavaWorkingSetBytes": 1757028352.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 68591616,
+        "workingSetBytes": 179052544,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18300928,
+        "workingSetBytes": 47915008,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 279666688,
+        "workingSetBytes": 356143104,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 385421312,
+        "workingSetBytes": 324993024,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 97.584218,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 681177088,
+    "chromePlusJavaPrivateBytes": 1559941120.0,
+    "sample": 7,
+    "chromeWorkingSetBytes": 1211240448.0,
+    "bridgePrivateBytes": 68345856
+  },
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:21.8162083+03:00",
+    "chromePrivateBytes": 883789824.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 542703616,
+    "chromePlusJavaWorkingSetBytes": 1761718272.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 70512640,
+        "workingSetBytes": 180953088,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18292736,
+        "workingSetBytes": 47534080,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 282763264,
+        "workingSetBytes": 358678528,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 385437696,
+        "workingSetBytes": 328712192,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 99.043596,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 678998016,
+    "chromePlusJavaPrivateBytes": 1562787840.0,
+    "sample": 8,
+    "chromeWorkingSetBytes": 1219014656.0,
+    "bridgePrivateBytes": 68345856
+  },
+  {
+    "bridgeWorkingSetBytes": 87322624,
+    "at": "2026-11-01T00:07:23.2902318+03:00",
+    "chromePrivateBytes": 880939008.0,
+    "javaPid": 35092,
+    "javaWorkingSetBytes": 538849280,
+    "chromePlusJavaWorkingSetBytes": 1755598848.0,
+    "chromeProcesses": [
+      {
+        "privateBytes": 70512640,
+        "workingSetBytes": 180953088,
+        "pid": 48800,
+        "type": "browser"
+      },
+      {
+        "privateBytes": 8269824,
+        "workingSetBytes": 18821120,
+        "pid": 41120,
+        "type": "utility"
+      },
+      {
+        "privateBytes": 15335424,
+        "workingSetBytes": 32059392,
+        "pid": 45544,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 18292736,
+        "workingSetBytes": 47534080,
+        "pid": 28620,
+        "type": "network"
+      },
+      {
+        "privateBytes": 34553856,
+        "workingSetBytes": 79863808,
+        "pid": 43052,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 279891968,
+        "workingSetBytes": 356388864,
+        "pid": 27852,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 2502656,
+        "workingSetBytes": 10620928,
+        "pid": 33204,
+        "type": "crashpad utility"
+      },
+      {
+        "privateBytes": 18571264,
+        "workingSetBytes": 46907392,
+        "pid": 21460,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 20881408,
+        "workingSetBytes": 43814912,
+        "pid": 23220,
+        "type": "extension renderer"
+      },
+      {
+        "privateBytes": 385458176,
+        "workingSetBytes": 328736768,
+        "pid": 22844,
+        "type": "GPU"
+      },
+      {
+        "privateBytes": 17403904,
+        "workingSetBytes": 46841856,
+        "pid": 39452,
+        "type": "renderer"
+      },
+      {
+        "privateBytes": 9265152,
+        "workingSetBytes": 24207360,
+        "pid": 34332,
+        "type": "utility"
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      },
+      {
+        "url": "https://www.youtube.com/watch?redacted",
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 100.518231,
+            "duration": 213.061,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "blob:https://www.youtube.com/a1f1988f-cb66-4df4-885a-561c1c988138",
+            "error": null
+          }
+        ]
+      }
+    ],
+    "javaPrivateBytes": 674021376,
+    "chromePlusJavaPrivateBytes": 1554960384.0,
+    "sample": 9,
+    "chromeWorkingSetBytes": 1216749568.0,
+    "bridgePrivateBytes": 68345856
+  }
+]

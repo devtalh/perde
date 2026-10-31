@@ -1,0 +1,264 @@
+{
+  "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+  "contextId": 1.0,
+  "result": {
+    "result": {
+      "type": "object",
+      "value": {
+        "url": "https://www.dailymotion.com/video/xbsj7ry",
+        "title": "Trendyol Süper Lig: Fenerbahçe: 1 - Göztepe: 0 (İlk yarı) | Ajansspor | IHA - Dailymotion Video",
+        "visibility": "visible",
+        "gates": {
+          "consent": false,
+          "login": false,
+          "age": false
+        },
+        "signals": [],
+        "media": [],
+        "frames": [],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "VerticalNav__toggle___xaFVc",
+            "label": "Collapse navigation",
+            "rect": {
+              "x": 197.0,
+              "y": 17.0,
+              "w": 40.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "VerticalNavItem__item___r7rsh VerticalNav__searchItem___CO6gT",
+            "label": "Ara",
+            "rect": {
+              "x": 12.0,
+              "y": 70.0,
+              "w": 225.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "VerticalNavItem__item___r7rsh",
+            "label": "Yükle",
+            "rect": {
+              "x": 12.0,
+              "y": 118.0,
+              "w": 225.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "VerticalNav__logIn___XSR2z Button__button___ro5TM Button__medium___d3zct Button__primary___FpMuc Button__wide___OnBsq",
+            "label": "Oturum aç",
+            "rect": {
+              "x": 12.0,
+              "y": 310.0,
+              "w": 225.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "FooterAccordion__trigger___saLii FooterAccordion__triggerOpen___L3Xol",
+            "label": "Şirket",
+            "rect": {
+              "x": 16.0,
+              "y": 374.0,
+              "w": 217.0,
+              "h": 28.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "FooterAccordion__trigger___saLii FooterAccordion__triggerOpen___L3Xol",
+            "label": "Destek",
+            "rect": {
+              "x": 16.0,
+              "y": 498.0,
+              "w": 217.0,
+              "h": 28.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "FooterAccordion__trigger___saLii FooterAccordion__triggerOpen___L3Xol",
+            "label": "Yasal",
+            "rect": {
+              "x": 16.0,
+              "y": 622.0,
+              "w": 217.0,
+              "h": 28.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "AccordionLinks__link___unm1v AccordionLinks__cmpButton___B0rhL",
+            "label": "Çerez ayarları",
+            "rect": {
+              "x": 16.0,
+              "y": 652.0,
+              "w": 217.0,
+              "h": 20.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "FullscreenOnLandscapeTrigger__fullscreenConfirmation___gMjbt",
+            "label": "",
+            "rect": {
+              "x": 526.9296875,
+              "y": 10.0,
+              "w": 211.140625,
+              "h": 50.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "LikeButton__likeButton___mqkhv LikeButton__isWatching___qpb71 Button__button___ro5TM Button__medium___d3zct Button__tertiary___lEWU7 Button__isButtonIcon___yfUeV Button__isLargeIcon___SplRE Button__rounded___evCqt",
+            "label": "",
+            "rect": {
+              "x": 345.0,
+              "y": 508.40625,
+              "w": 40.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "Button__button___ro5TM Button__medium___d3zct Button__tertiary___lEWU7 Button__isButtonIcon___yfUeV Button__isLargeIcon___SplRE Button__rounded___evCqt",
+            "label": "",
+            "rect": {
+              "x": 393.0,
+              "y": 508.40625,
+              "w": 40.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "Button__button___ro5TM Button__medium___d3zct Button__tertiary___lEWU7 Button__isButtonIcon___yfUeV Button__isLargeIcon___SplRE Button__rounded___evCqt",
+            "label": "",
+            "rect": {
+              "x": 441.0,
+              "y": 508.40625,
+              "w": 40.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "Button__button___ro5TM Button__medium___d3zct Button__tertiary___lEWU7 Button__isButtonIcon___yfUeV Button__isLargeIcon___SplRE Button__rounded___evCqt",
+            "label": "",
+            "rect": {
+              "x": 489.0,
+              "y": 508.40625,
+              "w": 40.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "VideoActions__moreButton___ylUzi Button__button___ro5TM Button__medium___d3zct Button__tertiary___lEWU7 Button__isButtonIcon___yfUeV Button__isLargeIcon___SplRE Button__rounded___evCqt",
+            "label": "",
+            "rect": {
+              "x": 537.0,
+              "y": 508.40625,
+              "w": 40.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "DropdownButton__element___OtLI7",
+            "label": "",
+            "rect": {
+              "x": 1269.0,
+              "y": 468.40625,
+              "w": 157.875,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "DropdownButton__element___OtLI7",
+            "label": "",
+            "rect": {
+              "x": 1269.0,
+              "y": 508.40625,
+              "w": 157.875,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "Button__button___ro5TM Button__medium___d3zct Button__tertiary___lEWU7 Button__isButtonIcon___yfUeV Button__isLargeIcon___SplRE Button__rounded___evCqt",
+            "label": "Player only view",
+            "rect": {
+              "x": 585.0,
+              "y": 508.40625,
+              "w": 40.0,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "Button__button___ro5TM Button__xSmall___ONb8q Button__gradient___nMRBB",
+            "label": "Takip Et",
+            "rect": {
+              "x": 763.828125,
+              "y": 32.0,
+              "w": 72.0,
+              "h": 24.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "VideoInfoTitle__titleContainer___vNeln VideoInfoTitle__buttonTitleContainer___qPQXh VideoInfoTitle__minimal___GlKUj VideoInfoTitle__newWatchingDesktop___EApAz",
+            "label": "Trendyol Süper Lig: Fenerbahçe: 1 - Göztepe: 0 (İlk yarı) | Ajansspor | IHA",
+            "rect": {
+              "x": 645.0,
+              "y": 72.0,
+              "w": 284.0,
+              "h": 66.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ShowMoreButton__showMoreButton___bGxmv VideoInfoDesktop__showMoreButton___AeEu6 ShowMoreButton__expanded____Z8RJ Button__button___ro5TM Button__medium___d3zct Button__link___dGprm Button__iconOnTheRight___iUMDP",
+            "label": "Daha az",
+            "rect": {
+              "x": 645.0,
+              "y": 450.0,
+              "w": 43.875,
+              "h": 20.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

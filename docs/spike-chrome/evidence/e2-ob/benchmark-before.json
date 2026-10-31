@@ -1,0 +1,39 @@
+{
+  "session": "796C7B3C04A72D133362DFD084852F82",
+  "contextId": 2.0,
+  "result": {
+    "result": {
+      "type": "object",
+      "value": {
+        "url": "https://example.org/",
+        "title": "",
+        "visibility": "visible",
+        "gates": {
+          "challenge": false,
+          "consent": false,
+          "login": false,
+          "age": false
+        },
+        "signals": [],
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 6.74446,
+            "duration": 52.208333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 854.0,
+            "height": 480.0,
+            "src": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+            "error": null
+          }
+        ],
+        "frames": [],
+        "controls": []
+      }
+    }
+  }
+}

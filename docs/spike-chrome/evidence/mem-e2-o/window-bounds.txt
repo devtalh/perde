@@ -1,0 +1,7 @@
+monitor,0,0,1536,960
+11406472,-26214,-26214,-25574,-25734,True,False,intersectsMonitor=False
+2233382,0,0,0,0,False,False,intersectsMonitor=False
+2495786,205,205,1357,869,False,False,intersectsMonitor=True
+2757612,0,0,0,0,False,False,intersectsMonitor=False
+3672972,0,0,0,0,False,False,intersectsMonitor=False
+1053072,0,0,0,0,False,False,intersectsMonitor=False

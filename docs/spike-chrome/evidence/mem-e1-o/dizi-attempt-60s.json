@@ -1,0 +1,2784 @@
+[
+  {
+    "at": "2026-10-31T23:47:06.6401429+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 0.7592,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 0.5024,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 0.5021,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 0.6771,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:11.6620879+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 5.7845,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 5.5277,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 5.5274,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 5.7024,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:16.6883163+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.5692,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.2913,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.2911,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.5396,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:21.7032119+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 3.4147,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 3.1021,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 3.1019,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 3.3685,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:26.7153687+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 2.2508,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 1.9436,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 1.9434,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 2.206,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:31.7397808+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 1.0124,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 0.714,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 0.713,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 0.9656,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:36.7650507+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 6.033333,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 5.7411,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 5.7401,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 5.9927,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:41.7814166+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.8656,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.5531,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.553,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.8048,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:46.7893955+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 3.6492,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 3.325,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 3.3248,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 3.5906,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:51.811764+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 2.4346,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 2.0911,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 2.091,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 2.3437,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:47:56.8284884+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 1.1924,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 0.8942,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 0.8939,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 1.1455,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:48:01.8490606+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 6.033333,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 5.9145,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 5.9143,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 6.033333,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "at": "2026-10-31T23:48:06.8722819+03:00",
+    "observation": [
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 1.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+              "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.9962,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.747,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.7468,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 800.0,
+                  "height": 50.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+                  "error": null
+                },
+                {
+                  "tag": "VIDEO",
+                  "ready": 4.0,
+                  "time": 4.9959,
+                  "duration": 6.033333,
+                  "paused": false,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 400.0,
+                  "height": 40.0,
+                  "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+                  "error": null
+                }
+              ],
+              "frames": [
+                {
+                  "src": "https://dizipalorijinal20.com/api/embed.php",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 41.35000228881836,
+                    "w": 976.0,
+                    "h": 549.0
+                  }
+                }
+              ],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "",
+                  "rect": {
+                    "x": 1118.4000244140625,
+                    "y": 20.200000762939453,
+                    "w": 14.0,
+                    "h": 16.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab",
+                  "label": "1. Sezon",
+                  "rect": {
+                    "x": 144.40000915527344,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "bp-stab active",
+                  "label": "2. Sezon",
+                  "rect": {
+                    "x": 228.6875,
+                    "y": 911.5499877929688,
+                    "w": 78.2874984741211,
+                    "h": 25.200000762939453
+                  }
+                },
+                {
+                  "tag": "SPAN",
+                  "id": "",
+                  "cls": "adx-sticky-close",
+                  "label": "×",
+                  "rect": {
+                    "x": 1230.800048828125,
+                    "y": 643.7625122070312,
+                    "w": 26.0,
+                    "h": 26.0
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "contextId": 3.0,
+        "result": {
+          "result": {
+            "type": "object",
+            "value": {
+              "url": "https://dizipalorijinal20.com/api/embed.php?redacted",
+              "title": "",
+              "visibility": "visible",
+              "youtubeAd": false,
+              "gates": {
+                "challenge": false,
+                "consent": false,
+                "login": false,
+                "age": false
+              },
+              "signals": [],
+              "media": [
+                {
+                  "tag": "VIDEO",
+                  "ready": 0.0,
+                  "time": 0.0,
+                  "duration": null,
+                  "paused": true,
+                  "ended": false,
+                  "muted": true,
+                  "volume": 0.0,
+                  "width": 0.0,
+                  "height": 0.0,
+                  "src": "https://dizipalorijinal20.com/api/hls.php",
+                  "error": {
+                    "code": 4.0,
+                    "message": "MEDIA_ELEMENT_ERROR: Format error"
+                  }
+                }
+              ],
+              "frames": [],
+              "controls": [
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "active",
+                  "label": "TR Altyazi",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 10.0,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                },
+                {
+                  "tag": "BUTTON",
+                  "id": "",
+                  "cls": "",
+                  "label": "Altyazisiz",
+                  "rect": {
+                    "x": 874.0375366210938,
+                    "y": 46.79999923706055,
+                    "w": 91.9625015258789,
+                    "h": 30.80000114440918
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+]

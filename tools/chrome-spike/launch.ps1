@@ -38,7 +38,7 @@ public static class SpikeLaunch {
   using(var input=new FileStream(new SafeFileHandle(pr,true),FileAccess.Read,4096,false))using(var output=new FileStream(new SafeFileHandle(pw,true),FileAccess.Write,1,false)) {
    var listener=new TcpListener(IPAddress.Loopback,0);listener.Start();File.WriteAllText(handshake,"{\"pid\":"+pi.pid+",\"port\":"+((IPEndPoint)listener.LocalEndpoint).Port+"}");
    var accept=listener.AcceptTcpClientAsync();if(!accept.Wait(30000)){listener.Stop();return;}
-   using(var client=accept.Result){listener.Stop();using(var net=client.GetStream()){var a=Task.Run(()=>input.CopyTo(net));var b=Task.Run(()=>net.CopyTo(output));Task.WaitAny(a,b);}}
+   using(var client=accept.Result){client.NoDelay=true;listener.Stop();using(var net=client.GetStream()){var a=Task.Run(()=>input.CopyTo(net));var b=Task.Run(()=>net.CopyTo(output));Task.WaitAny(a,b);}}
   }
  }
 }

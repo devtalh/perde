@@ -1,0 +1,47 @@
+{
+  "currentIndex": 4.0,
+  "entries": [
+    {
+      "id": 6.0,
+      "url": "about:blank",
+      "userTypedURL": "about:blank",
+      "title": "",
+      "transitionType": "auto_toplevel"
+    },
+    {
+      "id": 13.0,
+      "url": "https://vimeo.com/76979871",
+      "userTypedURL": "https://vimeo.com/76979871",
+      "title": "The New Vimeo Player (You Know, For Videos)",
+      "transitionType": "typed"
+    },
+    {
+      "id": 40.0,
+      "url": "https://www.dailymotion.com/video/xbsj7ry",
+      "userTypedURL": "https://www.dailymotion.com/video/xbsj7ry",
+      "title": "Trendyol Süper Lig: Fenerbahçe: 1 - Göztepe: 0 (İlk yarı) | Ajansspor | IHA - Dailymotion Video",
+      "transitionType": "typed"
+    },
+    {
+      "id": 44.0,
+      "url": "https://vimeo.com/76979871",
+      "userTypedURL": "https://vimeo.com/76979871",
+      "title": "The New Vimeo Player (You Know, For Videos) | Videos & Movies on Vimeo",
+      "transitionType": "typed"
+    },
+    {
+      "id": 46.0,
+      "url": "https://www.dailymotion.com/video/xbsj7ry",
+      "userTypedURL": "https://www.dailymotion.com/video/xbsj7ry",
+      "title": "Trendyol Süper Lig: Fenerbahçe: 1 - Göztepe: 0 (İlk yarı) | Ajansspor | IHA - Dailymotion Video",
+      "transitionType": "typed"
+    },
+    {
+      "id": 48.0,
+      "url": "https://diziwatch.app/dizi/horror-collector/sezon-1/bolum-4",
+      "userTypedURL": "https://diziwatch.app/dizi/horror-collector/sezon-1/bolum-4",
+      "title": "HORROR COLLECTOR 1.Sezon 4. Bölüm izle – diziwatch",
+      "transitionType": "typed"
+    }
+  ]
+}

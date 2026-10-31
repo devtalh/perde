@@ -1,0 +1,61 @@
+{
+  "id": "e2-h",
+  "pid": 50164,
+  "startupMs": 1912.1606,
+  "mode": "headless",
+  "version": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/156.0.8078.80",
+    "revision": "@fb096c0011f9d50f0a264a9376420cdea9c421e3",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "jsVersion": "15.6.75.27"
+  },
+  "snapshot": {
+    "processes": [
+      {
+        "pid": 35504,
+        "cpuMs": 15.625
+      },
+      {
+        "pid": 12688,
+        "cpuMs": 31.25
+      },
+      {
+        "pid": 42000,
+        "cpuMs": 31.25
+      },
+      {
+        "pid": 50164,
+        "cpuMs": 1250.0
+      },
+      {
+        "pid": 48452,
+        "cpuMs": 328.125
+      },
+      {
+        "pid": 23300,
+        "cpuMs": 62.5
+      },
+      {
+        "pid": 24148,
+        "cpuMs": 46.875
+      },
+      {
+        "pid": 5688,
+        "cpuMs": 1093.75
+      },
+      {
+        "pid": 39564,
+        "cpuMs": 46.875
+      },
+      {
+        "pid": 51292,
+        "cpuMs": 265.625
+      }
+    ],
+    "chromeCpuMs": 3171.875,
+    "javaCpuMs": 8640.625,
+    "javaPid": 42788
+  },
+  "profile": "run\\chrome-spike\\e2-h\\profile-13d1f766-2dc8-468d-89bf-1de17910a7f6"
+}

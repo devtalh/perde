@@ -1,0 +1,23 @@
+{
+  "start": "2026-10-31T23:51:09.265114+03:00",
+  "end": "2026-10-31T23:51:22.2162963+03:00",
+  "note": "No Fetch interception enabled. Separate fresh navigations, not a deterministic ad auction.",
+  "blockedRequestCount": 1,
+  "blocked": [
+    {
+      "at": "2026-10-31T20:51:09.669656400Z",
+      "kind": "Network.loadingFailed",
+      "data": {
+        "session": "23CCD618E62A895D02FCD88C59F1E80E",
+        "params": {
+          "requestId": "11576.8",
+          "timestamp": 126818.221757,
+          "type": "Script",
+          "errorText": "net::ERR_BLOCKED_BY_CLIENT",
+          "canceled": false,
+          "blockedReason": "other"
+        }
+      }
+    }
+  ]
+}

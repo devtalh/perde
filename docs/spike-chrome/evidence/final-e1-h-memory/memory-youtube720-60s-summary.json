@@ -1,0 +1,46 @@
+{
+  "id": "final-e1-h-memory",
+  "chromePlusJavaWorkingSetBytes": {
+    "meanMiB": 1673.05234375,
+    "maxMiB": 1680.10546875
+  },
+  "bridgePrivateBytes": {
+    "meanMiB": 65.1796875,
+    "maxMiB": 65.1796875
+  },
+  "processTypes": [
+    "browser",
+    "crashpad utility",
+    "extension renderer",
+    "GPU",
+    "network",
+    "renderer",
+    "utility"
+  ],
+  "point": "youtube720-60s",
+  "chromePlusJavaPrivateBytes": {
+    "meanMiB": 1484.465234375,
+    "maxMiB": 1490.390625
+  },
+  "chromeWorkingSetBytes": {
+    "meanMiB": 1156.683203125,
+    "maxMiB": 1162.54296875
+  },
+  "bridgeWorkingSetBytes": {
+    "meanMiB": 83.27734375,
+    "maxMiB": 83.27734375
+  },
+  "chromePrivateBytes": {
+    "meanMiB": 838.033203125,
+    "maxMiB": 842.84765625
+  },
+  "count": 10,
+  "javaPrivateBytes": {
+    "meanMiB": 646.43203125,
+    "maxMiB": 649.62109375
+  },
+  "javaWorkingSetBytes": {
+    "meanMiB": 516.369140625,
+    "maxMiB": 520.50390625
+  }
+}

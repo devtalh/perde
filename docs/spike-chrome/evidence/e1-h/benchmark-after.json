@@ -1,0 +1,97 @@
+[
+  {
+    "session": "8AC06F3E4E66A0940D725D80CFB3EF3C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "D1023F64B787EE76F6753988170F6687",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "9E00164BDE5F83E956A5692B4D7BFBF0",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "D2350B217347AB06A2C48BC9C5848844",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "D65B025AF4FCD82DBD5111001AF03E7F",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "C434333519E70BD9B6C1D7AA2125AE52",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://example.org/",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 27.774675,
+              "duration": 52.208333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 854.0,
+              "height": 480.0,
+              "src": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+              "error": null
+            }
+          ],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "043293DC5DAD86213094B08775DF5056",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "FEFF091C1A54421E859BC45173502A8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "FDED7F1482D9BAF98546280C99B6E00A",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "993CF1F04BF786CA6838467979646E7C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "F5805F4721C0C2273BD24B8096F1B635",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "3BA19439CBF972C4A4A1967458DF262D",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "00D270DB432131C3CB1ACDCD898FD977",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "BFD1160692A8DB30114B2B01AD4997DF",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "B603FF42C951BD2E7FE24CADBEDDD9E4",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  }
+]

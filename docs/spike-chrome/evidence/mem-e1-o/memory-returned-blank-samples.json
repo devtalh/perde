@@ -1,0 +1,1052 @@
+[
+  {
+    "chromeWorkingSetBytes": 1186521088.0,
+    "at": "2026-10-31T23:48:56.2661745+03:00",
+    "chromePlusJavaPrivateBytes": 1592061952.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668237824,
+    "bridgeWorkingSetBytes": 87359488,
+    "bridgePrivateBytes": 68231168,
+    "chromePlusJavaWorkingSetBytes": 1726689280.0,
+    "chromePrivateBytes": 923824128.0,
+    "javaWorkingSetBytes": 540168192,
+    "sample": 0,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90066944,
+        "pid": 41824,
+        "workingSetBytes": 214028288
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 55169024,
+        "pid": 46240,
+        "workingSetBytes": 166023168
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 538583040,
+        "pid": 29444,
+        "workingSetBytes": 323149824
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9412608,
+        "pid": 32908,
+        "workingSetBytes": 19111936
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8978432,
+        "pid": 33324,
+        "workingSetBytes": 24506368
+      },
+      {
+        "type": "network",
+        "privateBytes": 18092032,
+        "pid": 46864,
+        "workingSetBytes": 50036736
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21266432,
+        "pid": 49844,
+        "workingSetBytes": 51982336
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15630336,
+        "pid": 51512,
+        "workingSetBytes": 32808960
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60026880,
+        "pid": 45628,
+        "workingSetBytes": 59904000
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  },
+  {
+    "chromeWorkingSetBytes": 1186562048.0,
+    "at": "2026-10-31T23:48:57.6926034+03:00",
+    "chromePlusJavaPrivateBytes": 1590927360.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668237824,
+    "bridgeWorkingSetBytes": 87359488,
+    "bridgePrivateBytes": 68231168,
+    "chromePlusJavaWorkingSetBytes": 1726730240.0,
+    "chromePrivateBytes": 922689536.0,
+    "javaWorkingSetBytes": 540168192,
+    "sample": 1,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90066944,
+        "pid": 41824,
+        "workingSetBytes": 214028288
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 55169024,
+        "pid": 46240,
+        "workingSetBytes": 166023168
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 537247744,
+        "pid": 29444,
+        "workingSetBytes": 321748992
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9412608,
+        "pid": 32908,
+        "workingSetBytes": 19111936
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8888320,
+        "pid": 33324,
+        "workingSetBytes": 24465408
+      },
+      {
+        "type": "network",
+        "privateBytes": 18092032,
+        "pid": 46864,
+        "workingSetBytes": 50036736
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21557248,
+        "pid": 49844,
+        "workingSetBytes": 53465088
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15630336,
+        "pid": 51512,
+        "workingSetBytes": 32808960
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60026880,
+        "pid": 45628,
+        "workingSetBytes": 59904000
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  },
+  {
+    "chromeWorkingSetBytes": 1185755136.0,
+    "at": "2026-10-31T23:48:59.1303071+03:00",
+    "chromePlusJavaPrivateBytes": 1590120448.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668237824,
+    "bridgeWorkingSetBytes": 87359488,
+    "bridgePrivateBytes": 68231168,
+    "chromePlusJavaWorkingSetBytes": 1725923328.0,
+    "chromePrivateBytes": 921882624.0,
+    "javaWorkingSetBytes": 540168192,
+    "sample": 2,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90075136,
+        "pid": 41824,
+        "workingSetBytes": 214032384
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 55169024,
+        "pid": 46240,
+        "workingSetBytes": 166023168
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 536428544,
+        "pid": 29444,
+        "workingSetBytes": 320929792
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9412608,
+        "pid": 32908,
+        "workingSetBytes": 19111936
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8888320,
+        "pid": 33324,
+        "workingSetBytes": 24465408
+      },
+      {
+        "type": "network",
+        "privateBytes": 18092032,
+        "pid": 46864,
+        "workingSetBytes": 50036736
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21561344,
+        "pid": 49844,
+        "workingSetBytes": 53473280
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15630336,
+        "pid": 51512,
+        "workingSetBytes": 32808960
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60026880,
+        "pid": 45628,
+        "workingSetBytes": 59904000
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  },
+  {
+    "chromeWorkingSetBytes": 1185394688.0,
+    "at": "2026-10-31T23:49:00.5506484+03:00",
+    "chromePlusJavaPrivateBytes": 1589739520.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668237824,
+    "bridgeWorkingSetBytes": 87359488,
+    "bridgePrivateBytes": 68231168,
+    "chromePlusJavaWorkingSetBytes": 1725562880.0,
+    "chromePrivateBytes": 921501696.0,
+    "javaWorkingSetBytes": 540168192,
+    "sample": 3,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90075136,
+        "pid": 41824,
+        "workingSetBytes": 214032384
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 55169024,
+        "pid": 46240,
+        "workingSetBytes": 166023168
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 536428544,
+        "pid": 29444,
+        "workingSetBytes": 320929792
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9412608,
+        "pid": 32908,
+        "workingSetBytes": 19111936
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8888320,
+        "pid": 33324,
+        "workingSetBytes": 24465408
+      },
+      {
+        "type": "network",
+        "privateBytes": 18092032,
+        "pid": 46864,
+        "workingSetBytes": 50036736
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21569536,
+        "pid": 49844,
+        "workingSetBytes": 53493760
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15241216,
+        "pid": 51512,
+        "workingSetBytes": 32428032
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60026880,
+        "pid": 45628,
+        "workingSetBytes": 59904000
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  },
+  {
+    "chromeWorkingSetBytes": 1181868032.0,
+    "at": "2026-10-31T23:49:02.0130512+03:00",
+    "chromePlusJavaPrivateBytes": 1585950720.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668237824,
+    "bridgeWorkingSetBytes": 87359488,
+    "bridgePrivateBytes": 68231168,
+    "chromePlusJavaWorkingSetBytes": 1722036224.0,
+    "chromePrivateBytes": 917712896.0,
+    "javaWorkingSetBytes": 540168192,
+    "sample": 4,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90066944,
+        "pid": 41824,
+        "workingSetBytes": 214032384
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 51425280,
+        "pid": 46240,
+        "workingSetBytes": 162504704
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 536428544,
+        "pid": 29444,
+        "workingSetBytes": 320929792
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9412608,
+        "pid": 32908,
+        "workingSetBytes": 19111936
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8888320,
+        "pid": 33324,
+        "workingSetBytes": 24465408
+      },
+      {
+        "type": "network",
+        "privateBytes": 18092032,
+        "pid": 46864,
+        "workingSetBytes": 50036736
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21577728,
+        "pid": 49844,
+        "workingSetBytes": 53506048
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15241216,
+        "pid": 51512,
+        "workingSetBytes": 32428032
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 59981824,
+        "pid": 45628,
+        "workingSetBytes": 59883520
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  },
+  {
+    "chromeWorkingSetBytes": 1181876224.0,
+    "at": "2026-10-31T23:49:03.444294+03:00",
+    "chromePlusJavaPrivateBytes": 1585963008.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668237824,
+    "bridgeWorkingSetBytes": 87359488,
+    "bridgePrivateBytes": 68231168,
+    "chromePlusJavaWorkingSetBytes": 1722044416.0,
+    "chromePrivateBytes": 917725184.0,
+    "javaWorkingSetBytes": 540168192,
+    "sample": 5,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90075136,
+        "pid": 41824,
+        "workingSetBytes": 214036480
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 51425280,
+        "pid": 46240,
+        "workingSetBytes": 162504704
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 536428544,
+        "pid": 29444,
+        "workingSetBytes": 320929792
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9412608,
+        "pid": 32908,
+        "workingSetBytes": 19111936
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8888320,
+        "pid": 33324,
+        "workingSetBytes": 24465408
+      },
+      {
+        "type": "network",
+        "privateBytes": 18092032,
+        "pid": 46864,
+        "workingSetBytes": 50036736
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21581824,
+        "pid": 49844,
+        "workingSetBytes": 53510144
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15241216,
+        "pid": 51512,
+        "workingSetBytes": 32428032
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 59981824,
+        "pid": 45628,
+        "workingSetBytes": 59883520
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  },
+  {
+    "chromeWorkingSetBytes": 1181880320.0,
+    "at": "2026-10-31T23:49:04.8828643+03:00",
+    "chromePlusJavaPrivateBytes": 1585967104.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668237824,
+    "bridgeWorkingSetBytes": 87392256,
+    "bridgePrivateBytes": 68325376,
+    "chromePlusJavaWorkingSetBytes": 1722048512.0,
+    "chromePrivateBytes": 917729280.0,
+    "javaWorkingSetBytes": 540168192,
+    "sample": 6,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90075136,
+        "pid": 41824,
+        "workingSetBytes": 214036480
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 51425280,
+        "pid": 46240,
+        "workingSetBytes": 162504704
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 536428544,
+        "pid": 29444,
+        "workingSetBytes": 320929792
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9412608,
+        "pid": 32908,
+        "workingSetBytes": 19111936
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8888320,
+        "pid": 33324,
+        "workingSetBytes": 24465408
+      },
+      {
+        "type": "network",
+        "privateBytes": 18092032,
+        "pid": 46864,
+        "workingSetBytes": 50036736
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21585920,
+        "pid": 49844,
+        "workingSetBytes": 53514240
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15241216,
+        "pid": 51512,
+        "workingSetBytes": 32428032
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 59981824,
+        "pid": 45628,
+        "workingSetBytes": 59883520
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  },
+  {
+    "chromeWorkingSetBytes": 1181790208.0,
+    "at": "2026-10-31T23:49:06.3904474+03:00",
+    "chromePlusJavaPrivateBytes": 1585868800.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668237824,
+    "bridgeWorkingSetBytes": 87375872,
+    "bridgePrivateBytes": 68296704,
+    "chromePlusJavaWorkingSetBytes": 1721958400.0,
+    "chromePrivateBytes": 917630976.0,
+    "javaWorkingSetBytes": 540168192,
+    "sample": 7,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90066944,
+        "pid": 41824,
+        "workingSetBytes": 214032384
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 51425280,
+        "pid": 46240,
+        "workingSetBytes": 162508800
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 536428544,
+        "pid": 29444,
+        "workingSetBytes": 320929792
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9404416,
+        "pid": 32908,
+        "workingSetBytes": 19103744
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8888320,
+        "pid": 33324,
+        "workingSetBytes": 24465408
+      },
+      {
+        "type": "network",
+        "privateBytes": 18001920,
+        "pid": 46864,
+        "workingSetBytes": 49946624
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21594112,
+        "pid": 49844,
+        "workingSetBytes": 53522432
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15241216,
+        "pid": 51512,
+        "workingSetBytes": 32428032
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 59981824,
+        "pid": 45628,
+        "workingSetBytes": 59883520
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  },
+  {
+    "chromeWorkingSetBytes": 1181802496.0,
+    "at": "2026-10-31T23:49:07.8363963+03:00",
+    "chromePlusJavaPrivateBytes": 1585885184.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668237824,
+    "bridgeWorkingSetBytes": 87375872,
+    "bridgePrivateBytes": 68296704,
+    "chromePlusJavaWorkingSetBytes": 1721970688.0,
+    "chromePrivateBytes": 917647360.0,
+    "javaWorkingSetBytes": 540168192,
+    "sample": 8,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90075136,
+        "pid": 41824,
+        "workingSetBytes": 214036480
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 51425280,
+        "pid": 46240,
+        "workingSetBytes": 162508800
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 536428544,
+        "pid": 29444,
+        "workingSetBytes": 320929792
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9404416,
+        "pid": 32908,
+        "workingSetBytes": 19103744
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8888320,
+        "pid": 33324,
+        "workingSetBytes": 24465408
+      },
+      {
+        "type": "network",
+        "privateBytes": 18001920,
+        "pid": 46864,
+        "workingSetBytes": 49946624
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21602304,
+        "pid": 49844,
+        "workingSetBytes": 53530624
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15241216,
+        "pid": 51512,
+        "workingSetBytes": 32428032
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 59981824,
+        "pid": 45628,
+        "workingSetBytes": 59883520
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  },
+  {
+    "chromeWorkingSetBytes": 1181757440.0,
+    "at": "2026-10-31T23:49:09.2897081+03:00",
+    "chromePlusJavaPrivateBytes": 1585922048.0,
+    "javaPid": 21288,
+    "javaPrivateBytes": 668323840,
+    "bridgeWorkingSetBytes": 87375872,
+    "bridgePrivateBytes": 68296704,
+    "chromePlusJavaWorkingSetBytes": 1722032128.0,
+    "chromePrivateBytes": 917598208.0,
+    "javaWorkingSetBytes": 540274688,
+    "sample": 9,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 90066944,
+        "pid": 41824,
+        "workingSetBytes": 214032384
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 51425280,
+        "pid": 46240,
+        "workingSetBytes": 162508800
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2543616,
+        "pid": 49092,
+        "workingSetBytes": 10764288
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 536379392,
+        "pid": 29444,
+        "workingSetBytes": 320880640
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 35934208,
+        "pid": 43844,
+        "workingSetBytes": 82296832
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 28160000,
+        "pid": 7304,
+        "workingSetBytes": 58417152
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9404416,
+        "pid": 32908,
+        "workingSetBytes": 19103744
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8888320,
+        "pid": 33324,
+        "workingSetBytes": 24465408
+      },
+      {
+        "type": "network",
+        "privateBytes": 18001920,
+        "pid": 46864,
+        "workingSetBytes": 49946624
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 21610496,
+        "pid": 49844,
+        "workingSetBytes": 53538816
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 20918272,
+        "pid": 4088,
+        "workingSetBytes": 44519424
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 15241216,
+        "pid": 51512,
+        "workingSetBytes": 32428032
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19042304,
+        "pid": 44124,
+        "workingSetBytes": 48971776
+      },
+      {
+        "type": "utility",
+        "privateBytes": 59981824,
+        "pid": 45628,
+        "workingSetBytes": 59883520
+      }
+    ],
+    "media": [
+      {
+        "url": "about:blank",
+        "media": []
+      }
+    ]
+  }
+]

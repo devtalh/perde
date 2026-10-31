@@ -1,0 +1,83 @@
+{
+  "inputReadback": {
+    "result": {
+      "type": "object",
+      "value": {
+        "typed": "Perde CDP 25",
+        "clicks": "1"
+      }
+    }
+  },
+  "frames": [
+    {
+      "result": {
+        "type": "object",
+        "value": {
+          "origin": "https://example.org",
+          "binding": "function"
+        }
+      }
+    },
+    {
+      "result": {
+        "type": "object",
+        "value": {
+          "origin": "https://example.com",
+          "binding": "function"
+        }
+      }
+    }
+  ],
+  "type": {},
+  "scrollReadback": {
+    "result": {
+      "type": "number",
+      "value": 400.0,
+      "description": "400"
+    }
+  },
+  "fetchDisable": {},
+  "fetchProbe": {
+    "result": {
+      "type": "object",
+      "value": {
+        "blocked": true,
+        "error": "Failed to fetch"
+      }
+    }
+  },
+  "deny-notifications": {},
+  "scroll": {},
+  "navigation": {
+    "frameId": "7EC70109B45DAB163C6AF0C927B78C91",
+    "loaderId": "6C50CAB4FF9A1356FA106AAF2E98D033",
+    "isDownload": false
+  },
+  "fetchEnable": {},
+  "deny-geolocation": {},
+  "permissionReadback": {
+    "result": {
+      "type": "object",
+      "value": [
+        {
+          "name": "geolocation",
+          "state": "denied"
+        },
+        {
+          "name": "microphone",
+          "state": "denied"
+        },
+        {
+          "name": "camera",
+          "state": "denied"
+        },
+        {
+          "name": "notifications",
+          "state": "denied"
+        }
+      ]
+    }
+  },
+  "deny-microphone": {},
+  "deny-camera": {}
+}
