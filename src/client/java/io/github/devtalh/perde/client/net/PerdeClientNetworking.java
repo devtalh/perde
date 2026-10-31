@@ -12,6 +12,7 @@ public final class PerdeClientNetworking {
     private PerdeClientNetworking() { }
 
     public static void initialize() {
+        ClientPlaybackClock.initialize();
         ClientPlayConnectionEvents.INIT.register((listener, client) -> ClientSitePolicy.reset());
         ClientPlayConnectionEvents.DISCONNECT.register((listener, client) -> ClientSitePolicy.reset());
         ClientPlayNetworking.registerGlobalReceiver(PerdePayloads.AllowedDomains.TYPE, (payload, context) -> context.client().execute(() -> {

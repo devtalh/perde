@@ -115,6 +115,51 @@ public final class Phase2Probe implements ClientModInitializer {
                         if (!button.active) throw new IllegalStateException("Open button is disabled");
                         button.onPress(new MouseButtonInfo(0, 0));
                     }
+                    case "panel-playback" -> {
+                        if (!(client.gui.screen() instanceof PerdePanelScreen panel)) throw new IllegalStateException("Expected real server-opened panel");
+                        String key = "perde.ui." + args[2];
+                        if (args[2].equals("go")) {
+                            EditBox time = panel.children().stream().filter(EditBox.class::isInstance).map(EditBox.class::cast).skip(1).findFirst().orElseThrow();
+                            time.setValue(args[3]);
+                        }
+                        Button button = panel.children().stream().filter(Button.class::isInstance).map(Button.class::cast)
+                                .filter(candidate -> candidate.getMessage().getString().equals(Component.translatable(key).getString())).findFirst().orElseThrow();
+                        if (!button.active) throw new IllegalStateException("Playback button is disabled");
+                        button.onPress(new MouseButtonInfo(0, 0));
+                    }
+                    case "panel-audit" -> {
+                        if (!(client.gui.screen() instanceof PerdePanelScreen panel)) throw new IllegalStateException("Expected real server-opened panel");
+                        for (var child : panel.children()) {
+                            if (child instanceof net.minecraft.client.gui.components.AbstractWidget widget) {
+                                LOG.info("F3-1 panel widget text={} active={} x={} y={} width={} height={}", widget.getMessage().getString(),
+                                        widget.active, widget.getX(), widget.getY(), widget.getWidth(), widget.getHeight());
+                            }
+                        }
+                    }
+                    case "raw-playback" -> {
+                        switch (args[5]) {
+                            case "play" -> ClientPlayNetworking.send(new PerdePayloads.Play(pos(args)));
+                            case "pause" -> ClientPlayNetworking.send(new PerdePayloads.Pause(pos(args)));
+                            case "absolute" -> ClientPlayNetworking.send(new PerdePayloads.SeekAbsolute(pos(args), number(args, 6)));
+                            case "relative" -> ClientPlayNetworking.send(new PerdePayloads.SeekRelative(pos(args), number(args, 6)));
+                            default -> throw new IllegalArgumentException("Unknown playback action");
+                        }
+                    }
+                    case "clock-flood" -> {
+                        for (int i = 0; i < 10; i++) ClientPlayNetworking.send(new PerdePayloads.TimeRequest(Long.MIN_VALUE + i));
+                    }
+                    case "playback-status" -> {
+                        if (!(client.level.getBlockEntity(pos(args)) instanceof PerdeBlockEntity entity)) throw new IllegalStateException("Missing Perde");
+                        if (!io.github.devtalh.perde.client.net.ClientPlaybackClock.ready()) throw new IllegalStateException("Clock not ready");
+                        long localMs = System.currentTimeMillis();
+                        long serverMs = io.github.devtalh.perde.client.net.ClientPlaybackClock.serverNowMs();
+                        long referenceMs = Long.parseLong(args[5]);
+                        var clock = entity.screenState().playback();
+                        LOG.info("F3-1 playback player={} state={} localMs={} serverNowMs={} currentMs={} referenceLocalMs={} referencePositionMs={} offsetMs={} rttMs={}",
+                                client.player.getPlainTextName(), entity.screenState(), localMs, serverMs, clock.current(serverMs), referenceMs,
+                                clock.current(serverMs + referenceMs - localMs), io.github.devtalh.perde.client.net.ClientPlaybackClock.offsetMs(),
+                                io.github.devtalh.perde.client.net.ClientPlaybackClock.rttMs());
+                    }
                     case "geometry" -> ClientPlayNetworking.send(new PerdePayloads.SetGeometry(pos(args), number(args, 5), number(args, 6), number(args, 7), number(args, 8)));
                     case "equip" -> {
                         if (client.gameMode.getPlayerMode() != GameType.CREATIVE) throw new IllegalStateException("Creative only");

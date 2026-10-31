@@ -20,6 +20,10 @@ public final class ControlDecisions {
     public sealed interface Change {
         default boolean adminOnly() { return this instanceof SetAccess || this instanceof AddPlayer || this instanceof RemovePlayer; }
     }
+    public record Play() implements Change { }
+    public record Pause() implements Change { }
+    public record SeekRelative(double deltaMs) implements Change { }
+    public record SeekAbsolute(double positionMs) implements Change { }
     public record SetUrl(String url) implements Change { }
     public record SetGeometry(double width, double height, double offsetX, double offsetY) implements Change { }
     public record Center() implements Change { }
@@ -41,6 +45,11 @@ public final class ControlDecisions {
     }
 
     public static Result decide(Context context, ScreenState state, Change change, PacketRateLimiter limiter, long nowMs, SiteAllowlist allowlist) {
+        return decide(context, state, change, limiter, nowMs, allowlist, System.currentTimeMillis());
+    }
+
+    public static Result decide(Context context, ScreenState state, Change change, PacketRateLimiter limiter,
+                                long nowMs, SiteAllowlist allowlist, long serverMs) {
         Rejection rejection = authorize(context, state, change.adminOnly());
         if (rejection != null) return new Result(state, rejection, false);
         if (change instanceof AddPlayer request) {
@@ -58,7 +67,11 @@ public final class ControlDecisions {
                 if (!validated.isEmpty() && !allowlist.allowsPage(validated)) return new Result(state, Rejection.SITE_NOT_ALLOWED, false);
             }
             next = switch (change) {
-                case SetUrl request -> state.withUrl(request.url());
+                case Play ignored -> state.withPlayback(state.playback().play(serverMs));
+                case Pause ignored -> state.withPlayback(state.playback().pause(serverMs));
+                case SeekRelative request -> state.withPlayback(state.playback().seekRelative(request.deltaMs(), serverMs));
+                case SeekAbsolute request -> state.withPlayback(state.playback().seekAbsolute(request.positionMs(), serverMs));
+                case SetUrl request -> state.withUrl(request.url(), serverMs);
                 case SetGeometry request -> state.withGeometry(request.width(), request.height(), request.offsetX(), request.offsetY());
                 case Center ignored -> state.withGeometry(state.width(), state.height(), 0, 0);
                 case SetAccess request -> state.withAccessMode(AccessMode.valueOf(request.mode()));

@@ -3,6 +3,8 @@ package io.github.devtalh.perde.block;
 import io.github.devtalh.perde.registry.PerdeRegistry;
 import io.github.devtalh.perde.screen.AccessMode;
 import io.github.devtalh.perde.screen.ScreenState;
+import io.github.devtalh.perde.screen.PerdeServerClock;
+import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
@@ -20,10 +22,32 @@ public final class PerdeBlockEntity extends BlockEntity {
     private ScreenState state = ScreenState.defaults();
 
     public PerdeBlockEntity(BlockPos pos, BlockState blockState) { super(PerdeRegistry.BLOCK_ENTITY, pos, blockState); }
-    public ScreenState screenState() { return state; }
+    private boolean loadedPlayback;
+    public ScreenState screenState() { rebaseLoadedPlayback(); return state; }
+
+    @Override public void setLevel(Level level) {
+        super.setLevel(level);
+        rebaseLoadedPlayback();
+    }
+
+    private void rebaseLoadedPlayback() {
+        if (loadedPlayback && level != null && !level.isClientSide()) {
+            loadedPlayback = false;
+            state = state.withPlayback(state.playback().loaded(PerdeServerClock.startMs(level.getServer()), System.currentTimeMillis()));
+            // setLevel also runs while a chunk is being constructed. Do not request that chunk
+            // recursively here; the running ticker marks it dirty after installation.
+        }
+    }
+
+    public static void serverTick(Level level, BlockPos pos, BlockState block, PerdeBlockEntity entity) {
+        // A running timeline must be serialized at autosave/unload/shutdown even without controls.
+        // Mark only the chunk dirty, without neighbor updates or per-tick client packets.
+        if (entity.screenState().playing()) level.blockEntityChanged(pos);
+    }
 
     public void setScreenState(ScreenState value) {
         if (level != null && level.isClientSide()) throw new IllegalStateException("Only the server may change screen state");
+        loadedPlayback = false;
         state = value;
         setChanged();
         if (level != null) level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
@@ -31,6 +55,8 @@ public final class PerdeBlockEntity extends BlockEntity {
 
     @Override protected void saveAdditional(ValueOutput output) {
         super.saveAdditional(output);
+        ScreenState state = screenState();
+        if (level != null && !level.isClientSide()) state = state.withPlayback(state.playback().checkpoint(System.currentTimeMillis()));
         output.putString("url", state.url());
         output.putBoolean("playing", state.playing());
         output.putLong("positionMs", state.positionMs());
@@ -69,6 +95,8 @@ public final class PerdeBlockEntity extends BlockEntity {
                 finite(input, "width", defaults.width()), finite(input, "height", defaults.height()),
                 finite(input, "offsetX", 0), finite(input, "offsetY", 0),
                 uuid(input.getStringOr("owner", "")), input.getStringOr("ownerName", ""), mode, players);
+        loadedPlayback = true;
+        rebaseLoadedPlayback();
     }
 
     private static UUID uuid(String value) {

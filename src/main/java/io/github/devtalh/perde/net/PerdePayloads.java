@@ -21,6 +21,54 @@ public final class PerdePayloads {
         return new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath("perde", name));
     }
 
+    public record Play(BlockPos pos) implements CustomPacketPayload {
+        public static final Type<Play> TYPE = PerdePayloads.type("play");
+        public static final StreamCodec<FriendlyByteBuf, Play> CODEC = CustomPacketPayload.codec(Play::write, Play::new);
+        private Play(FriendlyByteBuf b) { this(b.readBlockPos()); }
+        private void write(FriendlyByteBuf b) { b.writeBlockPos(pos); }
+        @Override public Type<Play> type() { return TYPE; }
+    }
+
+    public record Pause(BlockPos pos) implements CustomPacketPayload {
+        public static final Type<Pause> TYPE = PerdePayloads.type("pause");
+        public static final StreamCodec<FriendlyByteBuf, Pause> CODEC = CustomPacketPayload.codec(Pause::write, Pause::new);
+        private Pause(FriendlyByteBuf b) { this(b.readBlockPos()); }
+        private void write(FriendlyByteBuf b) { b.writeBlockPos(pos); }
+        @Override public Type<Pause> type() { return TYPE; }
+    }
+
+    public record SeekRelative(BlockPos pos, double deltaMs) implements CustomPacketPayload {
+        public static final Type<SeekRelative> TYPE = PerdePayloads.type("seek_relative");
+        public static final StreamCodec<FriendlyByteBuf, SeekRelative> CODEC = CustomPacketPayload.codec(SeekRelative::write, SeekRelative::new);
+        private SeekRelative(FriendlyByteBuf b) { this(b.readBlockPos(), b.readDouble()); }
+        private void write(FriendlyByteBuf b) { b.writeBlockPos(pos); b.writeDouble(deltaMs); }
+        @Override public Type<SeekRelative> type() { return TYPE; }
+    }
+
+    public record SeekAbsolute(BlockPos pos, double positionMs) implements CustomPacketPayload {
+        public static final Type<SeekAbsolute> TYPE = PerdePayloads.type("seek_absolute");
+        public static final StreamCodec<FriendlyByteBuf, SeekAbsolute> CODEC = CustomPacketPayload.codec(SeekAbsolute::write, SeekAbsolute::new);
+        private SeekAbsolute(FriendlyByteBuf b) { this(b.readBlockPos(), b.readDouble()); }
+        private void write(FriendlyByteBuf b) { b.writeBlockPos(pos); b.writeDouble(positionMs); }
+        @Override public Type<SeekAbsolute> type() { return TYPE; }
+    }
+
+    public record TimeRequest(long clientNanos) implements CustomPacketPayload {
+        public static final Type<TimeRequest> TYPE = PerdePayloads.type("time_request");
+        public static final StreamCodec<FriendlyByteBuf, TimeRequest> CODEC = CustomPacketPayload.codec(TimeRequest::write, TimeRequest::new);
+        private TimeRequest(FriendlyByteBuf b) { this(b.readLong()); }
+        private void write(FriendlyByteBuf b) { b.writeLong(clientNanos); }
+        @Override public Type<TimeRequest> type() { return TYPE; }
+    }
+
+    public record TimeResponse(long clientNanos, long serverMs) implements CustomPacketPayload {
+        public static final Type<TimeResponse> TYPE = PerdePayloads.type("time_response");
+        public static final StreamCodec<FriendlyByteBuf, TimeResponse> CODEC = CustomPacketPayload.codec(TimeResponse::write, TimeResponse::new);
+        private TimeResponse(FriendlyByteBuf b) { this(b.readLong(), b.readLong()); }
+        private void write(FriendlyByteBuf b) { b.writeLong(clientNanos); b.writeLong(serverMs); }
+        @Override public Type<TimeResponse> type() { return TYPE; }
+    }
+
     public record AllowedDomains(List<String> domains) implements CustomPacketPayload {
         public AllowedDomains { domains = new SiteAllowlist(domains).domains(); }
         public static final Type<AllowedDomains> TYPE = PerdePayloads.type("allowed_domains");
@@ -97,6 +145,13 @@ public final class PerdePayloads {
     }
 
     public static void registerTypes() {
+        PayloadTypeRegistry.serverboundPlay().register(Play.TYPE, Play.CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(Pause.TYPE, Pause.CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(SeekRelative.TYPE, SeekRelative.CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(SeekAbsolute.TYPE, SeekAbsolute.CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(TimeRequest.TYPE, TimeRequest.CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(TimeResponse.TYPE, TimeResponse.CODEC);
+
         PayloadTypeRegistry.clientboundPlay().register(OpenPanel.TYPE, OpenPanel.CODEC);
         PayloadTypeRegistry.clientboundPlay().register(AllowedDomains.TYPE, AllowedDomains.CODEC);
         PayloadTypeRegistry.serverboundPlay().register(SetUrl.TYPE, SetUrl.CODEC);

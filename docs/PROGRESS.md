@@ -4,12 +4,11 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase 2: **complete, PR awaiting review**. F2-3 (LEA-194/187/188), branch `feat/f2-3-validation`, [PR #8](https://github.com/devtalh/perde/pull/8). Full profile + Complementary real-screen/culling/switching and 10/10 lifecycle cycles passed. Spike removed; 197 fresh tests pass; post-removal MCEF-free windowless server and two-client URL/allowlist/smoke checks passed. Checkpoint `6797e0d` CI green; final evidence head must pass CI before ready. Do not merge. [Phase 2 report](phase2/F2-report.md).
-- Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
-- Last merged task: F2-2, [PR #7](https://github.com/devtalh/perde/pull/7), main `bb6f68e`; merge confirmed through GitHub and local history on 2026-10-31 before F2-3.
-- F2-2 (LEA-185): **merged under the lead-approved trusted-site boundary**. 197 tests/build and the MCEF-free windowless server passed. Native WebSocket bypass remains an accepted residual risk, not a repaired network filter. No canary repeat. [Report](phase2/F2-2-report.md).
-- Next: **Phase 3 planning by Claude** (video sync and LEA-195 ad reduction). No Phase 3 implementation in F2-3.
-- Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
+- Phase 3: **F3-1 complete, PR awaiting review** (LEA-196), branch `feat/f3-1-playback-state`, [PR #9](https://github.com/devtalh/perde/pull/9), from merged main `5e8fbd8`. Authoritative playback, panel controls and server clock delivered. Fresh build: 240 tests pass. MCEF-free server, two-client controls/permissions, max 8 ms skew, chunk reload and restart persistence passed. Evidence checkpoint `f986025` CI green ([run 67](https://github.com/devtalh/perde/actions/runs/41229769492)); final docs-only head must pass CI before ready. [Report](phase3/F3-1-report.md). Do not merge.
+- Phase 2: **merged**, [PR #8](https://github.com/devtalh/perde/pull/8), main `5e8fbd8`, confirmed 2026-10-31. [Phase 2 report](phase2/F2-report.md).
+- Phase 1B: **GO** (decided by Talha and Claude).
+- Next: **F3-2**, apply playback to browser/video. No F3-2 work in this branch.
+- Confirmed Minecraft 26.2, Fabric API 0.161.0+26.2, Java 25 and pinned MCEF 26.2 client build.
 
 ## Task log
 Newest first. Format:
@@ -23,6 +22,16 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F3-1 - Authoritative playback, panel controls and server clock (LEA-196)
+- Branch / PR: `feat/f3-1-playback-state`, from main `5e8fbd8`; [PR #9](https://github.com/devtalh/perde/pull/9). Commits: `3a0bd65` implementation, `3d139a8` lifecycle correction, `f986025` acceptance evidence. Evidence head CI green ([run 67](https://github.com/devtalh/perde/actions/runs/41229769492)); final docs-only head must pass CI before ready. Do not merge.
+- Status: done (2026-10-31, Europe/Istanbul), pending human review/final manual acceptance.
+- What changed: pure PlaybackClock and time parser/formatter; four playback C2S controls through existing authorization/validation/shared rate limiting; consistent save checkpoints and restart rebasing; connection-scoped monotonic estimator (lowest RTT of last eight, five initial samples then every 15 s, server max five requests/s/player); live panel controls and EN/TR texts. Accepted actions log INFO. Focus-free fixture drives real panel controls and genuine forged packets. Browser/video unchanged.
+- Verification: Java 25.0.4, clean main contains required PR #8 merge; repository, Notion hub and Linear LEA-196 read before coding. Fresh `.\gradlew.bat build --rerun-tasks --console=plain --warning-mode all` SUCCESSFUL in 12s, all nine tasks executed, **240 tests, zero failures/errors/skips**. Default jar/common/runtime isolation, 68 EN/TR keys, six unchanged F2 hash pairs, Git diff checked. SPEC/AGENTS/browser implementation unchanged.
+- Runtime: final independent MCEF-free windowless server (44 mods, run/server, 127.0.0.1:25570) Done (0.974s), normal stdin stop/all dimensions saved/Gradle exit 0. Owner panel play/pause/all four relative seeks/both time syntaxes pass; 21 common-reference two-client comparisons max **8 ms**, after restart **2 ms**. Four forged viewer actions rejected before restart and extra forged pause after restart; owner NaN/infinity/out-of-range seeks rejected. URL change resets 0/playing, clear resets 0/paused. Source chunk demonstrably unloaded with nobody watching; reload preserves exact 206707 ms elapsed time. Actual disk NBT saved 600857 ms; restart advances only 9743 ms after load and excludes 56895 ms downtime. Both clients log offset/RTT and reset/resample after reconnect. Final P1/P2 exits 0, native 0; no repo game process/listener remains. [Report](phase3/F3-1-report.md).
+- Corrections: initial setLevel -> setChanged recursively requested a constructing chunk; thread-dump root cause fixed, then chunk unload/reload and restart pass. Initial boot only was terminated after owned-PID validation. Wrapper encoding/sharing issues and one guarded console recovery are documented separately; final clean server used no attach agent. Accepted clients/server show zero bare AWT prefixes, fixture failures and Perde browser failures. No Computer Use, window activation/focus switching or unrelated game process access.
+- Left: human PR review/final manual acceptance; exact final docs-head CI gate before ready. Next separate task **F3-2**, browser playback application/JS/drift correction; no ad/embed/audio/interaction/deployment work or merge.
+- Risks: symmetric-latency assumption and server wall-clock adjustments; normal Minecraft save/crash durability; legacy/restart resumes last saved position. Existing trusted-site/native browser, ads/autoplay and memory risks remain.
 
 ### F2-3 - Full-profile validation and feasibility spike removal (LEA-194, LEA-187, LEA-188)
 - Branch / PR: `feat/f2-3-validation`, from main `bb6f68e`; [PR #8](https://github.com/devtalh/perde/pull/8), implementation/evidence checkpoint `6797e0d` pushed and CI green. Final evidence head must pass CI before ready; do not merge. PR #7 merge was confirmed through GitHub and local history before branching.

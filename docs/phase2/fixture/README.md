@@ -82,3 +82,10 @@ The init script supports both `runClient` (Player1, `run/`) and `runClient2` (Pl
 ```
 
 Use the real server console for positioning Player2. Check both actual native page results and saved screen state for URL/allowlist changes. This fixture does not synchronize video playback.
+
+
+## F3-1 playback checks
+
+The same opt-in fixture now supports `panel-playback` with a localized key suffix (`play`, `pause`, `back_30`, `back_10`, `forward_10`, `forward_30`, `go`). `go` takes a second value such as `1:02:03`. It edits the actual second EditBox and presses the real Go Button. `panel-audit` logs widget text, active state and bounds. `raw-playback` takes x/y/z, `play|pause|absolute|relative`, and an optional numeric value to exercise genuine server validation independently from disabled controls. `clock-flood` sends ten otherwise harmless TimeRequests with unmatched echo tokens; responses cannot alter the production estimator.
+
+`playback-status` takes x/y/z and a common reference local wall-clock epoch in ms. It records the received state, the production estimator's current server time, current media position, RTT/offset and position projected to that common instant. The latter allows two sequential fixture snapshots on the same PC to be compared without mistaking orchestration delay for clock skew. This is observation only, with no mutation of the estimator or playback. Browser/video playback is still untouched by F3-1 controls.

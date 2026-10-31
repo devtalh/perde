@@ -55,5 +55,16 @@
   "perde.wl.not_present": "%s izinli listesinde değil.",
   "perde.wl.invalid_domain": "Herkese açık bir alan adı veya HTTP(S) bağlantısı gir. IP adresleri ve yerel adlar kabul edilmez (en fazla 4096 site).",
   "perde.wl.unavailable": "Sunucunun site listesi henüz hazır değil.",
-  "perde.wl.save_failed": "Site listesi kaydedilemedi. Önceki izinli listesi hâlâ geçerli."
+  "perde.wl.save_failed": "Site listesi kaydedilemedi. Önceki izinli listesi hâlâ geçerli.",
+  "perde.ui.play": "Oynat",
+  "perde.ui.pause": "Duraklat",
+  "perde.ui.back_30": "-30 sn",
+  "perde.ui.back_10": "-10 sn",
+  "perde.ui.forward_10": "+10 sn",
+  "perde.ui.forward_30": "+30 sn",
+  "perde.ui.time": "Zamana git",
+  "perde.ui.go": "Git",
+  "perde.ui.position": "Konum: %s",
+  "perde.ui.invalid_time": "mm:ss veya h:mm:ss kullan (0 ile 24 saat).",
+  "perde.ui.clock_waiting": "Saat eşitleniyor..."
 }

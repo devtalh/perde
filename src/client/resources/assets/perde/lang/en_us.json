@@ -55,5 +55,16 @@
   "perde.wl.not_present": "%s is not on the allowlist.",
   "perde.wl.invalid_domain": "Enter a public domain or HTTP(S) URL. IP addresses and local names are not allowed (maximum 4096 sites).",
   "perde.wl.unavailable": "The server site policy is not available yet.",
-  "perde.wl.save_failed": "Could not save the site policy. The previous allowlist is still active."
+  "perde.wl.save_failed": "Could not save the site policy. The previous allowlist is still active.",
+  "perde.ui.play": "Play",
+  "perde.ui.pause": "Pause",
+  "perde.ui.back_30": "-30 s",
+  "perde.ui.back_10": "-10 s",
+  "perde.ui.forward_10": "+10 s",
+  "perde.ui.forward_30": "+30 s",
+  "perde.ui.time": "Go to time",
+  "perde.ui.go": "Go",
+  "perde.ui.position": "Position: %s",
+  "perde.ui.invalid_time": "Use mm:ss or h:mm:ss, from 0 to 24 hours.",
+  "perde.ui.clock_waiting": "Syncing clock..."
 }

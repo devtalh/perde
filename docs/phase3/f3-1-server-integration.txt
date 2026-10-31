@@ -1,0 +1,39 @@
+[21:17:03] [main/INFO] (FabricLoader) Loading 44 mods:
+[21:17:11] [Server thread/INFO] (Minecraft) Starting Minecraft server on 127.0.0.1:25570
+[21:17:12] [Server thread/INFO] (Minecraft) Done (0.875s)! For help, type "help"
+[21:17:12] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[21:18:04] [Server thread/INFO] (Minecraft) 300, 120, 300 has the following block data: {owner: "681f539b-8bb8-3f85-85e5-a2945f6c6539", components: {}, serverTimestamp: 1793470684006L, accessMode: "OWNER_ONLY", url: "https://www.youtube.com/watch?v=aqz-KE-bpKQ", volume: 1.0d, offsetX: 0.0d, offsetY: 0.0d, ownerName: "Player1", width: 8.0d, x: 300, y: 120, playing: 0b, z: 300, allowedPlayers: [], id: "perde:perde", positionMs: 0L, height: 4.5d}
+[21:18:15] [Server thread/INFO] (Minecraft) Teleported Player1 to 300.500000, 120.000000, 297.500000
+[21:18:16] [Server thread/INFO] (Minecraft) Teleported Player2 to 301.500000, 120.000000, 297.500000
+[21:18:29] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=Play positionMs=0 playing=true player=Player1
+[21:19:02] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekAbsolute positionMs=83000 playing=true player=Player1
+[21:19:03] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekRelative positionMs=94506 playing=true player=Player1
+[21:19:05] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekRelative positionMs=85958 playing=true player=Player1
+[21:19:06] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekRelative positionMs=117557 playing=true player=Player1
+[21:19:08] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekRelative positionMs=89105 playing=true player=Player1
+[21:19:11] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=Pause positionMs=92103 playing=false player=Player1
+[21:19:12] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekAbsolute positionMs=3723000 playing=false player=Player1
+[21:19:30] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=Play positionMs=3723000 playing=true player=Player1
+[21:19:32] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekAbsolute positionMs=86395000 playing=true player=Player1
+[21:19:33] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekRelative positionMs=86400000 playing=true player=Player1
+[21:19:35] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=Pause positionMs=86400000 playing=false player=Player1
+[21:19:36] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekAbsolute positionMs=5000 playing=false player=Player1
+[21:19:38] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekRelative positionMs=0 playing=false player=Player1
+[21:19:39] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SetUrl positionMs=0 playing=true player=Player1
+[21:20:00] [Server thread/INFO] (Minecraft) Chunk at [18, 18] in minecraft:overworld is not marked for force loading
+[21:20:08] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SetUrl positionMs=0 playing=false player=Player1
+[21:20:09] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SetUrl positionMs=0 playing=true player=Player1
+[21:20:10] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekAbsolute positionMs=120000 playing=true player=Player1
+[21:20:12] [Server thread/INFO] (Minecraft) 300, 120, 300 has the following block data: {owner: "681f539b-8bb8-3f85-85e5-a2945f6c6539", components: {}, serverTimestamp: 1793470812689L, accessMode: "OWNER_ONLY", url: "https://www.youtube.com/watch?v=aqz-KE-bpKQ", volume: 1.0d, offsetX: 0.0d, offsetY: 0.0d, ownerName: "Player1", width: 8.0d, x: 300, y: 120, playing: 1b, z: 300, allowedPlayers: [], id: "perde:perde", positionMs: 122401L, height: 4.5d}
+[21:20:13] [Server thread/INFO] (Minecraft) Teleported Player1 to 1000.500000, 120.000000, 1000.500000
+[21:20:14] [Server thread/INFO] (Minecraft) Teleported Player2 to 1001.500000, 120.000000, 1000.500000
+[21:20:37] [Server thread/INFO] (Minecraft) [Not Secure] [Server] F3-1_CHUNK_UNLOADED
+[21:21:13] [Server thread/INFO] (Minecraft) Teleported Player1 to 300.500000, 120.000000, 297.500000
+[21:23:38] [Server thread/INFO] (Minecraft) Teleported Player2 to 301.500000, 120.000000, 297.500000
+[21:23:39] [Server thread/INFO] (Minecraft) 300, 120, 300 has the following block data: {owner: "681f539b-8bb8-3f85-85e5-a2945f6c6539", components: {}, serverTimestamp: 1793471019396L, accessMode: "OWNER_ONLY", url: "https://www.youtube.com/watch?v=aqz-KE-bpKQ", volume: 1.0d, offsetX: 0.0d, offsetY: 0.0d, ownerName: "Player1", width: 8.0d, x: 300, y: 120, playing: 1b, z: 300, allowedPlayers: [], id: "perde:perde", positionMs: 329108L, height: 4.5d}
+[21:23:56] [Server thread/INFO] (perde) Perde playback pos=BlockPos{x=300, y=120, z=300} action=SeekAbsolute positionMs=600000 playing=true player=Player1
+[21:23:57] [Server thread/INFO] (Minecraft) 300, 120, 300 has the following block data: {owner: "681f539b-8bb8-3f85-85e5-a2945f6c6539", components: {}, serverTimestamp: 1793471037189L, accessMode: "OWNER_ONLY", url: "https://www.youtube.com/watch?v=aqz-KE-bpKQ", volume: 1.0d, offsetX: 0.0d, offsetY: 0.0d, ownerName: "Player1", width: 8.0d, x: 300, y: 120, playing: 1b, z: 300, allowedPlayers: [], id: "perde:perde", positionMs: 600507L, height: 4.5d}
+[21:23:57] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[21:23:57] [Server thread/INFO] (Minecraft) Stopping the server
+[21:23:57] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+BUILD SUCCESSFUL in 6m 56s
