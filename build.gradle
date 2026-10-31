@@ -9,7 +9,7 @@ base {
     archivesName = project.archives_base_name
 }
 
-// Opt-in feasibility profiles. Loom 26.x localRuntime is not published or bundled.
+// Opt-in compatibility profiles. Loom 26.x localRuntime is not published or bundled.
 def compatProfile = providers.gradleProperty('perde.compat').getOrElse('')
 if (!(compatProfile in ['', 'sodium', 'iris', 'full'])) {
     throw new GradleException('perde.compat must be sodium, iris or full (omit for vanilla).')
@@ -74,7 +74,7 @@ dependencies {
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     clientImplementation "net.dimaskama:mcef-modern:${project.mcef_version}"
-    // MCEF publishes JCEF as a runtime dependency; the spike also calls its FPS API.
+    // MCEF publishes JCEF as a runtime dependency; the browser backend also calls its native API.
     clientCompileOnly "me.friwi:jcef-api:${project.jcef_api_version}"
 
     // Immutable Modrinth version IDs select the exact MC 26.2 Fabric jars.

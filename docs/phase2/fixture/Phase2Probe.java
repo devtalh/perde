@@ -209,7 +209,7 @@ public final class Phase2Probe implements ClientModInitializer {
         });
     }
 
-    /** F2-2 opt-in probes. Only a managed Perde browser is targeted, never the spike or another mod. */
+    /** F2-2 opt-in probes. Only a managed Perde browser is targeted, never another mod. */
     private static Object managedBrowser() throws Exception {
         var backendField = PerdeBrowserManager.class.getDeclaredField("backend");
         backendField.setAccessible(true);
@@ -249,18 +249,16 @@ public final class Phase2Probe implements ClientModInitializer {
         Class<?> apiClass = Class.forName("net.dimaskama.mcef.api.MCEFApi");
         var future = (java.util.concurrent.CompletableFuture<?>) apiClass.getMethod("getInstanceFuture").invoke(null);
         if (!future.isDone() || future.isCompletedExceptionally()) return "initializing/failed";
-        Object api = future.getNow(null);
-        var field = api.getClass().getDeclaredField("client");
+        // Audit every live private client, including one that is still closing after selection changes.
+        Object app = Class.forName("org.cef.CefApp").getMethod("getInstance").invoke(null);
+        var field = app.getClass().getDeclaredField("clients_");
         field.setAccessible(true);
-        Object cefClient = field.get(api);
+        java.util.List<?> clients;
+        synchronized (app) { clients = new java.util.ArrayList<>((java.util.Set<?>) field.get(app)); }
         var all = Class.forName("org.cef.CefClient").getDeclaredMethod("getAllBrowser");
         all.setAccessible(true);
-        var browsers = new java.util.ArrayList<Object>(java.util.Arrays.asList((Object[]) all.invoke(cefClient)));
-        try {
-            Object managed = managedBrowser();
-            Object managedClient = Class.forName("org.cef.browser.CefBrowser").getMethod("getClient").invoke(managed);
-            if (managedClient != cefClient) browsers.addAll(java.util.Arrays.asList((Object[]) all.invoke(managedClient)));
-        } catch (IllegalStateException absent) { /* No managed browser is expected outside screen range. */ }
+        var browsers = new java.util.ArrayList<Object>();
+        for (Object cefClient : clients) browsers.addAll(java.util.Arrays.asList((Object[]) all.invoke(cefClient)));
         var browserType = Class.forName("org.cef.browser.CefBrowser");
         var result = new StringBuilder("count=" + browsers.size());
         for (Object browser : browsers) result.append(" [id=").append(browserType.getMethod("getIdentifier").invoke(browser))

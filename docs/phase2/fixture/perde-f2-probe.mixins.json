@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "io.github.devtalh.perde.client.test.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": ["McefMuteMixin"],
+  "injectors": {"defaultRequire": 1}
+}

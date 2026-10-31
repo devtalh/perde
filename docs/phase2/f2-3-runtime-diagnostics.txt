@@ -1,0 +1,44 @@
+Completed full-profile client stdout/stderr, 2026-10-31 19:37:49-19:59:59 Europe/Istanbul.
+AWT bare exception prefix lines: 0
+java.sql.SQLException lines: 0
+Perde browser failure log lines: 0
+Fixture failure log lines (interrupted orchestration, outside accepted soak): 1
+Maximum observed native browser count (one-second/explicit status samples): 1
+
+[19:59:54] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[19:59:54] [AWT-EventQueue-0/INFO] (Minecraft) [STDOUT]: shutdown on Thread[#92,AWT-EventQueue-0,6,InnocuousForkJoinWorkerThreadGroup]
+[19:59:54] [Server thread/INFO] (Minecraft) Stopping server
+[19:59:54] [Server thread/INFO] (Minecraft) Saving players
+[19:59:54] [Server thread/INFO] (Minecraft) Saving worlds
+[19:59:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[19:59:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[19:59:54] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[19:59:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:59:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:59:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:59:54] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[19:59:59] [Render thread/INFO] (AbstractDhRepo) Closing all [3] databases...
+[19:59:59] [Render thread/INFO] (ChunkBuilder) Stopping worker threads
+
+BUILD SUCCESSFUL in 22m 17s
+10 actionable tasks: 3 executed, 7 up-to-date
+
+Post-removal Player1: AWT bare prefixes=0, SQL exception lines=0, Perde browser failures=0, fixture failures=0.
+[20:07:02] [Render thread/INFO] (Minecraft) [System] [CHAT] Player2 left the game
+[20:07:03] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[20:07:03] [Render thread/INFO] (Minecraft) Stopping!
+[20:07:03] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (client stopping), active=0/1.
+[20:07:03] [AWT-EventQueue-0/INFO] (Minecraft) [STDOUT]: shutdown on Thread[#87,AWT-EventQueue-0,6,InnocuousForkJoinWorkerThreadGroup]
+
+BUILD SUCCESSFUL in 3m 43s
+10 actionable tasks: 3 executed, 7 up-to-date
+
+Post-removal Player2: AWT bare prefixes=0, SQL exception lines=0, Perde browser failures=0, fixture failures=0.
+[20:06:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_20.06.38.png
+[20:07:02] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[20:07:02] [Render thread/INFO] (Minecraft) Stopping!
+[20:07:02] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (client stopping), active=0/1.
+[20:07:02] [AWT-EventQueue-0/INFO] (Minecraft) [STDOUT]: shutdown on Thread[#87,AWT-EventQueue-0,6,InnocuousForkJoinWorkerThreadGroup]
+
+BUILD SUCCESSFUL in 2m 56s
+10 actionable tasks: 1 executed, 9 up-to-date
