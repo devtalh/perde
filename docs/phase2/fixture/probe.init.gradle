@@ -23,6 +23,7 @@ allprojects {
         }
         tasks.named('runClient').configure {
             dependsOn probeJar
+            jvmArgs '-Dperde.testMuted=true'
             jvmArgs '-Dfabric.addMods=' + layout.projectDirectory.file('run/phase2-probe/perde-f2-probe.jar').asFile.absolutePath
             // Keep the fixture ticking while the only test window is unfocused.
         }

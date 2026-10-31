@@ -36,7 +36,7 @@ Memory sampling writes `run/phase2-verification/memory.csv`; create that directo
 
 ## F2-2 security probes and native observations
 
-Talha authorized the resumed client checks; (a)-(e) have been executed. The task still remains partial because the additional local WebSocket canary demonstrated a native callback bypass. See the F2-2 report before treating these helpers as proof of isolation.
+Talha authorized the resumed client checks; (a)-(e) and the final allowlist follow-up are complete. The historical WebSocket canary demonstrated a native callback bypass. The explicit lead decision accepts an operator-managed trusted-site boundary; these helpers do not prove network isolation. Do not repeat the local canary. See the F2-2 report for residual risk and current acceptance.
 
 Use one managed Perde screen showing `https://example.com`, close the panel, and issue each probe separately. `policy` refuses non-development environments and non-public starting pages. It selects the manager's own browser by identity; it cannot target the spike or another mod. The native audit covers both the shared MCEF client (spike) and the dedicated Perde client.
 
@@ -56,3 +56,16 @@ Inspect `Perde browser blocked [...]` entries after each action. `issued probe` 
 `evaluate` accepts a label and a JavaScript expression, runs native Runtime.evaluate with awaitPromise/returnByValue/userGesture, and logs the actual result or a ten-second failure. Wait for `F2-2 native result <label>`, not merely the dispatch acknowledgement. `devtools` is an opt-in diagnostic command; Browser/Target context-inspection commands timed out in this JCEF and are not used by production security code.
 
 `raw-url` accepts x/y/z/url and sends the normal SetUrl payload. Open the real panel first to establish the normal server permission context. This tests server rejection independently from the panel's correct local rejection; it does not bypass authorization. `status` now records the actual Hud action-bar component through test-only reflection verified from Minecraft 26.2 source. No fixture class is packaged by a normal build.
+
+## Follow-up fixture controls and silent testing
+
+The opt-in init script sets perde.testMuted=true. On the first tick, the fixture saves only this repository test client's Minecraft master volume as 0. Chromium media volume is separate; before opening audible pages, the final run installed a test-only Page.enable + Page.addScriptToEvaluateOnNewDocument media-mute script and verified it on a quiet page, then observed muted=true/volume=0 during playback. This is not production security code and does not mute other apps.
+
+`connect` takes 127.0.0.1:port and uses normal ConnectScreen; it refuses non-loopback hosts and an already joined world. `chat-audit` inspects actual chat components and logs RunCommand values. Example:
+
+```powershell
+.\docs\phase2\fixture\Send-Probe.ps1 -Action connect -Values '127.0.0.1:25575'
+.\docs\phase2\fixture\Send-Probe.ps1 -Action chat-audit
+```
+
+Allow example.com with the real operator command before the managed-screen examples above. Until the S2C list arrives, no public managed main page may load. Never treat a queued command as an observed result.

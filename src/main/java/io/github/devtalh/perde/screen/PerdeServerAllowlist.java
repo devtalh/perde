@@ -68,35 +68,37 @@ public final class PerdeServerAllowlist {
 
     private static int list(CommandSourceStack source) {
         var domains = policy(source.getServer()).domains();
-        source.sendSuccess(() -> Component.translatable("perde.wl.list", domains.size(), String.join(", ", domains)), false);
+        source.sendSuccess(() -> Component.translatableWithFallback("perde.wl.list", "Allowed sites (%s): %s", domains.size(), String.join(", ", domains)), false);
         return domains.size();
     }
 
     private static int change(CommandSourceStack source, String input, boolean add) {
         PerdeServerAllowlist service = SERVERS.get(source.getServer());
-        if (service == null) { source.sendFailure(Component.translatable("perde.wl.unavailable")); return 0; }
+        if (service == null) { source.sendFailure(Component.translatableWithFallback("perde.wl.unavailable", "The server site policy is not available yet.")); return 0; }
         String domain;
         SiteAllowlist next;
         try {
             domain = SiteAllowlist.normalize(input);
             next = add ? service.policy.adding(domain) : service.policy.removing(domain);
         } catch (IllegalArgumentException exception) {
-            source.sendFailure(Component.translatable("perde.wl.invalid_domain"));
+            source.sendFailure(Component.translatableWithFallback("perde.wl.invalid_domain", "Enter a public domain or HTTP(S) URL, not an IP/local name (maximum 4096 sites)."));
             return 0;
         }
         if (next.equals(service.policy)) {
-            source.sendFailure(Component.translatable(add ? "perde.wl.already_allowed" : "perde.wl.not_present", domain));
+            source.sendFailure(Component.translatableWithFallback(add ? "perde.wl.already_allowed" : "perde.wl.not_present",
+                    add ? "%s is already on the allowlist." : "%s is not on the allowlist.", domain));
             return 0;
         }
         try { SiteAllowlistConfig.save(service.file, next); }
         catch (IOException exception) {
             Perde.LOGGER.error("Cannot save Perde allowlist; retaining the previous policy.", exception);
-            source.sendFailure(Component.translatable("perde.wl.save_failed"));
+            source.sendFailure(Component.translatableWithFallback("perde.wl.save_failed", "Could not save the site policy. The previous allowlist is still active."));
             return 0;
         }
         service.policy = next;
         for (ServerPlayer player : source.getServer().getPlayerList().getPlayers()) send(source.getServer(), player);
-        source.sendSuccess(() -> Component.translatable(add ? "perde.wl.added" : "perde.wl.removed", domain), true);
+        source.sendSuccess(() -> Component.translatableWithFallback(add ? "perde.wl.added" : "perde.wl.removed",
+                add ? "Allowed site: %s" : "Removed allowed site: %s", domain), true);
         Perde.LOGGER.info("Perde allowlist {}: {} ({} domains).", add ? "added" : "removed", domain, next.domains().size());
         return 1;
     }

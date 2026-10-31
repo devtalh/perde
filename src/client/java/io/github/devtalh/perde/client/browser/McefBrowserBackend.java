@@ -62,6 +62,9 @@ final class McefBrowserBackend implements BrowserBackend {
             try {
                 if (state.closed) { created.getCefBrowser().close(true); return; }
                 BrowserPrivacy.configure(context);
+                Perde.LOGGER.info("Perde browser privacy verified: globalContext={}, WebRTC={}, URL overrides={}, local-IP exceptions={}.",
+                        context.isGlobal(), context.getPreference("webrtc.ip_handling_policy"),
+                        context.getPreference("webrtc.ip_handling_url"), context.getPreference("webrtc.local_ips_allowed_urls"));
                 state.configured = true;
                 if (!state.closed) created.getCefBrowser().loadURL(state.desiredUrl);
             } catch (RuntimeException | LinkageError exception) {

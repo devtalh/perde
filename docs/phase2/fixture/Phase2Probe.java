@@ -36,6 +36,7 @@ public final class Phase2Probe implements ClientModInitializer {
     private int walkTicks;
     private int ticks;
     private String lastAudit = "";
+    private boolean soundConfigured;
 
     @Override public void onInitializeClient() {
         try { if (Files.exists(commandFile)) previous = Files.readString(commandFile); }
@@ -45,6 +46,12 @@ public final class Phase2Probe implements ClientModInitializer {
 
     private void tick(Minecraft client) {
         try {
+            if (!soundConfigured && Boolean.getBoolean("perde.testMuted")) {
+                client.options.getSoundSourceOptionInstance(net.minecraft.sounds.SoundSource.MASTER).set(0.0);
+                client.options.save();
+                soundConfigured = true;
+                LOG.info("Test client master volume: {}", client.options.getSoundSourceVolume(net.minecraft.sounds.SoundSource.MASTER));
+            }
             if (++ticks % 20 == 0) {
                 String audit = browserAudit();
                 if (!audit.equals(lastAudit)) {
@@ -67,6 +74,13 @@ public final class Phase2Probe implements ClientModInitializer {
                 client.createWorldOpenFlows().openWorld(args[2], () -> client.gui.setScreen(new TitleScreen()));
             } else if (action.equals("quit")) {
                 client.stop();
+            } else if (action.equals("connect")) {
+                if (client.level != null) throw new IllegalStateException("Leave the current world first");
+                var address = net.minecraft.client.multiplayer.resolver.ServerAddress.parseString(args[2]);
+                if (!address.getHost().equals("127.0.0.1")) throw new IllegalArgumentException("Repository loopback server only");
+                net.minecraft.client.gui.screens.ConnectScreen.startConnecting(new TitleScreen(), client, address,
+                        new net.minecraft.client.multiplayer.ServerData("Perde local verification", args[2],
+                                net.minecraft.client.multiplayer.ServerData.Type.OTHER), false, null);
             } else if (action.equals("f2")) {
                 if (!client.handleGlobalKeyPress(client.options.keyScreenshot.getDefaultKey(), false)) {
                     throw new IllegalStateException("F2 is not bound");
@@ -78,6 +92,7 @@ public final class Phase2Probe implements ClientModInitializer {
                     case "evaluate" -> evaluate(args[2], args[3]);
                     case "devtools" -> devTools(args[2], args[3], args[4]);
                     case "raw-url" -> ClientPlayNetworking.send(new PerdePayloads.SetUrl(pos(args), args[5]));
+                    case "chat-audit" -> auditChat(client);
                     case "command" -> client.player.connection.sendCommand(args[2]);
                     case "leave" -> client.disconnectFromWorld(Component.literal("F2-1 save and quit test"));
                     case "close" -> client.gui.setScreen(null);
@@ -145,6 +160,23 @@ public final class Phase2Probe implements ClientModInitializer {
     }
 
     private static double number(String[] args, int index) { return Double.parseDouble(args[index]); }
+
+    private static void auditChat(Minecraft client) throws Exception {
+        var chat = client.gui.hud.getChat();
+        var field = chat.getClass().getDeclaredField("allMessages");
+        field.setAccessible(true);
+        var messages = (java.util.List<?>) field.get(chat);
+        for (Object message : messages.stream().limit(12).toList()) {
+            Component text = ((net.minecraft.client.multiplayer.chat.GuiMessage) message).content();
+            LOG.info("F2-2 chat component: {}", text.getString());
+            text.visit((style, part) -> {
+                if (style.getClickEvent() instanceof net.minecraft.network.chat.ClickEvent.RunCommand command) {
+                    LOG.info("F2-2 clickable component text={} command={}", part, command.command());
+                }
+                return java.util.Optional.empty();
+            }, net.minecraft.network.chat.Style.EMPTY);
+        }
+    }
 
     private static void evaluate(String label, String expression) throws Exception {
         if (!FabricLoader.getInstance().isDevelopmentEnvironment()) throw new IllegalStateException("Development only");

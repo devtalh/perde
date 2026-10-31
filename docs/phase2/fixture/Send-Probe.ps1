@@ -1,5 +1,5 @@
 param(
-    [Parameter(Mandatory)][ValidateSet('load', 'quit', 'f2', 'command', 'leave', 'close', 'aim', 'walk', 'open', 'panel-url', 'geometry', 'equip', 'place', 'break', 'status', 'policy', 'evaluate', 'raw-url', 'devtools')][string]$Action,
+    [Parameter(Mandatory)][ValidateSet('load', 'quit', 'f2', 'command', 'leave', 'close', 'aim', 'walk', 'open', 'panel-url', 'geometry', 'equip', 'place', 'break', 'status', 'policy', 'evaluate', 'raw-url', 'devtools', 'connect', 'chat-audit')][string]$Action,
     [string[]]$Values = @()
 )
 $ErrorActionPreference = 'Stop'

@@ -1,128 +1,119 @@
 # F2-2: browser navigation and privacy policy
 
-Status: **partial, lead-approved allowlist implemented; runtime acceptance next.** Branch `feat/f2-2-browser-policy`, [draft PR #7](https://github.com/devtalh/perde/pull/7), based on main `6b75980`. Implementation commit: `bdc33b7`. [F2-1 PR #6](https://github.com/devtalh/perde/pull/6) was confirmed merged before implementation. [Linear LEA-185](https://linear.app/leak-rake/issue/LEA-185) and the Notion Perde hub were read; repository SPEC and the supplied F2-2 task govern current implementation. Linear field notes still return `Tool get_agent_context not found`.
+Status: **done under the lead-approved trusted-site boundary** (2026-10-31, Europe/Istanbul). Branch `feat/f2-2-browser-policy`, [PR #7](https://github.com/devtalh/perde/pull/7), based on merged F2-1/main `6b75980`. Implementation checkpoints: `bdc33b7`, `33755ba`, `98b7396`. PR is eligible for ready after latest-head CI; do not merge. Next separate task: F2-3.
 
-## Lead decision and current follow-up
+[Linear LEA-185](https://linear.app/leak-rake/issue/LEA-185) and the Notion Perde hub were read. Linear field notes still return `Tool get_agent_context not found`. Repository SPEC governs design except the explicit Talha + Claude decision supplied on 2026-10-31 below. SPEC.md remains unchanged.
 
-Talha + Claude approved a product trust boundary on 2026-10-31: operators manage a live site allowlist; listed sites are trusted. This mitigates which pages may run, without claiming that the native WebSocket bypass has been fixed. No MCEF/native/global flag or other-mod changes, and no local WebSocket canary repeat.
+## Accepted decision and residual risk
 
-Core implementation now passes 197 tests and build. Only HTTP(S) main-frame pages in the server list are eligible. Subframes/resources retain the literal-host/scheme filters. Public saved URLs remain stored when removed, but cannot create/render a browser until allowed again. Before the first server list, the client permits only internal about:blank.
+Talha + Claude explicitly chose an operator-managed SITE ALLOWLIST as the product trust boundary, rather than a network proxy. Only trusted sites may be opened. **The native WebSocket bypass is not fixed.** An earlier passive canary demonstrated that JCEF request/resource callbacks did not see a WebSocket handshake and an owned loopback listener received it. [Original evidence](f2-2-websocket-canary.txt). This failure is retained, not reclassified as a successful native denial. The follow-up does not repeat the canary, as instructed.
 
-Config is atomically replaced and commands save before publishing/broadcasting a new snapshot. The full list is bounded at 4096 normalized domains for safe payload sizing. Missing config creates the eight requested defaults; invalid entries warn and are ignored; malformed existing files fail closed. Runtime console/client checks are still pending at this intermediate commit. A SPEC change proposal and final residual-risk report will follow after acceptance.
+A malicious or compromised allowed page, or code it loads, may still reach the local network through native paths outside these callbacks. Listed sites and their loaded code are trusted. DNS rebinding and public names resolving to private addresses remain outside literal URL validation. The allowlist reduces which main pages may run; it is not a network firewall. Subframes/resources are not restricted to listed domains, to preserve video/CDN use, and therefore retain this residual trust exposure.
 
-Talha authorized/resumed game testing. All requested in-game checks (a)-(e) were executed and their listed behavior passed after a navigation-recovery fix. An additional passive local canary nevertheless received a WebSocket handshake from the public managed page, without a JCEF request callback. The broader local-network goal therefore fails: do not mark ready or merge. This is no longer waiting for permission to start Minecraft. F2-3 must wait for the native request boundary to be resolved. [Canary evidence](f2-2-websocket-canary.txt).
+MCEF itself adds `--disable-web-security` process-wide. This pinned API has no per-browser removal; Perde does not patch MCEF, native binaries, global flags or other mods. Same-origin/CORS protection is not restored. Players should not sign in to accounts inside Perde. The old draft/blocker conclusion is superseded only by the explicit lead acceptance of this product boundary, not by a claim that native isolation now works.
 
-## Resumed verification and fixes
+## Final implementation
 
-- Final `gradlew.bat build --rerun-tasks --console=plain --warning-mode all`: **BUILD SUCCESSFUL in 6s, 9 tasks executed, 149 tests, zero failures/errors/skips**. [Build](f2-2-build.txt), [suite counts](f2-2-tests.csv). Original implementation-stage results below are historical.
-- Final MCEF-free server: 44 mods, loopback-only binding, Done (0.316s), console stop/all dimensions saved, **BUILD SUCCESSFUL in 21s**. Explicit --nogui, CREATE_NO_WINDOW, repository-owned PID 42788 verified. [Final log](f2-2-server-final.txt), [binding/PID](f2-2-server-final-binding.txt). No test client/server remained afterward.
-- Chromium replaced a file navigation with `about:blank#blocked` without delivering onBeforeBrowse. The initial test failed because the public page disappeared. Added owned main-frame address recovery and denied-redirect recovery to reload the last public URL; invalid-URL paints are withheld so the blocked page is not shown on the quad. This reload may reset DOM/media state. Regression tests cover recovery and browser identity.
-- Chromium's [sanitized clipboard write context](https://github.com/chromium/chromium/blob/146.0.7680.179/components/permissions/contexts/clipboard_sanitized_write_permission_context.cc) grants sanitized write independently of the ordinary clipboard preference. The permission query reports granted. Actual write was denied with NotAllowedError / Document is not focused, using an unresolved data promise so no clipboard content was read or written. Added native focus-request cancellation and unexpected-focus revocation for owned display-only browsers. This boundary must be revisited before Phase 5 allows input/focus. Regression tests cover focus isolation.
-- The opt-in fixture records actual native Runtime.evaluate results and can send raw permission-checked SetUrl packets while the real panel context is open. No product validation was removed. Browser/Target-level DevTools context-inspection commands timed out; no production policy depends on them and no default/global permission override was attempted.
-- [Runtime excerpts](f2-2-runtime-evidence.txt), 12 unchanged vanilla F2-handler captures with [SHA-256 provenance](f2-2-provenance.csv). Representative playback, panel/action-bar, recovery, rendering and spike images were visually inspected. Full raw runs remain under ignored run/f2-2-verification. Final client shutdown saved every dimension and finished BUILD SUCCESSFUL in 5m 38s. No Computer Use/window activation or unrelated process control was used.
+- Pure Java `screen.SiteAllowlist` applies HTTP(S) plus exact-domain/subdomain matching to server SetUrl and client main-frame navigation, including redirects. `youtube.com.evil.example` and `evilyoutube.com` do not match `youtube.com`. Exact internal `about:blank` is the only pre-sync main-frame exception.
+- Defaults: youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com. `config/perde-server.json` stores `allowedDomains`. Missing files get defaults. Invalid entries warn and are ignored; malformed existing files fail closed without overwriting them. Writes use a same-directory temporary file and atomic replacement. Failed saves retain the active policy; there is no non-atomic fallback.
+- Bare domains or full HTTP(S) URLs normalize with IDN-to-ASCII, lowercase, removal of one leading www and trailing dot. IP literals, private/local names, single-label names, invalid arguments and domains longer than 253 characters are rejected. The list is capped at 4096 domains to bound the S2C payload.
+- `/perde wl add <domain-or-url>`, `remove <domain>` and `list`, alias `/perde whitelist`, require normal permission level >=2. The console works too, with readable English translation fallbacks. Changes save immediately before full-list broadcast; joining players receive the full list. Client initialization/disconnect resets policy to closed until sync.
+- An authorized unlisted SetUrl returns the translated requester action bar, retains the previous state and sends every online operator a clickable approval component. Its `/perde wl add <domain>` action passes through normal command permission checks. Notices are limited to one per domain per 60 seconds; unauthorized/invalid requests cannot generate approvals.
+- Removing an active site's domain closes its native browser and displays the localized site-not-allowed placeholder immediately. The stored public URL is retained. Adding the domain back restores the screen without another URL edit or restart. Malformed/private legacy saved URLs are still cleared by the existing `ScreenState.savedUrl` helper; public unlisted URLs are retained but gated from activation/rendering.
+- Main-frame navigation and recovery use the current list; subframe/resource requests retain `UrlPolicy` literal-host and scheme restrictions. The paint filter withholds disallowed committed main pages. File/about:blank#blocked and denied redirects recover to the last allowed main page, which may reset DOM/media state. If that page is no longer allowed, recovery uses blank and the manager closes the browser.
+- All new text is translated in English and Turkish; 57 keys match in both language files. Server control permission, opened-panel context, proximity and request-rate checks remain authoritative.
 
-### Native request blocker
+### Private native context and verified sources
 
-The passive owned loopback canary received an HTTP Upgrade request from the managed public page. Pure UrlPolicy correctly rejects this host, but the verified JCEF request/resource callbacks do not see the native WebSocket handshake. A browser error after the canary closes its accepted socket does not mean Perde blocked the connection. [Complete canary output](f2-2-websocket-canary.txt).
+Verified [MCEF Modern df61843](https://github.com/DimasKama/mcef-modern/tree/df61843), the matching [JCEF sources](https://repo.maven.apache.org/maven2/me/friwi/jcef-api/jcef-d3de827+cef-146.0.10+g8219561+chromium-146.0.7680.179/jcef-api-jcef-d3de827+cef-146.0.10+g8219561+chromium-146.0.7680.179-sources.jar) and [native context factory](https://github.com/chromiumembedded/java-cef/blob/d3de827/native/CefRequestContext_N.cpp). Copies are in ignored run/f2-2-sources. The MCEF shared client has no upstream add*Handler registrations in this version. Perde uses its own CefClient and isolated CefRequestContext, retaining the existing upstream renderer constructor/lifecycle; it never replaces shared handlers. Owned callbacks require exact browser identity and are installed before native creation. Spike continues using its original shared client.
 
-The probe accidentally had a trailing call producing a TypeError after WebSocket construction; the received network request still proves access. A repeat was rejected by automatic tool review with `blocked by policy`; no repeat is claimed and the rejection was not bypassed. The listener exited normally.
+The first native page is blank. Before public navigation, CEF's UI-thread callback installs and reads back all required settings. Missing, immutable, rejected or ineffective preferences fail closed and close the browser. A session object isolates late callbacks; Minecraft-thread manager cleanup owns the GPU bridge. JCEF onBeforeClose disposes the request context, so Perde does not dispose it twice.
 
-Resolving this requires an upstream-supported native WebSocket filter or an explicitly reviewed broader network boundary. No global flags, other-mod behavior, native binaries or JS security shims were changed to disguise the failure. Keep F2-2 partial and PR draft until the native bypass and affected checks are resolved.
+Chromium **146.0.7680.179** sources verified the WebRTC keys and values: [chrome_pref_names.h](https://github.com/chromium/chromium/blob/146.0.7680.179/chrome/common/pref_names.h), [policy constants](https://github.com/chromium/chromium/blob/146.0.7680.179/third_party/blink/common/peerconnection/webrtc_ip_handling_policy.cc), [policy meaning](https://github.com/chromium/chromium/blob/146.0.7680.179/third_party/blink/public/common/peerconnection/webrtc_ip_handling_policy.h), [renderer preference application](https://github.com/chromium/chromium/blob/146.0.7680.179/chrome/browser/renderer_preferences_util.cc). JCEF's native JNI value conversion supports Java Lists. Every private context requires:
 
-## Policy and server behavior
-
-- Pure Java `screen.UrlPolicy`, with no Minecraft/MCEF/JCEF imports, separates page entry, navigation and resource decisions. Public HTTP(S) with a host is allowed for page entry. Navigation additionally allows the exact internal `about:blank` exception. WebSocket, data and blob URLs are resource-only; blob origins are checked when present. Everything else is denied.
-- Hosts are normalized for case, IDN/dot variants and a trailing dot. Userinfo is separated from the actual host. Ambiguous escaped/scoped hosts and malformed ports fail closed. Chromium-style IPv4 decimal, octal, hex, short and single-integer forms are parsed without DNS. IPv6 uses Java 25 `InetAddress.ofLiteral`, which does not resolve names; mapped IPv4 is checked with the same IPv4 rules.
-- Denied literals: localhost/subdomains, 0/8, 10/8, 127/8, 172.16/12, 192.168/16, 169.254/16, 100.64/10, unspecified IPv6, ::1, fc00::/7, fe80::/10, mapped forms, and .local/.lan/.home/.internal suffixes. Multicast literals are also denied.
-- **DNS-based bypasses, rebinding and public hostnames resolving to private IPs are out of scope.** This is literal validation, not a network sandbox or DNS firewall.
-- `ScreenState.validateUrl` applies the same page policy on the server and client. Unauthorized requests still fail permission checks first. Invalid authorized SetUrl requests return the existing `INVALID_URL` rejection and retain the original state. English/Turkish action-bar text now explains that local/private hosts are blocked.
-- Persisted URLs pass through `ScreenState.savedUrl` in `PerdeBlockEntity.loadAdditional`; newly disallowed legacy URLs become empty without discarding geometry/ownership. Tests exercise that exact normalization helper and unchanged-state server decisions.
-
-## MCEF findings and handler wiring
-
-Verified against [MCEF Modern df61843 source](https://github.com/DimasKama/mcef-modern/tree/df61843) and the resolved [JCEF sources jar](https://repo.maven.apache.org/maven2/me/friwi/jcef-api/jcef-d3de827+cef-146.0.10+g8219561+chromium-146.0.7680.179/jcef-api-jcef-d3de827+cef-146.0.10+g8219561+chromium-146.0.7680.179-sources.jar), not current MCEF master. The matching [JCEF native context factory](https://github.com/chromiumembedded/java-cef/blob/d3de827/native/CefRequestContext_N.cpp) confirms CreateContext uses a new default-settings context, rather than the global-context factory. Downloaded source copies remain under ignored `run/f2-2-sources/`.
-
-`MCEFApiImpl.java:24-38` constructs one process-wide CefApp and adds `--disable-web-security` at line 28, before `build()`. Its private shared CefClient is created at line 38, and `createBrowser` at lines 58-69 uses that client and the global request context. There are **no upstream add*Handler calls** in this 26.2 MCEF implementation. Rendering and cursor handling live on `MCEFBrowserImpl` / `CustomCefBrowserOsr` themselves, rather than separately installed client handlers.
-
-There is no per-browser API to remove this global command-line switch. `CefBrowserSettings` in this JCEF exposes only the windowless frame-rate setting. Perde does **not** mutate global command-line state, replace CefApp, patch MCEF, or claim that CORS/same-origin isolation was restored. YouTube playback passed. **Players should not sign in to accounts inside Perde.** SPEC.md is unchanged; this report proposes adding that limitation to its security section during a separate design review.
-
-Perde now constructs the same upstream `MCEFBrowserImpl` renderer with a **dedicated CefClient and isolated CefRequestContext per managed browser**. It uses the verified public implementation constructor, then resize, setCloseAllowed and createImmediately. This intentionally couples the backend to the pinned MCEF implementation; recheck the constructor/lifecycle on an upgrade. It neither modifies nor replaces handlers on the shared MCEF client. Spike and other mods remain on their own clients. Owned callbacks additionally require exact CefBrowser object identity. Native callbacks are attached before createImmediately, so the initial public request cannot precede handler installation.
-
-The browser initially opens only `about:blank`. In the CEF UI-thread `onAfterCreated` callback it installs and reads back the required native permission defaults, then loads the desired public URL. Missing, immutable, rejected or ineffective settings fail closed: no public page is loaded, the native browser closes, and the manager reports browser failure. A per-creation session object prevents delayed callbacks from an older browser using a replacement browser's state. The manager still owns GPU cleanup on the Minecraft client thread. JCEF's `CefBrowser_N.onBeforeClose:132-134` disposes its request context; Perde does not dispose it a second time. The dedicated client is disposed on normal manager closure.
-
-| Handler/API | Behavior |
+| Preference | Required value |
 | --- | --- |
-| CefRequestHandler.onBeforeBrowse | Validate main and subframe navigations, including redirects delivered to this callback. Cancel invalid navigation before commit. |
-| onOpenURLFromTab / CefLifeSpanHandler.onBeforePopup | Cancel all new-tab/popup requests. |
-| getResourceRequestHandler / onBeforeResourceLoad | Apply navigation or resource policy; cancel downloads and invalid requests. A private context handler also covers browserless requests delivered by CEF, such as worker requests. |
-| onResourceRedirect | Validate the target and replace a denied target with a non-network denied sentinel (`perde-blocked:redirect`). It cannot return a cancellation boolean. Navigation additionally stops and restores the last public page; actual public file/data redirects passed. |
-| onProtocolExecution | Always deny OS protocol execution. |
-| CefDownloadHandler | Claim onBeforeDownload without ever calling Continue; cancel every update callback. This avoids both default download handling and the file picker. |
-| CefDialogHandler | Cancel the file callback and return handled. |
-| CefJSDialogHandler | Suppress alert/confirm/prompt; accept leaving without showing beforeunload UI. |
-| CefContextMenuHandler | Clear the native context menu, including clipboard/print/DevTools entries. |
-| Request-context preferences | Set microphone, camera, geolocation, notifications, clipboard, automatic downloads, file-system read/write guards to CONTENT_SETTING_BLOCK (2), and verify readback before navigation. |
+| webrtc.ip_handling_policy | disable_non_proxied_udp |
+| webrtc.ip_handling_url | empty list, no URL overrides |
+| webrtc.local_ips_allowed_urls | empty list, no local-IP exceptions |
 
-Permission preference names and BLOCK support were verified from Chromium **146.0.7680.179** [content settings registry](https://github.com/chromium/chromium/blob/146.0.7680.179/components/content_settings/core/browser/content_settings_registry.cc) and [preference-name conversion](https://github.com/chromium/chromium/blob/146.0.7680.179/components/content_settings/core/browser/website_settings_info.cc). The latter prefixes `profile.default_content_setting_values.` and converts hyphens to underscores.
+This disables non-proxied UDP/local address exposure according to the pinned Chromium policy; it does not disable all WebRTC or fix WebSocket interception. Actual native readback at 18:51:42 and 18:54:11: `globalContext=false, WebRTC=disable_non_proxied_udp, URL overrides=[], local-IP exceptions=[]`. Failure paths have unit coverage.
 
-### Explicit API limits and remaining risks
+Eight native permission defaults block microphone, camera, geolocation, notifications, clipboard, automatic downloads and file-system read/write guards using CONTENT_SETTING_BLOCK (2). Sources: Chromium [registry](https://github.com/chromium/chromium/blob/146.0.7680.179/components/content_settings/core/browser/content_settings_registry.cc), [preference-name conversion](https://github.com/chromium/chromium/blob/146.0.7680.179/components/content_settings/core/browser/website_settings_info.cc). `permission-default/*` logs mean configured policy, not observed permission attempts. Pinned JCEF has no CefPermissionHandler, so strict per-attempt permission audit is unavailable.
 
-- This JCEF sources jar contains **no CefPermissionHandler or permission callbacks** for media, geolocation, notifications or clipboard. Native defaults are the available mitigation, with the sanitized-write focus limitation described above. Per-attempt permission logging cannot be implemented through a nonexistent handler. `permission-default/<setting>` INFO entries record configured policy once per page, **not an observed permission request or proof of a native denial**. Runtime denial was tested. The strict per-attempt permission audit requirement remains an API limitation for review. Chromium also rejects some popups before a Java callback; the fixture records dispatch and native null result without fabricating an audit callback.
-- `BlockedRequestLog` logs each callback category once per accepted main-frame navigation, bounds URLs to 200 characters and sanitizes control/line-separator characters. Blocked navigation does not reset the log allowance. UI and IO threads share a synchronized audit. Native excerpts are retained in the resumed evidence file. Existing OSHI/AWT messages and CEF blocked-iframe timeout/parentless-dialog cancellation messages were retained; rendering and normal shutdown continued.
-- Unit tests prove policy decisions and callback behavior without Chromium natives. They do not establish complete native interception of WebSockets, renderer-local schemes, WebRTC or every worker request. These callbacks are not a general network firewall. CEF itself tracks [worker requests bypassing request callbacks](https://github.com/chromiumembedded/cef/issues/3593); the private context fallback is implemented, but complete coverage in this pinned runtime remains unproven. Do not describe this implementation as guaranteeing isolation from all local-network traffic.
-- Browser creation now uses a private client/context and does not reuse MCEF's shared cookie context. Cookie/cache persistence and native teardown must be observed in the resumed client checks. No filesystem cache deletion or global MCEF cache mutation is performed.
+### Handler scope and compatibility guard
 
-## Initial implementation-stage verification (historical, 2026-10-31)
+| Handler/API | Scope |
+| --- | --- |
+| onBeforeBrowse / main-frame address callbacks | Live allowlist for main pages; existing policy for subframes; recover last allowed URL. |
+| getResourceRequestHandler / onBeforeResourceLoad | Existing scheme/literal filters; main-frame allowlist; cancel downloads; private-context browserless fallback. |
+| onResourceRedirect | Validate target; denied sentinel plus main-page recovery. |
+| onOpenURLFromTab / onBeforePopup / onProtocolExecution | Deny new windows/tabs and OS protocol execution. |
+| Download / file dialog / JS dialog / context menu | Refuse Continue, cancel downloads/pickers, suppress dialogs and remove native menu. |
+| Native focus callbacks | Reject focus for display-only owned browsers; revoke unexpected focus. |
 
-Java/Javac 25.0.4. Every Gradle command used repository-local `GRADLE_USER_HOME=.gradle-user-home`. Test-generated log files are confined to `build/test-runtime`; no client runtime was started.
+Chromium's [sanitized clipboard write](https://github.com/chromium/chromium/blob/146.0.7680.179/components/permissions/contexts/clipboard_sanitized_write_permission_context.cc) query can report granted independently of the clipboard preference. Earlier actual read/write tests rejected access; write used an unresolved data promise and did not read/write user clipboard data. The unfocused display-only boundary must be reviewed before Phase 5 input. Some popups are rejected by Chromium before Java callbacks. Worker/native request completeness is unproven, including [CEF issue 3593](https://github.com/chromiumembedded/cef/issues/3593). Audit logs are synchronized, bounded to one category per allowed navigation and sanitized/truncated to 200 characters.
+
+`McefCompatibility` checks the internal MCEFBrowserImpl class, constructor and required method signatures before loading the backend. Reflection and LinkageError failures are contained, logged with expected **0.3.3+mc26.2.jcef146.0.10**, and shown as a translated incompatible-version status instead of crashing. Async creation/paint and manager texture/close paths are guarded too. Unit tests cover missing class/constructor/method and wrapped linkage failures; the real pinned version passed runtime creation. Future incompatible native behavior still requires upgrade testing; this is a guard for internal Java API coupling, not a promise of arbitrary-version compatibility.
+
+## Final verification
+
+All commands used Java/Javac 25.0.4 and repository-local GRADLE_USER_HOME. Test worlds/configs/natives stayed under run/. No Computer Use/window activation, unrelated Minecraft process control or system changes.
 
 ```text
-gradlew.bat test --console=plain
-BUILD SUCCESSFUL in 6s
-
-gradlew.bat -I docs/phase2/fixture/probe.init.gradle compilePhase2Probe --console=plain
-BUILD SUCCESSFUL in 6s
-
-gradlew.bat build --rerun-tasks --console=plain --warning-mode all
-BUILD SUCCESSFUL in 11s
+.\gradlew.bat build --rerun-tasks --console=plain --warning-mode all
+BUILD SUCCESSFUL in 9s
 9 actionable tasks: 9 executed
-147 tests, 0 failures, 0 errors, 0 skipped
-
-gradlew.bat build --console=plain --warning-mode all
-Final follow-up after the browserless-download audit adjustment:
-BUILD SUCCESSFUL in 6s
-9 actionable tasks: 4 executed, 5 up-to-date
-147 tests, 0 failures, 0 errors, 0 skipped
+197 tests, 0 failures, 0 errors, 0 skipped
 ```
 
-[Build output](f2-2-build.txt), [test counts by suite](f2-2-tests.csv). Tests cover every listed host family/scheme, parser tricks, boundary public addresses, IDN dots, userinfo, ports, saved-URL clearing, server rejection/state retention, handler browser identity, navigation/resources/redirect sentinel, browserless resource callback, popups, file/JS dialogs, download continuation refusal/cancel, native preference failure paths and bounded audit/reset behavior. Initial test-double compilation failed because JCEF constructors are package-private; test-only doubles were moved into their API packages. No test/assertion was weakened or disabled.
+[Build](f2-2-allowlist-build.txt), [suite counts](f2-2-allowlist-tests.csv), [isolation/hash checks](f2-2-allowlist-checks.txt). Tests cover domain normalization/bounds/look-alikes, command argument validation, immutable matching, config invalid entries and atomic failure retention, notice limit, payload bounds, client sync/reset, authoritative decisions, main/subframe separation, recovery/focus/identity, privacy preferences and compatibility signatures. No test/assertion was disabled or weakened. The initial compatibility test used a ClassLoader substitution with the wrong binary name; its seam was corrected to check real Class signatures, retaining the expected failure assertion.
 
-Default built jar inspection: no MCEF/JCEF classes, nested jars, tests or fixture classes bundled. Common Java sources contain no client/MCEF/JCEF imports. English/Turkish key parity remains 43 each. SPEC, AGENTS and production spike code are unchanged. Git diff and whitespace checks passed.
+The default jar bundles no MCEF/JCEF, nested jars, tests or fixture. Common source has no client/MCEF/JCEF imports. English/Turkish parity: 57 keys. SPEC.md, AGENTS.md and production spike code unchanged; Git diff/whitespace reviewed.
 
-Dedicated-server boot used fresh `run/f2-2-server`, `server-ip=127.0.0.1`, `server-port=25572`, explicit `--nogui`, redirected stdin/stdout and Windows `CREATE_NO_WINDOW`. Only that launcher's stdin received `stop`. The OS listener check verified **exactly one loopback listener**, PID 50304, whose command line contains this repository's DLI config. No other Minecraft process was controlled. Both owned launcher/server exited; no listener remained. [Complete server log](f2-2-server.txt), [socket/PID ownership evidence](f2-2-server-binding.txt).
+Final MCEF-free runServer: 44 mods, explicit --nogui and Windows CREATE_NO_WINDOW. Verified repository-owned PID **41296**, only **127.0.0.1:25575**, Done (0.440s). The saved 11-domain test config survived restart and `/perde wl list` returned it. Console stop saved all dimensions; **BUILD SUCCESSFUL in 50s**, exit 0. [Final log](f2-2-allowlist-server-final.txt), [listener/PID evidence](f2-2-allowlist-server-binding.txt). [Earlier full acceptance server log](f2-2-allowlist-server.txt) includes default creation and console add/list/remove. No listener remained after shutdown. Test client quit normally, BUILD SUCCESSFUL in 9m 49s, native registry zero before quit. Existing OSHI/performance-counter diagnostics, dev profile-key/Realms warnings and bare AWT shutdown prefixes remain documented; no Perde crash occurred.
 
-```text
-[15:02:57] [main/INFO] (FabricLoader) Loading 44 mods:
-[15:03:10] [main/INFO] (perde) Perde initialized.
-[15:03:12] [Server thread/INFO] (Minecraft) Starting Minecraft server on 127.0.0.1:25572
-[15:03:15] [Server thread/INFO] (Minecraft) Done (2.529s)! For help, type "help"
-[15:03:17] [Server thread/INFO] (Minecraft) Stopping the server
-[15:03:17] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-BUILD SUCCESSFUL in 24s
-5 actionable tasks: 1 executed, 4 up-to-date
-```
+### Allowlist runtime acceptance
 
-The mod list contains no MCEF. Existing Windows OSHI/performance-counter errors are retained in the full log; Minecraft continued to Done and shut down cleanly. No registry/system changes were attempted.
+[Native/client excerpts](f2-2-allowlist-runtime.txt). These are real results, not dispatch acknowledgements. Nine new unmodified vanilla F2 copies plus 12 earlier captures have [SHA-256 provenance](f2-2-provenance.csv), all 21 source/evidence pairs verified. Representative approval, placeholder, playback and spike captures were visually inspected.
 
-## In-game acceptance results (2026-10-31, Europe/Istanbul)
+| Check | Result |
+| --- | --- |
+| Console default/add/list/remove | PASS. Missing config created eight defaults; add example.com =9; list=9; whitelist remove =8. Readable console feedback. |
+| Join and permission gate | PASS. Client received full list including pre-join example.com. After deop, normal `/perde wl add denied.example` was denied and list remained unchanged. Op restored. Pre-sync/reset fail-closed behavior also has unit coverage. |
+| Unlisted panel URL + approval | PASS. example.org rejected; old example.com state/browser retained; requester action bar and op chat shown. Native chat component has `[Allow]`, RunCommand `/perde wl add example.org`. Three requests within 60 seconds produced one notice. [F2](screenshots/f2-2-wl-approval-request.png). |
+| Normal approval command | PASS. Ran the component's command as operator; full list updated, same panel URL accepted immediately and browser id1 reloaded to Example Domain. [F2](screenshots/f2-2-wl-approved-live.png). |
+| Remove and restore live | PASS. Remove example.org closed id1, native count=0, site-not-allowed placeholder; client and server NBT retained https://example.org. Add back created id2, same saved URL loaded without edit/restart. [Removed](screenshots/f2-2-wl-removed-placeholder.png), [restored](screenshots/f2-2-wl-restored-live.png). |
+| Main-frame redirect | PASS. Allowed httpbingo.org returned HTTP302 Location https://example.net (independent no-follow check retained). example.net was unlisted; native navigation denial logged, recovered to https://example.org/ and rendered Example Domain. [F2](screenshots/f2-2-wl-redirect-blocked.png). |
+| WebRTC/private context | PASS for actual required native readback. globalContext=false, all three WebRTC preferences match; no global context mutation. |
+| YouTube | PASS. Native currentTime 3.668526 to 10.703503, paused=false, readyState=4. Minecraft master=0, browser video muted=true/volume=0. [F2](screenshots/f2-2-wl-youtube-muted.png). |
+| Spike regression | PASS. Outside managed range, unchanged `/perde-spike place https://example.com` created shared-client browser id4 and rendered. Remove returned native count=0. Quiet URL honors Talha's zero-audio request. [F2](screenshots/f2-2-wl-spike-stable.png). |
+
+The fixture sets only the repository test client's master volume to zero. Chromium audio is separate: test-only Page.enable + Page.addScriptToEvaluateOnNewDocument forced media mute/volume0 before opening YouTube, with successful native proof on a quiet page first. Page.addScript without Page.enable initially did not run; that was detected before video navigation and corrected. This script is for test audio only, is not product code or a security mitigation, and did not change production permissions. A first spike capture followed falling before its platform loaded; after loading the platform and normal teleport, the stable capture above confirms rendering. Neither orchestration issue was hidden by changing product checks.
+
+### Earlier requested checks (a)-(e), retained evidence
+
+All original checks were executed before the lead follow-up, not left pending. [Earlier exact runtime excerpts](f2-2-runtime-evidence.txt), [149-test build](f2-2-build.txt), [earlier server check](f2-2-server-final.txt).
 
 | Check | Result and evidence |
 | --- | --- |
-| (a) Public playback | **PASS.** Real panel entry loads example.com and YouTube. Final video currentTime advanced 31.156445 to 47.639364, paused=false, readyState=4. [Example F2](screenshots/f2-2-a-example.png), [final YouTube F2](screenshots/f2-2-a-final-youtube.png). |
-| (b) Server validation | **PASS.** Panel validation rejects all three addresses. Since it correctly prevents the packet, opt-in raw-url additionally sends each SetUrl in that real opened-panel context, without bypassing server authorization. Every request returns the translated action bar and unchanged state. [Panel](screenshots/f2-2-b-client-private.png), [private action bar](screenshots/f2-2-b-server-private.png), [localhost](screenshots/f2-2-b-server-localhost.png), [loopback](screenshots/f2-2-b-server-loopback.png). |
-| (c) Listed page attacks | **PASS for the listed probes.** File navigation recovers; popup returns null; loopback fetch returns TypeError with request audit; private iframe is blocked/audited; alert/confirm/prompt return without UI (false/null); media returns NotAllowedError; blob download is denied/audited. Rendering continues, no new repository download file. Extra file picker returns zero files, beforeunload is suppressed, geolocation returns denial code 1, notifications return denied, clipboard read/write calls reject. [Final rendering](screenshots/f2-2-c-final-rendering.png). This does not erase the separate WebSocket failure. |
-| (d) Popup/redirects | **PASS.** Actual public httpbingo HTTP 302 responses targeting file: and data: are denied and the managed browser returns to Example Domain at example.com. Response status/Location were independently checked without following them. [Redirect F2](screenshots/f2-2-d-file-redirect.png). Recovery reload may reset DOM/media state. |
-| (e) Spike | **PASS.** Outside managed range at x=200, /perde-spike place renders YouTube using the unchanged shared MCEF client. Remove returns native registry=0. [F2](screenshots/f2-2-e-spike.png). An ordinary fill command created a repository-only test platform to prevent falling. |
-| Additional local WebSocket canary | **FAIL, task blocker.** The owned local listener received an HTTP Upgrade request despite the literal policy; native request callbacks were bypassed. [Evidence](f2-2-websocket-canary.txt). |
+| (a) Public playback | PASS. example.com and YouTube rendered; video time 31.156445 to 47.639364, paused=false, ready=4. [F2](screenshots/f2-2-a-final-youtube.png). Repeated above on final allowlist implementation, muted. |
+| (b) Server validation | PASS. Panel and normal raw SetUrl under a real opened-panel permission context rejected private/localhost/loopback addresses and retained state/action bar. [F2](screenshots/f2-2-b-server-private.png). |
+| (c) Listed page attacks | PASS for listed probes only: file recovery, popup null, loopback fetch/private iframe rejection+audit, JS dialogs suppressed, getUserMedia NotAllowedError, blob download denied, continued rendering. Extra file picker/beforeunload/geolocation/notifications/clipboard checks also denied. [F2](screenshots/f2-2-c-final-rendering.png). This never proved all native network isolation. |
+| (d) Redirects | PASS. Public HTTP302 to file/data rejected and recovered. [F2](screenshots/f2-2-d-file-redirect.png). Final follow-up also verified allowed-to-unlisted HTTP302. |
+| (e) Spike | PASS. Earlier unchanged spike rendered YouTube; final follow-up rendered quiet example.com and removed to zero browsers. [Earlier F2](screenshots/f2-2-e-spike.png). |
+| Extra WebSocket canary | Historical FAIL. Verified native callback bypass, explicitly accepted as residual risk via the lead decision; not repeated. [Evidence](f2-2-websocket-canary.txt). |
 
-See [opt-in fixture instructions](fixture/README.md). The fixture is absent from the default jar and targets only the managed browser by reflection. All requested (a)-(e) checks are executed, but the native WebSocket request boundary still fails the broader security goal. Resolve it and rerun the canary/affected checks before marking ready. No F2-3 work or merge in this task.
+The original canary script had a trailing TypeError after WebSocket construction; the received handshake still proves access. A historical repeat was rejected by automatic tool review with `blocked by policy`; no repeat or workaround is claimed. The listener exited normally. Browser/Target DevTools context-inspection commands timed out in the earlier session; no production behavior depends on them.
+
+## SPEC change proposal (not applied)
+
+The explicit lead decision authorizes this implementation while leaving SPEC unchanged for review. Proposed amendments:
+
+1. Replace unrestricted HTTP(S) page entry with HTTP(S) plus operator-managed trusted-site main-frame allowlist, including redirects and stored-screen activation. Document the eight defaults, IDN normalization, 253-character domain and 4096-domain bounds. Subframes/CDNs retain existing scheme/literal restrictions.
+2. Define config/perde-server.json, atomic writes and invalid-entry/fail-closed handling. Add `/perde wl add/remove/list` and alias whitelist, permission >=2, immediate save/full S2C updates on join/change, no pre-sync main navigation except blank. Keep removed public saved URLs and restore after re-adding.
+3. Add translated approval requests to all ops, permission-gated clickable command and per-domain 60-second notice limit. Client rejection never substitutes for server authorization.
+4. Specify per-private-context WebRTC policy/readback and fail-closed creation; guard the pinned internal MCEF API and localized incompatible status.
+5. State the trusted-site residual risk explicitly: native WebSocket/worker paths and DNS rebinding are not comprehensively filtered, allowed-page code is trusted, and --disable-web-security remains upstream. No account sign-in; no claim of network sandboxing or per-attempt permission audit. Revisit clipboard/focus before Phase 5.
+
+No F2-3 implementation or merge is included. Remaining work is human review/final manual acceptance and the separate F2-3 full-pack/culling/spike-removal task.
