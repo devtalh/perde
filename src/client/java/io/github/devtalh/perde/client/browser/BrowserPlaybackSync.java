@@ -21,7 +21,6 @@ import java.util.Set;
 
 /** Client tick owns decisions; CEF's UI thread only submits bounded observations. */
 final class BrowserPlaybackSync implements AutoCloseable {
-    private static final int MAX_FRAMES = 256;
     private final String token;
     private final CefBrowser browser;
     private final CefClient client;
@@ -80,7 +79,6 @@ final class BrowserPlaybackSync implements AutoCloseable {
         var ids = browser.getFrameIdentifiers();
         if (ids == null) return;
         for (String id : ids) {
-            if (pending.size() >= MAX_FRAMES) break;
             CefFrame frame = browser.getFrameByIdentifier(id);
             if (frame == null) continue;
             try {

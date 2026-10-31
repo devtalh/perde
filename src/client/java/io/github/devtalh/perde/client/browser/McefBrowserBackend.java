@@ -35,7 +35,7 @@ final class McefBrowserBackend implements BrowserBackend {
 
     private static final class Session {
         volatile String desiredUrl;
-        volatile boolean configured, closed;
+        volatile boolean configured, closed, pageReady;
         volatile RuntimeException failure;
         final PlaybackUrlGuard guard = new PlaybackUrlGuard();
         final java.util.concurrent.atomic.AtomicBoolean pageChanged = new java.util.concurrent.atomic.AtomicBoolean();
@@ -72,11 +72,17 @@ final class McefBrowserBackend implements BrowserBackend {
         };
         policy.own(browser.getCefBrowser());
         sync = new BrowserPlaybackSync(client, browser.getCefBrowser());
+        CefBrowser owned = browser.getCefBrowser();
         client.addLoadHandler(new CefLoadHandlerAdapter() {
-            @Override public void onLoadEnd(CefBrowser source, CefFrame frame, int status) {
-                if (state.closed || source != browser.getCefBrowser() || frame == null || !frame.isMain()) return;
-                state.guard.committed(frame.getURL());
+            @Override public void onLoadStart(CefBrowser source, CefFrame frame, CefRequest.TransitionType transition) {
+                if (state.closed || source != owned || frame == null || !frame.isMain()) return;
+                // A new committed document invalidates old renderer observations and element identities.
+                state.pageReady = io.github.devtalh.perde.screen.UrlPolicy.allowsPage(frame.getURL());
                 state.pageChanged.set(true);
+            }
+            @Override public void onLoadEnd(CefBrowser source, CefFrame frame, int status) {
+                if (state.closed || source != owned || frame == null || !frame.isMain()) return;
+                state.guard.committed(frame.getURL());
             }
         });
         MCEFBrowser created = browser;
@@ -108,6 +114,7 @@ final class McefBrowserBackend implements BrowserBackend {
     @Override public void loadUrl(String url) {
         checkHealth();
         session.guard.reset();
+        session.pageReady = false;
         sync.newPage();
         session.desiredUrl = ScreenState.validateUrl(url);
         if (session.configured && !session.closed) browser.getCefBrowser().loadURL(session.desiredUrl);
@@ -119,11 +126,12 @@ final class McefBrowserBackend implements BrowserBackend {
         if (session.guard.takeRestore()) {
             Perde.LOGGER.info("Perde sync: restoring server URL after page navigation.");
             sync.newPage();
+            session.pageReady = false;
             browser.getCefBrowser().loadURL(session.desiredUrl);
             return;
         }
         if (session.pageChanged.getAndSet(false)) sync.newPage();
-        if (serverNowMs != null) sync.tick(playback, serverNowMs);
+        if (session.pageReady && serverNowMs != null) sync.tick(playback, serverNowMs);
     }
 
     @Override public void close() {

@@ -1,5 +1,5 @@
 param(
-    [Parameter(Mandatory)][ValidateSet('load', 'quit', 'f2', 'command', 'leave', 'close', 'aim', 'walk', 'open', 'panel-url', 'geometry', 'equip', 'place', 'break', 'status', 'policy', 'evaluate', 'raw-url', 'devtools', 'connect', 'chat-audit', 'panel-playback', 'panel-audit', 'raw-playback', 'playback-status', 'clock-flood', 'sync-sample', 'sync-record')][string]$Action,
+    [Parameter(Mandatory)][ValidateSet('load', 'quit', 'f2', 'command', 'leave', 'close', 'aim', 'walk', 'open', 'panel-url', 'geometry', 'equip', 'place', 'break', 'status', 'policy', 'evaluate', 'frame-evaluate', 'raw-url', 'devtools', 'connect', 'chat-audit', 'panel-playback', 'panel-audit', 'raw-playback', 'playback-status', 'clock-flood', 'sync-sample', 'sync-record')][string]$Action,
     [string[]]$Values = @(),
     [ValidateSet('Player1', 'Player2')][string]$Player = 'Player1'
 )
