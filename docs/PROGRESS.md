@@ -6,7 +6,7 @@ This is the handoff point between Codex sessions and accounts: the next session 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
 - Last merged task: F2-1, [PR #6](https://github.com/devtalh/perde/pull/6), main `6b75980`; merge confirmed through GitHub and origin/main on 2026-10-31.
-- F2-2 (LEA-185): **partial, security blocker found** on `feat/f2-2-browser-policy`, [draft PR #7](https://github.com/devtalh/perde/pull/7). Talha authorized/resumed game tests. Checks (a)-(e) have now been executed; required behavior passed after a renderer-blocked navigation recovery fix. **Additional local WebSocket canary FAILED: Chromium reached 127.0.0.1 without a JCEF request callback. Do not mark ready or merge.** [Report/evidence](phase2/F2-2-report.md). Final build: 149 tests passing; MCEF-free loopback server passed again. No longer waiting for Talha to finish playing.
+- F2-2 (LEA-185): **partial, allowlist implementation complete, runtime verification next** on `feat/f2-2-browser-policy`, [draft PR #7](https://github.com/devtalh/perde/pull/7). Lead decision (Talha + Claude, 2026-10-31) accepts the WebSocket residual risk through an operator-managed trusted-site allowlist. Core policy/config/commands/approval notices/S2C sync, main-frame filtering, WebRTC settings and MCEF compatibility guards are implemented; 197 unit tests and build pass. Dedicated-console/client acceptance and final report/ready transition remain. Do not repeat the local WebSocket canary. [Report](phase2/F2-2-report.md).
 - Next task after F2-2 completion: **F2-3 full-pack validation, culling, spike removal**. Do not start it during the F2-2 handoff.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
@@ -22,6 +22,13 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F2-2 follow-up - Trusted-site allowlist (lead-approved mitigation)
+- Branch / PR: `feat/f2-2-browser-policy`, draft PR #7.
+- Status: partial (implementation and unit verification complete; runtime checks next)
+- What changed: immutable domain normalization/matching; atomic config/perde-server.json; operator/console wl and whitelist commands; rate-limited clickable approval requests; full list on join/live changes; fail-closed client policy before sync; main-frame-only allowlist with existing subframe/resource rules; live removal closes browsers without deleting saved URLs; Chromium 146 per-context WebRTC policy/readback; guarded pinned MCEF implementation reflection/linkage handling; matching English/Turkish text.
+- Verification: gradlew.bat build SUCCESSFUL in 6s, 197 tests with zero failures/errors/skips. Added config round trips/failure retention, domain/look-alike matching, command arguments, notice limit, codec bounds, client reset, main/subframe separation and MCEF missing signatures. An initial compatibility test incorrectly substituted a differently named class through Class.forName; corrected the test seam to validate real Class signatures instead of weakening its expected exception.
+- Left: dedicated-console add/list/remove and operator permission checks; client join sync/approval/live removal-add/recovery/YouTube/spike; verify required WebRTC preferences in the real private context; final build/server evidence, docs and PR ready. SPEC unchanged; proposal belongs in the report. No native/global Chromium modification or local canary repeat.
 
 ### F2-2 - Browser navigation and privacy policy (LEA-185)
 - Branch / PR: `feat/f2-2-browser-policy`, [draft PR #7](https://github.com/devtalh/perde/pull/7), targeting `main`. Do not merge or mark ready: an actual native request bypass remains.

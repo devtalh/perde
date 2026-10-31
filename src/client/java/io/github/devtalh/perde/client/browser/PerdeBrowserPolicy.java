@@ -12,20 +12,26 @@ import org.cef.network.CefRequest;
 import org.cef.network.CefResponse;
 
 import java.util.Vector;
+import java.util.function.Predicate;
 
 /** Installed on a private CefClient before native creation; never mutates MCEF's shared client. */
 final class PerdeBrowserPolicy {
     private final BlockedRequestLog audit;
     private volatile CefBrowser owned;
     private volatile String lastPublicUrl;
+    private final Predicate<String> allowsMain;
 
-    PerdeBrowserPolicy(BlockedRequestLog audit) { this.audit = audit; }
+    PerdeBrowserPolicy(BlockedRequestLog audit, Predicate<String> allowsMain) {
+        this.audit = audit;
+        this.allowsMain = allowsMain;
+    }
     void own(CefBrowser browser) { owned = browser; }
     private boolean owns(CefBrowser browser) { return browser != null && browser == owned; }
 
-    boolean block(CefBrowser browser, String url, boolean navigation) {
+    boolean block(CefBrowser browser, String url, boolean navigation, boolean mainFrame) {
         if (!owns(browser)) return false;
-        if (navigation ? UrlPolicy.allowsNavigation(url) : UrlPolicy.allowsResource(url)) return false;
+        boolean allowed = navigation ? (mainFrame ? allowsMain.test(url) : UrlPolicy.allowsNavigation(url)) : UrlPolicy.allowsResource(url);
+        if (allowed) return false;
         audit.blocked(navigation ? "navigation" : "request", url);
         return true;
     }
@@ -49,7 +55,7 @@ final class PerdeBrowserPolicy {
     Handlers handlers(Runnable afterCreated, Runnable beforeClose) {
         var requestHandler = new CefRequestHandlerAdapter() {
             @Override public boolean onBeforeBrowse(CefBrowser browser, CefFrame frame, CefRequest request, boolean gesture, boolean redirect) {
-                if (block(browser, request.getURL(), true)) return true;
+                if (block(browser, request.getURL(), true, frame == null || frame.isMain())) return true;
                 if (owns(browser) && frame != null && frame.isMain()) {
                     audit.newPage();
                     auditPermissions(request.getURL());
@@ -66,7 +72,7 @@ final class PerdeBrowserPolicy {
                     CefRequest request, boolean navigation, boolean download, String initiator, BoolRef disable) {
                 if (!owns(browser)) return null;
                 if (download) audit.blocked("download", request.getURL());
-                return resources(navigation, download);
+                return resources(navigation, isMainFrame(frame, request), download);
             }
         };
         var life = new CefLifeSpanHandlerAdapter() {
@@ -122,8 +128,8 @@ final class PerdeBrowserPolicy {
         var display = new CefDisplayHandlerAdapter() {
             @Override public void onAddressChange(CefBrowser browser, CefFrame frame, String url) {
                 if (!owns(browser) || frame == null || !frame.isMain()) return;
-                if (UrlPolicy.allowsPage(url)) lastPublicUrl = url;
-                else if (!UrlPolicy.allowsNavigation(url)) {
+                if (UrlPolicy.allowsPage(url) && allowsMain.test(url)) lastPublicUrl = url;
+                else if (!allowsMain.test(url)) {
                     // Chromium may replace a renderer-blocked file navigation with about:blank#blocked
                     // without delivering onBeforeBrowse. Keep its pixels hidden and restore the public page.
                     audit.blocked("navigation", url);
@@ -149,7 +155,10 @@ final class PerdeBrowserPolicy {
 
     private void restorePublicPage(CefBrowser browser) {
         String restore = lastPublicUrl;
-        if (restore != null && owns(browser)) { browser.stopLoad(); browser.loadURL(restore); }
+        if (owns(browser)) {
+            browser.stopLoad();
+            browser.loadURL(restore != null && allowsMain.test(restore) ? restore : "about:blank");
+        }
     }
 
     private void auditPermissions(String url) {
@@ -157,14 +166,20 @@ final class PerdeBrowserPolicy {
         for (String setting : BrowserPrivacy.DENIED) audit.blocked("permission-default/" + setting, url);
     }
 
-    CefResourceRequestHandler resources(boolean navigation, boolean download) {
+    static boolean isMainFrame(CefFrame frame, CefRequest request) {
+        if (frame != null) return frame.isMain();
+        return request.getResourceType() != CefRequest.ResourceType.RT_SUB_FRAME
+                && request.getResourceType() != CefRequest.ResourceType.RT_NAVIGATION_PRELOAD_SUB_FRAME;
+    }
+
+    CefResourceRequestHandler resources(boolean navigation, boolean mainFrame, boolean download) {
         return new CefResourceRequestHandlerAdapter() {
             @Override public boolean onBeforeResourceLoad(CefBrowser browser, CefFrame frame, CefRequest request) {
                 if (download) { audit.blocked("download", request.getURL()); return true; }
-                return block(owned, request.getURL(), navigation);
+                return block(owned, request.getURL(), navigation, mainFrame);
             }
             @Override public void onResourceRedirect(CefBrowser browser, CefFrame frame, CefRequest request, CefResponse response, StringRef target) {
-                if (block(owned, target.get(), navigation)) {
+                if (block(owned, target.get(), navigation, mainFrame)) {
                     target.set("perde-blocked:redirect");
                     if (navigation) restorePublicPage(browser);
                 }

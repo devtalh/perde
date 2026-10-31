@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /** Native-free test double in the API package to access its package-private constructor. */
-public final class TestRequestContext extends CefRequestContext {
+public class TestRequestContext extends CefRequestContext {
         public final Map<String, Object> preferences = new HashMap<>();
         public boolean available = true, writable = true, verify = true;
         public String error;

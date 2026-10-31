@@ -41,5 +41,19 @@
   "perde.browser.loading": "Loading",
   "perde.browser.missing": "MCEF missing",
   "perde.browser.inactive": "Inactive (another screen or too far)",
-  "perde.browser.failed": "Browser failed (change URL to retry)"
+  "perde.browser.failed": "Browser failed (change URL to retry)",
+  "perde.error.site_not_allowed": "This site is not on the server allowlist.",
+  "perde.browser.site_not_allowed": "Site not allowed",
+  "perde.browser.policy_waiting": "Waiting for server site policy",
+  "perde.browser.incompatible": "MCEF version incompatible",
+  "perde.wl.allow": "[Allow]",
+  "perde.wl.request": "%s wants to open %s.",
+  "perde.wl.list": "Allowed sites (%s): %s",
+  "perde.wl.added": "Allowed site: %s",
+  "perde.wl.removed": "Removed allowed site: %s",
+  "perde.wl.already_allowed": "%s is already on the allowlist.",
+  "perde.wl.not_present": "%s is not on the allowlist.",
+  "perde.wl.invalid_domain": "Enter a public domain or HTTP(S) URL. IP addresses and local names are not allowed (maximum 4096 sites).",
+  "perde.wl.unavailable": "The server site policy is not available yet.",
+  "perde.wl.save_failed": "Could not save the site policy. The previous allowlist is still active."
 }

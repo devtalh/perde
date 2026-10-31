@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PerdeBrowserPolicyTest {
     private final List<String> events = new ArrayList<>();
     private final BlockedRequestLog audit = new BlockedRequestLog((type, url) -> events.add(type + ":" + url));
-    private final PerdeBrowserPolicy policy = new PerdeBrowserPolicy(audit);
+    private final PerdeBrowserPolicy policy = new PerdeBrowserPolicy(audit, new io.github.devtalh.perde.screen.SiteAllowlist(List.of("example.com"))::allowsMainNavigation);
     private final CefBrowser browser = stub(CefBrowser.class, "https://example.com");
     private final CefBrowser other = stub(CefBrowser.class, "https://other.example");
     private final AtomicInteger created = new AtomicInteger(), closed = new AtomicInteger();
@@ -45,6 +45,21 @@ class PerdeBrowserPolicyTest {
         assertFalse(handlers.request().onBeforeBrowse(browser, null, new TestRequest("https://example.com"), false, true));
         assertTrue(handlers.request().onOpenURLFromTab(browser, null, "https://example.com", true));
         assertEquals(2, events.size()); // One navigation and one popup category.
+    }
+
+    @Test void allowlistAppliesOnlyToMainFrameIncludingRedirects() {
+        CefFrame main = stub(CefFrame.class, "");
+        CefFrame sub = (CefFrame) Proxy.newProxyInstance(CefFrame.class.getClassLoader(), new Class[]{CefFrame.class},
+                (object, method, args) -> false);
+        var unlisted = new TestRequest("https://cdn.unlisted.example/frame");
+        assertTrue(handlers.request().onBeforeBrowse(browser, main, unlisted, false, true));
+        assertFalse(handlers.request().onBeforeBrowse(browser, sub, unlisted, false, true));
+        assertFalse(policy.resources(true, false, false).onBeforeResourceLoad(browser, sub, unlisted));
+        assertFalse(policy.resources(false, false, false).onBeforeResourceLoad(browser, main, unlisted));
+        assertTrue(policy.resources(true, true, false).onBeforeResourceLoad(browser, main, unlisted));
+        var target = new StringRef("https://youtube.com.evil.example");
+        policy.resources(true, true, false).onResourceRedirect(browser, main, new TestRequest("https://example.com"), null, target);
+        assertEquals("perde-blocked:redirect", target.get());
     }
 
     @Test void otherBrowsersAndTheirHandlersAreUnaffected() {
@@ -96,7 +111,7 @@ class PerdeBrowserPolicyTest {
         handlers.display().onAddressChange(other, main, "file:///C:/");
         assertEquals(1, restored.size());
         var target = new StringRef("file:///C:/");
-        policy.resources(true, false).onResourceRedirect(recovering, main, new TestRequest("https://example.com/redirect"), null, target);
+        policy.resources(true, true, false).onResourceRedirect(recovering, main, new TestRequest("https://example.com/redirect"), null, target);
         assertEquals("perde-blocked:redirect", target.get());
         assertEquals(List.of("https://example.com/", "https://example.com/"), restored);
     }
@@ -114,10 +129,10 @@ class PerdeBrowserPolicyTest {
         var allow = new BoolRef(true);
         resource.onProtocolExecution(browser, null, new TestRequest("mailto:test@example.com"), allow);
         assertFalse(allow.get());
-        var navigation = policy.resources(true, false);
+        var navigation = policy.resources(true, true, false);
         assertTrue(navigation.onBeforeResourceLoad(browser, null, new TestRequest("data:text/html,x")));
         assertFalse(navigation.onBeforeResourceLoad(browser, null, new TestRequest("about:blank")));
-        assertTrue(policy.resources(false, true).onBeforeResourceLoad(browser, null, new TestRequest("https://example.com/download")));
+        assertTrue(policy.resources(false, false, true).onBeforeResourceLoad(browser, null, new TestRequest("https://example.com/download")));
     }
 
     @Test void dialogsAndDownloadsNeverContinueOrShowUi() {

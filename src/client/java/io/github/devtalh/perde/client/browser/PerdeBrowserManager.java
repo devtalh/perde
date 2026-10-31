@@ -26,13 +26,16 @@ public final class PerdeBrowserManager {
     private ClientLevel level;
     private PerdeBlockEntity active;
     private String currentUrl = "";
-    private boolean open, failed;
+    private boolean open, failed, incompatible;
     private long generation;
 
     private PerdeBrowserManager() { }
 
     public void initialize(boolean mcefAvailable) {
-        if (mcefAvailable) backend = new McefBrowserBackend();
+        if (mcefAvailable) {
+            try { backend = McefCompatibility.createBackend(); }
+            catch (ReflectiveOperationException | LinkageError exception) { incompatible(exception); }
+        }
         BrowserTexture.initialize();
         ClientBlockEntityEvents.BLOCK_ENTITY_LOAD.register((entity, world) -> {
             if (entity instanceof PerdeBlockEntity screen) loaded.add(screen);
@@ -82,7 +85,7 @@ public final class PerdeBrowserManager {
         if (active == null || backend == null) return;
         if (open) {
             try { backend.checkHealth(); }
-            catch (RuntimeException exception) { fail(exception); return; }
+            catch (RuntimeException | LinkageError exception) { fail(exception); return; }
         }
         String url = validUrl(active);
         if (!url.equals(currentUrl)) {
@@ -92,32 +95,54 @@ public final class PerdeBrowserManager {
                 try {
                     backend.loadUrl(url);
                     Perde.LOGGER.info("Perde browser: URL updated at {} on existing browser.", active.getBlockPos());
-                } catch (RuntimeException exception) { fail(exception); }
+                } catch (RuntimeException | LinkageError exception) { fail(exception); }
             }
         }
-        if (!open && !failed && backend.ready()) {
+        if (!open && !failed && !incompatible) {
             try {
+                if (!backend.ready()) return;
                 backend.open(url);
                 open = true;
                 generation++;
                 Perde.LOGGER.info("Perde browser: created at {}, 1280x720, 30 fps, unfocused, active=1/{}.",
                         active.getBlockPos(), BrowserSelection.MAX_ACTIVE_BROWSERS);
-            } catch (RuntimeException exception) { fail(exception); }
+            } catch (RuntimeException | LinkageError exception) { fail(exception); }
         }
     }
 
-    private void fail(RuntimeException exception) {
+    private void fail(Throwable exception) {
         requireClientThread();
-        backend.close();
+        safeClose();
         open = false;
         failed = true;
         generation++;
+        if (exception instanceof LinkageError || exception instanceof McefCompatibility.Incompatible) incompatible(exception);
         Perde.LOGGER.error("Perde browser: creation/navigation failed; retry after URL or selection changes.", exception);
+    }
+
+    private void incompatible(Throwable exception) {
+        incompatible = true;
+        Perde.LOGGER.error("Perde MCEF version incompatible; expected {}.", McefCompatibility.EXPECTED_VERSION, exception);
+    }
+
+    private void safeClose() {
+        try { if (backend != null) backend.close(); }
+        catch (LinkageError | RuntimeException exception) {
+            if (exception instanceof LinkageError || exception instanceof McefCompatibility.Incompatible) incompatible(exception);
+            else Perde.LOGGER.error("Perde browser cleanup failed.", exception);
+        }
+    }
+
+    public void policyChanged() {
+        requireClientThread();
+        try {
+            if (active != null && (validUrl(active).isEmpty() || (open && !backend.currentPageAllowed()))) close("site allowlist updated");
+        } catch (RuntimeException | LinkageError exception) { fail(exception); }
     }
 
     private void close(String reason) {
         requireClientThread();
-        if (backend != null) backend.close();
+        safeClose();
         if (open) Perde.LOGGER.info("Perde browser: closed at {} ({}), active=0/{}.",
                 active.getBlockPos(), reason, BrowserSelection.MAX_ACTIVE_BROWSERS);
         open = false;
@@ -132,7 +157,10 @@ public final class PerdeBrowserManager {
     }
 
     private static String validUrl(PerdeBlockEntity entity) {
-        try { return ScreenState.validateUrl(entity.screenState().url()); }
+        try {
+            String url = ScreenState.validateUrl(entity.screenState().url());
+            return ClientSitePolicy.allowsPage(url) ? url : "";
+        }
         catch (IllegalArgumentException exception) { return ""; }
     }
 
@@ -143,8 +171,11 @@ public final class PerdeBrowserManager {
     }
 
     public String statusKey(PerdeBlockEntity entity) {
-        if (validUrl(entity).isEmpty()) return "perde.ui.no_page";
+        if (entity.screenState().url().isEmpty()) return "perde.ui.no_page";
+        if (incompatible) return "perde.browser.incompatible";
         if (backend == null) return "perde.browser.missing";
+        if (!ClientSitePolicy.received()) return "perde.browser.policy_waiting";
+        if (validUrl(entity).isEmpty()) return "perde.browser.site_not_allowed";
         if (active != entity) return "perde.browser.inactive";
         return failed ? "perde.browser.failed" : "perde.browser.loading";
     }
@@ -155,5 +186,8 @@ public final class PerdeBrowserManager {
     }
 
     public boolean isCurrentFrame(long ticket) { return ticket >= 0 && ticket == generation && textureView() != null; }
-    public GpuTextureView textureView() { return open ? backend.textureView() : null; }
+    public GpuTextureView textureView() {
+        try { return open ? backend.textureView() : null; }
+        catch (RuntimeException | LinkageError exception) { fail(exception); return null; }
+    }
 }

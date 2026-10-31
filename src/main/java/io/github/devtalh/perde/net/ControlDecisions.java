@@ -3,6 +3,7 @@ package io.github.devtalh.perde.net;
 import io.github.devtalh.perde.screen.AccessMode;
 import io.github.devtalh.perde.screen.ScreenPermissions;
 import io.github.devtalh.perde.screen.ScreenState;
+import io.github.devtalh.perde.screen.SiteAllowlist;
 import java.util.UUID;
 
 /** Pure authorization/validation decisions shared by the live handlers and unit tests. */
@@ -13,7 +14,7 @@ public final class ControlDecisions {
                           boolean screenExists, double distanceSquared) { }
 
     public enum Rejection {
-        WRONG_LEVEL, UNLOADED, MISSING, TOO_FAR, FORBIDDEN, INVALID_URL, INVALID_VALUE, PLAYER_OFFLINE, PLAYER_LIMIT, INVALID_NAME
+        WRONG_LEVEL, UNLOADED, MISSING, TOO_FAR, FORBIDDEN, INVALID_URL, SITE_NOT_ALLOWED, INVALID_VALUE, PLAYER_OFFLINE, PLAYER_LIMIT, INVALID_NAME
     }
 
     public sealed interface Change {
@@ -39,7 +40,7 @@ public final class ControlDecisions {
         return allowed ? null : Rejection.FORBIDDEN;
     }
 
-    public static Result decide(Context context, ScreenState state, Change change, PacketRateLimiter limiter, long nowMs) {
+    public static Result decide(Context context, ScreenState state, Change change, PacketRateLimiter limiter, long nowMs, SiteAllowlist allowlist) {
         Rejection rejection = authorize(context, state, change.adminOnly());
         if (rejection != null) return new Result(state, rejection, false);
         if (change instanceof AddPlayer request) {
@@ -51,6 +52,11 @@ public final class ControlDecisions {
         }
         ScreenState next;
         try {
+            if (change instanceof SetUrl request) {
+                String validated = ScreenState.validateUrl(request.url());
+                if (!validated.isEmpty()) SiteAllowlist.normalize(validated);
+                if (!validated.isEmpty() && !allowlist.allowsPage(validated)) return new Result(state, Rejection.SITE_NOT_ALLOWED, false);
+            }
             next = switch (change) {
                 case SetUrl request -> state.withUrl(request.url());
                 case SetGeometry request -> state.withGeometry(request.width(), request.height(), request.offsetX(), request.offsetY());

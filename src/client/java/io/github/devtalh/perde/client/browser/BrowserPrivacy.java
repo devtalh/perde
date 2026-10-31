@@ -11,14 +11,21 @@ final class BrowserPrivacy {
 
     static void configure(CefRequestContext context) {
         for (String setting : DENIED) {
-            String key = "profile.default_content_setting_values." + setting;
-            if (!context.hasPreference(key) || !context.canSetPreference(key)) {
-                throw new IllegalStateException("Required Chromium permission preference unavailable: " + key);
-            }
-            String error = context.setPreference(key, 2); // CONTENT_SETTING_BLOCK
-            if (error != null || !Integer.valueOf(2).equals(context.getPreference(key))) {
-                throw new IllegalStateException("Could not deny Chromium permission: " + key + " (" + error + ")");
-            }
+            requirePreference(context, "profile.default_content_setting_values." + setting, 2); // CONTENT_SETTING_BLOCK
+        }
+        // Chromium 146: only proxied UDP/TCP, no per-origin policy override or local-IP exposure exception.
+        requirePreference(context, "webrtc.ip_handling_policy", "disable_non_proxied_udp");
+        requirePreference(context, "webrtc.ip_handling_url", new java.util.ArrayList<>());
+        requirePreference(context, "webrtc.local_ips_allowed_urls", new java.util.ArrayList<>());
+    }
+
+    private static void requirePreference(CefRequestContext context, String key, Object value) {
+        if (!context.hasPreference(key) || !context.canSetPreference(key)) {
+            throw new IllegalStateException("Required Chromium preference unavailable: " + key);
+        }
+        String error = context.setPreference(key, value);
+        if (error != null || !value.equals(context.getPreference(key))) {
+            throw new IllegalStateException("Could not apply Chromium privacy preference: " + key + " (" + error + ")");
         }
     }
 }

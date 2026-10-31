@@ -6,7 +6,6 @@ import net.dimaskama.mcef.api.MCEFBrowser;
 import net.dimaskama.mcef.impl.MCEFBrowserImpl;
 import io.github.devtalh.perde.Perde;
 import io.github.devtalh.perde.screen.ScreenState;
-import io.github.devtalh.perde.screen.UrlPolicy;
 import org.cef.CefApp;
 import org.cef.CefClient;
 import org.cef.browser.CefRequestContext;
@@ -37,13 +36,13 @@ final class McefBrowserBackend implements BrowserBackend {
         session = state;
         if (MCEFApi.getInstanceFuture().getNow(null) == null) throw new IllegalStateException("MCEF is not initialized");
         var audit = new BlockedRequestLog((type, target) -> Perde.LOGGER.info("Perde browser blocked [{}]: {}", type, target));
-        var policy = new PerdeBrowserPolicy(audit);
+        var policy = new PerdeBrowserPolicy(audit, ClientSitePolicy::allowsMainNavigation);
         client = CefApp.getInstance().createClient();
         CefRequestContext context = CefRequestContext.createContext(new CefRequestContextHandlerAdapter() {
             @Override public CefResourceRequestHandler getResourceRequestHandler(CefBrowser source, CefFrame frame,
                     CefRequest request, boolean navigation, boolean download, String initiator, BoolRef disable) {
                 // Context belongs only to this screen, including requests without a browser (service workers).
-                return policy.resources(navigation, download);
+                return policy.resources(navigation, PerdeBrowserPolicy.isMainFrame(frame, request), download);
             }
         });
         if (context == null) { client.dispose(); client = null; throw new IllegalStateException("Could not create private browser context"); }
@@ -52,7 +51,9 @@ final class McefBrowserBackend implements BrowserBackend {
             @Override public void onPaint(CefBrowser source, boolean popup, java.awt.Rectangle[] dirty,
                     java.nio.ByteBuffer buffer, int width, int height) {
                 // Preserve the last safe texture while Chromium recovers a renderer-blocked navigation.
-                if (UrlPolicy.allowsNavigation(source.getURL())) super.onPaint(source, popup, dirty, buffer, width, height);
+                try {
+                    if (ClientSitePolicy.allowsMainNavigation(source.getURL())) super.onPaint(source, popup, dirty, buffer, width, height);
+                } catch (LinkageError exception) { state.failure = McefCompatibility.incompatible(exception); }
             }
         };
         policy.own(browser.getCefBrowser());
@@ -63,10 +64,11 @@ final class McefBrowserBackend implements BrowserBackend {
                 BrowserPrivacy.configure(context);
                 state.configured = true;
                 if (!state.closed) created.getCefBrowser().loadURL(state.desiredUrl);
-            } catch (RuntimeException exception) {
-                state.failure = exception;
+            } catch (RuntimeException | LinkageError exception) {
+                state.failure = exception instanceof LinkageError ? McefCompatibility.incompatible(exception) : (RuntimeException) exception;
                 Perde.LOGGER.error("Perde browser permission setup failed; no public page will be loaded.", exception);
-                created.getCefBrowser().close(true);
+                try { created.getCefBrowser().close(true); }
+                catch (LinkageError closingFailure) { state.failure = McefCompatibility.incompatible(closingFailure); }
             }
         }, () -> { }); // CefBrowser_N.onBeforeClose disposes its request context exactly once.
         browser.resize(1280, 720);
@@ -77,6 +79,7 @@ final class McefBrowserBackend implements BrowserBackend {
     }
 
     @Override public void checkHealth() { if (session != null && session.failure != null) throw session.failure; }
+    @Override public boolean currentPageAllowed() { return browser == null || ClientSitePolicy.allowsMainNavigation(browser.getCefBrowser().getURL()); }
     @Override public void loadUrl(String url) {
         checkHealth();
         session.desiredUrl = ScreenState.validateUrl(url);

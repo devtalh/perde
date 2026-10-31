@@ -1,6 +1,14 @@
 # F2-2: browser navigation and privacy policy
 
-Status: **partial, confirmed native WebSocket security bypass. Keep PR draft.** Branch `feat/f2-2-browser-policy`, [draft PR #7](https://github.com/devtalh/perde/pull/7), based on main `6b75980`. Implementation commit: `bdc33b7`. [F2-1 PR #6](https://github.com/devtalh/perde/pull/6) was confirmed merged before implementation. [Linear LEA-185](https://linear.app/leak-rake/issue/LEA-185) and the Notion Perde hub were read; repository SPEC and the supplied F2-2 task govern current implementation. Linear field notes still return `Tool get_agent_context not found`.
+Status: **partial, lead-approved allowlist implemented; runtime acceptance next.** Branch `feat/f2-2-browser-policy`, [draft PR #7](https://github.com/devtalh/perde/pull/7), based on main `6b75980`. Implementation commit: `bdc33b7`. [F2-1 PR #6](https://github.com/devtalh/perde/pull/6) was confirmed merged before implementation. [Linear LEA-185](https://linear.app/leak-rake/issue/LEA-185) and the Notion Perde hub were read; repository SPEC and the supplied F2-2 task govern current implementation. Linear field notes still return `Tool get_agent_context not found`.
+
+## Lead decision and current follow-up
+
+Talha + Claude approved a product trust boundary on 2026-10-31: operators manage a live site allowlist; listed sites are trusted. This mitigates which pages may run, without claiming that the native WebSocket bypass has been fixed. No MCEF/native/global flag or other-mod changes, and no local WebSocket canary repeat.
+
+Core implementation now passes 197 tests and build. Only HTTP(S) main-frame pages in the server list are eligible. Subframes/resources retain the literal-host/scheme filters. Public saved URLs remain stored when removed, but cannot create/render a browser until allowed again. Before the first server list, the client permits only internal about:blank.
+
+Config is atomically replaced and commands save before publishing/broadcasting a new snapshot. The full list is bounded at 4096 normalized domains for safe payload sizing. Missing config creates the eight requested defaults; invalid entries warn and are ignored; malformed existing files fail closed. Runtime console/client checks are still pending at this intermediate commit. A SPEC change proposal and final residual-risk report will follow after acceptance.
 
 Talha authorized/resumed game testing. All requested in-game checks (a)-(e) were executed and their listed behavior passed after a navigation-recovery fix. An additional passive local canary nevertheless received a WebSocket handshake from the public managed page, without a JCEF request callback. The broader local-network goal therefore fails: do not mark ready or merge. This is no longer waiting for permission to start Minecraft. F2-3 must wait for the native request boundary to be resolved. [Canary evidence](f2-2-websocket-canary.txt).
 

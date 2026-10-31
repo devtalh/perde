@@ -2,6 +2,7 @@ package io.github.devtalh.perde.net;
 
 import io.github.devtalh.perde.screen.AccessMode;
 import io.github.devtalh.perde.screen.ScreenState;
+import io.github.devtalh.perde.screen.SiteAllowlist;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
@@ -12,11 +13,31 @@ import io.netty.handler.codec.DecoderException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
+import java.util.List;
 
 public final class PerdePayloads {
     private PerdePayloads() { }
     private static <T extends CustomPacketPayload> CustomPacketPayload.Type<T> type(String name) {
         return new CustomPacketPayload.Type<>(Identifier.fromNamespaceAndPath("perde", name));
+    }
+
+    public record AllowedDomains(List<String> domains) implements CustomPacketPayload {
+        public AllowedDomains { domains = new SiteAllowlist(domains).domains(); }
+        public static final Type<AllowedDomains> TYPE = PerdePayloads.type("allowed_domains");
+        public static final StreamCodec<FriendlyByteBuf, AllowedDomains> CODEC = CustomPacketPayload.codec(AllowedDomains::write, AllowedDomains::new);
+        private AllowedDomains(FriendlyByteBuf b) { this(readDomains(b)); }
+        private void write(FriendlyByteBuf b) {
+            b.writeVarInt(domains.size());
+            domains.forEach(domain -> b.writeUtf(domain, 253));
+        }
+        @Override public Type<AllowedDomains> type() { return TYPE; }
+        private static List<String> readDomains(FriendlyByteBuf b) {
+            int count = b.readVarInt();
+            if (count < 0 || count > SiteAllowlist.MAX_DOMAINS) throw new DecoderException("Invalid domain count");
+            var result = new java.util.ArrayList<String>(count);
+            for (int i = 0; i < count; i++) result.add(b.readUtf(253));
+            return result;
+        }
     }
 
     public record OpenPanel(BlockPos pos, ScreenState state, boolean canControl, boolean canAdmin) implements CustomPacketPayload {
@@ -77,6 +98,7 @@ public final class PerdePayloads {
 
     public static void registerTypes() {
         PayloadTypeRegistry.clientboundPlay().register(OpenPanel.TYPE, OpenPanel.CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(AllowedDomains.TYPE, AllowedDomains.CODEC);
         PayloadTypeRegistry.serverboundPlay().register(SetUrl.TYPE, SetUrl.CODEC);
         PayloadTypeRegistry.serverboundPlay().register(SetGeometry.TYPE, SetGeometry.CODEC);
         PayloadTypeRegistry.serverboundPlay().register(CenterScreen.TYPE, CenterScreen.CODEC);
