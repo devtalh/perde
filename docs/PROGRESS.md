@@ -4,6 +4,7 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
+- SPIKE-CHROME: **partial, measurements running**, branch `spike/chrome-cdp` from main `35b22fb`. Standalone Java CDP fixture only; two engines/modes, codec/playback/stream/extension evidence collected. Ten-sample memory matrix requested by Talha is being completed. [Research report](spike-chrome/report.md). Product architecture remains MCEF; no next phase or merge authorized.
 - Phase 3: **F3-2 done, (f) deferred to LEA-200 (codecs)** (LEA-197), `feat/f3-2-sync-engine`, [PR #10](https://github.com/devtalh/perde/pull/10). Current build: **296 tests pass**. Identity guard ignores housekeeping, real ID changes restore server URL. Late runs: entry->ready **5.007/2.838 s**, ready->stable **9.056/4.342 s**, **0 same-video guard reloads**. The <1.5 s goal was missed and explicitly accepted by Talha as a buffering constraint. Five metadata-only codec probes complete. [Report](phase3/F3-2-report.md). Ready after final-head CI; do not merge.
 - Phase 3: **F3-1 merged**, [PR #9](https://github.com/devtalh/perde/pull/9), main `a326147`, confirmed 2026-10-31 before F3-2. [Report](phase3/F3-1-report.md) retains its historical pre-merge status.
 - Phase 2: **merged**, [PR #8](https://github.com/devtalh/perde/pull/8), main `5e8fbd8`, confirmed 2026-10-31. [Phase 2 report](phase2/F2-report.md).
@@ -23,6 +24,14 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### SPIKE-CHROME - Chrome CDP browser feasibility
+- Branch / PR: `spike/chrome-cdp`, main `35b22fb`; checkpoint, PR pending final measurements.
+- Status: **partial (measurements in progress)**.
+- What changed: standalone Java 25 measurement controller, isolated Windows no-activation launcher, optional pipe bridge, CDP site/control/screencast and memory fixtures under `tools/chrome-spike/`. Product code, SPEC and AGENTS unchanged.
+- Verification: Java 25.0.4; repository, Notion hub and LEA-200 read. Linear field-notes endpoint unavailable. Installed Chrome 156.0.8078.74 and official Stable CfT 156.0.8078.80 tested, all files/profiles under run/chrome-spike. Build SUCCESSFUL in 10 s, 9 tasks executed, 296 tests with zero failures/errors/skips. Owned process cleanups so far leave zero tracked processes. No Computer Use, focus activation, unrelated process control or software installation.
+- Left: complete per-mode 60-second/720p memory matrix (10 samples, working set/private bytes and process types), final control/restart assertions, sanitized evidence export, final report/diff/build review, push and PR. Successful dizi episode playback has not been established; do not present banner playback as episode success.
+- Risks: CDP JPEG copies/CPU, independent browser distribution/upgrades, site challenges, X-Frame-Options, format/network failures, first-party ads, memory and experimental extension/screencast APIs. Existing backend is unchanged. [Report](spike-chrome/report.md).
 
 ### F3-2 - Client browser playback sync (LEA-197)
 - Branch / PR: `feat/f3-2-sync-engine`, from main `a326147`; [PR #10](https://github.com/devtalh/perde/pull/10). Identity checkpoint `03877b2` passed CI; final head must also pass before ready. No merge.
