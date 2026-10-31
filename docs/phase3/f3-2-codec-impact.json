@@ -1,0 +1,509 @@
+{
+  "vimeo": {
+    "frames": [
+      {
+        "tag": "perde-codec-LEA-200",
+        "frameHost": "vimeo.com",
+        "top": true,
+        "videos": [
+          {
+            "index": 0,
+            "time": 0,
+            "firstTime": 0,
+            "ready": 0,
+            "readyMax": 0,
+            "advancingSamples": 0,
+            "paused": false,
+            "visible": true,
+            "duration": 61.853,
+            "volume": 0,
+            "muted": true,
+            "error": null,
+            "sourceHost": "",
+            "sourceKind": "blob",
+            "declaredTypes": []
+          }
+        ],
+        "requests": [
+          "vod-adaptive-ak.vimeocdn.com:m3u8",
+          "vod-adaptive-ak.vimeocdn.com:mpd",
+          "vod-adaptive-ak.vimeocdn.com:mp4"
+        ],
+        "controls": [],
+        "support": {
+          "h264": {
+            "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "aac": {
+            "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "vp9": {
+            "mime": "video/webm; codecs=\"vp9\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "av1": {
+            "mime": "video/mp4; codecs=\"av01.0.05M.08\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "opus": {
+            "mime": "audio/webm; codecs=\"opus\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          }
+        },
+        "now": 1793475141978,
+        "gate": false,
+        "challenge": false
+      }
+    ]
+  },
+  "dailymotion": {
+    "frames": [
+      {
+        "tag": "perde-codec-LEA-200",
+        "frameHost": "www.dailymotion.com",
+        "top": true,
+        "videos": [],
+        "requests": [],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "aria": "Player only view",
+            "title": null,
+            "test": null,
+            "classes": "Button__button___ro5TM Button__medium___d3zct Button__tertiary___lEWU7 Button__isButtonIcon___yfUeV Button__isLargeIcon_"
+          }
+        ],
+        "support": {
+          "h264": {
+            "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "aac": {
+            "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "vp9": {
+            "mime": "video/webm; codecs=\"vp9\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "av1": {
+            "mime": "video/mp4; codecs=\"av01.0.05M.08\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "opus": {
+            "mime": "audio/webm; codecs=\"opus\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          }
+        },
+        "now": 1793475186715,
+        "gate": true,
+        "challenge": false
+      },
+      {
+        "tag": "perde-codec-LEA-200",
+        "frameHost": "geo.dailymotion.com",
+        "top": false,
+        "videos": [
+          {
+            "index": 0,
+            "time": 0,
+            "firstTime": 0,
+            "ready": 0,
+            "readyMax": 0,
+            "advancingSamples": 0,
+            "paused": false,
+            "visible": true,
+            "duration": null,
+            "volume": 0,
+            "muted": true,
+            "error": null,
+            "sourceHost": "geo.dailymotion.com",
+            "sourceKind": "unknown",
+            "declaredTypes": []
+          }
+        ],
+        "requests": [],
+        "controls": [],
+        "support": {
+          "h264": {
+            "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "aac": {
+            "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "vp9": {
+            "mime": "video/webm; codecs=\"vp9\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "av1": {
+            "mime": "video/mp4; codecs=\"av01.0.05M.08\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "opus": {
+            "mime": "audio/webm; codecs=\"opus\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          }
+        },
+        "now": 1793475186717,
+        "gate": false,
+        "challenge": false
+      }
+    ]
+  },
+  "diziwatch": {
+    "frames": [
+      {
+        "tag": "perde-codec-LEA-200",
+        "frameHost": "diziwatch.app",
+        "top": true,
+        "videos": [],
+        "requests": [],
+        "controls": [],
+        "support": {
+          "h264": {
+            "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "aac": {
+            "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "vp9": {
+            "mime": "video/webm; codecs=\"vp9\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "av1": {
+            "mime": "video/mp4; codecs=\"av01.0.05M.08\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "opus": {
+            "mime": "audio/webm; codecs=\"opus\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          }
+        },
+        "now": 1793475249171,
+        "gate": false,
+        "challenge": false
+      },
+      {
+        "tag": "perde-codec-LEA-200",
+        "frameHost": "four.pichive.online",
+        "top": false,
+        "videos": [
+          {
+            "index": 0,
+            "time": 0,
+            "firstTime": 0,
+            "ready": 0,
+            "readyMax": 0,
+            "advancingSamples": 0,
+            "paused": false,
+            "visible": true,
+            "duration": 1503.1250479999967,
+            "volume": 0,
+            "muted": true,
+            "error": null,
+            "sourceHost": "",
+            "sourceKind": "blob",
+            "declaredTypes": []
+          }
+        ],
+        "requests": [],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "aria": "Oynat",
+            "title": null,
+            "test": null,
+            "classes": "np-play"
+          }
+        ],
+        "support": {
+          "h264": {
+            "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "aac": {
+            "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "vp9": {
+            "mime": "video/webm; codecs=\"vp9\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "av1": {
+            "mime": "video/mp4; codecs=\"av01.0.05M.08\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "opus": {
+            "mime": "audio/webm; codecs=\"opus\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          }
+        },
+        "now": 1793475249074,
+        "gate": false,
+        "challenge": false
+      }
+    ]
+  },
+  "dizipal": {
+    "frames": [
+      {
+        "tag": "perde-codec-LEA-200",
+        "frameHost": "dizipalorijinal20.com",
+        "top": true,
+        "videos": [
+          {
+            "index": 0,
+            "time": 0,
+            "firstTime": 0,
+            "ready": 0,
+            "readyMax": 0,
+            "advancingSamples": 0,
+            "paused": true,
+            "visible": true,
+            "duration": null,
+            "volume": 0,
+            "muted": true,
+            "error": {
+              "code": 4,
+              "message": "PipelineStatus::DEMUXER_ERROR_NO_SUPPORTED_STREAMS: FFmpegDemuxer: no supported streams"
+            },
+            "sourceHost": "dizipalorijinal20.com",
+            "sourceKind": "mp4",
+            "declaredTypes": []
+          },
+          {
+            "index": 1,
+            "time": 0,
+            "firstTime": 0,
+            "ready": 0,
+            "readyMax": 0,
+            "advancingSamples": 0,
+            "paused": true,
+            "visible": false,
+            "duration": null,
+            "volume": 0,
+            "muted": true,
+            "error": {
+              "code": 4,
+              "message": "PipelineStatus::DEMUXER_ERROR_NO_SUPPORTED_STREAMS: FFmpegDemuxer: no supported streams"
+            },
+            "sourceHost": "dizipalorijinal20.com",
+            "sourceKind": "mp4",
+            "declaredTypes": []
+          },
+          {
+            "index": 2,
+            "time": 0,
+            "firstTime": 0,
+            "ready": 0,
+            "readyMax": 0,
+            "advancingSamples": 0,
+            "paused": true,
+            "visible": true,
+            "duration": null,
+            "volume": 0,
+            "muted": true,
+            "error": {
+              "code": 4,
+              "message": "PipelineStatus::DEMUXER_ERROR_NO_SUPPORTED_STREAMS: FFmpegDemuxer: no supported streams"
+            },
+            "sourceHost": "dizipalorijinal20.com",
+            "sourceKind": "mp4",
+            "declaredTypes": []
+          },
+          {
+            "index": 3,
+            "time": 0,
+            "firstTime": 0,
+            "ready": 0,
+            "readyMax": 0,
+            "advancingSamples": 0,
+            "paused": true,
+            "visible": false,
+            "duration": null,
+            "volume": 0,
+            "muted": true,
+            "error": {
+              "code": 4,
+              "message": "PipelineStatus::DEMUXER_ERROR_NO_SUPPORTED_STREAMS: FFmpegDemuxer: no supported streams"
+            },
+            "sourceHost": "dizipalorijinal20.com",
+            "sourceKind": "mp4",
+            "declaredTypes": []
+          }
+        ],
+        "requests": [
+          "dizipalorijinal20.com:mp4"
+        ],
+        "controls": [],
+        "support": {
+          "h264": {
+            "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "aac": {
+            "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "vp9": {
+            "mime": "video/webm; codecs=\"vp9\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "av1": {
+            "mime": "video/mp4; codecs=\"av01.0.05M.08\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "opus": {
+            "mime": "audio/webm; codecs=\"opus\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          }
+        },
+        "now": 1793475292439,
+        "gate": false,
+        "challenge": false
+      }
+    ]
+  },
+  "dizilla": {
+    "frames": [
+      {
+        "tag": "perde-codec-LEA-200",
+        "frameHost": "dizilla.now",
+        "top": true,
+        "videos": [],
+        "requests": [],
+        "controls": [],
+        "support": {
+          "h264": {
+            "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "aac": {
+            "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "vp9": {
+            "mime": "video/webm; codecs=\"vp9\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "av1": {
+            "mime": "video/mp4; codecs=\"av01.0.05M.08\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "opus": {
+            "mime": "audio/webm; codecs=\"opus\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          }
+        },
+        "now": 1793475352196,
+        "gate": false,
+        "challenge": false
+      },
+      {
+        "tag": "perde-codec-LEA-200",
+        "frameHost": "four.pichive.online",
+        "top": false,
+        "videos": [
+          {
+            "index": 0,
+            "time": 0,
+            "firstTime": 0,
+            "ready": 0,
+            "readyMax": 0,
+            "advancingSamples": 0,
+            "paused": false,
+            "visible": true,
+            "duration": 3311.166680999999,
+            "volume": 0,
+            "muted": true,
+            "error": null,
+            "sourceHost": "",
+            "sourceKind": "blob",
+            "declaredTypes": []
+          }
+        ],
+        "requests": [],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "aria": "Oynat",
+            "title": null,
+            "test": null,
+            "classes": "np-play"
+          }
+        ],
+        "support": {
+          "h264": {
+            "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "aac": {
+            "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+            "mediaSource": false,
+            "canPlay": ""
+          },
+          "vp9": {
+            "mime": "video/webm; codecs=\"vp9\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "av1": {
+            "mime": "video/mp4; codecs=\"av01.0.05M.08\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          },
+          "opus": {
+            "mime": "audio/webm; codecs=\"opus\"",
+            "mediaSource": true,
+            "canPlay": "probably"
+          }
+        },
+        "now": 1793475352104,
+        "gate": false,
+        "challenge": false
+      }
+    ]
+  }
+}

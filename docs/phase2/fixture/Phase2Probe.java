@@ -111,7 +111,9 @@ public final class Phase2Probe implements ClientModInitializer {
                     case "evaluate" -> evaluate(args[2], args[3]);
                     case "frame-evaluate" -> {
                         var source = (org.cef.browser.CefBrowser) managedBrowser();
-                        for (String id : source.getFrameIdentifiers()) {
+                        var identifiers = source.getFrameIdentifiers();
+                        if (identifiers == null) throw new IllegalStateException("Native frames are not ready");
+                        for (String id : identifiers) {
                             var frame = source.getFrameByIdentifier(id);
                             if (frame == null) continue;
                             try {
@@ -245,7 +247,10 @@ public final class Phase2Probe implements ClientModInitializer {
             throw absent;
         }
         var source = (org.cef.browser.CefBrowser) managed;
-        for (String id : source.getFrameIdentifiers()) {
+        var identifiers = source.getFrameIdentifiers();
+        // Chromium has no native frame list yet during asynchronous browser creation.
+        if (identifiers == null) return;
+        for (String id : identifiers) {
             var frame = source.getFrameByIdentifier(id);
             if (frame == null) continue;
             try { frame.executeJavaScript("document.querySelectorAll('video,audio').forEach(v=>{v.muted=true;v.volume=0;});", frame.getURL(), 0); }

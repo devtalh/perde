@@ -2,6 +2,7 @@ package io.github.devtalh.perde.client.browser;
 
 import io.github.devtalh.perde.screen.UrlPolicy;
 import java.net.URI;
+import java.net.IDN;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
@@ -14,7 +15,17 @@ final class PlaybackMediaIdentity {
         if (!UrlPolicy.allowsPage(url)) return null;
         try {
             URI uri = URI.create(url);
-            String host = uri.getHost().toLowerCase(Locale.ROOT);
+            String host = uri.getHost();
+            if (host == null) {
+                // URI.getHost is null for Unicode domains that the existing URL policy accepts.
+                String authority = uri.getRawAuthority();
+                host = authority.substring(authority.lastIndexOf('@') + 1);
+                int port = host.lastIndexOf(':');
+                if (port >= 0) host = host.substring(0, port);
+                host = IDN.toASCII(host, IDN.USE_STD3_ASCII_RULES);
+            }
+            host = host.toLowerCase(Locale.ROOT);
+            if (host.endsWith(".")) host = host.substring(0, host.length() - 1);
             if (host.startsWith("www.")) host = host.substring(4);
             String path = uri.getRawPath() == null ? "" : uri.getRawPath();
             while (path.endsWith("/")) path = path.substring(0, path.length() - 1);

@@ -1,0 +1,22 @@
+[
+  {
+    "run": "first",
+    "entryMs": 1793474975976,
+    "readyMs": 1793474980983,
+    "stableMs": 1793474990039,
+    "entryToReadyMs": 5007,
+    "readyToStableMs": 9056,
+    "stableDriftMs": -181.0,
+    "guardReloads": 0
+  },
+  {
+    "run": "second",
+    "entryMs": 1793475520236,
+    "readyMs": 1793475523074,
+    "stableMs": 1793475527416,
+    "entryToReadyMs": 2838,
+    "readyToStableMs": 4342,
+    "stableDriftMs": -293.4060000000027,
+    "guardReloads": 0
+  }
+]

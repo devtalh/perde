@@ -43,4 +43,11 @@ class PlaybackMediaIdentityTest {
             assertNull(PlaybackMediaIdentity.key(url), url);
         assertNull(PlaybackMediaIdentity.key(null));
     }
+
+    @Test void acceptedUnicodeAuthoritiesAndDnsAliasesDoNotCrashOrChangeIdentity() {
+        assertEquals("xn--bcher-kva.de/episode", PlaybackMediaIdentity.key("https://www.bücher.de/episode/"));
+        assertEquals(PlaybackMediaIdentity.key("https://bücher.de/episode"), PlaybackMediaIdentity.key("https://xn--bcher-kva.de/episode"));
+        assertEquals("xn--bcher-kva.de/episode", PlaybackMediaIdentity.key("https://test:pass@bücher.de:8443/episode"));
+        assertEquals("youtube:aqz-KE-bpKQ", PlaybackMediaIdentity.key("https://www.YouTube.com./watch?v=aqz-KE-bpKQ"));
+    }
 }
