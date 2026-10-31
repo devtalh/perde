@@ -1,6 +1,6 @@
 # F3-1: authoritative playback, panel controls and server clock
 
-Status: **local acceptance complete, PR/latest-head CI pending**. Branch `feat/f3-1-playback-state`, from main `5e8fbd8` (merged PR #8). [LEA-196](https://linear.app/leak-rake/issue/LEA-196). No merge authorized. Next separate task: **F3-2**, applying this state to browser/video.
+Status: **F3-1 complete, PR awaiting review**. [PR #9](https://github.com/devtalh/perde/pull/9), branch `feat/f3-1-playback-state`, from main `5e8fbd8` (merged PR #8). [LEA-196](https://linear.app/leak-rake/issue/LEA-196). Evidence checkpoint `f986025` passed [CI run 67](https://github.com/devtalh/perde/actions/runs/41229769492); final docs-only head must pass CI before ready. No merge authorized. Next separate task: **F3-2**, applying this state to browser/video.
 
 ## Delivered behavior
 
@@ -31,7 +31,7 @@ All game data stays under `run/`, Gradle uses `.gradle-user-home`, and only repo
 | Criterion | Observed result / evidence |
 | --- | --- |
 | Build and old/new tests | Fresh `.\gradlew.bat build --rerun-tasks --console=plain --warning-mode all`: SUCCESSFUL in 12s, all nine tasks executed, **240 tests, 0 failures/errors/skips**. [Build](f3-1-build.txt), [suites](f3-1-tests.csv). |
-| MCEF-free windowless dedicated server | Final independent boot: 44 mods, MCEF/compat absent, --nogui/CREATE_NO_WINDOW, run/server, 127.0.0.1:25570, PID 47028. Done (0.974s), ordinary stdin stop, all dimensions saved, Gradle exit 0/SUCCESSFUL in 1m 21s. [Full final server log](f3-1-server-final.txt). |
+| MCEF-free windowless dedicated server | Final independent boot: 44 mods, MCEF/compat absent, --nogui/CREATE_NO_WINDOW, run/server, 127.0.0.1:25570, PID 47028. Done (0.974s), ordinary stdin stop, all dimensions saved, Gradle exit 0/SUCCESSFUL in 1m 21s. [Final server log](f3-1-server-final.txt), trailing whitespace normalized. |
 | Owner panel actions | Player1 changed the real server-opened panel: play/pause, each +/-10/30 s, 01:23 and 1:02:03 Go, pause-preserving seek, lower/upper clamps. INFO server changes agree with both received vanilla BE timelines. [Server](f3-1-server-integration.txt), [P1](f3-1-player1.txt), [P2](f3-1-player2.txt). |
 | Client position agreement | **21 common-reference comparisons, max difference 8 ms**, below 100 ms. Paused states are exact; after restart 620651 vs 620653 ms (2 ms). Both clients use the production estimator. [All comparisons](f3-1-skew.csv). |
 | Watch-only rejection | OWNER_ONLY/Player1 owner, Player2 non-op. All playback widgets/time input disabled, live position visible. Real forged Play, Pause, SeekRelative, SeekAbsolute rejected with permission action bar, paused position 3723000 unchanged on both. Extra forged pause after restart also rejected, playing state retained. No accepted Player2 playback log. |
@@ -60,7 +60,7 @@ BUILD SUCCESSFUL in 1m 21s
 
 ## Visual proof
 
-Six unchanged vanilla F2 screenshots, SHA256 source/evidence pairs verified in [provenance](f3-1-provenance.csv). Owner/viewer/paused/error and restarted owner images visually inspected. Restarted viewer is also retained as paired evidence.
+Six unchanged vanilla F2 screenshots, SHA256 source/evidence pairs verified in [provenance](f3-1-provenance.csv). All six owner/viewer/paused/error/restarted images visually inspected.
 
 - [Owner playing](screenshots/f3-1-owner-playing.png), [viewer disabled](screenshots/f3-1-viewer-playing.png).
 - [Paused 1:02:03](screenshots/f3-1-owner-hour-paused.png), [invalid time error](screenshots/f3-1-invalid-time.png).
@@ -84,4 +84,4 @@ Clock estimation assumes approximately symmetric latency and can jump when its b
 4. Change URL, confirm position starts at zero/playing; clear it, confirm zero/paused.
 5. Save/stop while playing, wait, restart and rejoin. Position resumes from the saved checkpoint, excluding downtime. Video behavior is deliberately unchanged in this PR.
 
-Only human review/final manual acceptance and exact-head CI remain before ready. Do not merge. Next task F3-2 owns browser application/JS/drift correction; F3-3/F3-4 own ad/embed work.
+Evidence checkpoint CI is green. Final docs-only head must also pass CI before marking ready; then only human review/final manual acceptance remains. Do not merge. Next task F3-2 owns browser application/JS/drift correction; F3-3/F3-4 own ad/embed work.
