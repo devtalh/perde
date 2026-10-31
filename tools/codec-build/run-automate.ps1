@@ -4,13 +4,15 @@
 
 .DESCRIPTION
   Everything (depot_tools, Chromium/CEF sources, outputs, caches, temp files)
-  stays inside one workspace folder (default D:\cef). The process environment
-  is redirected to that workspace (HOME, USERPROFILE, APPDATA, LOCALAPPDATA,
-  TEMP, vpython/CIPD caches) so tools do not write into the real user profile.
-  Nothing system-wide is changed: no PATH/registry/Defender edits, no installs.
+  stays inside one workspace folder (default D:\cef). cef-env.ps1 redirects
+  the process environment (HOME, USERPROFILE, APPDATA, LOCALAPPDATA, TEMP,
+  vpython/CIPD caches) to that workspace so tools do not write into the real
+  user profile. Nothing system-wide is changed: no PATH/registry/Defender
+  edits, no installs.
 
   Re-running the same command resumes: automate-git.py reuses an existing
-  checkout, and the build stage re-runs ninja/siso incrementally.
+  checkout, and the build stage re-runs ninja/siso incrementally. If the
+  initial `gclient sync` was interrupted, use resume-sync.ps1 first.
 
   Stages:
     sources  depot_tools update + Chromium/CEF checkout + hooks, no build.
@@ -33,58 +35,8 @@ param(
     [string]$ExtraGnDefines = ''
 )
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'cef-env.ps1') -Workspace $Workspace -ExtraGnDefines $ExtraGnDefines
 
-$ws = [System.IO.Path]::GetFullPath($Workspace)
-$wsHome = Join-Path $ws 'home'
-$dirs = @(
-    $wsHome,
-    (Join-Path $wsHome 'AppData\Local'),
-    (Join-Path $wsHome 'AppData\Roaming'),
-    (Join-Path $wsHome '.cache'),
-    (Join-Path $ws 'tmp'),
-    (Join-Path $ws 'cache\vpython-root'),
-    (Join-Path $ws 'cache\cipd'),
-    (Join-Path $ws 'logs'),
-    (Join-Path $ws 'build')
-)
-foreach ($d in $dirs) { New-Item -ItemType Directory -Force -Path $d | Out-Null }
-
-# Workspace-local git config. Chromium requires autocrlf=false on Windows; the
-# system Git for Windows config sets autocrlf=true. HOME points here, so the
-# real user's global config is neither read nor changed.
-$gitConfig = Join-Path $wsHome '.gitconfig'
-if (-not (Test-Path $gitConfig)) {
-    @(
-        '[core]',
-        "`tautocrlf = false",
-        "`tfilemode = false",
-        "`tpreloadindex = true",
-        "`tfscache = true",
-        "`tlongpaths = true",
-        '[branch]',
-        "`tautosetuprebase = always"
-    ) | Set-Content -Path $gitConfig -Encoding ascii
-}
-
-$env:HOME = $wsHome
-$env:USERPROFILE = $wsHome
-$env:LOCALAPPDATA = Join-Path $wsHome 'AppData\Local'
-$env:APPDATA = Join-Path $wsHome 'AppData\Roaming'
-$env:XDG_CACHE_HOME = Join-Path $wsHome '.cache'
-$env:TEMP = Join-Path $ws 'tmp'
-$env:TMP = $env:TEMP
-$env:VPYTHON_VIRTUALENV_ROOT = Join-Path $ws 'cache\vpython-root'
-$env:CIPD_CACHE_DIR = Join-Path $ws 'cache\cipd'
-$env:DEPOT_TOOLS_METRICS = '0'
-$env:DEPOT_TOOLS_WIN_TOOLCHAIN = '0'
-$env:GYP_MSVS_VERSION = '2022'
-$env:PYTHONUNBUFFERED = '1'
-# Official CEF Windows x64 GN_DEFINES (chromiumembedded.github.io/cef/automated_build_setup)
-# plus proprietary codecs for H.264/AAC.
-$env:GN_DEFINES = ('is_official_build=true proprietary_codecs=true ffmpeg_branding=Chrome ' + $ExtraGnDefines).Trim()
-$env:CEF_ARCHIVE_FORMAT = 'zip'
-
-$depotTools = Join-Path $ws 'depot_tools'
 if (-not (Test-Path (Join-Path $depotTools '.git'))) {
     & git.exe clone https://chromium.googlesource.com/chromium/tools/depot_tools.git $depotTools
     if ($LASTEXITCODE -ne 0) { throw "depot_tools clone failed: $LASTEXITCODE" }
