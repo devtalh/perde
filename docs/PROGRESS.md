@@ -4,12 +4,11 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase 2: **complete, PR awaiting review**. F2-3 (LEA-194/187/188), branch `feat/f2-3-validation`, [PR #8](https://github.com/devtalh/perde/pull/8). Full profile + Complementary real-screen/culling/switching and 10/10 lifecycle cycles passed. Spike removed; 197 fresh tests pass; post-removal MCEF-free windowless server and two-client URL/allowlist/smoke checks passed. Checkpoint `6797e0d` CI green; final evidence head must pass CI before ready. Do not merge. [Phase 2 report](phase2/F2-report.md).
-- Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
-- Last merged task: F2-2, [PR #7](https://github.com/devtalh/perde/pull/7), main `bb6f68e`; merge confirmed through GitHub and local history on 2026-10-31 before F2-3.
-- F2-2 (LEA-185): **merged under the lead-approved trusted-site boundary**. 197 tests/build and the MCEF-free windowless server passed. Native WebSocket bypass remains an accepted residual risk, not a repaired network filter. No canary repeat. [Report](phase2/F2-2-report.md).
-- Next: **Phase 3 planning by Claude** (video sync and LEA-195 ad reduction). No Phase 3 implementation in F2-3.
-- Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
+- Phase 3: **F3-1 in progress** (LEA-196), branch `feat/f3-1-playback-state` from merged main `5e8fbd8` (PR #8). Authoritative playback, panel controls and clock estimator implemented; 240 tests/build pass. Dedicated server and two-client acceptance checks are in progress. [Report](phase3/F3-1-report.md).
+- Phase 2: **merged**, [PR #8](https://github.com/devtalh/perde/pull/8), main `5e8fbd8`, confirmed 2026-10-31. [Phase 2 report](phase2/F2-report.md).
+- Phase 1B: **GO** (decided by Talha and Claude).
+- Next after F3-1 acceptance/review: **F3-2**, apply playback to browser/video. No F3-2 work in this branch.
+- Confirmed Minecraft 26.2, Fabric API 0.161.0+26.2, Java 25 and pinned MCEF 26.2 client build.
 
 ## Task log
 Newest first. Format:
@@ -23,6 +22,14 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F3-1 - Authoritative playback, panel controls and server clock (LEA-196)
+- Branch / PR: `feat/f3-1-playback-state`, from main `5e8fbd8`; PR pending.
+- Status: partial (acceptance verification in progress).
+- What changed: pure PlaybackClock, playback C2S controls through existing authorization/validation/rate limiting, consistent save checkpoints and restart rebasing, connection-scoped monotonic lowest-RTT estimator, live panel controls and EN/TR texts. Focus-free fixture extended for actual panel and forged packet checks. Browser/video unchanged.
+- Verification: Java 25.0.4 present, clean main contains required PR #8 merge. Read SPEC/PROGRESS/F2 report, Notion hub and Linear LEA-196. `.\gradlew.bat build --rerun-tasks --console=plain --warning-mode all` SUCCESSFUL in 11s, 240 tests, zero failures/errors/skips. Fixture package compiles. MCEF-free windowless server reaches Done (1.410s) on 127.0.0.1:25570; runtime checks ongoing.
+- Left: two-client panel/permission/skew/URL/restart checks, screenshots/log report, final diff/build/isolation checks, push/PR and latest-head CI. Next separate task F3-2; do not merge.
+- Risks: clock estimation assumes roughly symmetric network delay; server wall-clock adjustments affect timelines by design. Restart resumes the last saved position. Existing trusted-site/native browser risks remain. SPEC/AGENTS unchanged.
 
 ### F2-3 - Full-profile validation and feasibility spike removal (LEA-194, LEA-187, LEA-188)
 - Branch / PR: `feat/f2-3-validation`, from main `bb6f68e`; [PR #8](https://github.com/devtalh/perde/pull/8), implementation/evidence checkpoint `6797e0d` pushed and CI green. Final evidence head must pass CI before ready; do not merge. PR #7 merge was confirmed through GitHub and local history before branching.

@@ -9,10 +9,17 @@ import java.util.UUID;
 public final class PacketRateLimiter {
     private final Map<UUID, ArrayDeque<Long>> accepted = new HashMap<>();
 
+    private final int maxPerSecond;
+    public PacketRateLimiter() { this(10); }
+    public PacketRateLimiter(int maxPerSecond) {
+        if (maxPerSecond < 1) throw new IllegalArgumentException("Invalid packet limit");
+        this.maxPerSecond = maxPerSecond;
+    }
+
     public boolean tryAccept(UUID player, long nowMs) {
         ArrayDeque<Long> window = accepted.computeIfAbsent(player, ignored -> new ArrayDeque<>());
         while (!window.isEmpty() && nowMs - window.peekFirst() >= 1000) window.removeFirst();
-        if (window.size() >= 10) return false;
+        if (window.size() >= maxPerSecond) return false;
         window.addLast(nowMs);
         return true;
     }

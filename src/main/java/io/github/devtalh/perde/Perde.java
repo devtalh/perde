@@ -12,6 +12,7 @@ public class Perde implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        io.github.devtalh.perde.screen.PerdeServerClock.initialize();
         PerdeRegistry.initialize();
         PerdeServerNetworking.initialize();
         PerdeServerAllowlist.initialize();

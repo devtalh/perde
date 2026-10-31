@@ -17,6 +17,7 @@ public record ScreenState(String url, boolean playing, long positionMs, long ser
 
     public ScreenState {
         url = validateUrl(url);
+        positionMs = PlaybackClock.clamp(positionMs);
         volume = clamp(volume, 0, 1);
         width = roundToGrid(width, 1, 16);
         height = roundToGrid(height, 0.5, 9);
@@ -77,6 +78,18 @@ public record ScreenState(String url, boolean playing, long positionMs, long ser
 
     public ScreenState withUrl(String value) {
         return copy(value, width, height, offsetX, offsetY, owner, ownerName, accessMode, allowedPlayers);
+    }
+
+    public PlaybackClock playback() { return new PlaybackClock(playing, positionMs, serverTimestamp); }
+
+    public ScreenState withPlayback(PlaybackClock clock) {
+        return new ScreenState(url, clock.playing(), clock.positionMs(), clock.serverTimestamp(), volume,
+                width, height, offsetX, offsetY, owner, ownerName, accessMode, allowedPlayers);
+    }
+
+    public ScreenState withUrl(String value, long now) {
+        ScreenState next = withUrl(value);
+        return next.url.equals(url) ? this : next.withPlayback(new PlaybackClock(!next.url.isEmpty(), 0, now));
     }
 
     public ScreenState withGeometry(double w, double h, double x, double y) {

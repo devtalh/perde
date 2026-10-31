@@ -21,6 +21,7 @@ import java.util.Map;
 import java.util.UUID;
 
 public final class PerdeServerNetworking {
+    private static final PacketRateLimiter TIME_LIMITER = new PacketRateLimiter(5);
     private static final PacketRateLimiter LIMITER = new PacketRateLimiter();
     private static final Map<UUID, OpenedScreen> OPENED = new HashMap<>();
     private record OpenedScreen(ResourceKey<Level> level, BlockPos pos) { }
@@ -29,6 +30,20 @@ public final class PerdeServerNetworking {
 
     public static void initialize() {
         PerdePayloads.registerTypes();
+        ServerPlayNetworking.registerGlobalReceiver(PerdePayloads.Play.TYPE,
+                (payload, context) -> handle(context.player(), payload.pos(), new ControlDecisions.Play()));
+        ServerPlayNetworking.registerGlobalReceiver(PerdePayloads.Pause.TYPE,
+                (payload, context) -> handle(context.player(), payload.pos(), new ControlDecisions.Pause()));
+        ServerPlayNetworking.registerGlobalReceiver(PerdePayloads.SeekRelative.TYPE,
+                (payload, context) -> handle(context.player(), payload.pos(), new ControlDecisions.SeekRelative(payload.deltaMs())));
+        ServerPlayNetworking.registerGlobalReceiver(PerdePayloads.SeekAbsolute.TYPE,
+                (payload, context) -> handle(context.player(), payload.pos(), new ControlDecisions.SeekAbsolute(payload.positionMs())));
+        ServerPlayNetworking.registerGlobalReceiver(PerdePayloads.TimeRequest.TYPE, (payload, context) -> {
+            if (TIME_LIMITER.tryAccept(context.player().getUUID(), System.nanoTime() / 1_000_000)) {
+                ServerPlayNetworking.send(context.player(), new PerdePayloads.TimeResponse(payload.clientNanos(), System.currentTimeMillis()));
+            }
+        });
+
         ServerPlayNetworking.registerGlobalReceiver(PerdePayloads.SetUrl.TYPE,
                 (payload, context) -> handle(context.player(), payload.pos(), new ControlDecisions.SetUrl(payload.url())));
         ServerPlayNetworking.registerGlobalReceiver(PerdePayloads.SetGeometry.TYPE,
@@ -61,6 +76,7 @@ public final class PerdeServerNetworking {
         ServerPlayConnectionEvents.DISCONNECT.register((listener, server) -> {
             UUID id = listener.player.getUUID();
             LIMITER.forget(id);
+            TIME_LIMITER.forget(id);
             OPENED.remove(id);
         });
     }
@@ -100,7 +116,7 @@ public final class PerdeServerNetworking {
         ControlDecisions.Context context = context(player, pos);
         ScreenState current = screenState(player, pos, context.chunkLoaded());
         ControlDecisions.Result result = ControlDecisions.decide(context, current, change, LIMITER, System.nanoTime() / 1_000_000,
-                PerdeServerAllowlist.policy(player.level().getServer()));
+                PerdeServerAllowlist.policy(player.level().getServer()), System.currentTimeMillis());
         if (result.rejection() != null) {
             reject(player, result.rejection());
             if (result.rejection() == ControlDecisions.Rejection.SITE_NOT_ALLOWED && change instanceof ControlDecisions.SetUrl request) {
@@ -110,6 +126,12 @@ public final class PerdeServerNetworking {
         }
         if (result.rateLimited()) return;
         ((PerdeBlockEntity) player.level().getBlockEntity(pos)).setScreenState(result.state());
+        if (change instanceof ControlDecisions.Play || change instanceof ControlDecisions.Pause
+                || change instanceof ControlDecisions.SeekRelative || change instanceof ControlDecisions.SeekAbsolute
+                || change instanceof ControlDecisions.SetUrl && !current.url().equals(result.state().url())) {
+            io.github.devtalh.perde.Perde.LOGGER.info("Perde playback pos={} action={} positionMs={} playing={} player={}",
+                    pos, change.getClass().getSimpleName(), result.state().positionMs(), result.state().playing(), player.getPlainTextName());
+        }
     }
 
     private static void reject(ServerPlayer player, ControlDecisions.Rejection rejection) {
