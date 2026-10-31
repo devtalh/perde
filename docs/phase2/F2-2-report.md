@@ -1,6 +1,6 @@
 # F2-2: browser navigation and privacy policy
 
-Status: **partial, draft review only**. Branch `feat/f2-2-browser-policy`, based on main `6b75980`. [F2-1 PR #6](https://github.com/devtalh/perde/pull/6) was confirmed merged before implementation. [Linear LEA-185](https://linear.app/leak-rake/issue/LEA-185) and the Notion Perde hub were read; repository SPEC and the supplied F2-2 task govern current implementation. Linear field notes still return `Tool get_agent_context not found`.
+Status: **partial, draft review only**. Branch `feat/f2-2-browser-policy`, [draft PR #7](https://github.com/devtalh/perde/pull/7), based on main `6b75980`. Implementation commit: `bdc33b7`. [F2-1 PR #6](https://github.com/devtalh/perde/pull/6) was confirmed merged before implementation. [Linear LEA-185](https://linear.app/leak-rake/issue/LEA-185) and the Notion Perde hub were read; repository SPEC and the supplied F2-2 task govern current implementation. Linear field notes still return `Tool get_agent_context not found`.
 
 Talha is playing Minecraft on this PC. As explicitly instructed, this stage used **no Computer Use, no runClient/runClient2, and no game windows**. Only implementation, unit tests, build, fixture compilation and a windowless loopback dedicated-server boot were performed. Acceptance checks (a) through (e) remain **pending**. Do not mark ready or merge. Resume game checks only after Talha explicitly says he has finished playing. The next task after completion is **F2-3 full-pack validation, culling, spike removal**.
 

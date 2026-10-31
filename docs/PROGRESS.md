@@ -6,7 +6,7 @@ This is the handoff point between Codex sessions and accounts: the next session 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
 - Last merged task: F2-1, [PR #6](https://github.com/devtalh/perde/pull/6), main `6b75980`; merge confirmed through GitHub and origin/main on 2026-10-31.
-- F2-2 (LEA-185): **partial**, implementation/unit tests/build/headless server checked on `feat/f2-2-browser-policy`; draft PR only. [Report](phase2/F2-2-report.md). In-game checks **(a) to (e) pending**. No Computer Use or game clients until Talha explicitly confirms he has finished playing. Permission callback/audit limits remain documented for review.
+- F2-2 (LEA-185): **partial**, implementation/unit tests/build/headless server checked on `feat/f2-2-browser-policy`; [draft PR #7](https://github.com/devtalh/perde/pull/7). [Report](phase2/F2-2-report.md). In-game checks **(a) to (e) pending**. No Computer Use or game clients until Talha explicitly confirms he has finished playing. Permission callback/audit limits remain documented for review.
 - Next task after F2-2 completion: **F2-3 full-pack validation, culling, spike removal**. Do not start it during the F2-2 handoff.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
@@ -24,7 +24,7 @@ Newest first. Format:
 ```
 
 ### F2-2 - Browser navigation and privacy policy (LEA-185)
-- Branch / PR: `feat/f2-2-browser-policy`, targeting `main`; draft PR link will be added after creation. Do not merge or mark ready in this stage.
+- Branch / PR: `feat/f2-2-browser-policy`, targeting `main`; [draft PR #7](https://github.com/devtalh/perde/pull/7). Do not merge or mark ready in this stage.
 - Status: partial (in-game verification deferred by Talha's explicit instruction while he is playing)
 - What changed: pure Java public-URL/literal-host policy shared by server/client; local/private server SetUrl rejection with translated action-bar text; unsafe saved URLs load empty. Private Perde CefClient/request context, identity-scoped navigation/resource/redirect/popup/download/file/JS-dialog handling, native permission defaults verified before public navigation, bounded INFO audit. MCEF shared handlers, rendering implementation and production spike remain intact. Opt-in development-only page probes added outside the default jar.
 - Verification (2026-10-31 Europe/Istanbul): `gradlew.bat build --rerun-tasks --console=plain --warning-mode all` SUCCESSFUL in 11s, all 9 tasks executed; final follow-up build SUCCESSFUL in 6s (4 executed, 5 up-to-date) after the browserless-download audit adjustment; **147 tests, 0 failures/errors/skips**. Native-free tests exercise URL edge cases, persisted-URL normalization, unchanged-state server rejections, real JCEF callback contracts, browser identity, download/dialog cancellation, native preference failures and audit bounds. Opt-in `compilePhase2Probe` SUCCESSFUL in 6s without launching a client. Default jar has no MCEF/JCEF/tests/fixture/nested jars; common sources contain no client/MCEF/JCEF imports; language parity 43 keys; Git diff/whitespace checked. [Build](phase2/f2-2-build.txt), [test counts](phase2/f2-2-tests.csv).
