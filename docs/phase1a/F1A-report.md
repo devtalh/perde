@@ -1,6 +1,6 @@
 # Phase 1A skeleton report
 
-Status: in progress on `feat/f1a-skeleton`. This report records only checks actually completed.
+Status: **partial**, `feat/f1a-skeleton`, draft [PR #5](https://github.com/devtalh/perde/pull/5). Computer Use was stopped by physical Escape during final restart verification. This report records only checks actually completed; the PR is not ready and must not be merged.
 
 ## Scope and implementation
 
@@ -57,10 +57,10 @@ Singleplayer checks: real placement, server-opened panel, Open URL to `https://e
 | d: Selected, Everyone, Only me | PASS: real C2S requests from background Player1, Player2 GUI URL edit, reverse sync logged | [Selected](screenshots/f1a-4-d-selected-player2.png), [Everyone without list membership](screenshots/f1a-4-d-everyone-player2.png), [Only me again](screenshots/f1a-4-d-only-me-player2.png) |
 | e: operator override and deop | PASS, panels reopened after role changes | [op](screenshots/f1a-4-e-operator-player2.png), [access/list](screenshots/f1a-4-e-operator-access.png), [deop](screenshots/f1a-4-e-deop-player2.png) |
 | f: unsafe URL rejection | PASS: actual C2S bypasses client validation; server action bar + unchanged NBT | [javascript](screenshots/f1a-4-f-javascript-rejected.png), [file](screenshots/f1a-4-f-file-rejected.png) |
-| g: restart persistence | Pending | |
+| g: restart persistence | PARTIAL: controlled restart and exact all-field NBT comparison PASS; Player1 reconnect snapshot PASS; Player2 reconnect and both F2 proofs pending after UI stop | [before/after evidence](persistence-evidence.txt) |
 | h: item drop and screen removal | Pending | |
 | i: singleplayer and spike regression | PASS: actual GUI checks and live YouTube frames from unchanged spike | [spike](screenshots/f1a-4-singleplayer-spike.png) |
-| j: default build, jar isolation, MCEF-free server | Partial: initial build/server pass | |
+| j: default build, jar isolation, MCEF-free server | PASS to checkpoint: 34 tests; last build SUCCESSFUL in 9s; jar and common runtime isolated; restarted default server 44 mods without MCEF, Done (1.258s). Final handoff/CI recheck remains | |
 
 ## Integration method and extra rendering evidence
 
@@ -74,4 +74,4 @@ Operator status flags are refreshed on server OpenPanel. Reopen after op/deop; s
 
 ## Known issues and Phase 2 handoff
 
-Integration checks remain pending. Existing OSHI and dev-account Realms diagnostics remain. Phase 2 must retain the F1B render path, implement browser lifetime/range policy and resolve LEA-185 navigation security; Entity Culling/MoreCulling integration is out of scope here.
+Remaining checks: Player2 reconnect after the controlled restart, actual F2 restart evidence from both clients, survival mining/drop and disappearance on both clients, final build/CI/diff checks and ready-for-review transition. The controlled restart already preserved all fields exactly, including non-default media values seeded only by server console; no media controls were added. Player1 reconnected and received the same complete state. The user pressed physical Escape before the first restart F2 capture, so no further Computer Use input was issued. Own server PID 23344 and Player1 PID 33912 are left running; re-identify them before resuming. Existing OSHI and dev-account Realms diagnostics remain. Phase 2 must retain the F1B render path, implement browser lifetime/range policy and resolve LEA-185 navigation security; Entity Culling/MoreCulling integration is out of scope here.

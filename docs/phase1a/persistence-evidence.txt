@@ -1,0 +1,11 @@
+Perde Phase 1A controlled restart evidence
+
+The server console seeds non-default media fields only for serialization testing. No Phase 1A media controls or packets are added.
+
+Before controlled stop (server console, 2026-10-31 Europe/Istanbul):
+[13:21:43] [Server thread/INFO] (Minecraft) 0, 120, 3 has the following block data: {owner: "681f539b-8bb8-3f85-85e5-a2945f6c6539", components: {}, serverTimestamp: 987654321L, accessMode: "OWNER_ONLY", url: "https://example.com/everyone", volume: 0.375d, offsetX: 1.3125d, offsetY: 0.0d, ownerName: "Player1", width: 8.0d, x: 0, y: 120, playing: 1b, z: 3, allowedPlayers: [{name: "Player2", uuid: "aed5efd4-551b-3965-bc28-ae21aa072a66"}], id: "perde:perde", positionMs: 12345L, height: 4.5d}
+
+After controlled restart (server console, 2026-10-31 Europe/Istanbul):
+[13:23:58] [Server thread/INFO] (Minecraft) 0, 120, 3 has the following block data: {owner: "681f539b-8bb8-3f85-85e5-a2945f6c6539", components: {}, serverTimestamp: 987654321L, accessMode: "OWNER_ONLY", url: "https://example.com/everyone", volume: 0.375d, offsetX: 1.3125d, offsetY: 0.0d, ownerName: "Player1", width: 8.0d, x: 0, y: 120, playing: 1b, z: 3, allowedPlayers: [{name: "Player2", uuid: "aed5efd4-551b-3965-bc28-ae21aa072a66"}], id: "perde:perde", positionMs: 12345L, height: 4.5d}
+
+PASS: the complete serialized NBT payload is identical before and after the controlled restart, including all media fields, owner/name, access mode and allowed UUID/name.
