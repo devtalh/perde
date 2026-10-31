@@ -1,4 +1,4 @@
-Completed full-profile client stdout/stderr, 2026-10-31 19:37:53-19:59:59 Europe/Istanbul.
+Completed full-profile client stdout/stderr, 2026-10-31 19:37:49-19:59:59 Europe/Istanbul.
 AWT bare exception prefix lines: 0
 java.sql.SQLException lines: 0
 Perde browser failure log lines: 0
@@ -22,3 +22,23 @@ Maximum observed native browser count (one-second/explicit status samples): 1
 
 BUILD SUCCESSFUL in 22m 17s
 10 actionable tasks: 3 executed, 7 up-to-date
+
+Post-removal Player1: AWT bare prefixes=0, SQL exception lines=0, Perde browser failures=0, fixture failures=0.
+[20:07:02] [Render thread/INFO] (Minecraft) [System] [CHAT] Player2 left the game
+[20:07:03] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[20:07:03] [Render thread/INFO] (Minecraft) Stopping!
+[20:07:03] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (client stopping), active=0/1.
+[20:07:03] [AWT-EventQueue-0/INFO] (Minecraft) [STDOUT]: shutdown on Thread[#87,AWT-EventQueue-0,6,InnocuousForkJoinWorkerThreadGroup]
+
+BUILD SUCCESSFUL in 3m 43s
+10 actionable tasks: 3 executed, 7 up-to-date
+
+Post-removal Player2: AWT bare prefixes=0, SQL exception lines=0, Perde browser failures=0, fixture failures=0.
+[20:06:38] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_20.06.38.png
+[20:07:02] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[20:07:02] [Render thread/INFO] (Minecraft) Stopping!
+[20:07:02] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (client stopping), active=0/1.
+[20:07:02] [AWT-EventQueue-0/INFO] (Minecraft) [STDOUT]: shutdown on Thread[#87,AWT-EventQueue-0,6,InnocuousForkJoinWorkerThreadGroup]
+
+BUILD SUCCESSFUL in 2m 56s
+10 actionable tasks: 1 executed, 9 up-to-date

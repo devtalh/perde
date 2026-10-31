@@ -5,5 +5,5 @@ No bundled MCEF/JCEF/compat/spike/fixture classes or nested jars.
 Common imports isolated.
 Language keys: 57 each, exact parity.
 SPEC/AGENTS unchanged.
-Unmodified F2 source/evidence hash pairs: 17
+Unmodified F2 source/evidence hash pairs: 26
 Default runtimeClasspath: no MCEF/JCEF/compat dependencies.

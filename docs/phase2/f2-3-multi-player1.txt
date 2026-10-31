@@ -1,0 +1,107 @@
+[20:03:52] [Render thread/INFO] (perde) Perde initialized.
+[20:03:53] [Render thread/INFO] (perde) Perde client initialized.
+[20:03:53] [ForkJoinPool.commonPool-worker-1/INFO] (perde-f2-probe) Test Chromium audio: --mute-audio
+[20:03:53] [ForkJoinPool.commonPool-worker-1/INFO] (perde) Perde: MCEF initialization completed.
+[20:03:56] [Render thread/INFO] (perde-f2-probe) Test client master volume: 0.0
+[20:03:56] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[20:04:27] [Render thread/INFO] (perde-f2-probe) Action connect completed
+[20:04:29] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com]
+[20:04:54] [Render thread/INFO] (perde-f2-probe) Action equip completed
+[20:04:54] [Render thread/INFO] (perde-f2-probe) Action place completed
+[20:04:54] [Render thread/INFO] (perde-f2-probe) Action open completed
+[20:04:55] [Render thread/INFO] (perde-f2-probe) Action geometry completed
+[20:04:55] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[20:04:55] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[20:04:55] [AWT-EventQueue-0/INFO] (perde) Perde browser privacy verified: globalContext=false, WebRTC=disable_non_proxied_udp, URL overrides=[], local-IP exceptions=[].
+[20:04:55] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=]
+[20:04:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: 
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: 
+[20:04:56] [Render thread/INFO] (perde-f2-probe) Action close completed
+[20:04:56] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[20:04:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[20:04:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[20:04:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[20:04:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[20:04:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[20:04:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[20:04:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[20:04:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[20:04:58] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[20:05:01] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[20:05:07] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[20:05:08] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[20:05:08] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result multi-initial-p1: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","title":"Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster) - YouTube","time":8.400118,"paused":false,"ready":4,"volume":0,"muted":true}}}
+[20:05:21] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[20:05:37] [Render thread/INFO] (perde-f2-probe) Action open completed
+[20:05:38] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[20:05:38] [Render thread/INFO] (perde) Perde browser: URL updated at BlockPos{x=300, y=120, z=300} on existing browser.
+[20:05:38] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[20:05:38] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:05:38] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:05:38] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:05:38] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:05:38] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:05:38] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:05:38] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:05:38] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:05:38] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=aqz-KE-bpKQ]
+[20:05:38] [Render thread/INFO] (perde-f2-probe) Action close completed
+[20:05:40] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[20:05:51] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(299.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=aqz-KE-bpKQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=679 status=perde.browser.loading thread=Render thread
+[20:05:51] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=aqz-KE-bpKQ]
+[20:05:51] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[20:05:51] [Render thread/INFO] (perde-f2-probe) Action status completed
+[20:05:52] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[20:05:52] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result multi-changed-p1: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=aqz-KE-bpKQ","title":"Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film - YouTube","time":11.660129,"paused":false,"ready":4,"volume":0,"muted":true}}}
+[20:05:53] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[20:06:04] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (site allowlist updated), active=0/1.
+[20:06:04] [Render thread/INFO] (perde) Perde allowlist received: [youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com]
+[20:06:04] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[20:06:05] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(299.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=aqz-KE-bpKQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.site_not_allowed thread=Render thread
+[20:06:05] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[20:06:05] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[20:06:05] [Render thread/INFO] (perde-f2-probe) Action status completed
+[20:06:06] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[20:06:08] [Render thread/INFO] (perde) Perde allowlist received: [youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, youtube.com]
+[20:06:08] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser privacy verified: globalContext=false, WebRTC=disable_non_proxied_udp, URL overrides=[], local-IP exceptions=[].
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: 
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: 
+[20:06:08] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=]
+[20:06:09] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=aqz-KE-bpKQ]
+[20:06:13] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1
+[20:06:13] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1
+[20:06:13] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1
+[20:06:13] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1
+[20:06:13] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1
+[20:06:13] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1
+[20:06:13] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1
+[20:06:13] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1
+[20:06:13] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1]
+[20:06:16] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=aqz-KE-bpKQ]
+[20:06:35] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[20:06:35] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result multi-restored-p1: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=aqz-KE-bpKQ","title":"Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film - YouTube","time":20.960072,"paused":false,"ready":4,"volume":0,"muted":true}}}
+[20:06:36] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(299.5, 120.0, 291.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=aqz-KE-bpKQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=682 status=perde.browser.loading thread=Render thread
+[20:06:36] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=aqz-KE-bpKQ]
+[20:06:36] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[20:06:36] [Render thread/INFO] (perde-f2-probe) Action status completed
+[20:06:37] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[20:07:03] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[20:07:03] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=300, y=120, z=300} (client stopping), active=0/1.
+BUILD SUCCESSFUL in 3m 43s
