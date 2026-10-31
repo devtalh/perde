@@ -176,7 +176,7 @@
 [18:59:31] [Render thread/INFO] (perde-f2-probe) Action status completed
 [18:59:39] [Render thread/INFO] (perde-f2-probe) Action quit completed
 BUILD SUCCESSFUL in 9m 49s
-Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" 
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0"
 Independent public redirect check (no follow): https://httpbingo.org/redirect-to?url=https%3A%2F%2Fexample.net
 HTTP 302
 Location: https://example.net
