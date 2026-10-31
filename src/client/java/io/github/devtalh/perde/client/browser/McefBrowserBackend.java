@@ -6,6 +6,7 @@ import net.dimaskama.mcef.api.MCEFBrowser;
 import net.dimaskama.mcef.impl.MCEFBrowserImpl;
 import io.github.devtalh.perde.Perde;
 import io.github.devtalh.perde.screen.ScreenState;
+import io.github.devtalh.perde.screen.UrlPolicy;
 import org.cef.CefApp;
 import org.cef.CefClient;
 import org.cef.browser.CefRequestContext;
@@ -47,7 +48,13 @@ final class McefBrowserBackend implements BrowserBackend {
         });
         if (context == null) { client.dispose(); client = null; throw new IllegalStateException("Could not create private browser context"); }
         // Same MCEF renderer/construction as df61843, but with our client/context. No shared handlers to replace or chain.
-        browser = new MCEFBrowserImpl(client, "about:blank", false, context, null);
+        browser = new MCEFBrowserImpl(client, "about:blank", false, context, null) {
+            @Override public void onPaint(CefBrowser source, boolean popup, java.awt.Rectangle[] dirty,
+                    java.nio.ByteBuffer buffer, int width, int height) {
+                // Preserve the last safe texture while Chromium recovers a renderer-blocked navigation.
+                if (UrlPolicy.allowsNavigation(source.getURL())) super.onPaint(source, popup, dirty, buffer, width, height);
+            }
+        };
         policy.own(browser.getCefBrowser());
         MCEFBrowser created = browser;
         policy.install(client, () -> {

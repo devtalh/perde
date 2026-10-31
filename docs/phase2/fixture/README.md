@@ -34,11 +34,11 @@ The queue script refuses input unless exactly one live repository DLI process ha
 
 Memory sampling writes `run/phase2-verification/memory.csv`; create that directory before first use. Each stage appends ten samples. Only the identified client's repository-native helpers are counted. Retained shared Chromium processes can outlive individual browsers; pair these samples with the fixture's native-browser registry logs.
 
-## F2-2 security probes (pending)
+## F2-2 security probes and native observations
 
-Do not launch any game client until Talha explicitly confirms he has finished playing. The F2-2 implementation stage compiled this fixture but did not run these checks.
+Talha authorized the resumed client checks; (a)-(e) have been executed. The task still remains partial because the additional local WebSocket canary demonstrated a native callback bypass. See the F2-2 report before treating these helpers as proof of isolation.
 
-Once that confirmation arrives, use one managed Perde screen showing `https://example.com`, close the panel, and issue each probe separately. `policy` refuses non-development environments and non-public starting pages. It selects the manager's own browser by identity; it cannot target the spike or another mod. The native audit now covers both the shared MCEF client (spike) and the dedicated Perde client.
+Use one managed Perde screen showing `https://example.com`, close the panel, and issue each probe separately. `policy` refuses non-development environments and non-public starting pages. It selects the manager's own browser by identity; it cannot target the spike or another mod. The native audit covers both the shared MCEF client (spike) and the dedicated Perde client.
 
 ```powershell
 .\docs\phase2\fixture\Send-Probe.ps1 -Action policy -Values file
@@ -52,3 +52,7 @@ Once that confirmation arrives, use one managed Perde screen showing `https://ex
 ```
 
 Inspect `Perde browser blocked [...]` entries after each action. `issued probe` only proves dispatch, not a native denial. Verify the native URL, continued rendering, absent windows/dialogs/downloads, media rejection, and unchanged screen state. `beforeunload` is an additional probe which deliberately navigates to another public page. An actual public HTTP redirect response is also needed for acceptance (d); assigning `location` alone does not prove redirect handling. Permission-default entries record installed native defaults, not per-attempt permission callbacks, which this JCEF version does not expose. Keep that distinction in the evidence report.
+
+`evaluate` accepts a label and a JavaScript expression, runs native Runtime.evaluate with awaitPromise/returnByValue/userGesture, and logs the actual result or a ten-second failure. Wait for `F2-2 native result <label>`, not merely the dispatch acknowledgement. `devtools` is an opt-in diagnostic command; Browser/Target context-inspection commands timed out in this JCEF and are not used by production security code.
+
+`raw-url` accepts x/y/z/url and sends the normal SetUrl payload. Open the real panel first to establish the normal server permission context. This tests server rejection independently from the panel's correct local rejection; it does not bypass authorization. `status` now records the actual Hud action-bar component through test-only reflection verified from Minecraft 26.2 source. No fixture class is packaged by a normal build.

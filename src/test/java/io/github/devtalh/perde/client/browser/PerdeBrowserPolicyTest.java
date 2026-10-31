@@ -6,6 +6,7 @@ import org.cef.browser.CefFrame;
 import org.cef.callback.*;
 import org.cef.handler.CefDialogHandler;
 import org.cef.handler.CefJSDialogHandler;
+import org.cef.handler.CefFocusHandler;
 import org.cef.misc.BoolRef;
 import org.cef.misc.StringRef;
 import org.junit.jupiter.api.Test;
@@ -65,6 +66,39 @@ class PerdeBrowserPolicyTest {
         assertFalse(handlers.life().doClose(browser));
         handlers.life().onBeforeClose(browser);
         assertEquals(1, closed.get());
+    }
+
+    @Test void displayOnlyBrowserCannotGainFocusForClipboardAccess() {
+        assertTrue(handlers.focus().onSetFocus(browser, CefFocusHandler.FocusSource.FOCUS_SOURCE_NAVIGATION));
+        assertTrue(handlers.focus().onSetFocus(browser, CefFocusHandler.FocusSource.FOCUS_SOURCE_SYSTEM));
+        assertFalse(handlers.focus().onSetFocus(other, CefFocusHandler.FocusSource.FOCUS_SOURCE_SYSTEM));
+        List<Boolean> focus = new ArrayList<>();
+        CefBrowser recovering = (CefBrowser) Proxy.newProxyInstance(CefBrowser.class.getClassLoader(), new Class[]{CefBrowser.class},
+                (object, method, args) -> { if (method.getName().equals("setFocus")) focus.add((Boolean) args[0]); return null; });
+        policy.own(recovering);
+        handlers.focus().onGotFocus(recovering);
+        handlers.focus().onGotFocus(other);
+        assertEquals(List.of(false), focus);
+    }
+
+    @Test void restoresLastPublicPageForRendererBlockedNavigationAndDeniedRedirects() {
+        List<String> restored = new ArrayList<>();
+        CefBrowser recovering = (CefBrowser) Proxy.newProxyInstance(CefBrowser.class.getClassLoader(), new Class[]{CefBrowser.class},
+                (object, method, args) -> {
+                    if (method.getName().equals("loadURL")) restored.add((String) args[0]);
+                    return null;
+                });
+        policy.own(recovering);
+        CefFrame main = stub(CefFrame.class, "");
+        handlers.display().onAddressChange(recovering, main, "https://example.com/");
+        handlers.display().onAddressChange(recovering, main, "about:blank#blocked");
+        assertEquals(List.of("https://example.com/"), restored);
+        handlers.display().onAddressChange(other, main, "file:///C:/");
+        assertEquals(1, restored.size());
+        var target = new StringRef("file:///C:/");
+        policy.resources(true, false).onResourceRedirect(recovering, main, new TestRequest("https://example.com/redirect"), null, target);
+        assertEquals("perde-blocked:redirect", target.get());
+        assertEquals(List.of("https://example.com/", "https://example.com/"), restored);
     }
 
     @Test void resourcesAndRedirectsIncludingBrowserlessWorkersAreBlocked() {

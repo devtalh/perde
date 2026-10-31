@@ -17,6 +17,7 @@ import java.util.Vector;
 final class PerdeBrowserPolicy {
     private final BlockedRequestLog audit;
     private volatile CefBrowser owned;
+    private volatile String lastPublicUrl;
 
     PerdeBrowserPolicy(BlockedRequestLog audit) { this.audit = audit; }
     void own(CefBrowser browser) { owned = browser; }
@@ -30,7 +31,8 @@ final class PerdeBrowserPolicy {
     }
 
     record Handlers(CefRequestHandler request, CefLifeSpanHandler life, CefDownloadHandler download,
-                    CefDialogHandler dialog, CefJSDialogHandler js, CefContextMenuHandler menu) { }
+                    CefDialogHandler dialog, CefJSDialogHandler js, CefContextMenuHandler menu,
+                    CefDisplayHandler display, CefFocusHandler focus) { }
 
     void install(CefClient client, Runnable afterCreated, Runnable beforeClose) {
         Handlers handlers = handlers(afterCreated, beforeClose);
@@ -40,6 +42,8 @@ final class PerdeBrowserPolicy {
         client.addDialogHandler(handlers.dialog());
         client.addJSDialogHandler(handlers.js());
         client.addContextMenuHandler(handlers.menu());
+        client.addDisplayHandler(handlers.display());
+        client.addFocusHandler(handlers.focus());
     }
 
     Handlers handlers(Runnable afterCreated, Runnable beforeClose) {
@@ -115,7 +119,37 @@ final class PerdeBrowserPolicy {
                 if (owns(browser)) model.clear();
             }
         };
-        return new Handlers(requestHandler, life, downloadHandler, dialog, js, menu);
+        var display = new CefDisplayHandlerAdapter() {
+            @Override public void onAddressChange(CefBrowser browser, CefFrame frame, String url) {
+                if (!owns(browser) || frame == null || !frame.isMain()) return;
+                if (UrlPolicy.allowsPage(url)) lastPublicUrl = url;
+                else if (!UrlPolicy.allowsNavigation(url)) {
+                    // Chromium may replace a renderer-blocked file navigation with about:blank#blocked
+                    // without delivering onBeforeBrowse. Keep its pixels hidden and restore the public page.
+                    audit.blocked("navigation", url);
+                    restorePublicPage(browser);
+                }
+            }
+        };
+        // These are display-only browsers. Chromium auto-grants sanitized clipboard-write separately
+        // from the clipboard content setting, but requires native document focus to use it.
+        // Keep page/system focus requests from elevating this browser's existing unfocused state.
+        var focus = new CefFocusHandlerAdapter() {
+            @Override public boolean onSetFocus(CefBrowser browser, FocusSource source) {
+                if (!owns(browser)) return false;
+                audit.blocked("focus", browser.getURL());
+                return true;
+            }
+            @Override public void onGotFocus(CefBrowser browser) {
+                if (owns(browser)) browser.setFocus(false);
+            }
+        };
+        return new Handlers(requestHandler, life, downloadHandler, dialog, js, menu, display, focus);
+    }
+
+    private void restorePublicPage(CefBrowser browser) {
+        String restore = lastPublicUrl;
+        if (restore != null && owns(browser)) { browser.stopLoad(); browser.loadURL(restore); }
     }
 
     private void auditPermissions(String url) {
@@ -130,7 +164,10 @@ final class PerdeBrowserPolicy {
                 return block(owned, request.getURL(), navigation);
             }
             @Override public void onResourceRedirect(CefBrowser browser, CefFrame frame, CefRequest request, CefResponse response, StringRef target) {
-                if (block(owned, target.get(), navigation)) target.set("perde-blocked:redirect");
+                if (block(owned, target.get(), navigation)) {
+                    target.set("perde-blocked:redirect");
+                    if (navigation) restorePublicPage(browser);
+                }
             }
             @Override public void onProtocolExecution(CefBrowser browser, CefFrame frame, CefRequest request, BoolRef allow) {
                 allow.set(false);

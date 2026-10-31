@@ -1,7 +1,7 @@
 name,tests,failures,errors,skipped
 io.github.devtalh.perde.client.browser.BrowserPrivacyTest,2,0,0,0
 io.github.devtalh.perde.client.browser.BrowserSelectionTest,6,0,0,0
-io.github.devtalh.perde.client.browser.PerdeBrowserPolicyTest,6,0,0,0
+io.github.devtalh.perde.client.browser.PerdeBrowserPolicyTest,8,0,0,0
 io.github.devtalh.perde.net.ControlDecisionsTest,16,0,0,0
 io.github.devtalh.perde.net.PayloadNamesTest,1,0,0,0
 io.github.devtalh.perde.screen.ScreenGeometryTest,2,0,0,0

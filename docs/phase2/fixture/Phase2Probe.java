@@ -75,6 +75,9 @@ public final class Phase2Probe implements ClientModInitializer {
                 if (client.level == null || client.player == null || client.gameMode == null) throw new IllegalStateException("Join a world first");
                 switch (action) {
                     case "policy" -> runPolicyProbe(args[2]);
+                    case "evaluate" -> evaluate(args[2], args[3]);
+                    case "devtools" -> devTools(args[2], args[3], args[4]);
+                    case "raw-url" -> ClientPlayNetworking.send(new PerdePayloads.SetUrl(pos(args), args[5]));
                     case "command" -> client.player.connection.sendCommand(args[2]);
                     case "leave" -> client.disconnectFromWorld(Component.literal("F2-1 save and quit test"));
                     case "close" -> client.gui.setScreen(null);
@@ -125,6 +128,10 @@ public final class Phase2Probe implements ClientModInitializer {
                                 entity instanceof PerdeBlockEntity screen ? PerdeBrowserManager.INSTANCE.frameTicket(screen) : -1,
                                 entity instanceof PerdeBlockEntity screen ? PerdeBrowserManager.INSTANCE.statusKey(screen) : "removed", Thread.currentThread().getName());
                         LOG.info("Native browser audit {}", browserAudit());
+                        var overlay = client.gui.hud.getClass().getDeclaredField("overlayMessageString");
+                        overlay.setAccessible(true);
+                        Object message = overlay.get(client.gui.hud);
+                        LOG.info("F2-2 action bar: {}", message instanceof Component text ? text.getString() : message);
                     }
                     default -> throw new IllegalArgumentException("Unknown action: " + action);
                 }
@@ -138,6 +145,37 @@ public final class Phase2Probe implements ClientModInitializer {
     }
 
     private static double number(String[] args, int index) { return Double.parseDouble(args[index]); }
+
+    private static void evaluate(String label, String expression) throws Exception {
+        if (!FabricLoader.getInstance().isDevelopmentEnvironment()) throw new IllegalStateException("Development only");
+        Object browser = managedBrowser();
+        Object devTools = Class.forName("org.cef.browser.CefBrowser").getMethod("getDevToolsClient").invoke(browser);
+        if (devTools == null) throw new IllegalStateException("Native browser not ready");
+        var parameters = new com.google.gson.JsonObject();
+        parameters.addProperty("expression", expression);
+        parameters.addProperty("returnByValue", true);
+        parameters.addProperty("awaitPromise", true);
+        parameters.addProperty("userGesture", true);
+        devTools(label, "Runtime.evaluate", parameters.toString());
+    }
+
+    private static void devTools(String label, String method, String parameters) throws Exception {
+        if (!FabricLoader.getInstance().isDevelopmentEnvironment()) throw new IllegalStateException("Development only");
+        Object browser = managedBrowser();
+        Object devTools = Class.forName("org.cef.browser.CefBrowser").getMethod("getDevToolsClient").invoke(browser);
+        if (devTools == null) throw new IllegalStateException("Native browser not ready");
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            try {
+                var result = (java.util.concurrent.CompletableFuture<?>) devTools.getClass()
+                        .getMethod("executeDevToolsMethod", String.class, String.class)
+                        .invoke(devTools, method, parameters);
+                result.orTimeout(10, java.util.concurrent.TimeUnit.SECONDS).whenComplete((value, failure) -> {
+                    if (failure != null) LOG.error("F2-2 native evaluation failed: " + label, failure);
+                    else LOG.info("F2-2 native result {}: {}", label, value);
+                });
+            } catch (Exception exception) { LOG.error("F2-2 native command dispatch failed: " + label, exception); }
+        });
+    }
 
     /** F2-2 opt-in probes. Only a managed Perde browser is targeted, never the spike or another mod. */
     private static Object managedBrowser() throws Exception {
