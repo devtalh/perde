@@ -1,0 +1,182 @@
+[18:50:18] [ForkJoinPool.commonPool-worker-1/INFO] (perde) Perde spike: MCEF initialization completed.
+[18:50:21] [Render thread/INFO] (perde-f2-probe) Test client master volume: 0.0
+[18:50:22] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:50:34] [Render thread/INFO] (perde-f2-probe) Action connect completed
+[18:50:38] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[18:50:41] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Made Player1 a server operator]
+[18:50:42] [Render thread/INFO] (Minecraft) [System] [CHAT] Your game mode has been updated to Creative Mode
+[18:50:42] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Set Player1's game mode to Creative Mode]
+[18:50:44] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Teleported Player1 to 100.500000, 120.000000, 97.500000]
+[18:51:10] [Render thread/INFO] (perde-f2-probe) Action equip completed
+[18:51:11] [Render thread/INFO] (perde-f2-probe) Action place completed
+[18:51:12] [Render thread/INFO] (perde-f2-probe) Action open completed
+[18:51:12] [Render thread/INFO] (perde-f2-probe) Action geometry completed
+[18:51:13] [Render thread/ERROR] (perde-f2-probe) F2-1 fixture failed
+[18:51:39] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Successfully filled 861 block(s)]
+[18:51:40] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Teleported Player1 to 100.500000, 120.000000, 97.000000]
+[18:51:40] [Render thread/INFO] (perde-f2-probe) Action place completed
+[18:51:41] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 97.0) block=Block{perde:perde}[facing=north] state=ScreenState[url=, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=4.0, height=2.25, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.ui.no_page thread=Render thread
+[18:51:41] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:51:41] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: Open this screen again in its own dimension.
+[18:51:41] [Render thread/INFO] (perde-f2-probe) Action status completed
+[18:51:41] [Render thread/INFO] (perde-f2-probe) Action open completed
+[18:51:42] [Render thread/INFO] (perde-f2-probe) Action geometry completed
+[18:51:42] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[18:51:42] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[18:51:42] [AWT-EventQueue-0/INFO] (perde) Perde browser privacy verified: globalContext=false, WebRTC=disable_non_proxied_udp, URL overrides=[], local-IP exceptions=[].
+[18:51:42] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=]
+[18:51:43] [Render thread/INFO] (perde-f2-probe) Action close completed
+[18:51:43] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[18:52:52] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:52:52] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result allowlisted-example: {"result":{"type":"object","value":{"url":"https://example.com/","title":"Example Domain"}}}
+[18:52:53] [Render thread/INFO] (perde-f2-probe) Action command completed
+[18:52:53] [Render thread/INFO] (Minecraft) [System] [CHAT] Teleported Player1 to 100.500000, 120.000000, 94.500000
+[18:52:53] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[18:52:54] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[18:52:54] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_18.52.54.png
+[18:52:55] [Render thread/INFO] (perde-f2-probe) Action open completed
+[18:52:55] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[18:52:55] [Render thread/INFO] (Minecraft) [System] [CHAT] Player1 wants to open example.org. [Allow]
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 chat component: Player1 wants to open example.org. [Allow]
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 clickable component text=[Allow] command=/perde wl add example.org
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 chat component: Saved screenshot as 2026-10-31_18.52.54.png
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 chat component: Teleported Player1 to 100.500000, 120.000000, 94.500000
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 chat component: [Server: Teleported Player1 to 100.500000, 120.000000, 97.000000]
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 chat component: [Server: Successfully filled 861 block(s)]
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 chat component: [Server: Teleported Player1 to 100.500000, 120.000000, 97.500000]
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 chat component: [Server: Set Player1's game mode to Creative Mode]
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 chat component: Your game mode has been updated to Creative Mode
+[18:52:56] [Render thread/INFO] (perde-f2-probe) F2-2 chat component: [Server: Made Player1 a server operator]
+[18:52:56] [Render thread/INFO] (perde-f2-probe) Action chat-audit completed
+[18:52:57] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://example.com, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=335 status=perde.browser.loading thread=Render thread
+[18:52:57] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[18:52:57] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: This site is not on the server allowlist.
+[18:52:57] [Render thread/INFO] (perde-f2-probe) Action status completed
+[18:52:57] [Render thread/INFO] (perde-f2-probe) Action close completed
+[18:52:58] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[18:52:58] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_18.52.58.png
+[18:53:13] [Render thread/INFO] (perde-f2-probe) Action open completed
+[18:53:14] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[18:53:14] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[18:53:15] [Render thread/INFO] (perde-f2-probe) Action command completed
+[18:53:15] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com, example.org]
+[18:53:15] [Render thread/INFO] (Minecraft) [System] [CHAT] Allowed site: example.org
+[18:53:15] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[18:53:15] [Render thread/INFO] (perde) Perde browser: URL updated at BlockPos{x=100, y=120, z=100} on existing browser.
+[18:53:16] [Render thread/INFO] (perde-f2-probe) Action close completed
+[18:53:16] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.org/]
+[18:53:17] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:53:17] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result approval-live-success: {"result":{"type":"object","value":{"url":"https://example.org/","title":"Example Domain"}}}
+[18:53:18] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[18:53:18] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_18.53.18.png
+[18:53:20] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (site allowlist updated), active=0/1.
+[18:53:20] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com]
+[18:53:20] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Removed allowed site: example.org]
+[18:53:20] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:53:21] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://example.org, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.site_not_allowed thread=Render thread
+[18:53:21] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:53:21] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: This site is not on the server allowlist.
+[18:53:21] [Render thread/INFO] (perde-f2-probe) Action status completed
+[18:53:21] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[18:53:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_18.53.21.png
+[18:54:11] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com, example.org]
+[18:54:11] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Allowed site: example.org]
+[18:54:11] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[18:54:11] [AWT-EventQueue-0/INFO] (perde) Perde browser privacy verified: globalContext=false, WebRTC=disable_non_proxied_udp, URL overrides=[], local-IP exceptions=[].
+[18:54:11] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=]
+[18:54:12] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:54:12] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result restored-without-url-edit: {"result":{"type":"object","value":{"url":"https://example.org/","title":"Example Domain"}}}
+[18:54:12] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://example.org/]
+[18:54:13] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[18:54:13] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_18.54.13.png
+[18:54:16] [Render thread/INFO] (perde-f2-probe) Action command completed
+[18:54:16] [Render thread/INFO] (Minecraft) [System] [CHAT] Incorrect argument for command
+[18:54:16] [Render thread/INFO] (Minecraft) [System] [CHAT] perde wl add denied.example<--[HERE]
+[18:54:18] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Made Player1 a server operator]
+[18:54:19] [Render thread/INFO] (perde) Perde allowlist received: [youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, example.com, example.org, httpbingo.org]
+[18:54:19] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Allowed site: httpbingo.org]
+[18:57:43] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:57:43] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result allowlist-redirect-start: {"result":{"type":"string","value":"started"}}
+[18:57:43] [Thread-1745/INFO] (perde) Perde browser blocked [navigation]: https://example.net/
+[18:57:47] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:57:47] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result allowlist-redirect-recovered: {"result":{"type":"object","value":{"url":"https://example.org/","title":"Example Domain"}}}
+[18:57:47] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[18:57:47] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_18.57.47.png
+[18:57:56] [Render thread/INFO] (perde-f2-probe) Action devtools completed
+[18:57:56] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-document-start: {"identifier":"1"}
+[18:57:57] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:57:57] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-reload: {"result":{"type":"string","value":"started"}}
+[18:57:57] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://example.org/?mute-check=1]
+[18:57:59] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:57:59] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-proof: {"result":{"type":"object","value":{"muted":false,"volume":1,"url":"https://example.org/?mute-check=1"}}}
+[18:58:14] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:58:14] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-proof-after-load: {"result":{"type":"object","value":{"muted":false,"volume":1,"url":"https://example.org/?mute-check=1","ready":"complete"}}}
+[18:58:29] [Render thread/INFO] (perde-f2-probe) Action devtools completed
+[18:58:29] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-page-enable: {}
+[18:58:29] [Render thread/INFO] (perde-f2-probe) Action devtools completed
+[18:58:29] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-document-enable: {"identifier":"2"}
+[18:58:30] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:58:30] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-reload2: {"result":{"type":"string","value":"started"}}
+[18:58:31] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://example.org/?mute-check=2]
+[18:58:34] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:58:34] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-proof2: {"result":{"type":"object","value":{"installed":true,"muted":true,"volume":0,"url":"https://example.org/?mute-check=2","ready":"complete"}}}
+[18:58:40] [Render thread/INFO] (perde-f2-probe) Action open completed
+[18:58:41] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[18:58:41] [Render thread/INFO] (perde) Perde browser: URL updated at BlockPos{x=100, y=120, z=100} on existing browser.
+[18:58:41] [Render thread/INFO] (perde-f2-probe) Action close completed
+[18:58:41] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1]
+[18:58:43] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1&themeRefresh=1]
+[18:58:47] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[18:58:49] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:58:49] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result youtube-muted-state1: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","title":"Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster) - YouTube","testMuted":true,"videos":[{"paused":false,"time":3.668526,"ready":4,"muted":true,"volume":0}],"buttons":[]}}}
+[18:58:56] [Render thread/INFO] (perde-f2-probe) Action evaluate completed
+[18:58:56] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result youtube-muted-state2: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","videos":[{"paused":false,"time":10.703503,"ready":4,"muted":true,"volume":0}]}}}
+[18:58:56] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[18:58:56] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_18.58.56.png
+[18:58:58] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Teleported Player1 to 200.500000, 120.000000, 200.500000]
+[18:58:58] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (out of range/empty URL/unloaded), active=0/1.
+[18:58:58] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:59:02] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Successfully filled 441 block(s)]
+[18:59:02] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[18:59:03] [Render thread/INFO] (perde) Perde spike: world browser created at 1280x720, requested 30 fps.
+[18:59:03] [Render thread/INFO] (Minecraft) [System] [CHAT] Spike screen placed (4 x 2.25 blocks, 1280 x 720).
+[18:59:03] [Render thread/INFO] (perde) Perde spike: world screen placed at (200.5, 49.70424804488121, 203.5), facing north.
+[18:59:03] [Render thread/INFO] (perde-f2-probe) Action command completed
+[18:59:03] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://example.com/]
+[18:59:05] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[18:59:05] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_18.59.05.png
+[18:59:06] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(200.5, 48.0, 200.5) block=Block{minecraft:void_air} state=null ticket=-1 status=removed thread=Render thread
+[18:59:06] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://example.com/]
+[18:59:06] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: This site is not on the server allowlist.
+[18:59:06] [Render thread/INFO] (perde-f2-probe) Action status completed
+[18:59:20] [Render thread/INFO] (perde) Perde spike: world browser closed (removed).
+[18:59:20] [Render thread/INFO] (Minecraft) [System] [CHAT] Spike screen removed.
+[18:59:20] [Render thread/INFO] (perde-f2-probe) Action command completed
+[18:59:20] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:59:25] [Render thread/INFO] (Minecraft) [System] [CHAT] [Server: Teleported Player1 to 200.500000, 120.000000, 200.500000]
+[18:59:25] [Render thread/INFO] (perde-f2-probe) Action aim completed
+[18:59:26] [Render thread/INFO] (perde) Perde spike: world browser created at 1280x720, requested 30 fps.
+[18:59:26] [Render thread/INFO] (Minecraft) [System] [CHAT] Spike screen placed (4 x 2.25 blocks, 1280 x 720).
+[18:59:26] [Render thread/INFO] (perde) Perde spike: world screen placed at (200.5, 121.62000000476837, 203.5), facing north.
+[18:59:26] [Render thread/INFO] (perde-f2-probe) Action command completed
+[18:59:27] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=4 url=https://example.com/]
+[18:59:29] [Render thread/INFO] (perde-f2-probe) Action f2 completed
+[18:59:29] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_18.59.29.png
+[18:59:29] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(200.5, 120.0, 200.5) block=Block{minecraft:air} state=null ticket=-1 status=removed thread=Render thread
+[18:59:29] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=4 url=https://example.com/]
+[18:59:29] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: This site is not on the server allowlist.
+[18:59:29] [Render thread/INFO] (perde-f2-probe) Action status completed
+[18:59:30] [Render thread/INFO] (perde) Perde spike: world browser closed (removed).
+[18:59:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Spike screen removed.
+[18:59:30] [Render thread/INFO] (perde-f2-probe) Action command completed
+[18:59:31] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:59:31] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(200.5, 120.0, 200.5) block=Block{minecraft:air} state=null ticket=-1 status=removed thread=Render thread
+[18:59:31] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:59:31] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: This site is not on the server allowlist.
+[18:59:31] [Render thread/INFO] (perde-f2-probe) Action status completed
+[18:59:39] [Render thread/INFO] (perde-f2-probe) Action quit completed
+BUILD SUCCESSFUL in 9m 49s
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0"
+Independent public redirect check (no follow): https://httpbingo.org/redirect-to?url=https%3A%2F%2Fexample.net
+HTTP 302
+Location: https://example.net

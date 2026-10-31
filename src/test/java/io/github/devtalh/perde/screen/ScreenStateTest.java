@@ -26,7 +26,7 @@ class ScreenStateTest {
         assertEquals("Player", ScreenState.boundedPlayerName("Player"));
     }
 
-    @ParameterizedTest @ValueSource(strings = {"https://example.com", "http://localhost:25570/a?q=x#b", "HTTPS://example.com"})
+    @ParameterizedTest @ValueSource(strings = {"https://example.com", "http://example.com:25570/a?q=x#b", "HTTPS://example.com"})
     void acceptsHttpUrls(String url) { assertEquals(url, ScreenState.validateUrl("  " + url + "  ")); }
 
     @ParameterizedTest @ValueSource(strings = {"javascript:alert(1)", "file:///C:/", "data:text/html,test", "ftp://example.com", "https:///path", "https://", "//example.com", "https://exa mple.com"})

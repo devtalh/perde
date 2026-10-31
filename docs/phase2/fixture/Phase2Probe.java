@@ -36,6 +36,7 @@ public final class Phase2Probe implements ClientModInitializer {
     private int walkTicks;
     private int ticks;
     private String lastAudit = "";
+    private boolean soundConfigured;
 
     @Override public void onInitializeClient() {
         try { if (Files.exists(commandFile)) previous = Files.readString(commandFile); }
@@ -45,6 +46,12 @@ public final class Phase2Probe implements ClientModInitializer {
 
     private void tick(Minecraft client) {
         try {
+            if (!soundConfigured && Boolean.getBoolean("perde.testMuted")) {
+                client.options.getSoundSourceOptionInstance(net.minecraft.sounds.SoundSource.MASTER).set(0.0);
+                client.options.save();
+                soundConfigured = true;
+                LOG.info("Test client master volume: {}", client.options.getSoundSourceVolume(net.minecraft.sounds.SoundSource.MASTER));
+            }
             if (++ticks % 20 == 0) {
                 String audit = browserAudit();
                 if (!audit.equals(lastAudit)) {
@@ -67,6 +74,13 @@ public final class Phase2Probe implements ClientModInitializer {
                 client.createWorldOpenFlows().openWorld(args[2], () -> client.gui.setScreen(new TitleScreen()));
             } else if (action.equals("quit")) {
                 client.stop();
+            } else if (action.equals("connect")) {
+                if (client.level != null) throw new IllegalStateException("Leave the current world first");
+                var address = net.minecraft.client.multiplayer.resolver.ServerAddress.parseString(args[2]);
+                if (!address.getHost().equals("127.0.0.1")) throw new IllegalArgumentException("Repository loopback server only");
+                net.minecraft.client.gui.screens.ConnectScreen.startConnecting(new TitleScreen(), client, address,
+                        new net.minecraft.client.multiplayer.ServerData("Perde local verification", args[2],
+                                net.minecraft.client.multiplayer.ServerData.Type.OTHER), false, null);
             } else if (action.equals("f2")) {
                 if (!client.handleGlobalKeyPress(client.options.keyScreenshot.getDefaultKey(), false)) {
                     throw new IllegalStateException("F2 is not bound");
@@ -74,6 +88,11 @@ public final class Phase2Probe implements ClientModInitializer {
             } else {
                 if (client.level == null || client.player == null || client.gameMode == null) throw new IllegalStateException("Join a world first");
                 switch (action) {
+                    case "policy" -> runPolicyProbe(args[2]);
+                    case "evaluate" -> evaluate(args[2], args[3]);
+                    case "devtools" -> devTools(args[2], args[3], args[4]);
+                    case "raw-url" -> ClientPlayNetworking.send(new PerdePayloads.SetUrl(pos(args), args[5]));
+                    case "chat-audit" -> auditChat(client);
                     case "command" -> client.player.connection.sendCommand(args[2]);
                     case "leave" -> client.disconnectFromWorld(Component.literal("F2-1 save and quit test"));
                     case "close" -> client.gui.setScreen(null);
@@ -124,6 +143,10 @@ public final class Phase2Probe implements ClientModInitializer {
                                 entity instanceof PerdeBlockEntity screen ? PerdeBrowserManager.INSTANCE.frameTicket(screen) : -1,
                                 entity instanceof PerdeBlockEntity screen ? PerdeBrowserManager.INSTANCE.statusKey(screen) : "removed", Thread.currentThread().getName());
                         LOG.info("Native browser audit {}", browserAudit());
+                        var overlay = client.gui.hud.getClass().getDeclaredField("overlayMessageString");
+                        overlay.setAccessible(true);
+                        Object message = overlay.get(client.gui.hud);
+                        LOG.info("F2-2 action bar: {}", message instanceof Component text ? text.getString() : message);
                     }
                     default -> throw new IllegalArgumentException("Unknown action: " + action);
                 }
@@ -137,6 +160,89 @@ public final class Phase2Probe implements ClientModInitializer {
     }
 
     private static double number(String[] args, int index) { return Double.parseDouble(args[index]); }
+
+    private static void auditChat(Minecraft client) throws Exception {
+        var chat = client.gui.hud.getChat();
+        var field = chat.getClass().getDeclaredField("allMessages");
+        field.setAccessible(true);
+        var messages = (java.util.List<?>) field.get(chat);
+        for (Object message : messages.stream().limit(12).toList()) {
+            Component text = ((net.minecraft.client.multiplayer.chat.GuiMessage) message).content();
+            LOG.info("F2-2 chat component: {}", text.getString());
+            text.visit((style, part) -> {
+                if (style.getClickEvent() instanceof net.minecraft.network.chat.ClickEvent.RunCommand command) {
+                    LOG.info("F2-2 clickable component text={} command={}", part, command.command());
+                }
+                return java.util.Optional.empty();
+            }, net.minecraft.network.chat.Style.EMPTY);
+        }
+    }
+
+    private static void evaluate(String label, String expression) throws Exception {
+        if (!FabricLoader.getInstance().isDevelopmentEnvironment()) throw new IllegalStateException("Development only");
+        Object browser = managedBrowser();
+        Object devTools = Class.forName("org.cef.browser.CefBrowser").getMethod("getDevToolsClient").invoke(browser);
+        if (devTools == null) throw new IllegalStateException("Native browser not ready");
+        var parameters = new com.google.gson.JsonObject();
+        parameters.addProperty("expression", expression);
+        parameters.addProperty("returnByValue", true);
+        parameters.addProperty("awaitPromise", true);
+        parameters.addProperty("userGesture", true);
+        devTools(label, "Runtime.evaluate", parameters.toString());
+    }
+
+    private static void devTools(String label, String method, String parameters) throws Exception {
+        if (!FabricLoader.getInstance().isDevelopmentEnvironment()) throw new IllegalStateException("Development only");
+        Object browser = managedBrowser();
+        Object devTools = Class.forName("org.cef.browser.CefBrowser").getMethod("getDevToolsClient").invoke(browser);
+        if (devTools == null) throw new IllegalStateException("Native browser not ready");
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            try {
+                var result = (java.util.concurrent.CompletableFuture<?>) devTools.getClass()
+                        .getMethod("executeDevToolsMethod", String.class, String.class)
+                        .invoke(devTools, method, parameters);
+                result.orTimeout(10, java.util.concurrent.TimeUnit.SECONDS).whenComplete((value, failure) -> {
+                    if (failure != null) LOG.error("F2-2 native evaluation failed: " + label, failure);
+                    else LOG.info("F2-2 native result {}: {}", label, value);
+                });
+            } catch (Exception exception) { LOG.error("F2-2 native command dispatch failed: " + label, exception); }
+        });
+    }
+
+    /** F2-2 opt-in probes. Only a managed Perde browser is targeted, never the spike or another mod. */
+    private static Object managedBrowser() throws Exception {
+        var backendField = PerdeBrowserManager.class.getDeclaredField("backend");
+        backendField.setAccessible(true);
+        Object backend = backendField.get(PerdeBrowserManager.INSTANCE);
+        if (backend == null) throw new IllegalStateException("MCEF backend absent");
+        var browserField = backend.getClass().getDeclaredField("browser");
+        browserField.setAccessible(true);
+        Object wrapper = browserField.get(backend);
+        if (wrapper == null) throw new IllegalStateException("No managed Perde browser");
+        return Class.forName("net.dimaskama.mcef.api.MCEFBrowser").getMethod("getCefBrowser").invoke(wrapper);
+    }
+
+    private static void runPolicyProbe(String name) throws Exception {
+        if (!FabricLoader.getInstance().isDevelopmentEnvironment()) throw new IllegalStateException("Development only");
+        String script = switch (name) {
+            case "file" -> "location.href='file:///C:/';";
+            case "popup" -> "window.open('https://example.com');";
+            case "loopback" -> "fetch('http://127.0.0.1:1/').then(()=>console.error('F2-2 unexpected fetch success')).catch(e=>console.log('F2-2 fetch denied',e.name));";
+            case "iframe" -> "{const f=document.createElement('iframe');f.src='http://192.168.1.1';document.body.append(f);}";
+            case "alert" -> "alert('x');confirm('x');prompt('x');";
+            case "media" -> "navigator.mediaDevices.getUserMedia({audio:true,video:true}).then(s=>{s.getTracks().forEach(t=>t.stop());console.error('F2-2 unexpected media access');}).catch(e=>console.log('F2-2 media denied',e.name));";
+            case "download" -> "{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['F2-2']));a.download='perde-policy-test.txt';a.click();}";
+            case "data-navigation" -> "location.href='data:text/html,blocked';";
+            case "beforeunload" -> "window.onbeforeunload=()=> 'F2-2';location.href='https://example.com/?f2-2=unload';";
+            default -> throw new IllegalArgumentException("Unknown policy probe: " + name);
+        };
+        Object browser = managedBrowser();
+        Class<?> type = Class.forName("org.cef.browser.CefBrowser");
+        String url = (String) type.getMethod("getURL").invoke(browser);
+        if (!io.github.devtalh.perde.screen.UrlPolicy.allowsPage(url)) throw new IllegalStateException("Load a public page first");
+        type.getMethod("executeJavaScript", String.class, String.class, int.class).invoke(browser, script, url, 0);
+        LOG.info("F2-2 issued probe {} to managed browser on {}. Native outcome still needs audit.", name, url);
+    }
     /** Test-only observation of JCEF's own browser registry, verified against the resolved JCEF jar. */
     private static String browserAudit() throws Exception {
         if (!FabricLoader.getInstance().isModLoaded("mcef-modern")) return "MCEF absent";
@@ -149,9 +255,14 @@ public final class Phase2Probe implements ClientModInitializer {
         Object cefClient = field.get(api);
         var all = Class.forName("org.cef.CefClient").getDeclaredMethod("getAllBrowser");
         all.setAccessible(true);
-        Object[] browsers = (Object[]) all.invoke(cefClient);
+        var browsers = new java.util.ArrayList<Object>(java.util.Arrays.asList((Object[]) all.invoke(cefClient)));
+        try {
+            Object managed = managedBrowser();
+            Object managedClient = Class.forName("org.cef.browser.CefBrowser").getMethod("getClient").invoke(managed);
+            if (managedClient != cefClient) browsers.addAll(java.util.Arrays.asList((Object[]) all.invoke(managedClient)));
+        } catch (IllegalStateException absent) { /* No managed browser is expected outside screen range. */ }
         var browserType = Class.forName("org.cef.browser.CefBrowser");
-        var result = new StringBuilder("count=" + browsers.length);
+        var result = new StringBuilder("count=" + browsers.size());
         for (Object browser : browsers) result.append(" [id=").append(browserType.getMethod("getIdentifier").invoke(browser))
                 .append(" url=").append(browserType.getMethod("getURL").invoke(browser)).append(']');
         return result.toString();

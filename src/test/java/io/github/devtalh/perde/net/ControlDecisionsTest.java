@@ -2,6 +2,7 @@ package io.github.devtalh.perde.net;
 
 import io.github.devtalh.perde.screen.AccessMode;
 import io.github.devtalh.perde.screen.ScreenState;
+import io.github.devtalh.perde.screen.SiteAllowlist;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -16,12 +17,33 @@ class ControlDecisionsTest {
         return new ControlDecisions.Context(player, level, true, true, true, distance);
     }
     private ControlDecisions.Result decide(ControlDecisions.Context ctx, ScreenState current, ControlDecisions.Change change) {
-        return ControlDecisions.decide(ctx, current, change, limiter, 1000);
+        return ControlDecisions.decide(ctx, current, change, limiter, 1000, new SiteAllowlist(java.util.List.of("example.com")));
     }
 
     @Test void forgedStrangerCannotChangeAnything() {
         var result = decide(context(OTHER, 0, 1), state, new ControlDecisions.SetUrl("https://example.com"));
         assertEquals(ControlDecisions.Rejection.FORBIDDEN, result.rejection());
+        assertSame(state, result.state());
+    }
+
+    @Test void serverPolicyRejectsOnlyUnlistedDomainsAndNeverChangesExistingState() {
+        var request = new ControlDecisions.SetUrl("https://example.org/path");
+        var rejected = ControlDecisions.decide(context(OWNER, 0, 0), state, request, limiter, 1000, SiteAllowlist.defaults());
+        assertEquals(ControlDecisions.Rejection.SITE_NOT_ALLOWED, rejected.rejection());
+        assertSame(state, rejected.state());
+        var approved = ControlDecisions.decide(context(OWNER, 0, 0), state, request, limiter, 1001,
+                SiteAllowlist.defaults().adding("example.org"));
+        assertTrue(approved.accepted());
+        assertEquals("https://example.org/path", approved.state().url());
+        assertEquals(ControlDecisions.Rejection.FORBIDDEN,
+                ControlDecisions.decide(context(OTHER, 0, 0), state, request, limiter, 1002, SiteAllowlist.empty()).rejection());
+        assertTrue(ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.SetUrl(""), limiter, 1003,
+                SiteAllowlist.empty()).accepted());
+    }
+
+    @Test void publicIpCannotGenerateAnUnapprovableDomainNotice() {
+        var result = decide(context(OWNER, 0, 0), state, new ControlDecisions.SetUrl("https://8.8.8.8"));
+        assertEquals(ControlDecisions.Rejection.INVALID_URL, result.rejection());
         assertSame(state, result.state());
     }
 
@@ -34,7 +56,8 @@ class ControlDecisionsTest {
         assertTrue(decide(context(OWNER, 0, 64), state, new ControlDecisions.Center()).accepted());
     }
 
-    @ParameterizedTest @ValueSource(strings = {"javascript:alert(1)", "file:///C:/", "data:text/html,x", "ftp://example.com", "https:///path"})
+    @ParameterizedTest @ValueSource(strings = {"javascript:alert(1)", "file:///C:/", "data:text/html,x", "ftp://example.com", "https:///path",
+            "http://192.168.1.1", "http://localhost:8080", "http://127.0.0.1", "http://127.1", "http://[::ffff:127.0.0.1]"})
     void unsafeUrlsDoNotChangeState(String url) {
         var result = decide(context(OWNER, 0, 0), state, new ControlDecisions.SetUrl(url));
         assertEquals(ControlDecisions.Rejection.INVALID_URL, result.rejection());
@@ -78,13 +101,13 @@ class ControlDecisionsTest {
 
     @Test void rollingRateLimitIsPerPlayerAndRejectionsAreFree() {
         for (int i = 0; i < 20; i++) assertFalse(decide(context(OWNER, 0, 0), state, new ControlDecisions.SetUrl("file:///x")).accepted());
-        for (int i = 0; i < 10; i++) assertTrue(ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 1000 + i).accepted());
-        var limited = ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 1999);
+        for (int i = 0; i < 10; i++) assertTrue(ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 1000 + i, new SiteAllowlist(java.util.List.of("example.com"))).accepted());
+        var limited = ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 1999, SiteAllowlist.defaults());
         assertTrue(limited.rateLimited()); assertSame(state, limited.state()); assertNull(limited.rejection());
-        assertTrue(ControlDecisions.decide(context(OTHER, 2, 0), state, new ControlDecisions.Center(), limiter, 1999).accepted());
-        assertTrue(ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 2000).accepted());
-        assertTrue(ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 2000).rateLimited());
+        assertTrue(ControlDecisions.decide(context(OTHER, 2, 0), state, new ControlDecisions.Center(), limiter, 1999, SiteAllowlist.defaults()).accepted());
+        assertTrue(ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 2000, SiteAllowlist.defaults()).accepted());
+        assertTrue(ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 2000, SiteAllowlist.defaults()).rateLimited());
         limiter.forget(OWNER);
-        assertTrue(ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 2000).accepted());
+        assertTrue(ControlDecisions.decide(context(OWNER, 0, 0), state, new ControlDecisions.Center(), limiter, 2000, SiteAllowlist.defaults()).accepted());
     }
 }

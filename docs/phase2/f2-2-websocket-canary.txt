@@ -1,0 +1,5 @@
+Controlled loopback canary. Owned Python PID 3496, repository dev client PID 50680.
+The final expression had a trailing call TypeError after constructing WebSocket; this does not negate the received network request below. A repeat was rejected by automatic tool review (blocked by policy), so no repeat is claimed.
+
+READY 127.0.0.1:25574
+UNEXPECTED_CONNECTION ('127.0.0.1', 63641) b'GET / HTTP/1.1\r\nHost: 127.0.0.1:25574\r\nConnection: Upgrade\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) MCEF-Modern/0 Safari/537.36\r\nUpgrade: websocket\r\nOrigin: https://example.com\r\nSec-WebSocket-Version: 13\r\nAccept-Encoding: gzip, deflate, br, zstd\r\nAccept-Language: en-US,en;q=0.9\r\nSec-WebSocket-Key: ANxTstJOS0HkC9bsr3iC1w==\r\nSec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n\r\n'

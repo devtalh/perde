@@ -3,6 +3,7 @@ package io.github.devtalh.perde.net;
 import io.github.devtalh.perde.block.PerdeBlockEntity;
 import io.github.devtalh.perde.screen.ScreenPermissions;
 import io.github.devtalh.perde.screen.ScreenState;
+import io.github.devtalh.perde.screen.PerdeServerAllowlist;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.core.BlockPos;
@@ -98,8 +99,15 @@ public final class PerdeServerNetworking {
         // Fabric's typed play receiver runs on the server thread (verified in 6.3.4 sources).
         ControlDecisions.Context context = context(player, pos);
         ScreenState current = screenState(player, pos, context.chunkLoaded());
-        ControlDecisions.Result result = ControlDecisions.decide(context, current, change, LIMITER, System.nanoTime() / 1_000_000);
-        if (result.rejection() != null) { reject(player, result.rejection()); return; }
+        ControlDecisions.Result result = ControlDecisions.decide(context, current, change, LIMITER, System.nanoTime() / 1_000_000,
+                PerdeServerAllowlist.policy(player.level().getServer()));
+        if (result.rejection() != null) {
+            reject(player, result.rejection());
+            if (result.rejection() == ControlDecisions.Rejection.SITE_NOT_ALLOWED && change instanceof ControlDecisions.SetUrl request) {
+                PerdeServerAllowlist.requestApproval(player.level().getServer(), player, request.url().trim());
+            }
+            return;
+        }
         if (result.rateLimited()) return;
         ((PerdeBlockEntity) player.level().getBlockEntity(pos)).setScreenState(result.state());
     }

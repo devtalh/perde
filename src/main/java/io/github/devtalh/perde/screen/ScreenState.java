@@ -1,7 +1,5 @@
 package io.github.devtalh.perde.screen;
 
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -49,16 +47,14 @@ public record ScreenState(String url, boolean playing, long positionMs, long ser
         String url = input.trim();
         if (url.length() > MAX_URL_LENGTH) throw new IllegalArgumentException("URL is too long");
         if (url.isEmpty()) return url;
-        try {
-            URI uri = new URI(url);
-            if (!("http".equalsIgnoreCase(uri.getScheme()) || "https".equalsIgnoreCase(uri.getScheme()))
-                    || uri.getHost() == null || uri.getHost().isEmpty()) {
-                throw new IllegalArgumentException("Only HTTP(S) URLs with a host are allowed");
-            }
-        } catch (URISyntaxException exception) {
-            throw new IllegalArgumentException("Invalid URL", exception);
-        }
+        if (!UrlPolicy.allowsPage(url)) throw new IllegalArgumentException("Only public HTTP(S) URLs are allowed");
         return url;
+    }
+
+    /** Invalid legacy URLs are cleared without discarding the rest of the saved screen state. */
+    public static String savedUrl(String input) {
+        try { return validateUrl(input); }
+        catch (IllegalArgumentException exception) { return ""; }
     }
 
     public static double clamp(double value, double min, double max) {

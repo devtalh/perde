@@ -1,0 +1,301 @@
+
+Source: run/f2-2-verification/client-full.txt
+[17:47:40] [ForkJoinPool.commonPool-worker-1/INFO] (perde) Perde spike: MCEF initialization completed.
+[17:47:42] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[17:47:54] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[17:47:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:47:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:47:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:47:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:47:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:47:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:47:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:47:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:47:55] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[17:47:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:47:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:47:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:47:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:47:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:47:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:47:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:47:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:47:59] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[17:48:01] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[17:49:02] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (client stopping), active=0/1.
+BUILD SUCCESSFUL in 1m 38s
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0"
+
+Source: run/f2-2-verification/client-audit-full.txt
+[17:50:02] [ForkJoinPool.commonPool-worker-1/INFO] (perde) Perde spike: MCEF initialization completed.
+[17:50:04] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[17:50:25] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[17:50:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:50:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:50:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:50:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:50:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:50:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:50:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:50:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[17:50:25] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=]
+[17:50:26] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[17:50:29] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:50:29] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:50:29] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:50:29] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:50:29] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:50:29] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:50:29] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:50:29] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[17:50:29] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[17:50:33] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[17:50:49] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=417 status=perde.browser.loading thread=Render thread
+[17:50:49] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[17:50:49] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+[17:50:50] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result youtube-playing: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","title":"Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster) - YouTube","video":true,"currentTime":18.959201,"paused":false,"ready":4}}}
+[17:51:19] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result youtube-progress: {"result":{"type":"object","value":{"time":48.512192,"paused":false}}}
+[17:51:20] [Render thread/INFO] (perde) Perde browser: URL updated at BlockPos{x=100, y=120, z=100} on existing browser.
+[17:51:20] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/
+[17:51:20] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/
+[17:51:20] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/
+[17:51:20] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/
+[17:51:20] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/
+[17:51:20] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/
+[17:51:20] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/
+[17:51:20] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/
+[17:51:20] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[17:51:35] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result example-loaded: {"result":{"type":"object","value":{"url":"https://example.com/","title":"Example Domain","text":"This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.\n\n\u0647\u0630\u0627 \u0627\u0644\u0646\u0637\u0627\u0642 \u0645\u064f\u062e\u0635\u0635 \u0644\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0641\u064a \u0623\u0645\u062b\u0644\u0629 \u0627\u0644\u062a\u0648\u062b\u064a\u0642 \u062f\u0648\u0646 \u0627\u0644\u062d\u0627\u062c\u0629 \u0625\u0644\u0649 \u0625\u0630\u0646. \u0647\u0630\u0647 \u0644\u064a\u0633\u062a \u062e\u062f\u0645\u0629\u060c \u064a\u064f\u0631\u062c\u0649 \u062a\u062c\u0646\u0628 \u0627\u0644\u0627\u0639\u062a\u0645\u0627\u062f \u0639\u0644\u064a\u0647\u0627 \u0644\u0623\u063a\u0631\u0627\u0636 \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0648\u0627\u0644\u0645\u0631\u0627\u0642\u0628\u0629.\n\n\u8be5\u57df\u540d\u4ec5\u7528\u4e8e\u6587\u6863\u793a\u4f8b\uff0c\u65e0\u9700\u83b7\u5f97\u8bb8\u53ef\u3002\u8fd9\u5e76\u975e\u4e00\u9879\u670d\u52a1\uff0c\u8bf7\u52ff\u5c06\u5176\u7528\u4e8e\u6d4b\u8bd5\u548c\u76d1\u63a7\u76ee\u7684\u3002\n\nL\u2019usage de ce domaine est r\u00e9serv\u00e9 \u00e0 des exemples de documentation, sans autorisation pr\u00e9alable. Il ne s\u2019agit pas d\u2019un service ; son utilisation \u00e0 des fins de test ou de surveillance est \u00e0 \u00e9viter.\n\n\u0414\u0430\u043d\u043d\u044b\u0439 \u0434\u043e\u043c\u0435\u043d \u043f\u0440\u0435\u0434\u043d\u0430\u0437\u043d\u0430\u0447\u0435\u043d \u0434\u043b\u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f \u0432 \u043f\u0440\u0438\u043c\u0435\u0440\u0430\u0445 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u0438 \u0431\u0435\u0437 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e\u0441\u0442\u0438 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u043f\u0440\u0435\u0434\u0432\u0430\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0433\u043e \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u044f. \u042d\u0442\u043e \u043d\u0435 \u0441\u0435\u0440\u0432\u0438\u0441; \u043d\u0435 \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u0442\u0441\u044f \u0435\u0433\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0435 \u0434\u043b\u044f \u0442\u0435\u0441\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u0438 \u043c\u043e\u043d\u0438\u0442\u043e\u0440\u0438\u043d\u0433\u0430.\n\nEste dominio est\u00e1 destinado al uso en ejemplos de documentaci\u00f3n sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.\n\nLearn more"}}}
+[17:51:38] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://example.com, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=417 status=perde.browser.loading thread=Render thread
+[17:51:38] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[17:51:38] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: Enter a public HTTP or HTTPS URL (maximum 2048 characters). Local/private addresses are blocked.
+[17:51:55] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://example.com, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=417 status=perde.browser.loading thread=Render thread
+[17:51:55] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[17:51:55] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: Enter a public HTTP or HTTPS URL (maximum 2048 characters). Local/private addresses are blocked.
+[17:51:58] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://example.com, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=417 status=perde.browser.loading thread=Render thread
+[17:51:58] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[17:51:58] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: Enter a public HTTP or HTTPS URL (maximum 2048 characters). Local/private addresses are blocked.
+[17:51:59] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=about:blank#blocked]
+[17:52:00] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result file-navigation-result: {"result":{"type":"object","value":{"url":"about:blank#blocked","title":""}}}
+[17:52:00] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result popup-result: {"result":{"type":"object","value":{"popupDenied":true,"url":"about:blank#blocked"}}}
+[17:53:46] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (client stopping), active=0/1.
+BUILD SUCCESSFUL in 3m 57s
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0"
+
+Source: run/f2-2-verification/client-final-full.txt
+[17:54:38] [ForkJoinPool.commonPool-worker-1/INFO] (perde) Perde spike: MCEF initialization completed.
+[17:54:41] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[17:54:54] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[17:54:54] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/
+[17:54:54] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/
+[17:54:54] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/
+[17:54:54] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/
+[17:54:54] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/
+[17:54:54] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/
+[17:54:54] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/
+[17:54:54] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/
+[17:54:54] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[17:55:02] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result baseline: {"result":{"type":"object","value":{"url":"https://example.com/","title":"Example Domain"}}}
+[17:55:02] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [navigation]: about:blank#blocked
+[17:55:02] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/
+[17:55:02] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/
+[17:55:02] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/
+[17:55:02] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/
+[17:55:02] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/
+[17:55:02] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/
+[17:55:02] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/
+[17:55:02] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/
+[17:55:05] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result file-recovered: {"result":{"type":"object","value":{"url":"https://example.com/","title":"Example Domain"}}}
+[17:55:15] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result popup-denied: {"result":{"type":"object","value":{"denied":true,"url":"https://example.com/"}}}
+[17:55:15] [Thread-591/INFO] (perde) Perde browser blocked [request]: http://127.0.0.1:1/
+[17:55:15] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result fetch-loopback-denied: {"result":{"type":"object","value":{"denied":true,"error":"TypeError","url":"https://example.com/"}}}
+[17:55:16] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [navigation]: http://192.168.1.1/
+[17:55:16] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [js-dialog]: https://example.com/
+[17:55:16] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result js-dialogs-suppressed: {"result":{"type":"object","value":{"confirm":false,"prompt":null,"url":"https://example.com/"}}}
+[17:55:17] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result permission-states: {"result":{"type":"object","value":[{"name":"microphone","state":"denied"},{"name":"camera","state":"denied"},{"name":"geolocation","state":"denied"},{"name":"notifications","state":"denied"},{"name":"clipboard-read","state":"denied"},{"name":"clipboard-write","state":"granted"}]}}
+[17:55:17] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result media-denied: {"result":{"type":"object","value":{"denied":true,"error":"NotAllowedError","message":"Permission denied"}}}
+[17:55:17] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [download]: blob:https://example.com/711cbb38-5201-4804-95e7-00f47a8d2214
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" [22880:47148:1031/175518.087:ERROR:cef\libcef\browser\browser_info_manager.cc:858] Timeout of new browser info response for frame 6-D04966E5ED3FD8414AA839008271507F (has_rfh=0)
+[17:55:34] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result clipboard-sanitized-state: {"result":{"type":"object","value":{"state":"granted"}}}
+[17:55:35] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result clipboard-read-denied: {"result":{"type":"object","value":{"denied":true,"error":"NotAllowedError"}}}
+[17:55:35] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result geolocation-denied: {"result":{"type":"object","value":{"denied":true,"code":1,"message":"User denied Geolocation"}}}
+[17:55:35] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result notifications-denied: {"result":{"type":"object","value":{"permission":"denied"}}}
+[17:56:22] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result redirect-file-start: {"result":{"type":"string","value":"started"}}
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://httpbingo.org/redirect-to?url=file%3A%2F%2F%2FC%3A%2F
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://httpbingo.org/redirect-to?url=file%3A%2F%2F%2FC%3A%2F
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://httpbingo.org/redirect-to?url=file%3A%2F%2F%2FC%3A%2F
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://httpbingo.org/redirect-to?url=file%3A%2F%2F%2FC%3A%2F
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://httpbingo.org/redirect-to?url=file%3A%2F%2F%2FC%3A%2F
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://httpbingo.org/redirect-to?url=file%3A%2F%2F%2FC%3A%2F
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://httpbingo.org/redirect-to?url=file%3A%2F%2F%2FC%3A%2F
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://httpbingo.org/redirect-to?url=file%3A%2F%2F%2FC%3A%2F
+[17:56:22] [Thread-884/INFO] (perde) Perde browser blocked [navigation]: file:///C:/
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/
+[17:56:22] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/
+Exception in thread "AWT-EventQueue-0" [22880:47148:1031/175622.821:ERROR:cef\libcef\browser\javascript_dialog_manager.cc:331] Default dialog implementation requires a parent window handle; canceling the JS dialog
+[17:56:24] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result redirect-file-result: {"result":{"type":"object","value":{"url":"https://example.com/","title":"Example Domain"}}}
+[17:56:40] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (client stopping), active=0/1.
+BUILD SUCCESSFUL in 2m 14s
+
+Source: run/f2-2-verification/client-permissions-full.txt
+[17:57:07] [ForkJoinPool.commonPool-worker-1/INFO] (perde) Perde spike: MCEF initialization completed.
+[17:57:09] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[17:57:23] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[17:57:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/
+[17:57:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/
+[17:57:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/
+[17:57:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/
+[17:57:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/
+[17:57:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/
+[17:57:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/
+[17:57:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/
+[17:57:23] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=]
+[17:57:24] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[17:57:25] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result popup-with-gesture: {"result":{"type":"object","value":{"denied":true,"url":"https://example.com/"}}}
+[17:57:34] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result direct-popup-function: {"result":{"type":"object","value":{"url":"https://example.com/"}}}
+[17:59:25] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result data-redirect-start: {"result":{"type":"string","value":"started"}}
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://httpbingo.org/redirect-to?url=data%3Atext%2Fhtml%2Cblocked
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://httpbingo.org/redirect-to?url=data%3Atext%2Fhtml%2Cblocked
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://httpbingo.org/redirect-to?url=data%3Atext%2Fhtml%2Cblocked
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://httpbingo.org/redirect-to?url=data%3Atext%2Fhtml%2Cblocked
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://httpbingo.org/redirect-to?url=data%3Atext%2Fhtml%2Cblocked
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://httpbingo.org/redirect-to?url=data%3Atext%2Fhtml%2Cblocked
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://httpbingo.org/redirect-to?url=data%3Atext%2Fhtml%2Cblocked
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://httpbingo.org/redirect-to?url=data%3Atext%2Fhtml%2Cblocked
+[17:59:25] [Thread-805/INFO] (perde) Perde browser blocked [navigation]: data:text/html,blocked
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/
+[17:59:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/
+[17:59:28] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result data-redirect-result: {"result":{"type":"object","value":{"url":"https://example.com/","title":"Example Domain"}}}
+[17:59:28] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (client stopping), active=0/1.
+BUILD SUCCESSFUL in 2m 33s
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0"
+
+Source: run/f2-2-verification/client-acceptance-full.txt
+[17:59:41] [ForkJoinPool.commonPool-worker-1/INFO] (perde) Perde spike: MCEF initialization completed.
+[17:59:43] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[17:59:55] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[17:59:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/
+[17:59:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/
+[17:59:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/
+[17:59:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/
+[17:59:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/
+[17:59:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/
+[17:59:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/
+[17:59:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/
+[17:59:55] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[17:59:58] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result popup-native: {"result":{"type":"object","value":{"popupDenied":true,"url":"https://example.com/"}}}
+[18:00:06] [ForkJoinPool.commonPool-delayScheduler/ERROR] (perde-f2-probe) F2-2 native evaluation failed: context-info-awt
+[18:00:07] [ForkJoinPool.commonPool-delayScheduler/ERROR] (perde-f2-probe) F2-2 native evaluation failed: contexts-awt
+[18:00:39] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result clipboard-empty-write: {"result":{"type":"object","value":{"unexpectedSuccess":true,"focused":false}}}
+[18:00:39] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result page-focus-request: {"result":{"type":"object","value":{"focused":false}}}
+[18:01:29] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result file-picker-cancelled: {"result":{"type":"object","value":{"files":0,"url":"https://example.com/"}}}
+[18:01:29] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [file-dialog]: https://example.com/
+[18:01:29] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result clipboard-write-capability: {"result":{"type":"object","value":{"denied":true,"error":"NotAllowedError","message":"Failed to execute 'write' on 'Clipboard': Document is not focused."}}}
+[18:01:30] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [beforeunload]: https://example.com/
+[18:01:30] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/?f2-2=unload
+[18:01:30] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/?f2-2=unload
+[18:01:30] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/?f2-2=unload
+[18:01:30] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/?f2-2=unload
+[18:01:30] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/?f2-2=unload
+[18:01:30] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/?f2-2=unload
+[18:01:30] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/?f2-2=unload
+[18:01:30] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/?f2-2=unload
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" [19188:24916:1031/180130.691:ERROR:cef\libcef\browser\javascript_dialog_manager.cc:331] Default dialog implementation requires a parent window handle; canceling the JS dialog
+[18:01:30] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/?f2-2=unload]
+[18:01:31] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result after-dialogs-rendering: {"result":{"type":"object","value":{"url":"https://example.com/?f2-2=unload","title":"Example Domain","ready":"complete","body":true}}}
+[18:02:09] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (client stopping), active=0/1.
+BUILD SUCCESSFUL in 2m 41s
+
+Source: run/f2-2-verification/client-verified-full.txt
+[18:02:56] [ForkJoinPool.commonPool-worker-1/INFO] (perde) Perde spike: MCEF initialization completed.
+[18:02:58] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:03:27] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[18:03:27] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]:
+[18:03:28] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/
+[18:03:28] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/
+[18:03:28] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/
+[18:03:28] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/
+[18:03:28] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/
+[18:03:28] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/
+[18:03:28] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/
+[18:03:28] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/
+[18:03:28] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]:
+[18:03:28] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://example.com/]
+[18:03:29] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-example: {"result":{"type":"object","value":{"url":"https://example.com/","title":"Example Domain","ready":"complete"}}}
+[18:03:30] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-clipboard-denied: {"result":{"type":"object","value":{"denied":true,"error":"NotAllowedError","message":"Failed to execute 'write' on 'Clipboard': Document is not focused.","focused":false}}}
+[18:03:31] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-popup: {"result":{"type":"object","value":{"denied":true,"url":"https://example.com/"}}}
+[18:03:55] [Thread-608/INFO] (perde) Perde browser blocked [request]: http://127.0.0.1:1/
+[18:03:55] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-fetch: {"result":{"type":"object","value":{"denied":true,"error":"TypeError"}}}
+[18:03:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [navigation]: http://192.168.1.1/
+[18:03:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [js-dialog]: https://example.com/
+[18:03:56] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-dialogs: {"result":{"type":"object","value":{"confirm":false,"prompt":null}}}
+[18:03:57] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-media: {"result":{"type":"object","value":{"denied":true,"error":"NotAllowedError"}}}
+[50680:39892:1031/180358.067:ERROR:cef\libcef\browser\browser_info_manager.cc:858] Timeout of new browser info response for frame 6-8EC2C72BA94A4532D094C63CA933CE93 (has_rfh=0)
+[18:03:58] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-permissions: {"result":{"type":"object","value":[{"name":"microphone","state":"denied"},{"name":"camera","state":"denied"},{"name":"geolocation","state":"denied"},{"name":"notifications","state":"denied"},{"name":"clipboard-read","state":"denied"},{"name":"clipboard-write","state":"granted"}]}}
+[18:03:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [download]: blob:https://example.com/10b2960c-5a40-4b4e-8923-61f994ebca19
+[50680:39892:1031/180359.091:ERROR:cef\libcef\browser\javascript_dialog_manager.cc:331] Default dialog implementation requires a parent window handle; canceling the JS dialog
+[18:03:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://example.com/
+[18:03:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://example.com/
+[18:03:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://example.com/
+[18:03:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://example.com/
+[18:03:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://example.com/
+[18:03:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://example.com/
+[18:03:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://example.com/
+[18:03:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://example.com/
+[18:03:59] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: about:blank#blocked
+[18:04:00] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-file-recovered: {"result":{"type":"object","value":{"url":"https://example.com/","title":"Example Domain"}}}
+[18:04:56] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result loopback-websocket: {"result":{"type":"object","subtype":"error","className":"TypeError","description":"TypeError: (intermediate value) is not a function\n    at <anonymous>:1:206","objectId":"-2504895756632171632.5.1"},"exceptionDetails":{"exceptionId":1,"text":"Uncaught","lineNumber":0,"columnNumber":205,"scriptId":"17","exception":{"type":"object","subtype":"error","className":"TypeError","description":"TypeError: (intermediate value) is not a function\n    at <anonymous>:1:206","objectId":"-2504895756632171632.5.2"}}}
+[18:06:23] [Render thread/INFO] (perde) Perde browser: URL updated at BlockPos{x=100, y=120, z=100} on existing browser.
+[18:06:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[18:06:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[18:06:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[18:06:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[18:06:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[18:06:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[18:06:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[18:06:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[18:06:23] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: https://example.com/
+[18:06:23] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[18:06:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[18:06:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[18:06:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[18:06:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/notifications]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[18:06:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/clipboard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[18:06:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[18:06:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[18:06:25] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
+[18:06:26] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1]
+[18:06:28] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[18:06:57] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-youtube-a: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","time":31.156445,"paused":false,"ready":4}}}
+[18:07:14] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-youtube-progress: {"result":{"type":"object","value":{"time":47.639364,"paused":false}}}
+[18:07:15] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (out of range/empty URL/unloaded), active=0/1.
+[18:07:15] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:07:16] [Render thread/INFO] (perde) Perde spike: world browser created at 1280x720, requested 30 fps.
+[18:07:16] [Render thread/INFO] (perde) Perde spike: world screen placed at (200.5, 101.34090980333036, 97.5), facing north.
+[18:07:16] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=]
+[18:07:17] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[18:07:39] [Render thread/INFO] (perde) Perde spike: world browser closed (removed).
+[18:07:40] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:07:41] [Render thread/INFO] (perde) Perde spike: world browser created at 1280x720, requested 30 fps.
+[18:07:41] [Render thread/INFO] (perde) Perde spike: world screen placed at (200.5, 121.62000000476837, 97.5), facing north.
+[18:07:41] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=]
+[18:07:42] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[18:08:21] [Render thread/INFO] (perde) Perde spike: world browser closed (removed).
+[18:08:21] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:08:22] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(200.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.inactive thread=Render thread
+[18:08:22] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[18:08:22] [Render thread/INFO] (perde-f2-probe) F2-2 action bar: null
+BUILD SUCCESSFUL in 5m 38s
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0"

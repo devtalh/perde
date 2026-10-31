@@ -1,0 +1,15 @@
+Windows CREATE_NO_WINDOW launcher with explicit --nogui; repository-only run/f2-2-allowlist-server.
+
+LocalAddress  : 127.0.0.1
+LocalPort     : 25575
+OwningProcess : 41296
+
+
+
+ProcessId       : 41296
+ParentProcessId : 51220
+ExecutablePath  : C:\Program Files\Eclipse Adoptium\jdk-25.0.4.7-hotspot\bin\java.exe
+CommandLine     : "C:\Program Files\Eclipse Adoptium\jdk-25.0.4.7-hotspot\bin\java.exe" -Dfabric.dli.config=C:\Users\muham\Projects\Perde\.gradle\loom-cache\launch.cfg -Dfabric.dli.env=server -Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotServer @C:\Users\muham\Projects\Perde\build\loom-cache\argFiles\runServer --sun-misc-unsafe-memory-access=allow --enable-native-access=ALL-UNNAMED -Dfile.encoding=UTF-8 -Duser.country=TR -Duser.language=tr -Duser.variant net.fabricmc.devlaunchinjector.Main nogui --nogui
+
+
+Final check: no listener on 25575; owned server exited normally.

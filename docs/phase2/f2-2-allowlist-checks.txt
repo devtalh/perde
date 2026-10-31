@@ -1,0 +1,6 @@
+Fresh tests: {'tests': 197, 'failures': 0, 'errors': 0, 'skipped': 0}
+Language parity: 57 keys each
+Default jar: no bundled MCEF/JCEF/nested jars/tests/fixture
+Common source: no client/MCEF/JCEF imports
+Unchanged vanilla F2 copies: 21 SHA-256 matches (source and evidence)
+Artifact SHA-256: 7e479e2cfcbbd1115458f8933642e0304865e723578092b59dc56b161a10573b

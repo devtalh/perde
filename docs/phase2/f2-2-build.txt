@@ -1,0 +1,76 @@
+
+> Configure project :
+Fabric Loom: 1.17.21
+
+> Task :compileJava
+> Task :processResources
+> Task :classes
+> Task :compileClientJava
+> Task :processClientResources
+> Task :processIncludeJars
+> Task :jar
+> Task :sourcesJar
+> Task :assemble
+> Task :clientClasses
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+> Task :test
+> Task :validateAccessWidener NO-SOURCE
+> Task :check
+> Task :build
+
+BUILD SUCCESSFUL in 11s
+9 actionable tasks: 9 executed
+
+Final build after browserless-download audit adjustment:
+
+> Configure project :
+Fabric Loom: 1.17.21
+
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileClientJava
+> Task :processClientResources UP-TO-DATE
+> Task :processIncludeJars UP-TO-DATE
+> Task :jar
+> Task :sourcesJar
+> Task :assemble
+> Task :clientClasses
+> Task :compileTestJava UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test
+> Task :validateAccessWidener NO-SOURCE
+> Task :check
+> Task :build
+
+BUILD SUCCESSFUL in 6s
+9 actionable tasks: 4 executed, 5 up-to-date
+
+Resumed final build (149 tests):
+
+> Configure project :
+Fabric Loom: 1.17.21
+
+> Task :compileJava
+> Task :processResources
+> Task :classes
+> Task :compileClientJava
+> Task :processClientResources
+> Task :processIncludeJars
+> Task :jar
+> Task :sourcesJar
+> Task :assemble
+> Task :clientClasses
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+> Task :test
+> Task :validateAccessWidener NO-SOURCE
+> Task :check
+> Task :build
+
+BUILD SUCCESSFUL in 6s
+9 actionable tasks: 9 executed

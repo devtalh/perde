@@ -54,9 +54,7 @@ public final class PerdeBlockEntity extends BlockEntity {
     @Override protected void loadAdditional(ValueInput input) {
         super.loadAdditional(input);
         ScreenState defaults = ScreenState.defaults();
-        String url;
-        try { url = ScreenState.validateUrl(input.getStringOr("url", "")); }
-        catch (IllegalArgumentException exception) { url = ""; }
+        String url = ScreenState.savedUrl(input.getStringOr("url", ""));
         AccessMode mode;
         try { mode = AccessMode.valueOf(input.getStringOr("accessMode", "OWNER_ONLY")); }
         catch (IllegalArgumentException exception) { mode = AccessMode.OWNER_ONLY; }
