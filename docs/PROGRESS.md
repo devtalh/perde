@@ -6,7 +6,7 @@ This is the handoff point between Codex sessions and accounts: the next session 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
 - Last merged task: Phase 1A, [PR #5](https://github.com/devtalh/perde/pull/5), main `5eb1773`; merge confirmed through GitHub and origin/main on 2026-10-31.
-- F2-1: complete on `feat/f2-1-browser-manager`, PR pending. Live browser selection/rendering, all singleplayer acceptance checks, missing-MCEF client and dedicated server passed. [Report/evidence](phase2/F2-1-report.md).
+- F2-1: complete on `feat/f2-1-browser-manager`, [PR #6](https://github.com/devtalh/perde/pull/6), awaiting review. Live browser selection/rendering, all singleplayer acceptance checks, missing-MCEF client and dedicated server passed. [Report/evidence](phase2/F2-1-report.md).
 - Next task after F2-1: F2-2 browser navigation security (LEA-185).
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
@@ -24,7 +24,7 @@ Newest first. Format:
 ```
 
 ### F2-1 - Real browser manager and Perde screen rendering
-- Branch / PR: `feat/f2-1-browser-manager`, PR pending.
+- Branch / PR: `feat/f2-1-browser-manager`, [PR #6](https://github.com/devtalh/perde/pull/6), targeting main; not merged.
 - Status: done
 - What changed: client-only tracked loaded screens, rectangle-distance nearest selection with 48/52 range and 4-block switching hysteresis, one managed browser at 1280x720/30 fps, non-blocking initialization, existing-browser URL reload, lifecycle cleanup and non-owning live texture bridge. Localized placeholders and bounded 16-character owner/allowed-player names including safe payload writes. Spike preserved.
 - Verification (2026-10-31 Europe/Istanbul): final `gradlew.bat build --rerun-tasks --console=plain --warning-mode all` SUCCESSFUL in 6s, all 9 tasks executed, 42 fresh tests, 0 failures/errors/skips. Actual OpenPanel codec round trip verifies oversized saved names are safe. Default main runtime/common source/jar remain isolated, no nested MCEF/JCEF/test code. English/Turkish parity: 43 keys. Git diff checked; SPEC/AGENTS/spike unchanged.

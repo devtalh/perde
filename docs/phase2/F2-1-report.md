@@ -1,6 +1,6 @@
 # F2-1: real browser on Perde screens
 
-Status: **complete**, branch `feat/f2-1-browser-manager`, targeting `main`. PR #5 was confirmed merged at main `5eb1773` before implementation. No merge is performed here. Next: **F2-2 browser navigation security (LEA-185)**.
+Status: **complete**, branch `feat/f2-1-browser-manager`, [PR #6](https://github.com/devtalh/perde/pull/6) targeting `main`. PR #5 was confirmed merged at main `5eb1773` before implementation. No merge is performed here. Next: **F2-2 browser navigation security (LEA-185)**.
 
 ## Implementation
 
