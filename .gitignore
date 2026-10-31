@@ -21,3 +21,11 @@ run/
 # Operating systems
 .DS_Store
 Thumbs.db
+
+# Codec-enabled CEF runtime files must never be committed (CODEC-1, licensing)
+perde-codecs-*.zip
+perde-codecs-*.zip.sha256
+*.dll
+*.pak
+icudtl.dat
+v8_context_snapshot.bin
