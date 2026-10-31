@@ -1,0 +1,177 @@
+===== server.log =====
+[14:15:27] [main/INFO] (FabricLoader) Loading 44 mods:
+[14:15:33] [main/INFO] (perde) Perde initialized.
+[14:15:35] [Server thread/INFO] (Minecraft) Starting Minecraft server on 127.0.0.1:25571
+[14:15:37] [Server thread/INFO] (Minecraft) Done (1.791s)! For help, type "help"
+[14:15:37] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:15:53] [Server thread/INFO] (Minecraft) Stopping the server
+[14:15:53] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+===== client-first.log =====
+[14:15:55] [Render thread/INFO] (perde) Perde initialized.
+[14:16:06] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:16:07] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=1, y=70, z=28}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:16:43] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=1, y=70, z=28} (out of range/empty URL/unloaded), active=0/1.
+[14:16:46] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:16:47] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[14:16:47] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:16:57] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:16:58] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[14:16:58] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (nearer screen selected), active=0/1.
+[14:16:58] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=120, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:17:23] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=120, y=120, z=100} (nearer screen selected), active=0/1.
+[14:17:23] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:17:59] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (nearer screen selected), active=0/1.
+[14:17:59] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=120, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:17:59] [Render thread/INFO] (perde-f2-probe) Walk finished at (117.78225142427641, 120.0, 82.5)
+[14:18:27] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(118.03809752668855, 120.0, 82.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.inactive thread=Render thread
+[14:18:27] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:18:28] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(118.03809752668855, 120.0, 82.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://example.com, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=154 status=perde.browser.loading thread=Render thread
+[14:18:28] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:18:46] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:18:48] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[14:18:48] [Render thread/INFO] (perde) Perde browser: URL updated at BlockPos{x=120, y=120, z=100} on existing browser.
+[14:19:10] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:19:11] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[14:19:11] [Render thread/INFO] (perde) Perde browser: URL updated at BlockPos{x=120, y=120, z=100} on existing browser.
+[14:19:42] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=120, y=120, z=100} (out of range/empty URL/unloaded), active=0/1.
+[14:19:43] [Render thread/INFO] (perde-f2-probe) Walk finished at (120.5, 120.0, 42.95342508315365)
+[14:19:44] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(120.5, 120.0, 42.69757898074152) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.wikipedia.org, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.inactive thread=Render thread
+[14:19:44] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:20:34] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=120, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:20:35] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=120, y=120, z=100} (block removed/unloaded), active=0/1.
+[14:20:35] [Render thread/INFO] (perde-f2-probe) Action break completed
+[14:20:35] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:20:36] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(120.5, 120.0, 96.5) block=Block{minecraft:air} state=null ticket=-1 status=removed thread=Render thread
+[14:20:36] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:20:42] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (block removed/unloaded), active=0/1.
+[14:20:43] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:20:43] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[14:20:58] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:20:59] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:21:03] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=486 status=perde.browser.loading thread=Render thread
+[14:21:03] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:21:23] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (out of range/empty URL/unloaded), active=0/1.
+[14:21:24] [Render thread/INFO] (perde) Perde spike: world browser created at 1280x720, requested 30 fps.
+[14:21:24] [Render thread/INFO] (perde) Perde spike: world screen placed at (600.5, 105.71054135550924, 97.5), facing south.
+[14:21:29] [Render thread/INFO] (perde) Perde spike: world browser closed (removed).
+[14:21:30] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[14:21:31] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+BUILD SUCCESSFUL in 5m 53s
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0"
+===== client-audit.log =====
+[14:22:11] [Render thread/INFO] (perde) Perde initialized.
+[14:22:14] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[14:22:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:22:37] [Render thread/INFO] (perde) Perde spike: world browser created at 1280x720, requested 30 fps.
+[14:22:37] [Render thread/INFO] (perde) Perde spike: world screen placed at (600.5, 64.62000000476837, 97.5), facing south.
+[14:22:37] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=]
+[14:22:38] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:22:43] [Render thread/INFO] (perde) Perde spike: world browser closed (removed).
+[14:22:44] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[14:22:45] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:22:45] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:22:48] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=240 status=perde.browser.loading thread=Render thread
+[14:22:48] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:22:48] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:23:30] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (out of range/empty URL/unloaded), active=0/1.
+[14:23:30] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[14:23:31] [Render thread/INFO] (perde-f2-probe) Walk finished at (100.5, 120.0, 42.95342508315365)
+[14:23:32] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 42.69757898074152) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.inactive thread=Render thread
+[14:23:32] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[14:23:32] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:23:58] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:23:58] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:24:00] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:24:01] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[14:24:01] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (nearer screen selected), active=0/1.
+[14:24:01] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=120, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:24:01] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=4 url=https://example.com/]
+[14:24:04] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=120, y=120, z=100} (nearer screen selected), active=0/1.
+[14:24:04] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:24:04] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=5 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:24:07] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(102.5, 120.0, 82.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=247 status=perde.browser.loading thread=Render thread
+[14:24:07] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=5 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:24:07] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:24:45] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (nearer screen selected), active=0/1.
+[14:24:45] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=120, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:24:45] [Render thread/INFO] (perde-f2-probe) Walk finished at (117.78225142427641, 120.0, 82.5)
+[14:24:45] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=https://example.com/]
+[14:24:49] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(118.03809752668855, 120.0, 82.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://example.com, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=249 status=perde.browser.loading thread=Render thread
+[14:24:49] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=https://example.com/]
+[14:24:49] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:25:01] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:25:02] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[14:25:02] [Render thread/INFO] (perde) Perde browser: URL updated at BlockPos{x=120, y=120, z=100} on existing browser.
+[14:25:02] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=https://www.wikipedia.org/]
+[14:25:05] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(120.5, 120.0, 96.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.wikipedia.org, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=249 status=perde.browser.loading thread=Render thread
+[14:25:05] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=6 url=https://www.wikipedia.org/]
+[14:25:05] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:25:33] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:25:33] [Render thread/ERROR] (perde-f2-probe) F2-1 fixture failed
+java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+[14:25:36] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:25:37] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[14:25:39] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=120, y=120, z=100} (block removed/unloaded), active=0/1.
+[14:25:39] [Render thread/INFO] (perde-f2-probe) Action break completed
+[14:25:39] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:25:39] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=7 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:25:41] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(120.5, 120.0, 96.5) block=Block{minecraft:air} state=null ticket=-1 status=removed thread=Render thread
+[14:25:41] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=7 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:25:41] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:25:44] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (block removed/unloaded), active=0/1.
+[14:25:45] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:25:45] [Render thread/INFO] (perde-f2-probe) Action leave completed
+[14:25:45] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[14:26:02] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:26:03] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:26:03] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=8 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:26:07] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=619 status=perde.browser.loading thread=Render thread
+[14:26:07] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=8 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:26:07] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:26:27] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[14:26:28] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (client stopping), active=0/1.
+[14:26:28] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+BUILD SUCCESSFUL in 4m 33s
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0"
+===== client-no-mcef.log =====
+[14:27:19] [Render thread/INFO] (perde) Perde initialized.
+[14:27:19] [Render thread/WARN] (perde) MCEF Modern is missing. Perde browser features are disabled; install the Minecraft 26.2 build of mcef-modern.
+[14:27:21] [Render thread/INFO] (perde-f2-probe) Native browser audit MCEF absent
+[14:27:34] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:27:38] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.browser.missing thread=Render thread
+[14:27:38] [Render thread/INFO] (perde-f2-probe) Native browser audit MCEF absent
+[14:27:38] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:28:00] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[14:28:00] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+BUILD SUCCESSFUL in 53s
+===== client-final.log =====
+[14:28:13] [Render thread/INFO] (perde) Perde initialized.
+[14:28:16] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[14:28:32] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[14:28:33] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:28:34] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=]
+[14:28:34] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:28:36] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:28:38] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[14:28:38] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (out of range/empty URL/unloaded), active=0/1.
+[14:28:39] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[14:28:40] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=-1 status=perde.ui.no_page thread=Render thread
+[14:28:40] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[14:28:40] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:29:07] [Render thread/INFO] (perde-f2-probe) Action open completed
+[14:29:08] [Render thread/INFO] (perde-f2-probe) Action panel-url completed
+[14:29:08] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:29:08] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=]
+[14:29:09] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:29:11] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (block removed/unloaded), active=0/1.
+[14:29:12] [Render thread/INFO] (perde-f2-probe) Native browser audit count=0
+[14:29:14] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=100, y=120, z=100}, 1280x720, 30 fps, unfocused, active=1/1.
+[14:29:14] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:29:16] [Render thread/INFO] (perde-f2-probe) Status player=Player1 mode=CREATIVE position=(100.5, 120.0, 94.5) block=Block{perde:perde}[facing=north] state=ScreenState[url=https://www.youtube.com/watch?v=dQw4w9WgXcQ, playing=false, positionMs=0, serverTimestamp=0, volume=1.0, width=8.0, height=4.5, offsetX=0.0, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={}] ticket=346 status=perde.browser.loading thread=Render thread
+[14:29:16] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=3 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
+[14:29:16] [Render thread/INFO] (perde-f2-probe) Action status completed
+[14:29:17] [Render thread/INFO] (perde-f2-probe) Action quit completed
+[14:29:17] [Render thread/INFO] (perde) Perde browser: closed at BlockPos{x=100, y=120, z=100} (client stopping), active=0/1.
+[14:29:18] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+BUILD SUCCESSFUL in 1m 16s
+Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0" Exception in thread "AWT-EventQueue-0"

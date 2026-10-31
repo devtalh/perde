@@ -90,9 +90,9 @@ public final class PerdePayloads {
         b.writeBoolean(state.playing()); b.writeLong(state.positionMs()); b.writeLong(state.serverTimestamp());
         b.writeDouble(state.volume()); b.writeDouble(state.width()); b.writeDouble(state.height());
         b.writeDouble(state.offsetX()); b.writeDouble(state.offsetY());
-        b.writeUUID(state.owner()); b.writeUtf(state.ownerName(), 16); b.writeUtf(state.accessMode().name(), 32);
+        b.writeUUID(state.owner()); b.writeUtf(ScreenState.boundedPlayerName(state.ownerName()), ScreenState.MAX_PLAYER_NAME_LENGTH); b.writeUtf(state.accessMode().name(), 32);
         b.writeVarInt(state.allowedPlayers().size());
-        state.allowedPlayers().forEach((id, name) -> { b.writeUUID(id); b.writeUtf(name, 16); });
+        state.allowedPlayers().forEach((id, name) -> { b.writeUUID(id); b.writeUtf(ScreenState.boundedPlayerName(name), ScreenState.MAX_PLAYER_NAME_LENGTH); });
     }
 
     private static ScreenState readState(FriendlyByteBuf b) {

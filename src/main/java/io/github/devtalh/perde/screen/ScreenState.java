@@ -14,6 +14,7 @@ public record ScreenState(String url, boolean playing, long positionMs, long ser
                           UUID owner, String ownerName, AccessMode accessMode, Map<UUID, String> allowedPlayers) {
     public static final int MAX_URL_LENGTH = 2048;
     public static final int MAX_ALLOWED_PLAYERS = 32;
+    public static final int MAX_PLAYER_NAME_LENGTH = 16;
     public static final UUID UNOWNED = new UUID(0, 0);
 
     public ScreenState {
@@ -24,13 +25,19 @@ public record ScreenState(String url, boolean playing, long positionMs, long ser
         offsetX = roundToGrid(offsetX, -16, 16);
         offsetY = roundToGrid(offsetY, -16, 16);
         Objects.requireNonNull(owner);
-        Objects.requireNonNull(ownerName);
+        ownerName = boundedPlayerName(ownerName);
         Objects.requireNonNull(accessMode);
         if (allowedPlayers.size() > MAX_ALLOWED_PLAYERS) {
             throw new IllegalArgumentException("Too many allowed players");
         }
-        allowedPlayers.forEach((id, name) -> { Objects.requireNonNull(id); Objects.requireNonNull(name); });
-        allowedPlayers = Collections.unmodifiableMap(new LinkedHashMap<>(allowedPlayers));
+        Map<UUID, String> players = new LinkedHashMap<>();
+        allowedPlayers.forEach((id, name) -> players.put(Objects.requireNonNull(id), boundedPlayerName(name)));
+        allowedPlayers = Collections.unmodifiableMap(players);
+    }
+
+    public static String boundedPlayerName(String name) {
+        Objects.requireNonNull(name);
+        return name.substring(0, Math.min(name.length(), MAX_PLAYER_NAME_LENGTH));
     }
 
     public static ScreenState defaults() {

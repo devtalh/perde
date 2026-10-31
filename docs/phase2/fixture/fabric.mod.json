@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "perde_f2_probe",
+  "version": "1.0.0",
+  "name": "Perde F2-1 integration fixture",
+  "environment": "client",
+  "entrypoints": {"client": ["io.github.devtalh.perde.client.test.Phase2Probe"]},
+  "depends": {"perde": "*", "fabric-api": "*"}
+}

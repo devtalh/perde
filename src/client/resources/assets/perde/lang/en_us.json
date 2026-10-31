@@ -37,5 +37,9 @@
   "perde.access.owner_only": "Only me",
   "perde.access.selected": "Selected",
   "perde.access.everyone": "Everyone",
-  "perde.ui.invalid_name": "Enter a valid player name."
+  "perde.ui.invalid_name": "Enter a valid player name.",
+  "perde.browser.loading": "Loading",
+  "perde.browser.missing": "MCEF missing",
+  "perde.browser.inactive": "Inactive (another screen or too far)",
+  "perde.browser.failed": "Browser failed (change URL to retry)"
 }

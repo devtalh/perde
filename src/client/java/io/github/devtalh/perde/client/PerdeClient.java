@@ -1,6 +1,7 @@
 package io.github.devtalh.perde.client;
 
 import io.github.devtalh.perde.Perde;
+import io.github.devtalh.perde.client.browser.PerdeBrowserManager;
 import io.github.devtalh.perde.client.net.PerdeClientNetworking;
 import io.github.devtalh.perde.client.render.PerdeBlockEntityRenderer;
 import io.github.devtalh.perde.registry.PerdeRegistry;
@@ -25,5 +26,6 @@ public class PerdeClient implements ClientModInitializer {
         if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
             SpikeBrowserCommand.register(mcefAvailable);
         }
+        PerdeBrowserManager.INSTANCE.initialize(mcefAvailable);
     }
 }
