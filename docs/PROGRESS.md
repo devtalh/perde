@@ -6,7 +6,7 @@ This is the handoff point between Codex sessions and accounts: the next session 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude). Phase 1A (skeleton) starts.
 - Last merged task: F1B-3 render-mod compatibility and feasibility report, [PR #4](https://github.com/devtalh/perde/pull/4), main `7c4da6c`.
-- Phase 1A: F1A-1, F1A-2 and F1A-3 done; F1A-4 two-client integration next on `feat/f1a-skeleton`. Single draft PR will collect all four overnight sub-tasks. No Phase 2 work.
+- Phase 1A: F1A-1, F1A-2 and F1A-3 done; F1A-4 integration partial; controlled restart and survival drop checks next on `feat/f1a-skeleton`. Single draft PR will collect all four overnight sub-tasks. No Phase 2 work.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -21,6 +21,14 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F1A-4 - Dedicated server and two-client integration (checkpoint)
+- Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5) (draft).
+- Status: partial (integration continues; do not mark PR ready yet)
+- What changed: stable Player1/client and Player2/client2 Loom configs; server setup script for offline mode, secure-profile false, 127.0.0.1:25570 and dev EULA. Optional isolated client test fixture sends genuine use-item/C2S requests and logs received vanilla BE state; never included in the default jar. Corrected placeholder from 1x1 to 16x16 after it reduced atlas mip levels.
+- Verified so far: real survival craft with 3 copper/3 glowstone/3 redstone, placement owner Player1, gear; live Player2 geometry/offset updates and shared URL; Player2 view-only; Selected/add Player2/GUI URL edit with reverse sync; Everyone after removing list membership; Only me again; op gear/access and deop after reopening; actual javascript/file C2S rejected with action bar and unchanged NBT. Singleplayer/spike live browser regression passed. Oversized plane visible with source block off-camera; night/full-bright/depth occlusion/back-face tests passed. F2 originals copied unchanged with hashes. Default jar scan: no MCEF/JCEF/compat classes or nested jars. Details in [report](phase1a/F1A-report.md).
+- Exact remaining: controlled server stop/restart and BOTH-client reconnect, compare all persisted fields including allowed UUID/name, survival mine/drop and disappearance on both clients, final default build/test/runtime isolation checks, complete report/PR and mark ready. Keep scope at Phase 1A.
+- Risks: automated cross-Minecraft window activation repeatedly crashes native glfw.dll in pollEvents, with no Perde Java frame; root cause unresolved. Full diagnostic notes retained. User resumed at 12:51 after an internet outage; all old dev processes were absent, world state recovered and checks continued. No AFK process/window was targeted. Successful continuation uses a foreground client plus normal packets from the connected background client. Op/deop UI flags require reopening, while server permission checks are live. Entity Culling/MoreCulling code remains out of scope.
 
 ### F1A-3 - Control/access GUI and placeholder renderer
 - Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5) (draft).

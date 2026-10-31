@@ -7,7 +7,7 @@ Status: in progress on `feat/f1a-skeleton`. This report records only checks actu
 - F1A-1: common block/item/block entity registration, shaped recipe/unlock, copper-framed placeholder textures, immutable plain-Java state and permissions, ValueInput/ValueOutput persistence and vanilla block entity sync.
 - F1A-2: typed OpenPanel/full snapshot and six C2S payloads; server-thread level/chunk/entity/eye-distance/permission gates, server name resolution, translatable action-bar rejections, rolling 10 accepted requests/second/player limit.
 - F1A-3: client-only control/access screens, en_us/tr_tr strings, release/keyboard-commit geometry sliders, vanilla-synced open-panel refresh, and full-bright dark-plane/URL BlockEntityRenderer. Singleplayer runtime verification passed.
-- F1A-4: pending.
+- F1A-4: in progress. Stable Player1/Player2 configs and loopback-only server setup script are implemented; recipe, live state sync, permissions, invalid packets, spike regression and vanilla oversized rendering checks passed. Controlled restart/all-field persistence and survival mining remain.
 - Existing `client.spike` code is preserved. There is no browser on the Perde block in Phase 1A.
 
 ## Sources checked
@@ -51,16 +51,26 @@ Singleplayer checks: real placement, server-opened panel, Open URL to `https://e
 
 | Check | Result | Evidence |
 | --- | --- | --- |
-| a: survival recipe, placement, owner gear | Pending | |
-| b: shared URL, 8 x 4.5 geometry and offset | Pending | |
-| c: Player2 view-only panel | Pending | |
-| d: Selected, Everyone, Only me | Pending | |
-| e: operator override and deop | Pending | |
-| f: unsafe URL rejection | Pending | |
+| a: survival recipe, placement, owner gear | PASS | [recipe](screenshots/f1a-4-a-survival-recipe.png), [owner panel](screenshots/f1a-4-a-b-owner-panel.png) |
+| b: shared URL, 8 x 4.5 geometry and offset | PASS: Player2 logged live vanilla updates; F2 also taken after reconnect | [Player2](screenshots/f1a-4-b-player2-placeholder.png) |
+| c: Player2 view-only panel | PASS | [disabled controls/no gear](screenshots/f1a-4-c-player2-view-only.png) |
+| d: Selected, Everyone, Only me | PASS: real C2S requests from background Player1, Player2 GUI URL edit, reverse sync logged | [Selected](screenshots/f1a-4-d-selected-player2.png), [Everyone without list membership](screenshots/f1a-4-d-everyone-player2.png), [Only me again](screenshots/f1a-4-d-only-me-player2.png) |
+| e: operator override and deop | PASS, panels reopened after role changes | [op](screenshots/f1a-4-e-operator-player2.png), [access/list](screenshots/f1a-4-e-operator-access.png), [deop](screenshots/f1a-4-e-deop-player2.png) |
+| f: unsafe URL rejection | PASS: actual C2S bypasses client validation; server action bar + unchanged NBT | [javascript](screenshots/f1a-4-f-javascript-rejected.png), [file](screenshots/f1a-4-f-file-rejected.png) |
 | g: restart persistence | Pending | |
 | h: item drop and screen removal | Pending | |
-| i: singleplayer and spike regression | Pending | |
+| i: singleplayer and spike regression | PASS: actual GUI checks and live YouTube frames from unchanged spike | [spike](screenshots/f1a-4-singleplayer-spike.png) |
 | j: default build, jar isolation, MCEF-free server | Partial: initial build/server pass | |
+
+## Integration method and extra rendering evidence
+
+All testing remains inside the repository. `runServer` uses `run/server`, offline mode, secure profile off, loopback 127.0.0.1 and port 25570. `runClient` uses `run`/Player1; `runClient2` uses `run/client2`/Player2. `setup-dev-server.ps1` applies only those server settings and accepts the dev EULA. No external Minecraft instance is touched.
+
+A repeated GLFW native crash occurs during automated switching between Minecraft windows; see [diagnostics](diagnostics.md). A separate launcher experiment did not fix it and was removed. The successful continuation keeps Player2 foreground and uses the optional [fixture](fixture/Phase1aProbe.java) for normal Minecraft/Fabric requests from connected background Player1. The fixture sends a real use-item packet to obtain server OpenPanel, then ordinary C2S payloads. It does not change authorization or product code. The GUI URL edit by Player2 and F2 inputs are real UI interactions. Both clients log immutable snapshots received through vanilla sync. The fixture is compiled only by `-I docs/phase1a/fixture/probe.init.gradle`, stored under ignored run/, and absent from the default jar.
+
+Vanilla oversized-screen runtime checks passed at offsetX=16, camera (-15.5,120,-3.5), while the source block (0,120,3) was outside the camera: [visible rectangle](screenshots/f1a-4-render-off-block.png). Night/depth proof: [stone occludes bright URL/plane](screenshots/f1a-4-render-night-depth.png). Back-face proof from (-15.5,120,8.5), yaw 180: [no plane or URL](screenshots/f1a-4-render-back.png). Geometry restored to 8 x 4.5, offsetX=1.3125, offsetY=0 before persistence testing. The first solid 1x1 texture was corrected to 16x16 after atlas mip warnings; fresh logs now show a level-4 block atlas.
+
+Operator status flags are refreshed on server OpenPanel. Reopen after op/deop; server authorization checks live permissions for every packet even if an already-open UI has old flags.
 
 ## Known issues and Phase 2 handoff
 

@@ -32,6 +32,14 @@ loom {
         server {
             runDir = 'run/server'
         }
+        client {
+            programArgs '--username', 'Player1'
+        }
+        client2 {
+            client()
+            runDir = 'run/client2'
+            programArgs '--username', 'Player2'
+        }
     }
 }
 

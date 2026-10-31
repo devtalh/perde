@@ -1,0 +1,28 @@
+// Optional local test fixture. Default build/run tasks never compile, load or bundle this jar.
+allprojects {
+    afterEvaluate {
+        if (!plugins.hasPlugin('net.fabricmc.fabric-loom')) return
+        def probeCompile = tasks.register('compilePhase1aProbe', JavaCompile) {
+            dependsOn tasks.named('clientClasses')
+            source = files('docs/phase1a/fixture/Phase1aProbe.java')
+            classpath = sourceSets.client.runtimeClasspath
+            destinationDirectory = layout.projectDirectory.dir('run/phase1a-probe/classes')
+            javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(25) }
+            options.release = 25
+            options.encoding = 'UTF-8'
+        }
+        def probeJar = tasks.register('packagePhase1aProbe', Jar) {
+            dependsOn probeCompile
+            archiveFileName = 'perde-f1a-probe.jar'
+            destinationDirectory = layout.projectDirectory.dir('run/phase1a-probe')
+            from probeCompile
+            from('docs/phase1a/fixture/fabric.mod.json')
+        }
+        ['runClient', 'runClient2'].each { taskName ->
+            tasks.named(taskName).configure {
+                dependsOn probeJar
+                jvmArgs '-Dfabric.addMods=' + layout.projectDirectory.file('run/phase1a-probe/perde-f1a-probe.jar').asFile.absolutePath
+            }
+        }
+    }
+}
