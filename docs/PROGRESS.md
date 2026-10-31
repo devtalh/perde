@@ -4,7 +4,7 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase 3: **F3-1 in progress** (LEA-196), branch `feat/f3-1-playback-state` from merged main `5e8fbd8` (PR #8). Authoritative playback, panel controls and clock estimator implemented; 240 tests/build pass. Dedicated server and two-client acceptance checks are in progress. [Report](phase3/F3-1-report.md).
+- Phase 3: **F3-1 in progress** (LEA-196), branch `feat/f3-1-playback-state` from merged main `5e8fbd8` (PR #8). Authoritative playback, panel controls and clock estimator implemented; 240 tests/build pass. Dedicated server, two-client playback/permission/skew/URL and restart checks passed; final evidence/PR/CI pending. [Report](phase3/F3-1-report.md).
 - Phase 2: **merged**, [PR #8](https://github.com/devtalh/perde/pull/8), main `5e8fbd8`, confirmed 2026-10-31. [Phase 2 report](phase2/F2-report.md).
 - Phase 1B: **GO** (decided by Talha and Claude).
 - Next after F3-1 acceptance/review: **F3-2**, apply playback to browser/video. No F3-2 work in this branch.
@@ -25,10 +25,11 @@ Newest first. Format:
 
 ### F3-1 - Authoritative playback, panel controls and server clock (LEA-196)
 - Branch / PR: `feat/f3-1-playback-state`, from main `5e8fbd8`; PR pending.
-- Status: partial (acceptance verification in progress).
+- Status: partial (runtime acceptance passed; final evidence/PR/CI pending).
 - What changed: pure PlaybackClock, playback C2S controls through existing authorization/validation/rate limiting, consistent save checkpoints and restart rebasing, connection-scoped monotonic lowest-RTT estimator, live panel controls and EN/TR texts. Focus-free fixture extended for actual panel and forged packet checks. Browser/video unchanged.
 - Verification: Java 25.0.4 present, clean main contains required PR #8 merge. Read SPEC/PROGRESS/F2 report, Notion hub and Linear LEA-196. `.\gradlew.bat build --rerun-tasks --console=plain --warning-mode all` SUCCESSFUL in 11s, 240 tests, zero failures/errors/skips. Fixture package compiles. MCEF-free windowless server reaches Done (1.410s) on 127.0.0.1:25570; runtime checks ongoing.
-- Left: two-client panel/permission/skew/URL/restart checks, screenshots/log report, final diff/build/isolation checks, push/PR and latest-head CI. Next separate task F3-2; do not merge.
+- Runtime follow-up: fixed recursive chunk lookup caused by marking dirty inside setLevel. Both same-session chunk unload/reload and clean restart now pass. Actual saved NBT position 600857 ms resumes without 56895 ms of downtime. Two-client common-reference position differences are below 100 ms; final max/count to be recorded in the report.
+- Left: final screenshots/log report, diff/build/isolation checks, push/PR and latest-head CI. Next separate task F3-2; do not merge.
 - Risks: clock estimation assumes roughly symmetric network delay; server wall-clock adjustments affect timelines by design. Restart resumes the last saved position. Existing trusted-site/native browser risks remain. SPEC/AGENTS unchanged.
 
 ### F2-3 - Full-profile validation and feasibility spike removal (LEA-194, LEA-187, LEA-188)

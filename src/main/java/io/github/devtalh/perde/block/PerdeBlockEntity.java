@@ -34,7 +34,8 @@ public final class PerdeBlockEntity extends BlockEntity {
         if (loadedPlayback && level != null && !level.isClientSide()) {
             loadedPlayback = false;
             state = state.withPlayback(state.playback().loaded(PerdeServerClock.startMs(level.getServer()), System.currentTimeMillis()));
-            setChanged();
+            // setLevel also runs while a chunk is being constructed. Do not request that chunk
+            // recursively here; the running ticker marks it dirty after installation.
         }
     }
 
