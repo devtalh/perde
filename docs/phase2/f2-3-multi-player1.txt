@@ -14,7 +14,7 @@
 [20:04:55] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
 [20:04:55] [AWT-EventQueue-0/INFO] (perde) Perde browser privacy verified: globalContext=false, WebRTC=disable_non_proxied_udp, URL overrides=[], local-IP exceptions=[].
 [20:04:55] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=]
-[20:04:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: 
+[20:04:55] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]:
 [20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 [20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 [20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
@@ -23,7 +23,7 @@
 [20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 [20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 [20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: 
+[20:04:56] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]:
 [20:04:56] [Render thread/INFO] (perde-f2-probe) Action close completed
 [20:04:56] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=1 url=https://www.youtube.com/watch?v=dQw4w9WgXcQ]
 [20:04:58] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1
@@ -73,7 +73,7 @@
 [20:06:08] [Render thread/INFO] (perde) Perde allowlist received: [youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com, youtube.com]
 [20:06:08] [Render thread/INFO] (perde) Perde browser: created at BlockPos{x=300, y=120, z=300}, 1280x720, 30 fps, unfocused, active=1/1.
 [20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser privacy verified: globalContext=false, WebRTC=disable_non_proxied_udp, URL overrides=[], local-IP exceptions=[].
-[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: 
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]:
 [20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
 [20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_camera]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
 [20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/geolocation]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
@@ -82,7 +82,7 @@
 [20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/automatic_downloads]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
 [20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_read_guard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
 [20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/file_system_write_guard]: https://www.youtube.com/watch?v=aqz-KE-bpKQ
-[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]: 
+[20:06:08] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [focus]:
 [20:06:08] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=]
 [20:06:09] [Render thread/INFO] (perde-f2-probe) Native browser audit count=1 [id=2 url=https://www.youtube.com/watch?v=aqz-KE-bpKQ]
 [20:06:13] [AWT-EventQueue-0/INFO] (perde) Perde browser blocked [permission-default/media_stream_mic]: https://www.youtube.com/watch?v=aqz-KE-bpKQ&themeRefresh=1

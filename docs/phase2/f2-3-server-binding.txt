@@ -2,4 +2,3 @@ Bound only to 127.0.0.1:25570
 Owned repository server PID: 40868
 Command: "C:\Program Files\Eclipse Adoptium\jdk-25.0.4.7-hotspot\bin\java.exe" -Dfabric.dli.config=C:\Users\muham\Projects\Perde\.gradle\loom-cache\launch.cfg -Dfabric.dli.env=server -Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotServer @C:\Users\muham\Projects\Perde\build\loom-cache\argFiles\runServer --sun-misc-unsafe-memory-access=allow --enable-native-access=ALL-UNNAMED -Dfile.encoding=UTF-8 -Duser.country=TR -Duser.language=tr -Duser.variant net.fabricmc.devlaunchinjector.Main nogui --nogui
 Started by Run-Server.py with subprocess.CREATE_NO_WINDOW, stdin/stdout pipes, --nogui, run/server.
-
