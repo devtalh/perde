@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "perde:block/perde",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "perde:block/perde",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "perde:block/perde",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "perde:block/perde",
+      "y": 270
+    }
+  }
+}

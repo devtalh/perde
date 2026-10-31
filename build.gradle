@@ -29,6 +29,17 @@ loom {
         configureEach {
             runDir = 'run'
         }
+        server {
+            runDir = 'run/server'
+        }
+        client {
+            programArgs '--username', 'Player1'
+        }
+        client2 {
+            client()
+            runDir = 'run/client2'
+            programArgs '--username', 'Player2'
+        }
     }
 }
 
@@ -54,6 +65,9 @@ repositories {
 }
 
 dependencies {
+    testImplementation platform('org.junit:junit-bom:5.14.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
@@ -77,6 +91,10 @@ dependencies {
         localRuntime 'maven.modrinth:lithium:f7vZ0VWU' // 0.25.3
         localRuntime 'maven.modrinth:distanthorizons:aAow4a9f' // 3.3.3
     }
+}
+
+test {
+    useJUnitPlatform()
 }
 
 processResources {

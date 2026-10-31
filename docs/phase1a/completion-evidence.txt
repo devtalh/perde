@@ -1,0 +1,48 @@
+Perde F1A-4 completion evidence, 2026-10-31 Europe/Istanbul
+
+The earlier controlled restart/all-field NBT comparison is in persistence-evidence.txt.
+Manual post-checkpoint URL/geometry edits were restored through ordinary authorized C2S packets.
+This restoration is not another server restart. The non-default media fields were preserved.
+
+Reconnected state and non-operator permission expectations (F2 panels independently verify actual controls):
+[13:38:19] [Render thread/INFO] (perde-f1a-probe) Player1 status mode=SURVIVAL items=0 held=0 minecraft:air block=Block{perde:perde}[facing=north] entity=io.github.devtalh.perde.block.PerdeBlockEntity@793186bd owner=true control=true admin=true state=ScreenState[url=https://example.com/everyone, playing=true, positionMs=12345, serverTimestamp=987654321, volume=0.375, width=8.0, height=4.5, offsetX=1.3125, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={aed5efd4-551b-3965-bc28-ae21aa072a66=Player2}]
+[13:41:45] [Render thread/INFO] (perde-f1a-probe) Player2 status mode=SURVIVAL items=0 held=0 minecraft:air block=Block{perde:perde}[facing=north] entity=io.github.devtalh.perde.block.PerdeBlockEntity@63fe4a4a owner=false control=false admin=false state=ScreenState[url=https://example.com/everyone, playing=true, positionMs=12345, serverTimestamp=987654321, volume=0.375, width=8.0, height=4.5, offsetX=1.3125, offsetY=0.0, owner=681f539b-8bb8-3f85-85e5-a2945f6c6539, ownerName=Player1, accessMode=OWNER_ONLY, allowedPlayers={aed5efd4-551b-3965-bc28-ae21aa072a66=Player2}] position=(0.559031000851016, 120.0, 0.6184691543135644)
+
+Both players connected during mining/removal:
+[13:38:09] [Server thread/INFO] (Minecraft) Player1[/127.0.0.1:52288] logged in with entity id 1574 at (0.337571736820771, 120.0, -1.2434556344559917)
+[13:38:09] [Server thread/INFO] (Minecraft) Player1 joined the game
+[13:41:38] [Server thread/INFO] (Minecraft) Player2[/127.0.0.1:50285] logged in with entity id 1926 at (0.559031000851016, 120.0, 0.6184691543135644)
+[13:41:38] [Server thread/INFO] (Minecraft) Player2 joined the game
+[13:43:58] [Server thread/INFO] (Minecraft) Player2 lost connection: Disconnected
+[13:43:58] [Server thread/INFO] (Minecraft) Player2 left the game
+
+Real survival START/STOP packets, server-confirmed removal, normal item collection:
+[13:42:43] [Render thread/INFO] (perde-f1a-probe) Player2 mining finished ticks=64 air=true itemsBefore=0 itemsNow=0 mode=SURVIVAL
+[13:42:43] [Render thread/INFO] (perde-f1a-probe) Player2 observed null at BlockPos{x=0, y=120, z=3}
+[13:42:59] [Render thread/INFO] (perde-f1a-probe) Player2 collection finished ticks=9 itemsBefore=0 itemsNow=1 position=(0.6514064652875553, 120.0, 1.7361136090570775)
+[13:43:03] [Render thread/INFO] (perde-f1a-probe) Player2 status mode=SURVIVAL items=1 held=1 perde:perde block=Block{minecraft:air} entity=null owner=false control=false admin=false state=null position=(0.6297016732280418, 120.0, 1.9890092228568474)
+[13:42:43] [Render thread/INFO] (perde-f1a-probe) Player1 observed null at BlockPos{x=0, y=120, z=3}
+[13:43:03] [Render thread/INFO] (perde-f1a-probe) Player1 status mode=SURVIVAL items=0 held=0 minecraft:air block=Block{minecraft:air} entity=null owner=false control=false admin=false state=null
+
+Vanilla screenshot outputs, unedited originals in F2-provenance.csv:
+[13:38:30] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_13.38.30.png
+[13:44:09] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_13.44.09.png
+[13:42:07] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_13.42.07.png
+[13:42:33] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_13.42.33.png
+[13:42:50] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_13.42.50.png
+[13:43:42] [Render thread/INFO] (Minecraft) [System] [CHAT] Saved screenshot as 2026-10-31_13.43.42.png
+
+Player1 screenshots used guarded Computer Use F2.
+Player2 screenshots used the verified public vanilla F2 handler from the isolated fixture, without OS focus changes.
+The first resumed Player2 activation crashed in native GLFW; see diagnostics.md.
+
+Final default build: gradlew.bat build --rerun-tasks --console=plain --warning-mode all
+BUILD SUCCESSFUL in 10s; 9 actionable tasks: 9 executed.
+Fresh JUnit XML: 34 tests, 0 failures, 0 errors, 0 skipped.
+Rebuilt jar: no bundled MCEF/JCEF/compat classes, nested jars or probe.
+Default main runtimeClasspath: no MCEF/JCEF/compat artifacts.
+Common source references: no client Minecraft, Blaze3D, MCEF/JCEF or spike imports.
+Default dedicated server: 44 mods, no MCEF/JCEF/compat, Done (1.258s), live listener only 127.0.0.1:25570.
+SPEC, AGENTS and existing spike package unchanged.
+Raw logs/build/dependency output: ignored run/phase1a-verification/.
+CI for the latest pushed head must pass before ready; no merge and no Phase 2 in this task.
