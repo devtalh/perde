@@ -6,6 +6,7 @@ import com.mojang.blaze3d.textures.GpuTextureView;
 interface BrowserBackend {
     default void checkHealth() { }
     default boolean currentPageAllowed() { return true; }
+    default void sync(io.github.devtalh.perde.screen.PlaybackClock playback, Long serverNowMs) { }
     boolean ready();
     void open(String url);
     void loadUrl(String url);

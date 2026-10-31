@@ -37,6 +37,9 @@ public final class Phase2Probe implements ClientModInitializer {
     private int ticks;
     private String lastAudit = "";
     private boolean soundConfigured;
+    private int syncSamples;
+    private long nextSyncSample;
+    private BlockPos syncPos;
 
     @Override public void onInitializeClient() {
         try { if (Files.exists(commandFile)) previous = Files.readString(commandFile); }
@@ -58,6 +61,11 @@ public final class Phase2Probe implements ClientModInitializer {
                     lastAudit = audit;
                     LOG.info("Native browser audit {}", audit);
                 }
+            }
+            if (syncSamples > 0 && System.nanoTime() >= nextSyncSample) {
+                syncSamples--;
+                nextSyncSample = System.nanoTime() + 1_000_000_000L;
+                sampleSync(client, syncPos);
             }
             if (walkTicks > 0 && --walkTicks == 0) {
                 client.options.keyUp.setDown(false);
@@ -89,6 +97,13 @@ public final class Phase2Probe implements ClientModInitializer {
                 if (client.level == null || client.player == null || client.gameMode == null) throw new IllegalStateException("Join a world first");
                 switch (action) {
                     case "policy" -> runPolicyProbe(args[2]);
+                    case "sync-sample" -> sampleSync(client, pos(args));
+                    case "sync-record" -> {
+                        syncPos = pos(args);
+                        syncSamples = Integer.parseInt(args[5]);
+                        if (syncSamples < 1 || syncSamples > 300) throw new IllegalArgumentException("1..300 samples only");
+                        nextSyncSample = 0;
+                    }
                     case "evaluate" -> evaluate(args[2], args[3]);
                     case "devtools" -> devTools(args[2], args[3], args[4]);
                     case "raw-url" -> ClientPlayNetworking.send(new PerdePayloads.SetUrl(pos(args), args[5]));
@@ -205,6 +220,31 @@ public final class Phase2Probe implements ClientModInitializer {
     }
 
     private static double number(String[] args, int index) { return Double.parseDouble(args[index]); }
+
+    private static void sampleSync(Minecraft client, BlockPos pos) throws Exception {
+        if (!FabricLoader.getInstance().isDevelopmentEnvironment()) throw new IllegalStateException("Development only");
+        Object browser = managedBrowser();
+        Object tools = Class.forName("org.cef.browser.CefBrowser").getMethod("getDevToolsClient").invoke(browser);
+        String expression = "(() => {const v=document.querySelector('video'); return {now:Date.now(),url:location.href,video:!!v,"
+                + "time:v?.currentTime, duration:Number.isFinite(v?.duration)?v.duration:null,paused:v?.paused,ready:v?.readyState,"
+                + "ad:!!document.querySelector('.ad-showing'),muted:v?.muted,volume:v?.volume};})()";
+        var parameters = new com.google.gson.JsonObject();
+        parameters.addProperty("expression", expression);
+        parameters.addProperty("returnByValue", true);
+        var future = (java.util.concurrent.CompletableFuture<?>) tools.getClass()
+                .getMethod("executeDevToolsMethod", String.class, String.class).invoke(tools, "Runtime.evaluate", parameters.toString());
+        future.orTimeout(5, java.util.concurrent.TimeUnit.SECONDS).whenComplete((value, failure) -> client.execute(() -> {
+            if (failure != null) { LOG.error("F3-2 sample failed", failure); return; }
+            if (client.level == null || !(client.level.getBlockEntity(pos) instanceof PerdeBlockEntity entity)) return;
+            var result = com.google.gson.JsonParser.parseString(value.toString()).getAsJsonObject();
+            var media = result.getAsJsonObject("result").getAsJsonObject("value");
+            long now = System.currentTimeMillis();
+            long serverNow = io.github.devtalh.perde.client.net.ClientPlaybackClock.serverNowMs();
+            long target = entity.screenState().playback().current(serverNow + media.get("now").getAsLong() - now);
+            LOG.info("F3-2 sample player={} targetMs={} playing={} media={}", client.player.getPlainTextName(), target,
+                    entity.screenState().playing(), media);
+        }));
+    }
 
     private static void auditChat(Minecraft client) throws Exception {
         var chat = client.gui.hud.getChat();

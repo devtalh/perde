@@ -15,12 +15,14 @@ import org.cef.browser.CefBrowser;
 import org.cef.browser.CefFrame;
 import org.cef.network.CefRequest;
 import org.cef.misc.BoolRef;
+import org.cef.handler.CefLoadHandlerAdapter;
 
 /** Loaded only when Fabric reports MCEF present. Never waits on Chromium initialization. */
 final class McefBrowserBackend implements BrowserBackend {
     private MCEFBrowser browser;
     private CefClient client;
     private Session session;
+    private BrowserPlaybackSync sync;
 
     McefBrowserBackend() {
         // Preserve eager asynchronous engine startup after removing the feasibility entrypoint.
@@ -35,6 +37,8 @@ final class McefBrowserBackend implements BrowserBackend {
         volatile String desiredUrl;
         volatile boolean configured, closed;
         volatile RuntimeException failure;
+        final PlaybackUrlGuard guard = new PlaybackUrlGuard();
+        final java.util.concurrent.atomic.AtomicBoolean pageChanged = new java.util.concurrent.atomic.AtomicBoolean();
         Session(String url) { desiredUrl = ScreenState.validateUrl(url); }
     }
 
@@ -46,7 +50,7 @@ final class McefBrowserBackend implements BrowserBackend {
         session = state;
         if (MCEFApi.getInstanceFuture().getNow(null) == null) throw new IllegalStateException("MCEF is not initialized");
         var audit = new BlockedRequestLog((type, target) -> Perde.LOGGER.info("Perde browser blocked [{}]: {}", type, target));
-        var policy = new PerdeBrowserPolicy(audit, ClientSitePolicy::allowsMainNavigation);
+        var policy = new PerdeBrowserPolicy(audit, ClientSitePolicy::allowsMainNavigation, state.guard::address);
         client = CefApp.getInstance().createClient();
         CefRequestContext context = CefRequestContext.createContext(new CefRequestContextHandlerAdapter() {
             @Override public CefResourceRequestHandler getResourceRequestHandler(CefBrowser source, CefFrame frame,
@@ -67,6 +71,14 @@ final class McefBrowserBackend implements BrowserBackend {
             }
         };
         policy.own(browser.getCefBrowser());
+        sync = new BrowserPlaybackSync(client, browser.getCefBrowser());
+        client.addLoadHandler(new CefLoadHandlerAdapter() {
+            @Override public void onLoadEnd(CefBrowser source, CefFrame frame, int status) {
+                if (state.closed || source != browser.getCefBrowser() || frame == null || !frame.isMain()) return;
+                state.guard.committed(frame.getURL());
+                state.pageChanged.set(true);
+            }
+        });
         MCEFBrowser created = browser;
         policy.install(client, () -> {
             try {
@@ -95,14 +107,29 @@ final class McefBrowserBackend implements BrowserBackend {
     @Override public boolean currentPageAllowed() { return browser == null || ClientSitePolicy.allowsMainNavigation(browser.getCefBrowser().getURL()); }
     @Override public void loadUrl(String url) {
         checkHealth();
+        session.guard.reset();
+        sync.newPage();
         session.desiredUrl = ScreenState.validateUrl(url);
         if (session.configured && !session.closed) browser.getCefBrowser().loadURL(session.desiredUrl);
     }
     @Override public GpuTextureView textureView() { return browser == null ? null : browser.getTextureView(); }
 
+    @Override public void sync(io.github.devtalh.perde.screen.PlaybackClock playback, Long serverNowMs) {
+        if (!session.configured || session.closed) return;
+        if (session.guard.takeRestore()) {
+            Perde.LOGGER.info("Perde sync: restoring server URL after page navigation.");
+            sync.newPage();
+            browser.getCefBrowser().loadURL(session.desiredUrl);
+            return;
+        }
+        if (session.pageChanged.getAndSet(false)) sync.newPage();
+        if (serverNowMs != null) sync.tick(playback, serverNowMs);
+    }
+
     @Override public void close() {
         if (browser != null) {
             session.closed = true;
+            if (sync != null) { sync.close(); sync = null; }
             MCEFBrowser closing = browser;
             browser = null;
             closing.close();

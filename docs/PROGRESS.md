@@ -4,6 +4,7 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
+- Phase 3: **F3-2 partial, implementation checkpoint** (LEA-197), branch `feat/f3-2-sync-engine` from merged main `a326147` (PR #9 merged 2026-10-31). Pure decision/protocol/URL guard tests and initial build pass. Focus-free runtime acceptance is in progress; no completion claimed. Next after verified F3-2: F3-3.
 - Phase 3: **F3-1 complete, PR awaiting review** (LEA-196), branch `feat/f3-1-playback-state`, [PR #9](https://github.com/devtalh/perde/pull/9), from merged main `5e8fbd8`. Authoritative playback, panel controls and server clock delivered. Fresh build: 240 tests pass. MCEF-free server, two-client controls/permissions, max 8 ms skew, chunk reload and restart persistence passed. Evidence checkpoint `f986025` CI green ([run 67](https://github.com/devtalh/perde/actions/runs/41229769492)); final docs-only head must pass CI before ready. [Report](phase3/F3-1-report.md). Do not merge.
 - Phase 2: **merged**, [PR #8](https://github.com/devtalh/perde/pull/8), main `5e8fbd8`, confirmed 2026-10-31. [Phase 2 report](phase2/F2-report.md).
 - Phase 1B: **GO** (decided by Talha and Claude).
@@ -22,6 +23,14 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F3-2 - Client browser playback sync (LEA-197)
+- Branch / PR: `feat/f3-2-sync-engine`, from main `a326147`; PR pending.
+- Status: partial (implementation checkpoint, runtime verification in progress).
+- What changed: client-only 500 ms active-browser sampling through per-frame JCEF execution and a private token/poll/frame-scoped message router; pure seek/transport decisions, per-element debounce, live/end/exempt handling; committed URL/History guard. No common/server changes, SPEC/AGENTS unchanged.
+- Verification: PR #9 merge and Java 25.0.4 confirmed, Notion hub and LEA-197 read. Linear field-notes endpoint still unavailable. Initial build with new unit suites passes. MCEF-free windowless runServer reached Done (0.914s) on 127.0.0.1:25570. First actual YouTube video follows target and router seek works, but full acceptance remains pending.
+- Left: two-client 120-second drift, panel latency, late join, self-navigation, no-video/live, screenshots, final build/diff/CI, report and PR.
+- Risks: initial YouTube URL housekeeping caused a guard reload; monitor stability. Accepted ads/native-browser risks remain. All test game data under run/, muted Chromium/master 0, no Computer Use or focus switching.
 
 ### F3-1 - Authoritative playback, panel controls and server clock (LEA-196)
 - Branch / PR: `feat/f3-1-playback-state`, from main `5e8fbd8`; [PR #9](https://github.com/devtalh/perde/pull/9). Commits: `3a0bd65` implementation, `3d139a8` lifecycle correction, `f986025` acceptance evidence. Evidence head CI green ([run 67](https://github.com/devtalh/perde/actions/runs/41229769492)); final docs-only head must pass CI before ready. Do not merge.

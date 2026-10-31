@@ -20,10 +20,16 @@ final class PerdeBrowserPolicy {
     private volatile CefBrowser owned;
     private volatile String lastPublicUrl;
     private final Predicate<String> allowsMain;
+    private final java.util.function.Consumer<String> addressChanged;
 
     PerdeBrowserPolicy(BlockedRequestLog audit, Predicate<String> allowsMain) {
+        this(audit, allowsMain, url -> { });
+    }
+
+    PerdeBrowserPolicy(BlockedRequestLog audit, Predicate<String> allowsMain, java.util.function.Consumer<String> addressChanged) {
         this.audit = audit;
         this.allowsMain = allowsMain;
+        this.addressChanged = addressChanged;
     }
     void own(CefBrowser browser) { owned = browser; }
     private boolean owns(CefBrowser browser) { return browser != null && browser == owned; }
@@ -128,6 +134,7 @@ final class PerdeBrowserPolicy {
         var display = new CefDisplayHandlerAdapter() {
             @Override public void onAddressChange(CefBrowser browser, CefFrame frame, String url) {
                 if (!owns(browser) || frame == null || !frame.isMain()) return;
+                addressChanged.accept(url);
                 if (UrlPolicy.allowsPage(url) && allowsMain.test(url)) lastPublicUrl = url;
                 else if (!allowsMain.test(url)) {
                     // Chromium may replace a renderer-blocked file navigation with about:blank#blocked
