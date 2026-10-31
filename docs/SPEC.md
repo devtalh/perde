@@ -87,6 +87,9 @@ Note: the server is offline-mode, so UUIDs are offline UUIDs derived from player
 ### 3.6 Security
 - Accept only `http` and `https` URLs. Reject `file:`, `javascript:`, `data:` and everything else, on both client and server (server check is the one that matters).
 - All control packets pass server-side permission checks.
+- **Site allowlist (decided 2026-10-31, Phase 2 / F2-2):** a page URL and every main-frame navigation must be on the server's allowlist (domain or subdomain). Defaults: youtube.com, youtu.be, youtube-nocookie.com, twitch.tv, kick.com, w2g.tv, vimeo.com, dailymotion.com. Stored in `config/perde-server.json`; operators (level >= 2) and the console manage it live with `/perde wl add|remove|list` (alias `/perde whitelist`), no restart; changes are pushed to all clients. When a player tries a non-allowed site, online operators get a clickable [Allow] chat message.
+- Loopback/private/local hosts are blocked for every request (literal checks, no DNS). Each Perde browser uses its own private CEF client and request context (no shared cookies/logins), with mic, camera, geolocation, notifications, clipboard, downloads, file dialogs, JS dialogs and popups denied, and WebRTC local-IP exposure disabled.
+- Perde creates browsers through MCEF's non-API `MCEFBrowserImpl` to get a private context. This is pinned to MCEF `0.3.3+mc26.2.jcef146.0.10`; any other version shows "MCEF version incompatible" instead of crashing.
 
 ## 4. Player experience (Talha's decisions)
 
@@ -112,6 +115,8 @@ Note: the server is offline-mode, so UUIDs are offline UUIDs derived from player
 - DRM/paid streams (beIN, TOD, Netflix, etc.) will not work: MCEF has no Widevine. Out of scope.
 - Each client runs its own Chromium, so YouTube ads can differ per client and briefly break sync. Accepted for now.
 - First client launch downloads ~150 MB.
+- MCEF starts Chromium with `--disable-web-security` (cannot be changed without forking MCEF), and JCEF does not see WebSocket handshakes. A malicious page could therefore reach a player's local network via WebSocket. Accepted residual risk, mitigated by the operator-managed site allowlist: allowlisted sites are treated as trusted. A full network boundary (in-process proxy) is a possible future task if "any site" is ever wanted.
+- Browser memory: one YouTube browser can use up to ~1.1 GB of Chromium helper memory; shared Chromium helpers keep ~300-550 MB after the first browser closes.
 
 ## 6. Phases (sequential, one at a time)
 | Phase | Content |
