@@ -2,7 +2,6 @@ package io.github.devtalh.perde.client.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import io.github.devtalh.perde.block.PerdeBlock;
 import io.github.devtalh.perde.block.PerdeBlockEntity;
 import io.github.devtalh.perde.client.browser.BrowserTexture;
 import io.github.devtalh.perde.client.browser.PerdeBrowserManager;
@@ -15,7 +14,6 @@ import net.minecraft.client.renderer.blockentity.state.BlockEntityRenderState;
 import net.minecraft.client.renderer.feature.ModelFeatureRenderer;
 import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.client.renderer.state.level.CameraRenderState;
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.FormattedCharSequence;

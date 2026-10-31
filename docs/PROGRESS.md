@@ -6,7 +6,7 @@ This is the handoff point between Codex sessions and accounts: the next session 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
 - Last merged task: Phase 1A, [PR #5](https://github.com/devtalh/perde/pull/5), main `5eb1773`; merge confirmed through GitHub and origin/main on 2026-10-31.
-- F2-1: implementation on `feat/f2-1-browser-manager`; build/unit tests pass, runtime verification in progress. Not done until the full singleplayer matrix and dedicated server checks pass.
+- F2-1: complete on `feat/f2-1-browser-manager`, PR pending. Live browser selection/rendering, all singleplayer acceptance checks, missing-MCEF client and dedicated server passed. [Report/evidence](phase2/F2-1-report.md).
 - Next task after F2-1: F2-2 browser navigation security (LEA-185).
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
@@ -25,11 +25,12 @@ Newest first. Format:
 
 ### F2-1 - Real browser manager and Perde screen rendering
 - Branch / PR: `feat/f2-1-browser-manager`, PR pending.
-- Status: partial (verification in progress)
+- Status: done
 - What changed: client-only tracked loaded screens, rectangle-distance nearest selection with 48/52 range and 4-block switching hysteresis, one managed browser at 1280x720/30 fps, non-blocking initialization, existing-browser URL reload, lifecycle cleanup and non-owning live texture bridge. Localized placeholders and bounded 16-character owner/allowed-player names including safe payload writes. Spike preserved.
-- Verification: initial `gradlew.bat build --console=plain --warning-mode all` passed in 7s. Selection/rectangle and long-name regression tests added. Real Fabric 26.2 lifecycle/camera/render sources inspected locally. Linear LEA-193 and Notion hub read; repository SPEC/current task supersede the older hub. Linear field-notes tool still returns `Tool get_agent_context not found`.
-- Left: dedicated server, singleplayer acceptance a-g, missing-MCEF runtime check, screenshot/memory evidence, final build/diff and PR.
-- Risks: navigation security deferred explicitly to F2-2; spike is a separate development-only test browser. Known upstream AWT/native GLFW diagnostics remain open.
+- Verification (2026-10-31 Europe/Istanbul): final `gradlew.bat build --rerun-tasks --console=plain --warning-mode all` SUCCESSFUL in 6s, all 9 tasks executed, 42 fresh tests, 0 failures/errors/skips. Actual OpenPanel codec round trip verifies oversized saved names are safe. Default main runtime/common source/jar remain isolated, no nested MCEF/JCEF/test code. English/Turkish parity: 43 keys. Git diff checked; SPEC/AGENTS/spike unchanged.
+- Runtime: MCEF-free dedicated server loaded 44 mods on 127.0.0.1:25571, Done (1.791s), console stop/all dimensions saved, BUILD SUCCESSFUL in 29s. Creative two-screen placement, panel URLs, walking A-to-B, existing native browser id preserved during URL navigation, 52-block closure of playing video/native registry=0, creative break/no stale rectangle, Save and Quit/native=0/rejoin/native=1, spike place/remove, missing-MCEF client/no helpers, empty URL/no page and dimension change all passed. Cleanup on direct client stopping passed. Ten unchanged F2 copies hash-verified; raw helper samples and exact native-registry/lifecycle excerpts retained in [report](phase2/F2-1-report.md).
+- Left: PR review and Talha's final manual check; no further F2-1 implementation/test is pending. Next task: F2-2 browser navigation security (LEA-185). Do not merge in this task.
+- Risks: navigation security deferred explicitly to F2-2; spike is a separate development-only test browser. Chromium retains shared helpers even with zero browsers, and one YouTube/ad browser reached 1118.40 MiB helper mean, so the one-browser limit is not a fixed MB cap. Existing bare AWT exception prefixes remain unresolved; no GLFW activation crash occurred because no window switching was used. Culling/full-pack verification remains F2-3. Linear field-notes tool remains unavailable; see report.
 
 ### F1A-4 - Completion: restart evidence, survival mining and final verification
 - Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5), pending review; mark ready only after latest-head CI passes, never merge in this task.

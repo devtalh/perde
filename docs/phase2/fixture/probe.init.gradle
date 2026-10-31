@@ -1,0 +1,30 @@
+// Optional focus-free orchestration, excluded from normal builds and published jars.
+allprojects {
+    afterEvaluate {
+        if (!plugins.hasPlugin('net.fabricmc.fabric-loom')) return
+        if (providers.gradleProperty('perde.testWithoutMcef').isPresent()) {
+            configurations.clientRuntimeClasspath.exclude group: 'net.dimaskama', module: 'mcef-modern'
+        }
+        def probeCompile = tasks.register('compilePhase2Probe', JavaCompile) {
+            dependsOn tasks.named('clientClasses')
+            source = files('docs/phase2/fixture/Phase2Probe.java')
+            classpath = sourceSets.client.runtimeClasspath
+            destinationDirectory = layout.projectDirectory.dir('run/phase2-probe/classes')
+            javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(25) }
+            options.release = 25
+            options.encoding = 'UTF-8'
+        }
+        def probeJar = tasks.register('packagePhase2Probe', Jar) {
+            dependsOn probeCompile
+            archiveFileName = 'perde-f2-probe.jar'
+            destinationDirectory = layout.projectDirectory.dir('run/phase2-probe')
+            from probeCompile
+            from('docs/phase2/fixture/fabric.mod.json')
+        }
+        tasks.named('runClient').configure {
+            dependsOn probeJar
+            jvmArgs '-Dfabric.addMods=' + layout.projectDirectory.file('run/phase2-probe/perde-f2-probe.jar').asFile.absolutePath
+            // Keep the fixture ticking while the only test window is unfocused.
+        }
+    }
+}

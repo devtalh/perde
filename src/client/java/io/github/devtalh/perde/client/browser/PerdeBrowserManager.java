@@ -103,6 +103,7 @@ public final class PerdeBrowserManager {
     }
 
     private void fail(RuntimeException exception) {
+        requireClientThread();
         backend.close();
         open = false;
         failed = true;
@@ -111,6 +112,7 @@ public final class PerdeBrowserManager {
     }
 
     private void close(String reason) {
+        requireClientThread();
         if (backend != null) backend.close();
         if (open) Perde.LOGGER.info("Perde browser: closed at {} ({}), active=0/{}.",
                 active.getBlockPos(), reason, BrowserSelection.MAX_ACTIVE_BROWSERS);
@@ -119,6 +121,10 @@ public final class PerdeBrowserManager {
         active = null;
         currentUrl = "";
         generation++;
+    }
+
+    private static void requireClientThread() {
+        if (!Minecraft.getInstance().isSameThread()) throw new IllegalStateException("Browser cleanup must use the client thread");
     }
 
     private static String validUrl(PerdeBlockEntity entity) {
