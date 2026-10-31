@@ -1,0 +1,7 @@
+"Source","Evidence","SHA256"
+"run\screenshots\2026-10-31_21.19.09.png","docs\phase3\screenshots\f3-1-owner-playing.png","CAE33AF173333E188C28E97C259D4F646F1CF9D10603A6AABD55E30C30183C47"
+"run\client2\screenshots\2026-10-31_21.19.10.png","docs\phase3\screenshots\f3-1-viewer-playing.png","2EB7BCE3178CFA5110F378BC19C1E74A2C40DB46D8567F646EF70C979832489B"
+"run\screenshots\2026-10-31_21.19.14.png","docs\phase3\screenshots\f3-1-owner-hour-paused.png","A9B122B1CB3BF4DB82DE4EA5D0D557527F857C8CD9DBEC06374017EFA7591ECD"
+"run\screenshots\2026-10-31_21.19.30.png","docs\phase3\screenshots\f3-1-invalid-time.png","6BCB7D3EC37C550B24D01130D24E7AEDFBE525DB6D6740A89B2C815F6BDB6CAA"
+"run\screenshots\2026-10-31_21.25.14.png","docs\phase3\screenshots\f3-1-restarted-owner.png","3E5932ADD35C6944DC1839E99789B650AED5E07C504208414CA57B8B17450E31"
+"run\client2\screenshots\2026-10-31_21.25.15.png","docs\phase3\screenshots\f3-1-restarted-viewer.png","50AADCD086592BFF1A9E8EBC72D7D15098AAA1DDA0A0BAB6417EB7C93A51AE78"

@@ -1,0 +1,21 @@
+{
+  "owner": "681f539b-8bb8-3f85-85e5-a2945f6c6539",
+  "components": {},
+  "serverTimestamp": 1793471037539,
+  "accessMode": "OWNER_ONLY",
+  "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+  "volume": 1.0,
+  "offsetX": 0.0,
+  "offsetY": 0.0,
+  "ownerName": "Player1",
+  "keepPacked": 0,
+  "width": 8.0,
+  "x": 300,
+  "y": 120,
+  "playing": 1,
+  "z": 300,
+  "allowedPlayers": [],
+  "id": "perde:perde",
+  "positionMs": 600857,
+  "height": 4.5
+}

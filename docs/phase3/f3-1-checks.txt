@@ -1,0 +1,14 @@
+Tests: {'tests': 240, 'failures': 0, 'errors': 0, 'skipped': 0}
+Fresh build: SUCCESSFUL in 12s, all 9 tasks executed.
+Jar: perde-0.1.0-SNAPSHOT.jar, SHA256 ed2ab41df6b782a2d8ebee270ea0b3e015ebfef4364c6a2368eb1e41f913454d
+No bundled MCEF/JCEF/compat/spike/fixture classes or nested jars; main imports and default runtime isolated.
+Language keys: 68 each, exact parity.
+SPEC/AGENTS and browser implementation unchanged.
+Unmodified F2 image pairs: 6, all SHA256 verified.
+Common-reference comparisons: 21, maximum difference 8 ms (<100 ms).
+Restart: saved position 600857 ms at 1793471037539; later 610600 ms at 1793471104177.
+Inferred rebase/load epoch 1793471094434; omitted downtime 56895 ms; elapsed after load 9743 ms.
+Same-session chunk reload: 329108-122401 ms equals server timestamp delta, 206707 ms.
+P2 forged playback rejections: 5 total (4 before restart, 1 after), no accepted Player2 playback changes.
+P1 invalid seek rejections: 7 (NaN/infinity/too large for both forms and negative absolute).
+Final fresh Player1 and Player2 wrappers and server: Gradle exit 0.

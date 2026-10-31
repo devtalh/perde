@@ -1,0 +1,53 @@
+Initial product failure, fixed before accepted runtime: recursive chunk lookup from setLevel -> setChanged.
+"Server thread" #91 [38620] prio=8 os_prio=1 cpu=1718.75ms elapsed=96.60s tid=0x00000249c53c7e10 nid=38620 waiting on condition  [0x00000083a70fe000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@25.0.4/Native Method)
+	- parking to wait for  <0x0000000614977900> (a java.lang.String)
+	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@25.0.4/LockSupport.java:271)
+	at net.minecraft.util.thread.BlockableEventLoop.waitForTasks(BlockableEventLoop.java:155)
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:145)
+	at net.minecraft.server.level.ServerChunkCache.getChunk(ServerChunkCache.java:166)
+	at net.minecraft.world.level.Level.getChunk(Level.java:210)
+	at net.minecraft.world.level.LevelReader.getChunk(LevelReader.java:128)
+	at net.minecraft.world.level.Level.getChunk(Level.java:205)
+	at net.minecraft.world.level.Level.getChunkAt(Level.java:201)
+	at net.minecraft.world.level.Level.blockEntityChanged(Level.java:880)
+	at net.minecraft.world.level.block.entity.BlockEntity.setChanged(BlockEntity.java:201)
+	at net.minecraft.world.level.block.entity.BlockEntity.setChanged(BlockEntity.java:196)
+	at io.github.devtalh.perde.block.PerdeBlockEntity.rebaseLoadedPlayback(PerdeBlockEntity.java:37)
+	at io.github.devtalh.perde.block.PerdeBlockEntity.setLevel(PerdeBlockEntity.java:30)
+	at net.minecraft.world.level.chunk.LevelChunk.setBlockEntity(LevelChunk.java:442)
+	at net.minecraft.world.level.chunk.storage.SerializableChunkData.lambda$postLoadChunk$0(SerializableChunkData.java:508)
+	at net.minecraft.world.level.chunk.storage.SerializableChunkData$$Lambda/0x00000000272eca80.run(Unknown Source)
+	at net.minecraft.world.level.chunk.LevelChunk.runPostLoad(LevelChunk.java:510)
+	at net.minecraft.world.level.chunk.status.ChunkStatusTasks.lambda$full$0(ChunkStatusTasks.java:190)
+	at net.minecraft.world.level.chunk.status.ChunkStatusTasks$$Lambda/0x00000000271e2af0.get(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(java.base@25.0.4/CompletableFuture.java:1789)
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:160)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.doRunTask(ServerChunkCache.java:624)
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:135)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.pollTask(ServerChunkCache.java:634)
+	at net.minecraft.server.level.ServerChunkCache.pollTask(ServerChunkCache.java:279)
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:904)
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:892)
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:116)
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:861)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:767)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:307)
+	at net.minecraft.server.MinecraftServer$$Lambda/0x00000000270b79d0.run(Unknown Source)
+	at java.lang.Thread.runWith(java.base@25.0.4/Thread.java:1487)
+	at java.lang.Thread.run(java.base@25.0.4/Thread.java:1474)
+
+
+Initial failed connection was followed by a too-early fixture open; not accepted as a test.
+The hung owned server PID 31768 was terminated after command-line validation; only this first boot was abrupt.
+Player1 Python stdout wrapper later stopped on cp1254 gear encoding; actual Minecraft file log remains complete. Wrapper now uses UTF-8; final fresh client exits 0.
+Server queue thread had a transient Windows PermissionError during atomic queue replacement; wrapper now retries it. Normal console was restored once using a repo-local guarded attach helper, routing only ordinary console commands on the server thread. Its first attempts refused the target because DLI clears its env property; fixed guard checks exact run/server working directory plus the dev launcher. No product code or packet permission bypass was used.
+That server then saved/stopped normally (Gradle exit 0). The subsequent independent boot uses no attach agent and stops through normal stdin, exit 0. Recovery code and agent jars stay under ignored run/.
+
+Player1 actual first successful join: AWT bare prefixes=0, fixture failures=0, browser failures=0
+Player1 final fresh: AWT bare prefixes=0, fixture failures=0, browser failures=0
+Player2 completed: AWT bare prefixes=0, fixture failures=0, browser failures=0
+Final clean server: AWT bare prefixes=0, fixture failures=0, browser failures=0
+
+Known OSHI/performance-counter, dev-account/Realms and Chromium registry diagnostics are retained in raw run/ logs; no platform configuration was changed.
