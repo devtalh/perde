@@ -1,0 +1,114 @@
+Player1 final code
+[22:03:13] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:03:21] [Render thread/INFO] (perde) Perde sync driftMs=-2472.0 action=PLAY
+[22:03:23] [Render thread/INFO] (perde) Perde sync driftMs=-4514.0 action=PLAY
+[22:03:31] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result twitch-page: {"result":{"type":"object","value":{"title":"Monstercat - Twitch","text":"Skip to...\nAlt\nP\n\nBrowse\n\n11\nLog In\nSign Up\nLive Channels\n\nCaedrel\n\nLeague of Legends\n\nLive\n\n270K\n\n270K viewers\n\nHype Train \u2022 Level 11\n\nWarThunder_Esports\n\nWar Thunder\n\nAVReS 1-1 JinX | 4v4 Ground | WTCS Pro League Grand Finals 2026 | Day 5\n\nLive\n\n27.6K\n\n27.6K viewers\n\nHasanAbi\n\nJust Chatting\n\nLive\n\n23.7K\n\n23.7K viewers\n\nJynxzi\n\nRainbow Six Siege\n\nLive\n\n25.6K\n\n25.6K viewers\n\nRiot Games\n\nLeague of Legends\n\nLive\n\n52.2K\n\n52.2K viewers\n\nzackrawrr\n\nJust Chatting\n\nLive\n\n33.4K\n\n33.4K viewers\n\nThebausffs\n\nLeague of Legends\n\nLive\n\n7.5K\n\n7.5K viewers\n\nVincentSMG\n\nRust\n\nLive\n\n400\n\n400 viewers\n\nGorgc\n\nDota 2\n\nLive\n\n12.2K\n\n12.2K viewers\n\nforsen\n\nEscape from Playtime\n\nLive\n\n5K\n\n5K viewers\n\nOFFLINE\nMonstercat is offline.\nMonstercat prides itself in supporting rising electronic artists from around the globe. We are proving that independent labels have the ability to reshape the music industry landscape.\n\nInstagram\n\nSpotify\n\nTurn on Notifications\nMonstercat\n\n803K followers\n\nFollow\nGift a Sub\nSubscribe\nHome\nAbout\nClips\nVideos\nSchedule\n\nChat\n\nThe Mix Contest - Season 7\nS7E1 - The Mix Contest - \"Opening Ceremonies\"\n\nMonstercat\n\nMusic\n\n1:02:07\n5.5K views\n4 years ago\nS7E2 - The Mix Contest - \u201cTwo Minds\u201d\n\nMonstercat\n\nMusic\n\n57:19\n1.2K views\n4 years ago\nS7E3 - The Mix Contest - \u201cback2u\u201d\n\nMonstercat\n\nMusic\n\n58:44\n833 views\n4 years ago\nTeam Members of Monstercat\n\nWRLDmusic\n\nOffline\n\nStephenWalking\n\nOffline\n\nCaseAndPoint\n\nOffline\n\nFavright\n\nOffline\n\nRezonateMusic\n\nOffline\nOFFLINE\n\nFollow\nStream Chat\nWe","videos":[{"time":0,"duration":"NaN","paused":false,"ready":0}]}}}
+[22:03:40] [Render thread/INFO] (perde) Perde sync driftMs=-3042.0 action=PLAY
+[22:03:51] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result live-page: {"result":{"type":"object","value":{"title":"Riot Games - Twitch","text":"Skip to...\nAlt\nP\n\nBrowse\n\nLog In\nSign Up\nLive Channels\n\nCaedrel\n\nLeague of Legends\n\nLive\n\n270K\n\n270K viewers\n\nHype Train \u2022 Level 11\n\nHasanAbi\n\nJust Chatting\n\nLive\n\n23.7K\n\n23.7K viewers\n\nRiot Games\n\nLeague of Legends\n\nLive\n\n52.2K\n\n52.2K viewers\n\nzackrawrr\n\nJust Chatting\n\nLive\n\n33.4K\n\n33.4K viewers\n\nPoineMaia\n\nKnight Online\n\nLive\n\n1.7K\n\n1.7K viewers\n\nJynxzi\n\nRainbow Six Siege\n\nLive\n\n25.6K\n\n25.6K viewers\n\nThebausffs\n\nLeague of Legends\n\nLive\n\n7.5K\n\n7.5K viewers\n\nGorgc\n\nDota 2\n\nLive\n\n12.2K\n\n12.2K viewers\n\nforsen\n\nEscape from Playtime\n\nLive\n\n5K\n\n5K viewers\n\nLIRIK\n\nPhantom Blade Zero\n\nLive\n\n7.9K\n\n7.9K viewers\n\nRiot Games Viewers Also Watch\n\nCaedrel247\n\nLeague of Legends\n\nLive\n\n114\n\n114 viewers\n\nlol_nemesis\n\nLeague of Legends\n\nLive\n\n2.6K\n\n2.6K viewers\n\nJankos\n\nLeague of Legends\n\nLive\n\n2.7K\n\n2.7K viewers\n\nShow More\nThis video is either unavailable or not supported in this browser. (Error #4000)\nVolume\nStream Chat\nWelcome to riotgames's chat room!\nMawile303: NA KEKW\nmaaxweeell: NA LOL\nthe_noat: ! score\nizhtownFUN: \nSlow Mode\n\nSend a message\n\n\ufeff\n\n\nChat","videos":[{"time":0,"duration":"NaN","paused":false,"ready":0}]}}}
+[22:03:53] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:04:13] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result codec-capabilities: {"result":{"type":"object","value":{"h264":false,"aac":false,"vp9":true,"mp4":""}}}
+[22:04:24] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:04:34] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result kick-page: {"result":{"type":"object","value":{"title":"KICK","url":"https://kick.com/","text":"Log In\nSign Up\nHome\nBrowse\nFollowing\nEvents\nNEW\nRecommended\nWymzi\nJust Chatting\nLIVE\nLion\nCounter-Strike 2\nLIVE\n4HEAD\nGrand Theft Auto V (GTA)\n5.1K\nKylieBitkin\nGrand Theft Auto V (GTA)\n806\nnanatty\nIRL\n748\nHappychefTV\nIRL\n15\nfissure_dota_en\nDota 2\n5.7K\nchessbrah\nChess\n155\nasmongold\nJust Chatting\n7.5K\nRiotGames\nLeague of Legends\n4.8K\nShow More\nShow Less\nKICK: The #1 Live Streaming Platform\n\nThis content is for mature viewers only. You must be 18 or older to view it.\n\nI am 18+\nWymzi\n\ud83d\ude08 TRICK OR TREAT \ud83d\ude08 DEAL OR DEGEN \ud83c\udf83 !Enter !DoD !Stake\nJust Chatting\nEnglish\n18+\nWatch now\nChat\nBotRix\n:\u00a0\nEnglish only, please! Por favor, s\u00f3lo ingles, anglais seulement s'il vous plait, auf Englisch bitte, solo inglese per favore, ingilizce l\u00fctfen, ingl\u00eas, por favor, \u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629 \u0645\u0646 \u0641\u0636\u0644\u0643, \u8bf7\u82f1\u8bed, \u0415\u043d\u0433\u043b\u0435\u0441\u043a\u0438 \u043c\u043e\u043b\u0438\u043c, \u0627\u0646\u06af\u0644\u06cc\u0633\u06cc \u0644\u0637\u0641\u0627.\nAmuLito13\n:\u00a0\npoorman00\n:\u00a0\n12\nMaster1000x\n:\u00a0\npoorman00\n:\u00a0\n12\nasifah9018\n:\u00a0\nlifeline\npoorman00\n:\u00a0\n12\npoorman00\n:\u00a0\npoorman00\n:\u00a0\nKayliteStar\n:\u00a0\ntake ittttttt\nasifah9018\n:\u00a0\ncharliesheendonghands\n:\u00a0\nlol\nMaster1000x\n:\u00a0\ntake that\nNew messages\nasifah9018\n:\u00a0\npoorman00\n:\u00a0\nno deal\nJeffDubbz\n:\u00a0\nwalmatt916\n:\u00a0\nask for a lifeline my guy\nasifah9018\n:\u00a0\nTop Live Categories\n272.1K\nJust Chatting\nIRL\nCasual\n216.4K\nGrand Theft Auto V (GTA)\nShooter\nAction\nOpen World\n100.5K\nIRL\nAdventure\n89.5K\nLeague of Legen","links":["https://kick.com/","https://kick.com/browse","https://kick.com/","https://kick.com/","https://kick.com/browse","https://kick.com/events?source=sidebar","https://kick.com/wymzi","https://kick.com/lion","https://kick.com/4head","https://kick.com/kyliebitkin","https://kick.com/nanatty","https://kick.com/happycheftv","https://kick.com/fissure_dota_en","https://kick.com/chessbrah","https://kick.com/asmongold","https://kick.com/riotgames","https://kick.com/browse","https://kick.com/wymzi","https://kick.com/wymzi","https://kick.com/wymzi","https://kick.com/category/just-chatting","https://kick.com/wymzi","https://kick.com/wymzi","https://kick.com/wymzi","https://kick.com/wymzi"]}}}
+[22:04:50] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:05:17] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result kick-live-page: {"result":{"type":"object","value":{"title":"RiotGames Live Stream - Watch Live on KICK","text":" get any rewards throughout October. I watch live streams every day - do I need to participate in event predictions to get rewards? I didn't participate in any event predictions, but I'm on LolesportI logged into my Riot account and I'm also watching streams on Lolesport\nReplying to LuccaBazooka: drops on lolesports are not guaranteed, you have to watch there logged with your riot account to have a chance to earn them\nSunny0924\n:\u00a0\nDid I make some mistake?\nLuccaBazooka\n:\u00a0\nNo it should work, I don't know what the problem is them, sorry \nSunny0924\n:\u00a0\nIf I don't participate in the prediction, even if you log into your Riot account on Lolesport, won't you get any rewards? I watched the entire S series and didn't get anything\nLuccaBazooka\n:\u00a0\nIf you're talking about the pickems rewards them yes, you would need to participate\nLuccaBazooka\n:\u00a0\nif you're talking about the regular lolesports drops, then you should have a chance to earn them just by watching\nFollowers only\n\n\n\n\nSend a message\nChat\nClear all\nTune your KICK experience\nCookies make KICK work. They remember who you are, what you like, and help us show you content and offers you actually care about.\nCookie Settings Accept All Cookies","videos":[{"time":0,"duration":"NaN","paused":true,"ready":0,"error":"PipelineStatus::DEMUXER_ERROR_NO_SUPPORTED_STREAMS: FFmpegDemuxer: no supported streams"}]}}}
+[22:05:29] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:05:33] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result no-video-final: {"result":{"type":"object","value":{"url":"https://example.com/","videos":0}}}
+[22:05:34] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result cross-frame-create: {"result":{"type":"boolean","value":true}}
+[22:05:41] [Render thread/INFO] (perde-f2-probe) F3-2 frame id=1E-C1ABDCE8682805068520E300CC536E31 url=https://example.org/
+[22:05:41] [Render thread/INFO] (perde-f2-probe) F3-2 frame id=1D-F1D1E28A02E2B05ADFF354568F77A613 url=https://example.com/
+[22:05:55] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result cross-frame-paused: {"result":{"type":"object","value":{"mainVideos":0,"samples":[]}}}
+[22:06:02] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result cross-frame-inspect: {"result":{"type":"object","value":{"src":"https://example.org/","frames":1}}}
+[22:06:13] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result cross-frame-replace: {"result":{"type":"boolean","value":true}}
+[22:06:20] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result cross-frame-listener: {"result":{"type":"boolean","value":true}}
+[22:06:20] [Render thread/INFO] (perde-f2-probe) F3-2 frame id=1D-F1D1E28A02E2B05ADFF354568F77A613 url=https://example.com/
+[22:06:20] [Render thread/INFO] (perde-f2-probe) F3-2 frame id=1F-4401904F9DD84A89ED793C8A8E58B8FB url=https://httpbingo.org/html
+[22:06:21] [Render thread/INFO] (perde) Perde sync driftMs=-1987.612 action=seek targetMs=2000
+[22:06:21] [Render thread/INFO] (perde) Perde sync driftMs=-1987.612 action=PAUSE
+[22:06:30] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result cross-frame-final: {"result":{"type":"object","value":{"mainVideos":0,"samples":[{"fixture":"f3-2","now":1793473589704,"time":2,"duration":"5.059","paused":true,"ready":4},{"fixture":"f3-2","now":1793473589955,"time":2,"duration":"5.059","paused":true,"ready":4},{"fixture":"f3-2","now":1793473590207,"time":2,"duration":"5.059","paused":true,"ready":4},{"fixture":"f3-2","now":1793473590458,"time":2,"duration":"5.059","paused":true,"ready":4},{"fixture":"f3-2","now":1793473590707,"time":2,"duration":"5.059","paused":true,"ready":4},{"fixture":"f3-2","now":1793473590956,"time":2,"duration":"5.059","paused":true,"ready":4}]}}}
+[22:06:54] [Render thread/INFO] (perde) Perde sync driftMs=-8000.0 action=seek targetMs=5009
+[22:07:13] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result cross-frame-ended: {"result":{"type":"object","value":{"mainVideos":0,"samples":[{"fixture":"f3-2","now":1793473632457,"time":5.009,"duration":"5.059","paused":true,"ready":4},{"fixture":"f3-2","now":1793473632706,"time":5.009,"duration":"5.059","paused":true,"ready":4},{"fixture":"f3-2","now":1793473632958,"time":5.009,"duration":"5.059","paused":true,"ready":4},{"fixture":"f3-2","now":1793473633211,"time":5.009,"duration":"5.059","paused":true,"ready":4}]}}}
+[22:07:17] [Render thread/INFO] (perde) Perde sync driftMs=-2143.882 action=seek targetMs=2370
+[22:07:19] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:07:20] [Render thread/INFO] (perde) Perde sync driftMs=-5640.606 action=seek targetMs=6035
+[22:07:22] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:07:24] [Render thread/INFO] (perde) Perde sync driftMs=-8671.977 action=seek targetMs=9439
+[22:07:30] [Render thread/INFO] (perde) Perde sync driftMs=-332.4449999999997 action=PLAY
+[22:07:31] [Render thread/INFO] (perde) Perde sync driftMs=-865.4449999999997 action=PLAY
+[22:07:31] [Render thread/WARN] (perde) Perde sync: page rejected play(); retrying on the next loop.
+[22:07:31] [Render thread/INFO] (perde) Perde sync driftMs=-1365.4449999999997 action=PLAY
+[22:07:32] [Render thread/INFO] (perde) Perde sync driftMs=-1869.4449999999997 action=seek targetMs=17619
+[22:07:32] [Render thread/INFO] (perde) Perde sync driftMs=-1869.4449999999997 action=PLAY
+[22:07:32] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result play-rejection: {"result":{"type":"object","value":{"attempts":4,"paused":true}}}
+[22:07:32] [Render thread/INFO] (perde) Perde sync driftMs=-499.0 action=PLAY
+[22:07:33] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result play-restored: {"result":{"type":"object","value":{"attempts":5}}}
+[22:07:33] [Render thread/INFO] (perde) Perde sync driftMs=-1067.0 action=PLAY
+[22:07:55] [Render thread/INFO] (perde) Perde sync driftMs=-20906.754 action=seek targetMs=60167
+[22:10:53] [Render thread/INFO] (perde) Perde sync driftMs=-140.47299999999814 action=PAUSE
+[22:11:00] [Render thread/INFO] (perde) Perde sync driftMs=-278.7859999999928 action=PLAY
+[22:11:06] [Render thread/INFO] (perde) Perde sync driftMs=-30365.48999999999 action=seek targetMs=275099
+[22:11:13] [Render thread/INFO] (perde) Perde sync driftMs=221116.66099999996 action=seek targetMs=60478
+[22:11:43] [Render thread/INFO] (perde) Perde sync driftMs=90057.65299999999 action=seek targetMs=40
+[22:12:05] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-history-navigation: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=aqz-KE-bpKQ","at":1793473925140}}}
+[22:12:05] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:12:06] [Render thread/INFO] (perde) Perde sync driftMs=-23551.113 action=seek targetMs=23569
+[22:12:08] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-history-restored: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=aqz-KE-bpKQ","ready":"complete","time":25.013922}}}
+[22:12:16] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-document-navigation: {"result":{"type":"object","value":{"at":1793473936283}}}
+[22:12:16] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:12:17] [Render thread/INFO] (perde) Perde sync driftMs=-34786.45 action=seek targetMs=34843
+[22:12:18] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:12:20] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-document-restored: {"result":{"type":"object","value":{"url":"https://www.youtube.com/watch?v=aqz-KE-bpKQ","ready":"complete","time":1.331152}}}
+[22:12:21] [Render thread/INFO] (perde) Perde sync driftMs=-36650.924 action=seek targetMs=38117
+[22:12:21] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result final-invalid-messages: {"result":{"type":"object","value":[-1,-1,-1]}}
+Player2 final code
+[22:03:37] [Render thread/INFO] (perde) Perde sync driftMs=-18337.0 action=PLAY
+[22:03:39] [Render thread/INFO] (perde) Perde sync driftMs=-2460.0 action=PLAY
+[22:03:53] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:04:24] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:04:43] [Render thread/INFO] (perde) Perde sync driftMs=-3597.0 action=PLAY
+[22:04:50] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:05:29] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:07:17] [Render thread/INFO] (perde) Perde sync driftMs=-2380.0 action=seek targetMs=2380
+[22:07:19] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:07:21] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:07:23] [Render thread/INFO] (perde) Perde sync driftMs=-8783.62 action=seek targetMs=8922
+[22:07:55] [Render thread/INFO] (perde) Perde sync driftMs=-19849.722 action=seek targetMs=60469
+[22:10:53] [Render thread/INFO] (perde) Perde sync driftMs=-189.3310000000056 action=PAUSE
+[22:11:00] [Render thread/INFO] (perde) Perde sync driftMs=-230.7829999999958 action=PLAY
+[22:11:06] [Render thread/INFO] (perde) Perde sync driftMs=-30336.939000000013 action=seek targetMs=275093
+[22:11:13] [Render thread/INFO] (perde) Perde sync driftMs=221119.19700000004 action=seek targetMs=60335
+[22:12:46] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:12:47] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:12:48] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result page-enable: {}
+[22:12:49] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result document-mute: {"identifier":"1"}
+[22:12:49] [Render thread/INFO] (perde) Perde sync driftMs=-66326.0 action=seek targetMs=66326
+[22:12:49] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-now: {"result":{"type":"boolean","value":true}}
+[22:12:51] [Render thread/INFO] (perde) Perde sync driftMs=-2002.0010000000038 action=seek targetMs=68328
+preliminary code
+[21:55:19] [Render thread/INFO] (perde) Perde sync driftMs=-286636.0 action=seek targetMs=286636
+[21:55:20] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[21:55:21] [Render thread/INFO] (perde) Perde sync driftMs=-288704.646 action=seek targetMs=288723
+[21:55:22] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[21:55:24] [Render thread/INFO] (perde) Perde sync driftMs=-291511.38 action=seek targetMs=291527
+[21:55:26] [Render thread/INFO] (perde) Perde sync driftMs=-2001.0 action=seek targetMs=293528
+[21:55:40] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result page-enable: {}
+[21:55:40] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result document-mute: {"identifier":"1"}
+[21:55:41] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result mute-now: {"result":{"type":"boolean","value":true}}
+[21:55:42] [Render thread/INFO] (perde) Perde sync driftMs=249248.19300000003 action=seek targetMs=60183
+[21:58:00] [Render thread/INFO] (perde) Perde sync driftMs=-360.52700000000186 action=PAUSE
+[21:58:06] [Render thread/INFO] (perde) Perde sync driftMs=-358.29999999998836 action=PLAY
+[21:58:13] [Render thread/INFO] (perde) Perde sync driftMs=-30446.089000000007 action=seek targetMs=234487
+[21:58:19] [Render thread/INFO] (perde) Perde sync driftMs=180646.318 action=seek targetMs=60261
+[21:58:46] [Render thread/INFO] (perde) Perde sync driftMs=86691.979 action=seek targetMs=92
+[22:00:16] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result history-autoplay: {"result":{"type":"object","value":{"original":"https://www.youtube.com/watch?v=aqz-KE-bpKQ","at":1793473216700}}}
+[22:00:16] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:00:19] [Render thread/INFO] (perde) Perde sync driftMs=-92781.83 action=seek targetMs=92805
+[22:00:21] [Render thread/INFO] (perde) Perde sync driftMs=-2036.0 action=seek targetMs=94841
+[22:00:23] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result document-navigation: {"result":{"type":"object","value":{"at":1793473223007}}}
+[22:00:23] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:00:24] [Render thread/INFO] (perde) Perde sync: restoring server URL after page navigation.
+[22:00:24] [Render thread/INFO] (perde) Perde sync driftMs=-98144.126 action=seek targetMs=98245
+[22:00:26] [Render thread/INFO] (perde) Perde sync driftMs=-99398.643 action=seek targetMs=99446
+[22:00:28] [Render thread/INFO] (perde) Perde sync driftMs=-2035.0 action=seek targetMs=101481
+[22:00:57] [Render thread/INFO] (perde) Perde sync driftMs=130411.991 action=seek targetMs=154
+[22:01:07] [Render thread/WARN] (perde) Perde sync: no visible video on this page; URL guard remains active.
+[22:01:40] [AWT-EventQueue-0/INFO] (perde-f2-probe) F2-2 native result private-channel-invalid: {"result":{"type":"object","value":{"ignored":true,"code":-1}}}

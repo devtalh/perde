@@ -1,0 +1,11 @@
+{'tests': 274, 'failures': 0, 'errors': 0, 'skipped': 0}
+Build: SUCCESSFUL in 8s, 9/9 executed
+Dedicated server: 44 mods, MCEF absent, windowless loopback, Done 0.914s, normal save/stop, Gradle success
+Both final clients: Gradle success, native count zero, normal exit, no fixture/sample/product browser failures
+Default jar: no bundled MCEF/JCEF/nested jars/fixture; common imports clean; common/spec/agents/build unchanged
+11 F2 source/evidence SHA256 pairs identical
+Late range entry: start + 60043 ms; first ready video at 1793473966008 drift -62793.774 ms; first stable at 1793473971529 drift -144.7960000000021 ms
+Real Twitch/Kick live playback: FAILED/UNVERIFIED, codec capabilities false; F3-2 remains PARTIAL
+Player1: samples=121 spanMs=120876 medianMs=57.451 maxMs=76.941
+Player2: samples=121 spanMs=120705 medianMs=56.906 maxMs=68.353
+Control latency: 101..601 ms, all readyState=4
