@@ -1,13 +1,13 @@
 # Phase 1A skeleton report
 
-Status: **partial**, `feat/f1a-skeleton`, draft [PR #5](https://github.com/devtalh/perde/pull/5). Computer Use was stopped by physical Escape during final restart verification. This report records only checks actually completed; the PR is not ready and must not be merged.
+Status: **complete**, `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5), pending review. All Phase 1A integration checks passed. Merge and Phase 2 are not authorized by this task.
 
 ## Scope and implementation
 
 - F1A-1: common block/item/block entity registration, shaped recipe/unlock, copper-framed placeholder textures, immutable plain-Java state and permissions, ValueInput/ValueOutput persistence and vanilla block entity sync.
 - F1A-2: typed OpenPanel/full snapshot and six C2S payloads; server-thread level/chunk/entity/eye-distance/permission gates, server name resolution, translatable action-bar rejections, rolling 10 accepted requests/second/player limit.
 - F1A-3: client-only control/access screens, en_us/tr_tr strings, release/keyboard-commit geometry sliders, vanilla-synced open-panel refresh, and full-bright dark-plane/URL BlockEntityRenderer. Singleplayer runtime verification passed.
-- F1A-4: in progress. Stable Player1/Player2 configs and loopback-only server setup script are implemented; recipe, live state sync, permissions, invalid packets, spike regression and vanilla oversized rendering checks passed. Controlled restart/all-field persistence and survival mining remain.
+- F1A-4: complete. Stable Player1/Player2 configs, loopback-only server setup and isolated fixture; survival recipe/mining/drop, shared state, permissions, invalid packets, restart/all-field persistence, spike regression, oversized rendering and final isolation checks passed.
 - Existing `client.spike` code is preserved. There is no browser on the Perde block in Phase 1A.
 
 ## Sources checked
@@ -47,7 +47,7 @@ Singleplayer checks: real placement, server-opened panel, Open URL to `https://e
 - Every C2S edit also requires the last server-opened panel to match its block and dimension. This prevents delayed packets after dimension changes or edits without a server-authorized panel. State changes still use only vanilla BE sync. Online names are matched case-sensitively; offline lookup uses verified `UUIDUtil.createOfflinePlayerUUID`, with vanilla-compatible 1..16 ASCII player-name validation.
 - Notion's hub predates the GO decision and vanilla S2C sync decision. Repository SPEC and the explicit overnight task take precedence. Linear issues LEA-189..192 were read; its shared field-notes endpoint still returns `Tool get_agent_context not found`.
 
-## Remaining integration matrix
+## Completed integration matrix
 
 | Check | Result | Evidence |
 | --- | --- | --- |
@@ -57,10 +57,10 @@ Singleplayer checks: real placement, server-opened panel, Open URL to `https://e
 | d: Selected, Everyone, Only me | PASS: real C2S requests from background Player1, Player2 GUI URL edit, reverse sync logged | [Selected](screenshots/f1a-4-d-selected-player2.png), [Everyone without list membership](screenshots/f1a-4-d-everyone-player2.png), [Only me again](screenshots/f1a-4-d-only-me-player2.png) |
 | e: operator override and deop | PASS, panels reopened after role changes | [op](screenshots/f1a-4-e-operator-player2.png), [access/list](screenshots/f1a-4-e-operator-access.png), [deop](screenshots/f1a-4-e-deop-player2.png) |
 | f: unsafe URL rejection | PASS: actual C2S bypasses client validation; server action bar + unchanged NBT | [javascript](screenshots/f1a-4-f-javascript-rejected.png), [file](screenshots/f1a-4-f-file-rejected.png) |
-| g: restart persistence | PARTIAL: controlled restart and exact all-field NBT comparison PASS; Player1 reconnect snapshot PASS; Player2 reconnect and both F2 proofs pending after UI stop | [before/after evidence](persistence-evidence.txt) |
-| h: item drop and screen removal | Pending | |
+| g: restart persistence | PASS: exact all-field NBT comparison; both reconnected clients received the full matching state; owner/control/admin true for Player1 and false for Player2 | [NBT](persistence-evidence.txt), [completion logs](completion-evidence.txt), [Player1 owner panel](screenshots/f1a-4-g-restart-player1-owner.png), [Player2 view-only](screenshots/f1a-4-g-restart-player2-view-only.png), [Player2 plane](screenshots/f1a-4-g-restart-player2-placeholder.png) |
+| h: item drop and screen removal | PASS: survival, empty hand, normal mining packets; air after 64 client ticks, both clients' BE removed at 13:42:43; collection increased inventory 0 to 1 | [dropped item and no plane](screenshots/f1a-4-h-survival-drop.png), [collected](screenshots/f1a-4-h-survival-collected.png), [Player1 no plane](screenshots/f1a-4-h-player1-screen-removed.png), [exact logs](completion-evidence.txt) |
 | i: singleplayer and spike regression | PASS: actual GUI checks and live YouTube frames from unchanged spike | [spike](screenshots/f1a-4-singleplayer-spike.png) |
-| j: default build, jar isolation, MCEF-free server | PASS to checkpoint: 34 tests; last build SUCCESSFUL in 9s; jar and common runtime isolated; restarted default server 44 mods without MCEF, Done (1.258s). Final handoff/CI recheck remains | |
+| j: default build, jar isolation, MCEF-free server | PASS: final build reran all 9 tasks in 10s; 34 fresh JUnit invocations, zero failures/errors/skips. Rebuilt jar/common runtime isolated; default server 44 mods without MCEF, Done (1.258s), loopback port 25570. `git diff --check` passed; latest-head CI checked before making the PR ready | [verification summary](completion-evidence.txt) |
 
 ## Integration method and extra rendering evidence
 
@@ -72,6 +72,16 @@ Vanilla oversized-screen runtime checks passed at offsetX=16, camera (-15.5,120,
 
 Operator status flags are refreshed on server OpenPanel. Reopen after op/deop; server authorization checks live permissions for every packet even if an already-open UI has old flags.
 
+## Completion method (2026-10-31, Europe/Istanbul)
+
+At 13:34-13:44 the existing server was re-identified from its repository DLI command line and loopback listener. The old client had been manually edited after the earlier checkpoint (YouTube URL and different geometry). Normal authorized C2S requests restored the exact persistence baseline, preserving every media/owner/access field. Player1 rejoined at 13:38:09 and Player2 at 13:41:38; their complete snapshots match the recorded restart state. Restoration is not presented as another server restart. The original controlled restart/NBT comparison remains the persistence proof.
+
+Player1's restart panel and removal screenshots used Computer Use F2, after fresh PID/command-line/window verification. Player2's first resumed Computer Use F2 attempt reproduced the native activation crash. No further input targeted that process. A fresh Player2 used `Minecraft.handleGlobalKeyPress(options.keyScreenshot.getDefaultKey(), false)`, the exact public vanilla F2 handler verified in Minecraft 26.2 source. It invokes `Screenshot.grab` and writes ordinary unedited PNGs under that client's `run/` directory without Windows focus changes. These are vanilla F2-path captures, not physical Windows F2 inputs; provenance records the originals. The fixture never captures or controls the AFK instance.
+
+Survival mining used real `ServerboundPlayerActionPacket` START/STOP requests separated by the block's normal hardness duration. The server enforces reach, survival mode and elapsed progress. No `setblock`, `fill`, direct server mutation, creative destruction or spawned item was used. Player2 started with no Perde items and an empty hand. After 64 client ticks the server update removed the block/BE on both clients. Ordinary forward movement collected the dropped item (0 to 1); movement has a timeout and releases on completion, disconnect or error. Player2's F2 shows the drop and subsequent held item. Player1's later F2 independently confirms no stale plane remains; Player2 was already closed normally for that capture, but both clients were connected when removal arrived.
+
+`Send-Probe.ps1` refuses to queue a command unless exactly one live Java process has this repository path, DLI main, opt-in fixture and matching Player1/Player2 username. Final raw logs/build/dependency output are under ignored `run/phase1a-verification/`. All 27 committed F2 copies have SHA-256 provenance. Product source, SPEC, AGENTS and spike were unchanged during this completion pass.
+
 ## Known issues and Phase 2 handoff
 
-Remaining checks: Player2 reconnect after the controlled restart, actual F2 restart evidence from both clients, survival mining/drop and disappearance on both clients, final build/CI/diff checks and ready-for-review transition. The controlled restart already preserved all fields exactly, including non-default media values seeded only by server console; no media controls were added. Player1 reconnected and received the same complete state. The user pressed physical Escape before the first restart F2 capture, so no further Computer Use input was issued. Own server PID 23344 and Player1 PID 33912 are left running; re-identify them before resuming. Existing OSHI and dev-account Realms diagnostics remain. Phase 2 must retain the F1B render path, implement browser lifetime/range policy and resolve LEA-185 navigation security; Entity Culling/MoreCulling integration is out of scope here.
+No Phase 1A implementation or integration check remains. Final human review/manual acceptance and merge belong to Talha; this task does not merge or start Phase 2. Native cross-Minecraft window activation remains unresolved and was reproduced in this pass; the focus-free fixture is test orchestration, not a fix. Existing OSHI/dev-account Realms diagnostics and op/deop reopen behavior remain. The repository-local server and Player1 are left running for final inspection; Player2 exited normally and retains the mined item in its saved inventory. Always re-identify live processes before input. Phase 2 must retain the F1B render path, implement browser lifetime/range policy and resolve LEA-185 navigation security; Entity Culling/MoreCulling integration remains out of scope here.

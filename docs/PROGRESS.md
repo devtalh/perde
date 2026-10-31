@@ -4,9 +4,9 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude). Phase 1A (skeleton) starts.
+- Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
 - Last merged task: F1B-3 render-mod compatibility and feasibility report, [PR #4](https://github.com/devtalh/perde/pull/4), main `7c4da6c`.
-- Phase 1A: F1A-1, F1A-2 and F1A-3 done; F1A-4 partial after physical Escape stopped Computer Use; finish two-client restart proof, survival drop and final review checks next on `feat/f1a-skeleton`. Single draft PR will collect all four overnight sub-tasks. No Phase 2 work.
+- Phase 1A: F1A-1/2/3/4 complete on `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5), pending review. Restart/two-client F2, survival mine/drop/removal and final build/isolation checks passed. No merge and no Phase 2 work.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -22,7 +22,17 @@ Newest first. Format:
 - Known issues / risks:
 ```
 
-### F1A-4 - Dedicated server and two-client integration (checkpoint)
+### F1A-4 - Completion: restart evidence, survival mining and final verification
+- Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5), pending review; mark ready only after latest-head CI passes, never merge in this task.
+- Status: done
+- What changed: extended only the opt-in fixture with guarded status, normal survival START/STOP mining, timed forward collection, vanilla F2 handler and normal quit. Queue script verifies one live repository DLI fixture process and test username before every command. Added six unchanged F2 images, exact completion evidence and final report. No product-source changes in this pass; SPEC/AGENTS/spike unchanged.
+- Verification (2026-10-31 Europe/Istanbul): restored the manually edited test scene to the persistence baseline via ordinary authorized C2S requests; media/owner/access fields stayed intact. Both reconnected clients received identical full state. Player1 owner/control/admin true and Player2 false, confirmed with F2 panels. Original controlled restart and exact serialized NBT evidence remain valid; restoration is not counted as another restart.
+- Survival: Player2 SURVIVAL/empty hand/0 Perde items; real START/STOP requests used normal hardness elapsed time. Server removal arrived at 13:42:43 on both clients after 64 client ticks. Dropped item visible; forward collection changed 0 to 1. Both clients logged air/no BE and have visual no-plane proof (Player1 captured after Player2 exited normally). No creative destruction, block-replacement command or spawned loot. [Exact evidence](phase1a/completion-evidence.txt), [report and matrix](phase1a/F1A-report.md).
+- Final checks: `gradlew.bat build --rerun-tasks --console=plain --warning-mode all` SUCCESSFUL in 10s, all 9 tasks executed, 34 fresh JUnit invocations, 0 failures/errors/skips. Rebuilt default jar has no MCEF/JCEF/compat classes/nested jars/probe; default main runtime and common references isolated. Default dedicated server still serves only 127.0.0.1:25570, 44 mods without MCEF. All 27 F2 copies hash-verified; Git diff and PR review threads checked. Latest pushed head CI must pass before ready.
+- Left: final human review/manual acceptance and merge by Talha. No Phase 2 authorization. Repository server and Player1 remain available for inspection; Player2 exited normally with the mined item saved. Re-identify all live processes before input; never use historical PIDs below as authority.
+- Risks: Player2 PID 5148 reproduced the known native glfw.dll/pollEvents activation crash; no Perde frame, root cause unresolved. No further input targeted it. Fresh Player2 captures use the verified vanilla F2 handler through the fixture without OS focus changes; Player1 captures use guarded Computer Use F2. Existing OSHI/Realms diagnostics, op/deop reopen behavior and future culling-mod checks remain. AFK client untouched.
+
+### F1A-4 - Dedicated server and two-client integration (historical checkpoint, completed above)
 - Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5) (draft).
 - Status: partial (Computer Use stopped by physical Escape during the restart verification pass; do not mark PR ready yet)
 - What changed: stable Player1/client and Player2/client2 Loom configs; server setup script for offline mode, secure-profile false, 127.0.0.1:25570 and dev EULA. Optional isolated client test fixture sends genuine use-item/C2S requests and logs received vanilla BE state; never included in the default jar. Corrected placeholder from 1x1 to 16x16 after it reduced atlas mip levels.
