@@ -1,6 +1,6 @@
 # F3-2: client playback sync engine
 
-Status: **partial, real live-stream acceptance blocked**. Branch `feat/f3-2-sync-engine`, from merged main `a326147`. PR #9 was confirmed merged before coding. Do not mark done or merge. F3-3 follows only after F3-2 acceptance.
+Status: **partial, real live-stream acceptance blocked**. [Draft PR #10](https://github.com/devtalh/perde/pull/10), branch `feat/f3-2-sync-engine`, from merged main `a326147`. PR #9 was confirmed merged before coding. Do not mark done or merge. F3-3 follows only after F3-2 acceptance.
 
 ## Blocking acceptance result
 

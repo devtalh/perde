@@ -4,7 +4,7 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase 3: **F3-2 partial, live-stream acceptance blocked** (LEA-197), branch `feat/f3-2-sync-engine`, from main `a326147`. Final fresh build: **274 tests pass**. Final two-client 121-sample/120-second drift median/max P1 **57.451/76.941 ms**, P2 **56.906/68.353 ms**; panel controls **101..601 ms**. Real Twitch/Kick fail with observed missing H.264/AAC support; do not claim live acceptance. Late join settles at 144.796 ms after initial URL reloads/buffering, not an immediate-start guarantee. [Report](phase3/F3-2-report.md). Draft PR pending; final head CI gate remains. No merge.
+- Phase 3: **F3-2 partial, live-stream acceptance blocked** (LEA-197), branch `feat/f3-2-sync-engine`, [draft PR #10](https://github.com/devtalh/perde/pull/10), from main `a326147`. Final fresh build: **274 tests pass**. Final two-client 121-sample/120-second drift median/max P1 **57.451/76.941 ms**, P2 **56.906/68.353 ms**; panel controls **101..601 ms**. Real Twitch/Kick fail with observed missing H.264/AAC support; do not claim live acceptance. Late join settles at 144.796 ms after initial URL reloads/buffering, not an immediate-start guarantee. [Report](phase3/F3-2-report.md). Final head CI gate remains; keep draft, no merge.
 - Phase 3: **F3-1 merged**, [PR #9](https://github.com/devtalh/perde/pull/9), main `a326147`, confirmed 2026-10-31 before F3-2. [Report](phase3/F3-1-report.md) retains its historical pre-merge status.
 - Phase 2: **merged**, [PR #8](https://github.com/devtalh/perde/pull/8), main `5e8fbd8`, confirmed 2026-10-31. [Phase 2 report](phase2/F2-report.md).
 - Phase 1B: **GO** (decided by Talha and Claude).
@@ -25,7 +25,7 @@ Newest first. Format:
 ```
 
 ### F3-2 - Client browser playback sync (LEA-197)
-- Branch / PR: `feat/f3-2-sync-engine`, from main `a326147`; PR pending.
+- Branch / PR: `feat/f3-2-sync-engine`, from main `a326147`; [draft PR #10](https://github.com/devtalh/perde/pull/10). Implementation checkpoints `e375283`, `5d30670`; evidence checkpoint `ed3ac65`. Final docs-link head must pass CI too. Keep draft, no merge.
 - Status: partial (2026-10-31 Europe/Istanbul); implementation and supported-media verification delivered, real-live criterion blocked. Do not mark done.
 - What changed: client-only 500 ms active-browser sampling through per-frame JCEF execution and a private token/poll/frame-scoped message router; pure seek/transport decisions, per-element debounce, live/end/exempt handling; committed URL/History guard. No common/server changes, SPEC/AGENTS unchanged.
 - Verification: PR #9 merged and Java 25.0.4 confirmed; repo, pinned JCEF sources, Notion hub and LEA-197 read. Linear field-notes endpoint remains unavailable. Final `.\gradlew.bat build --rerun-tasks --console=plain --warning-mode all` SUCCESSFUL in 8s, all 9 tasks executed, **274 tests, zero failures/errors/skips**. Main source/SPEC/AGENTS/build unchanged; common/jar isolation and Git diff checked. Implementation checkpoints `e375283` and `5d30670` CI green; final evidence/docs head must also pass.
