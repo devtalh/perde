@@ -80,6 +80,10 @@ public final class PerdeBrowserManager {
             active = selected;
         }
         if (active == null || backend == null) return;
+        if (open) {
+            try { backend.checkHealth(); }
+            catch (RuntimeException exception) { fail(exception); return; }
+        }
         String url = validUrl(active);
         if (!url.equals(currentUrl)) {
             currentUrl = url;

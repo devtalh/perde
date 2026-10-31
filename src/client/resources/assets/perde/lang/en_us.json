@@ -6,7 +6,7 @@
   "perde.error.missing": "This screen no longer exists.",
   "perde.error.too_far": "Move within 8 blocks of the screen block.",
   "perde.error.forbidden": "You do not have permission to change this screen.",
-  "perde.error.invalid_url": "Enter an HTTP or HTTPS URL with a host (maximum 2048 characters).",
+  "perde.error.invalid_url": "Enter a public HTTP or HTTPS URL (maximum 2048 characters). Local/private addresses are blocked.",
   "perde.error.invalid_value": "Invalid screen setting.",
   "perde.error.player_offline": "That player must be online on this server.",
   "perde.error.player_limit": "You can allow at most 32 players.",

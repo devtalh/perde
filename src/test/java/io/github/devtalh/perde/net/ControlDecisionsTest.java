@@ -34,7 +34,8 @@ class ControlDecisionsTest {
         assertTrue(decide(context(OWNER, 0, 64), state, new ControlDecisions.Center()).accepted());
     }
 
-    @ParameterizedTest @ValueSource(strings = {"javascript:alert(1)", "file:///C:/", "data:text/html,x", "ftp://example.com", "https:///path"})
+    @ParameterizedTest @ValueSource(strings = {"javascript:alert(1)", "file:///C:/", "data:text/html,x", "ftp://example.com", "https:///path",
+            "http://192.168.1.1", "http://localhost:8080", "http://127.0.0.1", "http://127.1", "http://[::ffff:127.0.0.1]"})
     void unsafeUrlsDoNotChangeState(String url) {
         var result = decide(context(OWNER, 0, 0), state, new ControlDecisions.SetUrl(url));
         assertEquals(ControlDecisions.Rejection.INVALID_URL, result.rejection());

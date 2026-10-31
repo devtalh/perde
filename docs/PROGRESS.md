@@ -5,9 +5,9 @@ This is the handoff point between Codex sessions and accounts: the next session 
 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
-- Last merged task: Phase 1A, [PR #5](https://github.com/devtalh/perde/pull/5), main `5eb1773`; merge confirmed through GitHub and origin/main on 2026-10-31.
-- F2-1: complete on `feat/f2-1-browser-manager`, [PR #6](https://github.com/devtalh/perde/pull/6), awaiting review. Live browser selection/rendering, all singleplayer acceptance checks, missing-MCEF client and dedicated server passed. [Report/evidence](phase2/F2-1-report.md).
-- Next task after F2-1: F2-2 browser navigation security (LEA-185).
+- Last merged task: F2-1, [PR #6](https://github.com/devtalh/perde/pull/6), main `6b75980`; merge confirmed through GitHub and origin/main on 2026-10-31.
+- F2-2 (LEA-185): **partial**, implementation/unit tests/build/headless server checked on `feat/f2-2-browser-policy`; draft PR only. [Report](phase2/F2-2-report.md). In-game checks **(a) to (e) pending**. No Computer Use or game clients until Talha explicitly confirms he has finished playing. Permission callback/audit limits remain documented for review.
+- Next task after F2-2 completion: **F2-3 full-pack validation, culling, spike removal**. Do not start it during the F2-2 handoff.
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -22,6 +22,20 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F2-2 - Browser navigation and privacy policy (LEA-185)
+- Branch / PR: `feat/f2-2-browser-policy`, targeting `main`; draft PR link will be added after creation. Do not merge or mark ready in this stage.
+- Status: partial (in-game verification deferred by Talha's explicit instruction while he is playing)
+- What changed: pure Java public-URL/literal-host policy shared by server/client; local/private server SetUrl rejection with translated action-bar text; unsafe saved URLs load empty. Private Perde CefClient/request context, identity-scoped navigation/resource/redirect/popup/download/file/JS-dialog handling, native permission defaults verified before public navigation, bounded INFO audit. MCEF shared handlers, rendering implementation and production spike remain intact. Opt-in development-only page probes added outside the default jar.
+- Verification (2026-10-31 Europe/Istanbul): `gradlew.bat build --rerun-tasks --console=plain --warning-mode all` SUCCESSFUL in 11s, all 9 tasks executed; final follow-up build SUCCESSFUL in 6s (4 executed, 5 up-to-date) after the browserless-download audit adjustment; **147 tests, 0 failures/errors/skips**. Native-free tests exercise URL edge cases, persisted-URL normalization, unchanged-state server rejections, real JCEF callback contracts, browser identity, download/dialog cancellation, native preference failures and audit bounds. Opt-in `compilePhase2Probe` SUCCESSFUL in 6s without launching a client. Default jar has no MCEF/JCEF/tests/fixture/nested jars; common sources contain no client/MCEF/JCEF imports; language parity 43 keys; Git diff/whitespace checked. [Build](phase2/f2-2-build.txt), [test counts](phase2/f2-2-tests.csv).
+- Server: MCEF-free `runServer` loaded 44 mods and reached Done (2.529s), bound **only 127.0.0.1:25572**, socket/PID ownership verified, console stop/all dimensions saved, BUILD SUCCESSFUL in 24s. Fresh `run/f2-2-server`, explicit `--nogui`, Windows CREATE_NO_WINDOW and redirected streams. No other Minecraft process controlled; owned processes exited and listener closed. [Full log](phase2/f2-2-server.txt), [binding evidence](phase2/f2-2-server-binding.txt).
+- Pending in-game (a): YouTube/example.com rendering and playback with screenshots.
+- Pending in-game (b): panel submissions of http://192.168.1.1, http://localhost:8080 and http://127.0.0.1, translated rejection and unchanged state.
+- Pending in-game (c): public-page file navigation, popup, loopback fetch, private iframe, alert/confirm/prompt, media access and download probes; native denial/log/no UI or file/hardware access and continued rendering.
+- Pending in-game (d): popup and actual blocked-scheme redirect behavior, including unchanged displayed page.
+- Pending in-game (e): `/perde-spike place` regression and cleanup.
+- Left: wait for Talha to explicitly finish playing, then run (a)-(e), retain native logs/F2 screenshots/provenance, resolve/review the documented API limits, finish the report and mark PR ready only after successful acceptance. No Computer Use, runClient/runClient2 or game windows were used in this stage. Next task: F2-3 full-pack validation, culling, spike removal.
+- Known issues / risks: MCEF df61843 `MCEFApiImpl.java:28` adds global `--disable-web-security`; no per-browser removal API exists and no global hack was attempted. Do not sign in inside Perde. Pinned JCEF has no permission handler; native defaults deny the requested permissions, but per-attempt permission callback logging is unavailable (permission-default entries are configuration evidence only). Actual native preference application/YouTube/teardown and comprehensive request interception remain unverified; DNS-based tricks are explicitly out of scope, and callback coverage is not a general network firewall. Backend depends on the pinned public MCEFBrowserImpl constructor. Existing Windows OSHI counter errors remain in server evidence; no system changes attempted. SPEC/AGENTS unchanged. See [full report](phase2/F2-2-report.md).
 
 ### F2-1 - Real browser manager and Perde screen rendering
 - Branch / PR: `feat/f2-1-browser-manager`, [PR #6](https://github.com/devtalh/perde/pull/6), targeting main; not merged.

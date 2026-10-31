@@ -6,7 +6,7 @@
   "perde.error.missing": "Bu ekran artık yok.",
   "perde.error.too_far": "Perde bloğuna 8 blok mesafeye yaklaş.",
   "perde.error.forbidden": "Bu ekranı değiştirme yetkin yok.",
-  "perde.error.invalid_url": "Sunucu adresi içeren bir HTTP veya HTTPS bağlantısı gir (en fazla 2048 karakter).",
+  "perde.error.invalid_url": "Herkese açık bir HTTP veya HTTPS bağlantısı gir (en fazla 2048 karakter). Yerel/özel adresler engellenir.",
   "perde.error.invalid_value": "Geçersiz ekran ayarı.",
   "perde.error.player_offline": "Bu oyuncunun sunucuda çevrimiçi olması gerekiyor.",
   "perde.error.player_limit": "En fazla 32 oyuncuya izin verebilirsin.",
