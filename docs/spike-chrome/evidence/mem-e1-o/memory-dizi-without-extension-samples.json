@@ -1,0 +1,1542 @@
+[
+  {
+    "chromePlusJavaWorkingSetBytes": 1637244928.0,
+    "chromePrivateBytes": 870707200.0,
+    "bridgePrivateBytes": 68235264,
+    "bridgeWorkingSetBytes": 87412736,
+    "chromeWorkingSetBytes": 1087938560.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549306368,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 69726208,
+        "pid": 41824,
+        "workingSetBytes": 197926912
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 541683712,
+        "pid": 29444,
+        "workingSetBytes": 338382848
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8990720,
+        "pid": 33324,
+        "workingSetBytes": 24985600
+      },
+      {
+        "type": "network",
+        "privateBytes": 17989632,
+        "pid": 46864,
+        "workingSetBytes": 50319360
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 65417216,
+        "pid": 11576,
+        "workingSetBytes": 172163072
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60112896,
+        "pid": 45628,
+        "workingSetBytes": 60649472
+      }
+    ],
+    "at": "2026-10-31T23:51:51.3491766+03:00",
+    "sample": 0,
+    "chromePlusJavaPrivateBytes": 1551192064.0,
+    "javaPrivateBytes": 680484864,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 1.1627,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 0.9328,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 0.9326,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 0.9326,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  },
+  {
+    "chromePlusJavaWorkingSetBytes": 1636147200.0,
+    "chromePrivateBytes": 870686720.0,
+    "bridgePrivateBytes": 68235264,
+    "bridgeWorkingSetBytes": 87412736,
+    "chromeWorkingSetBytes": 1086828544.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549318656,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 69742592,
+        "pid": 41824,
+        "workingSetBytes": 197939200
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 541560832,
+        "pid": 29444,
+        "workingSetBytes": 337571840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8990720,
+        "pid": 33324,
+        "workingSetBytes": 24985600
+      },
+      {
+        "type": "network",
+        "privateBytes": 17989632,
+        "pid": 46864,
+        "workingSetBytes": 50319360
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 65503232,
+        "pid": 11576,
+        "workingSetBytes": 171851776
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60112896,
+        "pid": 45628,
+        "workingSetBytes": 60649472
+      }
+    ],
+    "at": "2026-10-31T23:51:52.7671195+03:00",
+    "sample": 1,
+    "chromePlusJavaPrivateBytes": 1551335424.0,
+    "javaPrivateBytes": 680648704,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 2.5808,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 2.3509,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 2.3507,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 2.3508,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  },
+  {
+    "chromePlusJavaWorkingSetBytes": 1634250752.0,
+    "chromePrivateBytes": 868614144.0,
+    "bridgePrivateBytes": 68235264,
+    "bridgeWorkingSetBytes": 87412736,
+    "chromeWorkingSetBytes": 1084850176.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549400576,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 66768896,
+        "pid": 41824,
+        "workingSetBytes": 194985984
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 541851648,
+        "pid": 29444,
+        "workingSetBytes": 337756160
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8986624,
+        "pid": 33324,
+        "workingSetBytes": 24981504
+      },
+      {
+        "type": "network",
+        "privateBytes": 17985536,
+        "pid": 46864,
+        "workingSetBytes": 50315264
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 66121728,
+        "pid": 11576,
+        "workingSetBytes": 172650496
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60112896,
+        "pid": 45628,
+        "workingSetBytes": 60649472
+      }
+    ],
+    "at": "2026-10-31T23:51:54.1713993+03:00",
+    "sample": 2,
+    "chromePlusJavaPrivateBytes": 1549496320.0,
+    "javaPrivateBytes": 680882176,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 3.9855,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 3.7555,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 3.7554,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 3.7554,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  },
+  {
+    "chromePlusJavaWorkingSetBytes": 1634226176.0,
+    "chromePrivateBytes": 868564992.0,
+    "bridgePrivateBytes": 68235264,
+    "bridgeWorkingSetBytes": 87412736,
+    "chromeWorkingSetBytes": 1084817408.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549408768,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 66768896,
+        "pid": 41824,
+        "workingSetBytes": 194985984
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 541802496,
+        "pid": 29444,
+        "workingSetBytes": 337711104
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8986624,
+        "pid": 33324,
+        "workingSetBytes": 24981504
+      },
+      {
+        "type": "network",
+        "privateBytes": 17985536,
+        "pid": 46864,
+        "workingSetBytes": 50315264
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 66121728,
+        "pid": 11576,
+        "workingSetBytes": 172662784
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60112896,
+        "pid": 45628,
+        "workingSetBytes": 60649472
+      }
+    ],
+    "at": "2026-10-31T23:51:55.5790967+03:00",
+    "sample": 3,
+    "chromePlusJavaPrivateBytes": 1549447168.0,
+    "javaPrivateBytes": 680882176,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 5.3934,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 5.1634,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 5.1632,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 5.1633,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  },
+  {
+    "chromePlusJavaWorkingSetBytes": 1631997952.0,
+    "chromePrivateBytes": 863653888.0,
+    "bridgePrivateBytes": 68235264,
+    "bridgeWorkingSetBytes": 87412736,
+    "chromeWorkingSetBytes": 1082589184.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549408768,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 66768896,
+        "pid": 41824,
+        "workingSetBytes": 194985984
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 539033600,
+        "pid": 29444,
+        "workingSetBytes": 337629184
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8986624,
+        "pid": 33324,
+        "workingSetBytes": 24981504
+      },
+      {
+        "type": "network",
+        "privateBytes": 17985536,
+        "pid": 46864,
+        "workingSetBytes": 50315264
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 63979520,
+        "pid": 11576,
+        "workingSetBytes": 170516480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60112896,
+        "pid": 45628,
+        "workingSetBytes": 60649472
+      }
+    ],
+    "at": "2026-10-31T23:51:57.0547848+03:00",
+    "sample": 4,
+    "chromePlusJavaPrivateBytes": 1544536064.0,
+    "javaPrivateBytes": 680882176,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 0.6357,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 0.3725,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 0.3723,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 0.3723,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  },
+  {
+    "chromePlusJavaWorkingSetBytes": 1631596544.0,
+    "chromePrivateBytes": 863223808.0,
+    "bridgePrivateBytes": 68235264,
+    "bridgeWorkingSetBytes": 87412736,
+    "chromeWorkingSetBytes": 1082187776.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549408768,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 66732032,
+        "pid": 41824,
+        "workingSetBytes": 194953216
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 538628096,
+        "pid": 29444,
+        "workingSetBytes": 337215488
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8986624,
+        "pid": 33324,
+        "workingSetBytes": 24981504
+      },
+      {
+        "type": "network",
+        "privateBytes": 17985536,
+        "pid": 46864,
+        "workingSetBytes": 50315264
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 64004096,
+        "pid": 11576,
+        "workingSetBytes": 170573824
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60100608,
+        "pid": 45628,
+        "workingSetBytes": 60637184
+      }
+    ],
+    "at": "2026-10-31T23:51:58.4710947+03:00",
+    "sample": 5,
+    "chromePlusJavaPrivateBytes": 1544105984.0,
+    "javaPrivateBytes": 680882176,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 2.0532,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 1.79,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 1.7898,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 1.7898,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  },
+  {
+    "chromePlusJavaWorkingSetBytes": 1631629312.0,
+    "chromePrivateBytes": 863748096.0,
+    "bridgePrivateBytes": 68235264,
+    "bridgeWorkingSetBytes": 87412736,
+    "chromeWorkingSetBytes": 1082220544.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549408768,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 66748416,
+        "pid": 41824,
+        "workingSetBytes": 194965504
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 539123712,
+        "pid": 29444,
+        "workingSetBytes": 337219584
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8986624,
+        "pid": 33324,
+        "workingSetBytes": 24981504
+      },
+      {
+        "type": "network",
+        "privateBytes": 17985536,
+        "pid": 46864,
+        "workingSetBytes": 50315264
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 64016384,
+        "pid": 11576,
+        "workingSetBytes": 170590208
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60100608,
+        "pid": 45628,
+        "workingSetBytes": 60637184
+      }
+    ],
+    "at": "2026-10-31T23:51:59.8953482+03:00",
+    "sample": 6,
+    "chromePlusJavaPrivateBytes": 1544630272.0,
+    "javaPrivateBytes": 680882176,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 3.4735,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 3.2103,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 3.2101,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 3.2101,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  },
+  {
+    "chromePlusJavaWorkingSetBytes": 1631670272.0,
+    "chromePrivateBytes": 863346688.0,
+    "bridgePrivateBytes": 68235264,
+    "bridgeWorkingSetBytes": 87412736,
+    "chromeWorkingSetBytes": 1081819136.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549851136,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 66748416,
+        "pid": 41824,
+        "workingSetBytes": 194965504
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 538718208,
+        "pid": 29444,
+        "workingSetBytes": 336814080
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8986624,
+        "pid": 33324,
+        "workingSetBytes": 24981504
+      },
+      {
+        "type": "network",
+        "privateBytes": 17985536,
+        "pid": 46864,
+        "workingSetBytes": 50315264
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 64020480,
+        "pid": 11576,
+        "workingSetBytes": 170594304
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60100608,
+        "pid": 45628,
+        "workingSetBytes": 60637184
+      }
+    ],
+    "at": "2026-10-31T23:52:01.3185913+03:00",
+    "sample": 7,
+    "chromePlusJavaPrivateBytes": 1544687616.0,
+    "javaPrivateBytes": 681340928,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 4.8998,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 4.6366,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 4.6364,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 4.6364,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  },
+  {
+    "chromePlusJavaWorkingSetBytes": 1631137792.0,
+    "chromePrivateBytes": 862724096.0,
+    "bridgePrivateBytes": 68235264,
+    "bridgeWorkingSetBytes": 87412736,
+    "chromeWorkingSetBytes": 1081286656.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549851136,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 66732032,
+        "pid": 41824,
+        "workingSetBytes": 194953216
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 538578944,
+        "pid": 29444,
+        "workingSetBytes": 336678912
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8986624,
+        "pid": 33324,
+        "workingSetBytes": 24981504
+      },
+      {
+        "type": "network",
+        "privateBytes": 17985536,
+        "pid": 46864,
+        "workingSetBytes": 50315264
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 63553536,
+        "pid": 11576,
+        "workingSetBytes": 170209280
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60100608,
+        "pid": 45628,
+        "workingSetBytes": 60637184
+      }
+    ],
+    "at": "2026-10-31T23:52:02.7329324+03:00",
+    "sample": 8,
+    "chromePlusJavaPrivateBytes": 1544065024.0,
+    "javaPrivateBytes": 681340928,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 0.0608,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 6.033333,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 6.033333,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 6.033333,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  },
+  {
+    "chromePlusJavaWorkingSetBytes": 1631457280.0,
+    "chromePrivateBytes": 862978048.0,
+    "bridgePrivateBytes": 68263936,
+    "bridgeWorkingSetBytes": 87429120,
+    "chromeWorkingSetBytes": 1081606144.0,
+    "javaPid": 21288,
+    "javaWorkingSetBytes": 549851136,
+    "chromeProcesses": [
+      {
+        "type": "browser",
+        "privateBytes": 66748416,
+        "pid": 41824,
+        "workingSetBytes": 194965504
+      },
+      {
+        "type": "crashpad utility",
+        "privateBytes": 2494464,
+        "pid": 49092,
+        "workingSetBytes": 10739712
+      },
+      {
+        "type": "GPU",
+        "privateBytes": 538578944,
+        "pid": 29444,
+        "workingSetBytes": 336678912
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 36249600,
+        "pid": 43844,
+        "workingSetBytes": 82874368
+      },
+      {
+        "type": "utility",
+        "privateBytes": 9396224,
+        "pid": 32908,
+        "workingSetBytes": 19681280
+      },
+      {
+        "type": "utility",
+        "privateBytes": 8986624,
+        "pid": 33324,
+        "workingSetBytes": 24981504
+      },
+      {
+        "type": "network",
+        "privateBytes": 17985536,
+        "pid": 46864,
+        "workingSetBytes": 50315264
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 18120704,
+        "pid": 39156,
+        "workingSetBytes": 35348480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 21209088,
+        "pid": 4088,
+        "workingSetBytes": 45219840
+      },
+      {
+        "type": "renderer",
+        "privateBytes": 63791104,
+        "pid": 11576,
+        "workingSetBytes": 170516480
+      },
+      {
+        "type": "extension renderer",
+        "privateBytes": 19316736,
+        "pid": 44124,
+        "workingSetBytes": 49647616
+      },
+      {
+        "type": "utility",
+        "privateBytes": 60100608,
+        "pid": 45628,
+        "workingSetBytes": 60637184
+      }
+    ],
+    "at": "2026-10-31T23:52:04.1469051+03:00",
+    "sample": 9,
+    "chromePlusJavaPrivateBytes": 1544318976.0,
+    "javaPrivateBytes": 681340928,
+    "media": [
+      {
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 1.4732,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 1.2213,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 1.2211,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 800.0,
+            "height": 50.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+            "error": null
+          },
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 1.2211,
+            "duration": 6.033333,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 400.0,
+            "height": 40.0,
+            "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+            "error": null
+          }
+        ],
+        "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum"
+      },
+      {
+        "media": [],
+        "url": "about:blank"
+      }
+    ]
+  }
+]

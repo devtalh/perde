@@ -1,0 +1,7 @@
+{
+  "blockedRequestCount": 0,
+  "start": "2026-10-31T23:56:40.3915831+03:00",
+  "end": "2026-10-31T23:56:52.9650898+03:00",
+  "note": "No Fetch interception enabled. Separate fresh navigations, not a deterministic ad auction.",
+  "blocked": []
+}

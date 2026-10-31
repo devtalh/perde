@@ -1,0 +1,122 @@
+{
+  "session": "6C45987D4DE34B48035B603C13E1B7E8",
+  "contextId": 1.0,
+  "result": {
+    "result": {
+      "type": "object",
+      "value": {
+        "url": "https://dizilla.now/carrie-1-sezon-1-bolum",
+        "title": "Carrie 1.Sezon 1.Bölüm Türkçe Dublaj izle, Altyazılı izle - Dizilla",
+        "visibility": "visible",
+        "youtubeAd": false,
+        "gates": {
+          "challenge": false,
+          "consent": false,
+          "login": false,
+          "age": false
+        },
+        "signals": [],
+        "media": [],
+        "frames": [],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "pvhit",
+            "label": "Bölümü başlat",
+            "rect": {
+              "x": 85.5,
+              "y": 304.625,
+              "w": 720.0,
+              "h": 405.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "pvact",
+            "label": "Takip et",
+            "rect": {
+              "x": 85.5,
+              "y": 911.515625,
+              "w": 107.390625,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "pvact pvseen",
+            "label": "İzledim: işaretlemek için giriş yap",
+            "rect": {
+              "x": 202.890625,
+              "y": 911.515625,
+              "w": 101.859375,
+              "h": 40.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "pvseg",
+            "label": "Öne çıkan",
+            "rect": {
+              "x": 1010.84375,
+              "y": 322.625,
+              "w": 83.15625,
+              "h": 30.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "pvseg",
+            "label": "En yeni",
+            "rect": {
+              "x": 1096.0,
+              "y": 322.625,
+              "w": 65.5,
+              "h": 30.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "pvsend ",
+            "label": "Gönder · yorum yazmak için giriş yap",
+            "rect": {
+              "x": 1081.5,
+              "y": 372.625,
+              "w": 78.0,
+              "h": 36.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "pvlk",
+            "label": "Yorumu beğen, 1 beğeni",
+            "rect": {
+              "x": 892.5,
+              "y": 485.921875,
+              "w": 42.5,
+              "h": 36.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "pvlk",
+            "label": "Rabia027 yorumuna yanıt yaz",
+            "rect": {
+              "x": 935.0,
+              "y": 485.921875,
+              "w": 74.09375,
+              "h": 36.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "ubol": {
+    "tag": "2026.1026.1812",
+    "zipSha256": "D3788EAC9F0A44C67F3745A43C3FD446EF33D56B1121F469B19E0FA0A836C2B5",
+    "assetUrl": "https://github.com/uBlockOrigin/uBOL-home/releases/download/2026.1026.1812/uBOLite_2026.1026.1812.chromium.zip"
+  },
+  "cft": {
+    "metadataUrl": "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json",
+    "asset": {
+      "platform": "win64",
+      "url": "https://storage.googleapis.com/chrome-for-testing-public/156.0.8078.80/win64/chrome-win64.zip"
+    },
+    "exeSha256": "A0DFAD5EF821278FD97FBA81BBC485F48969E376B9C82C4301DBDCD6644BA054",
+    "version": "156.0.8078.80",
+    "timestamp": "2026-10-31T10:11:00.448Z",
+    "zipSha256": "16EDB57D6107BF1C48A7C149B8D78B155FE614410093796DD72441FD6640540F"
+  }
+}

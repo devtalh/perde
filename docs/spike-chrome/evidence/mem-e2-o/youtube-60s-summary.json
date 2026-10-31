@@ -1,0 +1,36 @@
+{
+  "first": [
+    {
+      "tag": "VIDEO",
+      "ready": 4.0,
+      "time": 24.97094,
+      "duration": 213.061,
+      "paused": false,
+      "ended": false,
+      "muted": true,
+      "volume": 0.0,
+      "width": 1280.0,
+      "height": 720.0,
+      "src": "blob:https://www.youtube.com/003bff6b-ff2e-410f-99a3-e81140263b60",
+      "error": null
+    }
+  ],
+  "seconds": 60,
+  "passed": true,
+  "last": [
+    {
+      "tag": "VIDEO",
+      "ready": 4.0,
+      "time": 85.365739,
+      "duration": 213.061,
+      "paused": false,
+      "ended": false,
+      "muted": true,
+      "volume": 0.0,
+      "width": 1280.0,
+      "height": 720.0,
+      "src": "blob:https://www.youtube.com/003bff6b-ff2e-410f-99a3-e81140263b60",
+      "error": null
+    }
+  ]
+}

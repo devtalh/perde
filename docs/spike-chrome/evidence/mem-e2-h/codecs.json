@@ -1,0 +1,42 @@
+{
+  "result": {
+    "type": "object",
+    "value": {
+      "h264baseline": {
+        "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+        "mse": true,
+        "canPlayType": "probably"
+      },
+      "h264high": {
+        "mime": "video/mp4; codecs=\"avc1.640028\"",
+        "mse": true,
+        "canPlayType": "probably"
+      },
+      "aac": {
+        "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+        "mse": true,
+        "canPlayType": "probably"
+      },
+      "hevc": {
+        "mime": "video/mp4; codecs=\"hvc1.1.6.L93.B0\"",
+        "mse": true,
+        "canPlayType": "probably"
+      },
+      "vp9": {
+        "mime": "video/webm; codecs=\"vp09.00.10.08\"",
+        "mse": true,
+        "canPlayType": "probably"
+      },
+      "av1": {
+        "mime": "video/mp4; codecs=\"av01.0.05M.08\"",
+        "mse": true,
+        "canPlayType": "probably"
+      },
+      "opus": {
+        "mime": "audio/webm; codecs=\"opus\"",
+        "mse": true,
+        "canPlayType": "probably"
+      }
+    }
+  }
+}

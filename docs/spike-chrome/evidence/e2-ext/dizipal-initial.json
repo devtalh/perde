@@ -1,0 +1,166 @@
+[
+  {
+    "session": "F2063E60A8316606FBED9D01982E26D6",
+    "contextId": 2.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+          "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 4.9362,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 800.0,
+              "height": 50.0,
+              "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 5.1662,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 400.0,
+              "height": 40.0,
+              "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 4.6922,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 800.0,
+              "height": 50.0,
+              "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 4.4031,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 400.0,
+              "height": 40.0,
+              "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+              "error": null
+            }
+          ],
+          "frames": [
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            }
+          ],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 1118.5,
+                "y": 91.5,
+                "w": 14.0,
+                "h": 16.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "playBtn",
+              "cls": "bp-play-btn",
+              "label": "",
+              "rect": {
+                "x": 594.5,
+                "y": 1166.09375,
+                "w": 76.0,
+                "h": 76.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "bp-stab",
+              "label": "1. Sezon",
+              "rect": {
+                "x": 144.5,
+                "y": 1815.9375,
+                "w": 78.6875,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "bp-stab active",
+              "label": "2. Sezon",
+              "rect": {
+                "x": 229.1875,
+                "y": 1815.9375,
+                "w": 78.6875,
+                "h": 26.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "session": "F2063E60A8316606FBED9D01982E26D6",
+    "contextId": 3.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "session": "754E9265FEB426DC00E1B6553698438C",
+    "contextId": 6.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://dizipalorijinal20.com/bolum/mobland-2-sezon-7-bolum",
+          "title": "MobLand 2. Sezon 7. Bölüm izle | Dizipal",
+          "visibility": "visible",
+          "youtubeAd": false,
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 3.5636,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 800.0,
+              "height": 50.0,
+              "src": "https://dizipalorijinal20.com/dosya/setra800.mp4",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 3.532,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 400.0,
+              "height": 40.0,
+              "src": "https://dizipalorijinal20.com/dosya/setra400.mp4",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 3.5633,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 800.0,
+              "height": 50.0,
+              "src": "https://dizipalorijinal20.com/dosya/smart800.mp4",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 3.5319,
+              "duration": 6.033333,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 400.0,
+              "height": 40.0,
+              "src": "https://dizipalorijinal20.com/dosya/smart400.mp4",
+              "error": null
+            }
+          ],
+          "frames": [
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            }
+          ],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 1118.4000244140625,
+                "y": 20.200000762939453,
+                "w": 14.0,
+                "h": 16.80000114440918
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "playBtn",
+              "cls": "bp-play-btn",
+              "label": "",
+              "rect": {
+                "x": 594.4000244140625,
+                "y": 262.1000061035156,
+                "w": 76.0,
+                "h": 76.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "adx-pov-close",
+              "label": "×",
+              "rect": {
+                "x": 774.4000244140625,
+                "y": 145.85000610351562,
+                "w": 28.0,
+                "h": 28.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "bp-stab",
+              "label": "1. Sezon",
+              "rect": {
+                "x": 144.40000915527344,
+                "y": 911.5499877929688,
+                "w": 78.2874984741211,
+                "h": 25.200000762939453
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "bp-stab active",
+              "label": "2. Sezon",
+              "rect": {
+                "x": 228.6875,
+                "y": 911.5499877929688,
+                "w": 78.2874984741211,
+                "h": 25.200000762939453
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "adx-sticky-close",
+              "label": "×",
+              "rect": {
+                "x": 1230.800048828125,
+                "y": 643.7625122070312,
+                "w": 26.0,
+                "h": 26.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "session": "754E9265FEB426DC00E1B6553698438C",
+    "contextId": 7.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "youtubeAd": false,
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  }
+]

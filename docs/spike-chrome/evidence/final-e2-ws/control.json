@@ -1,0 +1,169 @@
+{
+  "navigation": {
+    "frameId": "592302BBF012E1FD070110E6CE768F14",
+    "loaderId": "9FBEAB9B18ACF9412086B58FC1645BEC",
+    "isDownload": false
+  },
+  "targets": {
+    "targetInfos": [
+      {
+        "targetId": "44E70B682BE1695C94AC50D3649097F0",
+        "type": "service_worker",
+        "title": "Service Worker chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js",
+        "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js",
+        "attached": true,
+        "canAccessOpener": false,
+        "browserContextId": "4933F57228B13970DD7B18C795BFF408"
+      },
+      {
+        "targetId": "57CEBA8F1901F766A89EB620E1A914DA",
+        "type": "service_worker",
+        "title": "Service Worker chrome-extension://glbjnfimcajjenihimblfaponejbkoph/background.js",
+        "url": "chrome-extension://glbjnfimcajjenihimblfaponejbkoph/background.js",
+        "attached": true,
+        "canAccessOpener": false,
+        "browserContextId": "4933F57228B13970DD7B18C795BFF408"
+      },
+      {
+        "targetId": "F48D4C6FEB5955DCECE86AEEEFEA2048",
+        "type": "service_worker",
+        "title": "Service Worker https://www.youtube.com/sw.js",
+        "url": "https://www.youtube.com/sw.js",
+        "attached": true,
+        "canAccessOpener": false,
+        "browserContextId": "4933F57228B13970DD7B18C795BFF408"
+      },
+      {
+        "targetId": "E0218B4A72D8E51693BA2D0E98CFBD50",
+        "type": "worker",
+        "title": "blob:https://challenges.cloudflare.com/a3b69791-1fc8-4fa5-9c6e-be5398485ab8",
+        "url": "blob:https://challenges.cloudflare.com/a3b69791-1fc8-4fa5-9c6e-be5398485ab8",
+        "attached": false,
+        "parentId": "E3414333C5B53FBE5CAE2D816544D1FA",
+        "canAccessOpener": false,
+        "parentFrameId": "E3414333C5B53FBE5CAE2D816544D1FA",
+        "browserContextId": "4933F57228B13970DD7B18C795BFF408"
+      },
+      {
+        "targetId": "C9B42C7C04C64E01382C42F2CAF50720",
+        "type": "browser_ui",
+        "title": "Omnibox Popup",
+        "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html",
+        "attached": true,
+        "canAccessOpener": false,
+        "browserContextId": "4933F57228B13970DD7B18C795BFF408"
+      },
+      {
+        "targetId": "3901C2E886936D41297899FDC63D3161",
+        "type": "browser_ui",
+        "title": "Omnibox Popup",
+        "url": "chrome://omnibox-popup.top-chrome/",
+        "attached": true,
+        "canAccessOpener": false,
+        "browserContextId": "4933F57228B13970DD7B18C795BFF408"
+      },
+      {
+        "targetId": "592302BBF012E1FD070110E6CE768F14",
+        "type": "page",
+        "title": "example.org",
+        "url": "https://example.org/",
+        "attached": true,
+        "canAccessOpener": false,
+        "browserContextId": "4933F57228B13970DD7B18C795BFF408"
+      },
+      {
+        "targetId": "FA41D7847D372672A296DCEB1B60A5EE",
+        "type": "iframe",
+        "title": "https://example.com/",
+        "url": "https://example.com/",
+        "attached": true,
+        "parentId": "592302BBF012E1FD070110E6CE768F14",
+        "canAccessOpener": false,
+        "parentFrameId": "592302BBF012E1FD070110E6CE768F14",
+        "browserContextId": "4933F57228B13970DD7B18C795BFF408"
+      }
+    ]
+  },
+  "deny-camera": {},
+  "popup": {
+    "result": {
+      "type": "string",
+      "value": "requested"
+    }
+  },
+  "frames": [
+    {
+      "result": {
+        "type": "object",
+        "value": {
+          "origin": "https://example.com",
+          "binding": "function"
+        }
+      }
+    },
+    {
+      "result": {
+        "type": "object",
+        "value": {
+          "origin": "https://example.org",
+          "binding": "function"
+        }
+      }
+    }
+  ],
+  "fetchEnable": {},
+  "type": {},
+  "permissionReadback": {
+    "result": {
+      "type": "object",
+      "value": [
+        {
+          "name": "geolocation",
+          "state": "denied"
+        },
+        {
+          "name": "microphone",
+          "state": "denied"
+        },
+        {
+          "name": "camera",
+          "state": "denied"
+        },
+        {
+          "name": "notifications",
+          "state": "denied"
+        }
+      ]
+    }
+  },
+  "scrollReadback": {
+    "result": {
+      "type": "number",
+      "value": 400.0,
+      "description": "400"
+    }
+  },
+  "inputReadback": {
+    "result": {
+      "type": "object",
+      "value": {
+        "typed": "Perde CDP 25",
+        "clicks": "1"
+      }
+    }
+  },
+  "fetchDisable": {},
+  "deny-microphone": {},
+  "scroll": {},
+  "deny-notifications": {},
+  "deny-geolocation": {},
+  "fetchProbe": {
+    "result": {
+      "type": "object",
+      "value": {
+        "blocked": true,
+        "error": "Failed to fetch"
+      }
+    }
+  }
+}

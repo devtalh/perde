@@ -1,0 +1,23 @@
+{
+  "result": {
+    "type": "object",
+    "subtype": "error",
+    "className": "TypeError",
+    "description": "TypeError: Cannot read properties of undefined (reading 'getEnabledRulesets')\n    at <anonymous>:1:30",
+    "objectId": "-1936705149465235195.1.1"
+  },
+  "exceptionDetails": {
+    "exceptionId": 1.0,
+    "text": "Uncaught",
+    "lineNumber": 0.0,
+    "columnNumber": 29.0,
+    "scriptId": "6",
+    "exception": {
+      "type": "object",
+      "subtype": "error",
+      "className": "TypeError",
+      "description": "TypeError: Cannot read properties of undefined (reading 'getEnabledRulesets')\n    at <anonymous>:1:30",
+      "objectId": "-1936705149465235195.1.2"
+    }
+  }
+}

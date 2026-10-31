@@ -1,0 +1,1278 @@
+[
+  {
+    "session": "6C45987D4DE34B48035B603C13E1B7E8",
+    "contextId": 4.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://player.vimeo.com/static/proxy.html",
+          "title": "Vimeo Player LocalStorage Proxy",
+          "visibility": "visible",
+          "youtubeAd": false,
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "6C45987D4DE34B48035B603C13E1B7E8",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://vimeo.com/76979871",
+          "title": "The New Vimeo Player (You Know, For Videos) | Videos & Movies on Vimeo",
+          "visibility": "visible",
+          "youtubeAd": false,
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [
+            {
+              "tag": "VIDEO",
+              "ready": 0.0,
+              "time": 0.0,
+              "duration": 61.853437,
+              "paused": true,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 0.0,
+              "height": 0.0,
+              "src": "blob:https://vimeo.com/289c046f-fb5f-40d1-bd8f-ffd84dfa5696",
+              "error": null
+            }
+          ],
+          "frames": [
+            {
+              "src": "https://player.vimeo.com/static/proxy.html",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            }
+          ],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-oodq46",
+              "label": "Log in",
+              "rect": {
+                "x": 1040.40625,
+                "y": 12.0,
+                "w": 73.234375,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu:_r_3_:trigger",
+              "cls": "chakra-button css-1y2b4wa",
+              "label": "",
+              "rect": {
+                "x": 1199.0,
+                "y": 11.0,
+                "w": 42.0,
+                "h": 42.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 Button_module_primary__61be5b9c Button_module_sm__61be5b9c Button_module_icon__61be5b9c Button_module_iconSm__61be5b9c exclude-global-button-styles like-button LikeButton_module_likeButton__3908feee",
+              "label": "Like (this opens in a new window)",
+              "rect": {
+                "x": 1225.0,
+                "y": 96.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 Button_module_primary__61be5b9c Button_module_sm__61be5b9c Button_module_icon__61be5b9c Button_module_iconSm__61be5b9c exclude-global-button-styles watch-later-button WatchLaterButton_module_watchLaterButton__238c6c3b",
+              "label": "Add to Watch Later (this opens in a new window)",
+              "rect": {
+                "x": 1225.0,
+                "y": 136.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 exclude-global-button-styles Error_module_button__b6661b70",
+              "label": "Send Error Log",
+              "rect": {
+                "x": 525.140625,
+                "y": 318.5,
+                "w": 107.34375,
+                "h": 34.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 exclude-global-button-styles Error_module_button__b6661b70",
+              "label": "Reload Player",
+              "rect": {
+                "x": 640.484375,
+                "y": 318.5,
+                "w": 99.375,
+                "h": 34.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "PlayButton_module_playButtonWrapper__d6312f47",
+              "label": "Play",
+              "rect": {
+                "x": 8.0,
+                "y": 468.0,
+                "w": 56.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 Button_module_icon__61be5b9c exclude-global-button-styles Tooltip_module_tooltipContainer__b2bc4d16 PlayButton_module_playButton__d6312f47 shared_module_focusable__29a0c6d5",
+              "label": "Play",
+              "rect": {
+                "x": 8.0,
+                "y": 468.0,
+                "w": 56.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 Button_module_icon__61be5b9c exclude-global-button-styles ControlBarButton_module_controlBarButton__9f6f2536 shared_module_focusable__29a0c6d5",
+              "label": "Unmute",
+              "rect": {
+                "x": 1023.0,
+                "y": 472.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "cc-control-bar-button",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 Button_module_icon__61be5b9c exclude-global-button-styles Tooltip_module_tooltipContainer__b2bc4d16 ControlBarButton_module_controlBarButton__9f6f2536 shared_module_focusable__29a0c6d5 cc",
+              "label": "CC/subtitles",
+              "rect": {
+                "x": 1051.0,
+                "y": 472.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "prefs-control-bar-button",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 Button_module_icon__61be5b9c exclude-global-button-styles Tooltip_module_tooltipContainer__b2bc4d16 ControlBarButton_module_controlBarButton__9f6f2536 shared_module_focusable__29a0c6d5 vp-prefs PrefsButton_module_prefsButton__c0bd4f7c",
+              "label": "Settings",
+              "rect": {
+                "x": 1079.0,
+                "y": 472.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "speed-control-bar-button",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 Button_module_icon__61be5b9c exclude-global-button-styles Tooltip_module_tooltipContainer__b2bc4d16 ControlBarButton_module_controlBarButton__9f6f2536 shared_module_focusable__29a0c6d5 SpeedButton_module_speedButton__bca13dee",
+              "label": "Speed",
+              "rect": {
+                "x": 1107.0,
+                "y": 472.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "pip-control-bar-button",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 Button_module_icon__61be5b9c exclude-global-button-styles Tooltip_module_tooltipContainer__b2bc4d16 ControlBarButton_module_controlBarButton__9f6f2536 shared_module_focusable__29a0c6d5 pip",
+              "label": "Picture-in-Picture",
+              "rect": {
+                "x": 1135.0,
+                "y": 472.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "fullscreen-control-bar-button",
+              "cls": "Button_module_button__61be5b9c shared_module_focusable__29a0c6d5 Button_module_icon__61be5b9c exclude-global-button-styles Tooltip_module_tooltipContainer__b2bc4d16 ControlBarButton_module_controlBarButton__9f6f2536 shared_module_focusable__29a0c6d5 fullscreen FullscreenButton_module_fullscreen__5b68e32b",
+              "label": "Fullscreen",
+              "rect": {
+                "x": 1163.0,
+                "y": 472.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-ovijh1",
+              "label": "Join for free",
+              "rect": {
+                "x": 647.890625,
+                "y": 558.0,
+                "w": 114.4375,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-1o5pa0h",
+              "label": "Close",
+              "rect": {
+                "x": 798.328125,
+                "y": 546.0,
+                "w": 16.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-13e7btg",
+              "label": "2,368",
+              "rect": {
+                "x": 48.0,
+                "y": 765.78125,
+                "w": 78.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_1b_",
+              "cls": "chakra-button chakra-menu__menu-button css-uzfu2e",
+              "label": "Collections button",
+              "rect": {
+                "x": 134.0,
+                "y": 765.78125,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_1b_-menuitem-_r_1e_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 46.203125,
+                "y": 704.0,
+                "w": 113.625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_1b_-menuitem-_r_1f_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 46.203125,
+                "y": 733.5999755859375,
+                "w": 113.625,
+                "h": 29.60003662109375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_1b_-menuitem-_r_1g_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 46.203125,
+                "y": 763.2000122070312,
+                "w": 113.625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_1b_-menuitem-_r_1h_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 46.203125,
+                "y": 800.0,
+                "w": 113.625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-uzfu2e",
+              "label": "Watch later button",
+              "rect": {
+                "x": 174.0,
+                "y": 765.78125,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-uzfu2e",
+              "label": "Report button",
+              "rect": {
+                "x": 214.0,
+                "y": 765.78125,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-1nsljsg",
+              "label": "Vimeo AI",
+              "rect": {
+                "x": 692.265625,
+                "y": 765.78125,
+                "w": 111.0625,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-a8noil",
+              "label": "Follow",
+              "rect": {
+                "x": 171.140625,
+                "y": 829.28125,
+                "w": 54.5,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-2z1klr",
+              "label": "Show more",
+              "rect": {
+                "x": 48.0,
+                "y": 1002.34375,
+                "w": 80.953125,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-19xib3d",
+              "label": "Search",
+              "rect": {
+                "x": 1148.984375,
+                "y": 557.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-19xib3d",
+              "label": "Layout toggle",
+              "rect": {
+                "x": 1184.984375,
+                "y": 557.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_l_",
+              "cls": "chakra-button chakra-menu__menu-button css-1d3ei8",
+              "label": "Newest",
+              "rect": {
+                "x": 1083.75,
+                "y": 621.0,
+                "w": 101.234375,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_l_-menuitem-_r_o_",
+              "cls": "chakra-menu__menuitem-option css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 868.8671875,
+                "y": 581.7000122070312,
+                "w": 76.3125,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_l_-menuitem-_r_p_",
+              "cls": "chakra-menu__menuitem-option css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 868.8671875,
+                "y": 611.2999877929688,
+                "w": 76.3125,
+                "h": 29.60003662109375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_r_",
+              "cls": "chakra-button chakra-menu__menu-button css-19xib3d",
+              "label": "Filter comments",
+              "rect": {
+                "x": 1184.984375,
+                "y": 621.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_r_-menuitem-_r_u_",
+              "cls": "chakra-menu__menuitem-option css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 877.8187255859375,
+                "y": 544.7000122070312,
+                "w": 147.925048828125,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_2d_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 673.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_2d_-menuitem-_r_2e_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_2d_-menuitem-_r_2f_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_2s_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 737.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_2s_-menuitem-_r_2t_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_2s_-menuitem-_r_2u_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_3b_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 873.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_3b_-menuitem-_r_3c_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_3b_-menuitem-_r_3d_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_3q_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 937.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_3q_-menuitem-_r_3r_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_3q_-menuitem-_r_3s_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_49_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 1073.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_49_-menuitem-_r_4a_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_49_-menuitem-_r_4b_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_4o_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 1137.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_4o_-menuitem-_r_4p_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_4o_-menuitem-_r_4q_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_57_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 1201.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_57_-menuitem-_r_58_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_57_-menuitem-_r_59_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_5m_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 1577.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_5m_-menuitem-_r_5n_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_5m_-menuitem-_r_5o_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-1h6hrfq",
+              "label": "1 reply",
+              "rect": {
+                "x": 915.328125,
+                "y": 1801.0,
+                "w": 73.640625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_63_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 1833.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_63_-menuitem-_r_64_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_63_-menuitem-_r_65_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_6h_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 1969.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_6h_-menuitem-_r_6i_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_6h_-menuitem-_r_6j_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-1h6hrfq",
+              "label": "1 reply",
+              "rect": {
+                "x": 915.328125,
+                "y": 2409.0,
+                "w": 73.640625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_6u_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 2441.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_6u_-menuitem-_r_6v_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_6u_-menuitem-_r_70_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_7c_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 2577.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_7c_-menuitem-_r_7d_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_7c_-menuitem-_r_7e_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "chakra-button css-1h6hrfq",
+              "label": "1 reply",
+              "rect": {
+                "x": 915.328125,
+                "y": 2825.0,
+                "w": 73.640625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_7p_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 2857.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_7p_-menuitem-_r_7q_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_7p_-menuitem-_r_7r_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_87_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 3017.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_87_-menuitem-_r_88_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_87_-menuitem-_r_89_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_8m_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 3249.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_8m_-menuitem-_r_8n_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_8m_-menuitem-_r_8o_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_95_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 3313.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_95_-menuitem-_r_96_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_95_-menuitem-_r_97_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_9k_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 3473.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_9k_-menuitem-_r_9l_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_9k_-menuitem-_r_9m_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_a3_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 3561.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_a3_-menuitem-_r_a4_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_a3_-menuitem-_r_a5_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_ai_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 3889.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_ai_-menuitem-_r_aj_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_ai_-menuitem-_r_ak_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_b1_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 4025.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_b1_-menuitem-_r_b2_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_b1_-menuitem-_r_b3_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-button-_r_bg_",
+              "cls": "chakra-button chakra-menu__menu-button css-1uheoh1",
+              "label": "Options",
+              "rect": {
+                "x": 1177.984375,
+                "y": 4089.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_bg_-menuitem-_r_bh_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 548.4000244140625,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "menu-list-_r_bg_-menuitem-_r_bi_",
+              "cls": "chakra-menu__menuitem css-ap8ocp",
+              "label": "",
+              "rect": {
+                "x": 875.2218627929688,
+                "y": 578.0,
+                "w": 127.1500244140625,
+                "h": 29.5999755859375
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

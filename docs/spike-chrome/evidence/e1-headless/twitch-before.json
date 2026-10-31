@@ -1,0 +1,865 @@
+{
+  "session": "101EAF04083B2819BC1CFEEDCC358EB0",
+  "contextId": 3.0,
+  "result": {
+    "result": {
+      "type": "object",
+      "value": {
+        "url": "https://www.twitch.tv/poinemaia",
+        "title": "PoineMaia - Twitch",
+        "visibility": "visible",
+        "gates": {
+          "consent": false,
+          "login": false,
+          "age": false
+        },
+        "signals": [],
+        "media": [
+          {
+            "tag": "VIDEO",
+            "ready": 4.0,
+            "time": 8.346084,
+            "duration": null,
+            "paused": false,
+            "ended": false,
+            "muted": true,
+            "volume": 0.0,
+            "width": 1280.0,
+            "height": 720.0,
+            "src": "",
+            "error": null
+          }
+        ],
+        "frames": [
+          {
+            "src": "https://supervisor.ext-twitch.tv/supervisor/v1/index.html",
+            "rect": {
+              "x": 0.0,
+              "y": 0.0,
+              "w": 0.0,
+              "h": 0.0
+            }
+          },
+          {
+            "src": "https://supervisor.ext-twitch.tv/supervisor/v1/index.html",
+            "rect": {
+              "x": 0.0,
+              "y": 0.0,
+              "w": 0.0,
+              "h": 0.0
+            }
+          },
+          {
+            "src": "https://aax-eu.amazon-adsystem.com/s/iu3",
+            "rect": {
+              "x": 0.0,
+              "y": 0.0,
+              "w": 0.0,
+              "h": 0.0
+            }
+          },
+          {
+            "src": "https://s.amazon-adsystem.com/iui3",
+            "rect": {
+              "x": 0.0,
+              "y": 719.0,
+              "w": 1.0,
+              "h": 1.0
+            }
+          },
+          {
+            "src": "https://k.twitchcdn.net/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp",
+            "rect": {
+              "x": 0.0,
+              "y": 0.0,
+              "w": 0.0,
+              "h": 0.0
+            }
+          }
+        ],
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX",
+            "label": "İçeriğe gidiş menüsü (Alt+P)",
+            "rect": {
+              "x": -10000.0,
+              "y": -15.5,
+              "w": 1.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Diğer Seçenekler",
+            "rect": {
+              "x": 109.828125,
+              "y": 9.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 ivGBcN InjectLayout-sc-1i43xsx-0 bRowwC tw-combo-input__button-icon tw-combo-input__button-icon--large",
+            "label": "Arama Düğmesi",
+            "rect": {
+              "x": 781.078125,
+              "y": 7.0,
+              "w": 36.0,
+              "h": 36.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Prime teklifler",
+            "rect": {
+              "x": 1005.296875,
+              "y": 9.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX",
+            "label": "Oturum Aç",
+            "rect": {
+              "x": 1045.296875,
+              "y": 9.0,
+              "w": 100.78125,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl",
+            "label": "Kayıt ol",
+            "rect": {
+              "x": 1154.078125,
+              "y": 9.0,
+              "w": 77.921875,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "Kullanıcı Menüsü",
+            "rect": {
+              "x": 1240.0,
+              "y": 9.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Kullanıcı Menüsü",
+            "rect": {
+              "x": 1240.0,
+              "y": 9.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Yan gezinti çubuğunu daralt",
+            "rect": {
+              "x": 184.0,
+              "y": 58.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreLink-sc-16kq0mq-0 hiVvkP tw-link",
+            "label": "Daha Fazla Göster",
+            "rect": {
+              "x": 12.0,
+              "y": 741.578125,
+              "w": 121.359375,
+              "h": 23.796875
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 fvjDUd",
+            "label": "PoineMaia kanalını takip et",
+            "rect": {
+              "x": 446.46875,
+              "y": 454.0,
+              "w": 105.921875,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX InjectLayout-sc-1i43xsx-0",
+            "label": "Abonelik Hediye Edin",
+            "rect": {
+              "x": 560.390625,
+              "y": 454.0,
+              "w": 213.328125,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX InjectLayout-sc-1i43xsx-0",
+            "label": "Abone Ol",
+            "rect": {
+              "x": 781.71875,
+              "y": 454.0,
+              "w": 132.28125,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl ScButtonIcon-sc-9yap0r-0 lnIUQQ",
+            "label": "Paylaş",
+            "rect": {
+              "x": 860.0,
+              "y": 511.59375,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Daha fazla",
+            "rect": {
+              "x": 892.0,
+              "y": 511.59375,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 fvjDUd",
+            "label": " kanalını takip et",
+            "rect": {
+              "x": 868.0,
+              "y": 794.171875,
+              "w": 48.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX InjectLayout-sc-1i43xsx-0",
+            "label": "Abone Ol",
+            "rect": {
+              "x": 884.0,
+              "y": 876.171875,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Uzantıyı Kapat",
+            "rect": {
+              "x": 515.0,
+              "y": 971.171875,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Daha Fazla Bilgi",
+            "rect": {
+              "x": 547.0,
+              "y": 971.171875,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Uzantıyı Kapat",
+            "rect": {
+              "x": 855.0,
+              "y": 971.171875,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Daha Fazla Bilgi",
+            "rect": {
+              "x": 887.0,
+              "y": 971.171875,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "Ücretli promosyon içerir",
+            "rect": {
+              "x": 255.0,
+              "y": 60.0,
+              "w": 210.53125,
+              "h": 44.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Duraklat (boşluk/k)",
+            "rect": {
+              "x": 248.0,
+              "y": 403.75,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Sesi aç (m)",
+            "rect": {
+              "x": 280.0,
+              "y": 403.75,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Ayarlar",
+            "rect": {
+              "x": 836.0,
+              "y": 403.75,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Tiyatro modu (alt+t)",
+            "rect": {
+              "x": 868.0,
+              "y": 403.75,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Tam ekran (f)",
+            "rect": {
+              "x": 900.0,
+              "y": 403.75,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Sohbeti Daralt",
+            "rect": {
+              "x": 950.0,
+              "y": 53.5,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Topluluk",
+            "rect": {
+              "x": 1241.0,
+              "y": 53.5,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 957.0,
+              "y": 201.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 978.0,
+              "y": 201.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "cls": "chat-line__username",
+            "label": "xberksss",
+            "rect": {
+              "x": 999.0,
+              "y": 203.0,
+              "w": 62.765625,
+              "h": 17.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+            "label": "@xberksss kişisine yanıt vermek için tıklayın.",
+            "rect": {
+              "x": 1243.0,
+              "y": 186.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 957.0,
+              "y": 231.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 978.0,
+              "y": 231.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "cls": "chat-line__username",
+            "label": "xserdarxxxx",
+            "rect": {
+              "x": 999.0,
+              "y": 233.0,
+              "w": 84.75,
+              "h": 17.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+            "label": "@xserdarxxxx kişisine yanıt vermek için tıklayın.",
+            "rect": {
+              "x": 1243.0,
+              "y": 216.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 957.0,
+              "y": 261.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "cls": "chat-line__username",
+            "label": "alperfbg41",
+            "rect": {
+              "x": 978.0,
+              "y": 263.0,
+              "w": 74.625,
+              "h": 17.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+            "label": "@alperfbg41 kişisine yanıt vermek için tıklayın.",
+            "rect": {
+              "x": 1243.0,
+              "y": 246.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 957.0,
+              "y": 291.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 978.0,
+              "y": 291.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 999.0,
+              "y": 291.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "cls": "chat-line__username",
+            "label": "HypnotisCaptain",
+            "rect": {
+              "x": 1020.0,
+              "y": 293.0,
+              "w": 115.5,
+              "h": 17.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+            "label": "@HypnotisCaptain kişisine yanıt vermek için tıklayın.",
+            "rect": {
+              "x": 1243.0,
+              "y": 276.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 957.0,
+              "y": 343.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 978.0,
+              "y": 343.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "cls": "chat-line__username",
+            "label": "xberksss",
+            "rect": {
+              "x": 999.0,
+              "y": 345.0,
+              "w": 62.765625,
+              "h": 17.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+            "label": "@xberksss kişisine yanıt vermek için tıklayın.",
+            "rect": {
+              "x": 1243.0,
+              "y": 328.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 957.0,
+              "y": 373.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "cls": "chat-line__username",
+            "label": "xAndyPyro",
+            "rect": {
+              "x": 978.0,
+              "y": 375.0,
+              "w": 75.546875,
+              "h": 17.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+            "label": "@xAndyPyro kişisine yanıt vermek için tıklayın.",
+            "rect": {
+              "x": 1243.0,
+              "y": 358.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 957.0,
+              "y": 403.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 978.0,
+              "y": 403.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "",
+            "label": "",
+            "rect": {
+              "x": 999.0,
+              "y": 403.0,
+              "w": 21.0,
+              "h": 22.0
+            }
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "cls": "chat-line__username",
+            "label": "ERSLY",
+            "rect": {
+              "x": 1020.0,
+              "y": 405.0,
+              "w": 43.71875,
+              "h": 17.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+            "label": "@ERSLY kişisine yanıt vermek için tıklayın.",
+            "rect": {
+              "x": 1243.0,
+              "y": 388.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 cNBIIJ",
+            "label": "Göster",
+            "rect": {
+              "x": 1197.6875,
+              "y": 538.0,
+              "w": 67.3125,
+              "h": 24.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Kapat",
+            "rect": {
+              "x": 1233.0,
+              "y": 481.40625,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl ScButtonIcon-sc-9yap0r-0 lnIUQQ",
+            "label": "Cheer",
+            "rect": {
+              "x": 1205.0,
+              "y": 579.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "İfade seçici",
+            "rect": {
+              "x": 1237.0,
+              "y": 579.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 FISKx",
+            "label": "Bit ve Sadakat Puanı bakiyesi",
+            "rect": {
+              "x": 949.0,
+              "y": 623.0,
+              "w": 106.6875,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+            "label": "Sohbet ayarları",
+            "rect": {
+              "x": 1160.375,
+              "y": 623.0,
+              "w": 32.0,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl",
+            "label": "Sohbet mesajı gönder",
+            "rect": {
+              "x": 1196.375,
+              "y": 623.0,
+              "w": 76.625,
+              "h": 32.0
+            }
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl InjectLayout-sc-1i43xsx-0 gbZxxf",
+            "label": "Kaydol",
+            "rect": {
+              "x": 853.421875,
+              "y": 676.0,
+              "w": 74.046875,
+              "h": 32.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

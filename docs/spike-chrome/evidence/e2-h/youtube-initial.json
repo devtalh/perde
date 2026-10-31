@@ -1,0 +1,711 @@
+[
+  {
+    "session": "5C2D123F0B83A472A97466FF3A9D52A1",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://accounts.google.com/ServiceLogin?redacted",
+          "title": "Error 401 (Hatalı İstek)!!1",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [
+            "401. Bu bir hata.İstek hatalı olduğundan sunucu tarafından işlenemiyor. Tekrar denenmemelidir. Tüm bildiğimiz bu."
+          ],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 2.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://www.youtube.com/watch?redacted",
+          "title": "Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film - YouTube",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 6.848834,
+              "duration": 634.601,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 854.0,
+              "height": 480.0,
+              "src": "blob:https://www.youtube.com/dbd063c2-e1c7-4367-970a-6445e0acad57",
+              "error": null
+            }
+          ],
+          "frames": [
+            {
+              "src": "https://accounts.google.com/ServiceLogin",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "about:blank",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            }
+          ],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "button",
+              "cls": "style-scope yt-icon-button",
+              "label": "Rehber",
+              "rect": {
+                "x": 24.0,
+                "y": 16.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextTonal ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Gezinmeyi atla",
+              "rect": {
+                "x": 16.0,
+                "y": -1000.0,
+                "w": 124.28125,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSearchboxComponentSearchButton",
+              "label": "Search",
+              "rect": {
+                "x": 850.5,
+                "y": 8.0,
+                "w": 64.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconOnlyDefault ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Sesle arama yapın",
+              "rect": {
+                "x": 930.5,
+                "y": 8.0,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "button",
+              "cls": "style-scope yt-icon-button",
+              "label": "Ayarlar",
+              "rect": {
+                "x": 1081.640625,
+                "y": 16.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "button",
+              "cls": "style-scope yt-icon-button",
+              "label": "",
+              "rect": {
+                "x": -216.0,
+                "y": 16.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "branding-img-container ytp-button",
+              "label": "",
+              "rect": {
+                "x": 837.25,
+                "y": 495.203125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytp-play-button ytp-button",
+              "label": "Duraklat (k)",
+              "rect": {
+                "x": 28.0,
+                "y": 511.203125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytp-volume-icon ytp-button",
+              "label": "Sessiz (m)",
+              "rect": {
+                "x": 80.0,
+                "y": 511.203125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "DIV",
+              "id": "",
+              "cls": "ytp-time-contents",
+              "label": "0 Dakika 2 Saniye / 10 Dakika 34 Saniye",
+              "rect": {
+                "x": 144.0,
+                "y": 511.203125,
+                "w": 75.171875,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytp-button ytp-autonav-toggle delhi-fast-follow-autonav-toggle",
+              "label": "Otomatik oynatma açık",
+              "rect": {
+                "x": 633.0,
+                "y": 511.203125,
+                "w": 48.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytp-subtitles-button ytp-button",
+              "label": "Altyazılar kullanılamıyor",
+              "rect": {
+                "x": 681.0,
+                "y": 511.203125,
+                "w": 48.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytp-button ytp-settings-button",
+              "label": "Ayarlar",
+              "rect": {
+                "x": 729.0,
+                "y": 511.203125,
+                "w": 48.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytp-size-button ytp-button",
+              "label": "Sinema modu (t)",
+              "rect": {
+                "x": 777.0,
+                "y": 511.203125,
+                "w": 48.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytp-fullscreen-button ytp-button",
+              "label": "Tam ekran (f)",
+              "rect": {
+                "x": 825.0,
+                "y": 511.203125,
+                "w": 48.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextFilled ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Blender kanalına abone ol.",
+              "rect": {
+                "x": 174.75,
+                "y": 608.703125,
+                "w": 87.390625,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextTonal ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconLeadingTrailing ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Geçerli ayarda, kişiselleştirilmiş bildirimler alıyorsunuz. Blender kanalının bildirim ayarını değiş",
+              "rect": {
+                "x": 174.75,
+                "y": 648.703125,
+                "w": 178.640625,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextTonal ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconLeading ytSpecButtonShapeNextSegmentedStart ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Diğer 110.291 kişiyle birlikte bu videoyu beğen",
+              "rect": {
+                "x": 591.046875,
+                "y": 610.703125,
+                "w": 98.203125,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextTonal ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextSegmentedEnd ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Bu videoyu beğenme",
+              "rect": {
+                "x": 689.25,
+                "y": 610.703125,
+                "w": 56.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextTonal ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Paylaş",
+              "rect": {
+                "x": 753.25,
+                "y": 610.703125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextTonal ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Oynatma listesine kaydet",
+              "rect": {
+                "x": 801.25,
+                "y": 610.703125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextTonal ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 849.25,
+                "y": 610.703125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "TP-YT-PAPER-BUTTON",
+              "id": "expand-sizer",
+              "cls": "button style-scope ytd-text-inline-expander",
+              "label": "",
+              "rect": {
+                "x": 562.171875,
+                "y": 734.203125,
+                "w": 64.890625,
+                "h": 20.0
+              }
+            },
+            {
+              "tag": "TP-YT-PAPER-BUTTON",
+              "id": "expand",
+              "cls": "button style-scope ytd-text-inline-expander",
+              "label": "daha fazla\n",
+              "rect": {
+                "x": 562.0,
+                "y": 734.203125,
+                "w": 64.890625,
+                "h": 20.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 977.15625,
+                "y": 243.859375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1093.0625,
+                "y": 243.859375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1208.96875,
+                "y": 243.859375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1324.875,
+                "y": 243.859375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1440.78125,
+                "y": 243.859375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconOnlyDefault ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "İleri",
+              "rect": {
+                "x": 1225.0,
+                "y": 149.84375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 431.703125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 560.546875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 694.546875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 823.390625,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 952.234375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 1081.078125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 1209.921875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 1338.765625,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 1467.609375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 1596.453125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 1725.296875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 1854.140625,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 1982.984375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 2111.828125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 2240.671875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 2369.515625,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 2498.359375,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 2627.203125,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 2756.046875,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ytSpecButtonShapeNextHost ytSpecButtonShapeNextText ytSpecButtonShapeNextMono ytSpecButtonShapeNextSizeM ytSpecButtonShapeNextIconButton ytSpecButtonShapeNextEnableBackdropFilterExperiment ytSpecButtonShapeNextMainstageIconSize ytSpecButtonShapeNextMainstagePadding",
+              "label": "Daha fazla işlem",
+              "rect": {
+                "x": 1209.0,
+                "y": 2884.890625,
+                "w": 40.0,
+                "h": 40.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]

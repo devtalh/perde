@@ -1,0 +1,61 @@
+{
+  "id": "isolate-e1-b",
+  "pid": 8088,
+  "startupMs": 1338.6018,
+  "mode": "headless",
+  "version": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/156.0.8078.74",
+    "revision": "@d331de35ca8ab1358c7a17e4bd41627d55eaef51",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "jsVersion": "15.6.75.25"
+  },
+  "snapshot": {
+    "processes": [
+      {
+        "pid": 46368,
+        "cpuMs": 31.25
+      },
+      {
+        "pid": 46996,
+        "cpuMs": 250.0
+      },
+      {
+        "pid": 42996,
+        "cpuMs": 328.125
+      },
+      {
+        "pid": 8088,
+        "cpuMs": 875.0
+      },
+      {
+        "pid": 49544,
+        "cpuMs": 31.25
+      },
+      {
+        "pid": 45784,
+        "cpuMs": 531.25
+      },
+      {
+        "pid": 23240,
+        "cpuMs": 15.625
+      },
+      {
+        "pid": 21640,
+        "cpuMs": 62.5
+      },
+      {
+        "pid": 19196,
+        "cpuMs": 31.25
+      },
+      {
+        "pid": 47772,
+        "cpuMs": 31.25
+      }
+    ],
+    "chromeCpuMs": 2187.5,
+    "javaCpuMs": 50984.375,
+    "javaPid": 35092
+  },
+  "profile": "run\\chrome-spike\\isolate-e1-b\\profile-e523b712-e2ed-4b6e-ac2c-a88ac1243e0b"
+}

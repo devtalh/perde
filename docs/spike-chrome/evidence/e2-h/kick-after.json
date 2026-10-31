@@ -1,0 +1,1093 @@
+[
+  {
+    "session": "80C6EBC4541C272472FFDE7D03029457",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "694806E560C1F7C2E5F34C018B4F3F8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "E8691F2244E24A4F3A6C5AE128B1206D",
+    "contextId": 2.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://tpc.googlesyndication.com/sodar/LVEN46HQ.html",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "DDE0140348949F487CFF008182FDD8D6",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fkick.com%2Frammus53&title=Rammus53%20Live%20Stream%20-%20Watch%20Live%20on%20KICK&referrer=&muid=NA&sid=NA&version=6&preview=false&__shared_params__[version]=basil",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [
+            {
+              "src": "https://m.stripe.network/inner.html#url=https%3A%2F%2Fkick.com%2Frammus53&title=Rammus53%20Live%20Stream%20-%20Watch%20Live%20on%20KICK&referrer=&muid=NA&sid=NA&version=6&preview=false&__shared_params__[version]=basil",
+              "rect": {
+                "x": 8.0,
+                "y": 8.0,
+                "w": 304.0,
+                "h": 154.0
+              }
+            }
+          ],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "5C2D123F0B83A472A97466FF3A9D52A1",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "694806E560C1F7C2E5F34C018B4F3F8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "80C6EBC4541C272472FFDE7D03029457",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "694806E560C1F7C2E5F34C018B4F3F8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "123E85A26F60DC30FD91A7C7E2109D71",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "7D5B2D5850ED435A646607463828E2DD",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 28.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 23.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 24.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "9C70B3E7D664BC745028AC4213BEC44E",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 20.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "about:blank",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "221AD506AF6598ABD1E0FECF2DA22099",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "2B3D4BBBBBEA1C0AC60E5CF2875D7260",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "7944E7108A7CFC0804666D3647A85046",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "B9E4055E04A3DDE32F02405BBBC293D3",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "8E4EB8CC0F2A021BC2682E2397957FF1",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 18.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://kick.com/rammus53",
+          "title": "Rammus53 Live Stream - Watch Live on KICK",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": true,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 12.10776,
+              "duration": null,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 1280.0,
+              "height": 720.0,
+              "src": "",
+              "error": null
+            },
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 0.0,
+              "duration": 2.0,
+              "paused": true,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 1280.0,
+              "height": 720.0,
+              "src": "https://static.kick.com/ads/black_2s.mp4",
+              "error": null
+            }
+          ],
+          "frames": [
+            {
+              "src": "about:blank",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 300.0,
+                "h": 150.0
+              }
+            },
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "https://tpc.googlesyndication.com/sodar/LVEN46HQ.html",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fkick.com%2Frammus53&title=Rammus53%20Live%20Stream%20-%20Watch%20Live%20on%20KICK&referrer=&muid=NA&sid=NA&version=6&preview=false&__shared_params__[version]=basil",
+              "rect": {
+                "x": 0.0,
+                "y": 720.0,
+                "w": 1280.0,
+                "h": 1.0
+              }
+            }
+          ],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest size-10 text-base leading-none",
+              "label": "Collapse sidebar",
+              "rect": {
+                "x": 12.0,
+                "y": 10.0,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] [&_svg]:fill-current state-layer text-surface-fg-default bg-transparent disabled:bg-transparent size-8 text-sm leading-none",
+              "label": "Aramayı temizle",
+              "rect": {
+                "x": 745.7999877929688,
+                "y": 14.800000190734863,
+                "w": 30.4000244140625,
+                "h": 30.400001525878906
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "radix-_R_vgljluiv5ubtb_",
+              "cls": "group flex size-9 shrink-0 items-center justify-center rounded state-layer",
+              "label": "",
+              "rect": {
+                "x": 1049.265625,
+                "y": 12.0,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-surface text-surface-onSurface bg-transparent disabled:bg-transparent h-9 px-(--edge-spacing-md) text-(length:--edge-typography-body-font-size-sm) leading-(--edge-typography-body-lineHeight-sm) gap-(--edge-spacing-sm)",
+              "label": "Giriş Yap",
+              "rect": {
+                "x": 1093.265625,
+                "y": 12.0,
+                "w": 76.171875,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-base bg-primary-base text-primary-onPrimary [&_svg]:fill-current focus-visible:bg-green-500 disabled:bg-disabled-base h-9 px-(--edge-spacing-md) text-(length:--edge-typography-body-font-size-sm) leading-(--edge-typography-body-lineHeight-sm) gap-(--edge-spacing-sm)",
+              "label": "Kaydol",
+              "rect": {
+                "x": 1177.4375,
+                "y": 12.0,
+                "w": 62.5625,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest py-2 text-base h-12 w-full justify-start gap-x-4 px-4",
+              "label": "Takip Edilen Kanallar",
+              "rect": {
+                "x": 8.0,
+                "y": 156.0,
+                "w": 240.0,
+                "h": 48.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default disabled:bg-transparent text-base justify-start p-0 text-left bg-surface-bg-highest",
+              "label": "Rammus53\nCounter-Strike 2\n11,3 B",
+              "rect": {
+                "x": 12.0,
+                "y": 309.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "Hazretiyasuo\nLeague of Legends\n1,9 B",
+              "rect": {
+                "x": 12.0,
+                "y": 361.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "leylunehar\nLeague of Legends\n515",
+              "rect": {
+                "x": 12.0,
+                "y": 413.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "ismailemre\nIRL\n266",
+              "rect": {
+                "x": 12.0,
+                "y": 465.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "hatexfps\nCounter-Strike 2\n26",
+              "rect": {
+                "x": 12.0,
+                "y": 517.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "cigdemt\nIRL\n625",
+              "rect": {
+                "x": 12.0,
+                "y": 569.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "Efes\nGarry's Mod\n432",
+              "rect": {
+                "x": 12.0,
+                "y": 621.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "Talimera\nCounter-Strike 2\n315",
+              "rect": {
+                "x": 12.0,
+                "y": 673.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "BeceriksizRomeo\nSadece Sohbet\n293",
+              "rect": {
+                "x": 12.0,
+                "y": 725.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer text-surface-fg-default bg-transparent disabled:bg-transparent text-base justify-start p-0 text-left",
+              "label": "Rooki3tv\nCounter-Strike 2\n224",
+              "rect": {
+                "x": 12.0,
+                "y": 777.0,
+                "w": 232.0,
+                "h": 44.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center justify-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight bg-transparent text-surface-fg-subtle [&_svg]:fill-current data-[state=active]:text-white p-0! focus-visible:underline underline-offset-2 disabled:opacity-30 px-3 py-1.5 text-sm",
+              "label": "Daha Az",
+              "rect": {
+                "x": 175.59375,
+                "y": 833.0,
+                "w": 68.40625,
+                "h": 20.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-base bg-primary-base text-primary-onPrimary [&_svg]:fill-current focus-visible:bg-green-500 disabled:bg-disabled-base h-9 px-(--edge-spacing-md) text-(length:--edge-typography-body-font-size-sm) leading-(--edge-typography-body-lineHeight-sm) gap-(--edge-spacing-sm)",
+              "label": "1080p dene",
+              "rect": {
+                "x": 640.5765380859375,
+                "y": 376.9725036621094,
+                "w": 94.30413818359375,
+                "h": 35.555023193359375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-surface bg-transparent disabled:bg-transparent h-9 px-(--edge-spacing-md) text-(length:--edge-typography-body-font-size-sm) leading-(--edge-typography-body-lineHeight-sm) gap-(--edge-spacing-sm) text-surface-fg-default",
+              "label": "Şimdi değil",
+              "rect": {
+                "x": 742.7817993164062,
+                "y": 376.9725036621094,
+                "w": 89.28875732421875,
+                "h": 35.555023193359375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "m-0! inline-flex h-14 w-12 items-center justify-center border-0 p-0! lg:h-[68px] lg:w-16",
+              "label": "LIVE",
+              "rect": {
+                "x": 284.0,
+                "y": 466.75,
+                "w": 64.0,
+                "h": 68.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight bg-transparent data-[state=active]:text-white p-0! focus-visible:underline text-white [&_svg]:fill-current disabled:opacity-30 px-3 py-2 gap-2 self-start text-lg leading-[1.2] font-bold select-auto lg:text-xl",
+              "label": "Rammus53",
+              "rect": {
+                "x": 364.0,
+                "y": 466.75,
+                "w": 138.15625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group/tag flex items-center rounded-full font-normal whitespace-nowrap transition-colors has-[[data-marquee]]:overflow-hidden h-6 px-2 py-0.5 text-sm bg-neutral-bg-default text-neutral-fg-default",
+              "label": "Turkish",
+              "rect": {
+                "x": 481.3125,
+                "y": 522.75,
+                "w": 64.515625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center justify-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer-inverse bg-brand-bg-default text-brand-fg-default [&_svg]:fill-current focus-visible:bg-kick-voltGreen-150 px-3 py-2 text-base",
+              "label": "Takip Et",
+              "rect": {
+                "x": 679.625,
+                "y": 466.75,
+                "w": 107.234375,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex gap-1.5 items-center justify-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer bg-neutral-bg-default text-neutral-fg-default [&_svg]:fill-current focus-visible:bg-neutral-bg-default px-3 py-2 text-base",
+              "label": "Abone Ol",
+              "rect": {
+                "x": 794.859375,
+                "y": 466.75,
+                "w": 117.140625,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest size-10 text-base leading-none",
+              "label": "Şununla paylaş:",
+              "rect": {
+                "x": 824.0,
+                "y": 516.75,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest size-10 text-base leading-none",
+              "label": "Şikayet Et",
+              "rect": {
+                "x": 872.0,
+                "y": 516.75,
+                "w": 40.0,
+                "h": 40.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-(--edge-spacing-md) whitespace-nowrap rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) ring-0 transition-all focus-visible:ring-0 outline-2 outline-transparent outline-offset-2 focus-visible:outline-focusLight active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] [&_svg]:fill-current cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 state-layer-surface text-surface-onSurface bg-transparent disabled:bg-transparent size-9 text-base",
+              "label": "",
+              "rect": {
+                "x": 952.0,
+                "y": 66.0,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group box-border flex shrink-0 grow-0 select-none items-center justify-center gap-(--edge-spacing-md) whitespace-nowrap rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) ring-0 transition-all focus-visible:ring-0 outline-2 outline-transparent outline-offset-2 focus-visible:outline-focusLight active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] [&_svg]:fill-current cursor-pointer disabled:cursor-not-allowed disabled:opacity-40 state-layer-surface text-surface-onSurface bg-transparent disabled:bg-transparent relative ml-auto size-9 text-base",
+              "label": "Aktif sohbet edenleri göster",
+              "rect": {
+                "x": 1232.0,
+                "y": 66.0,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "Expand leaderboard",
+              "rect": {
+                "x": 960.0,
+                "y": 109.0,
+                "w": 300.0,
+                "h": 34.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold",
+              "label": "BotRix",
+              "rect": {
+                "x": 1016.21875,
+                "y": 161.0,
+                "w": 37.828125,
+                "h": 18.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest size-8 text-sm leading-none",
+              "label": "",
+              "rect": {
+                "x": 1235.0,
+                "y": 154.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest size-8 text-sm leading-none",
+              "label": "",
+              "rect": {
+                "x": 1235.0,
+                "y": 186.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "w-full min-w-0 shrink-0 truncate text-left text-xs font-medium text-white/40 cursor-pointer betterhover:hover:text-white",
+              "label": "sizhepini: !menü isimli kullanıcıya yanıt veriyor",
+              "rect": {
+                "x": 960.0,
+                "y": -300.0,
+                "w": 296.0,
+                "h": 16.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "BenBirBoregim",
+              "rect": {
+                "x": 1053.5,
+                "y": -284.0,
+                "w": 102.265625,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "ahmet_39",
+              "rect": {
+                "x": 1030.125,
+                "y": -209.0,
+                "w": 67.25,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "BotRix",
+              "rect": {
+                "x": 1006.75,
+                "y": -177.0,
+                "w": 44.125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "fexadine",
+              "rect": {
+                "x": 983.375,
+                "y": -124.0,
+                "w": 59.234375,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Xomesin_01",
+              "rect": {
+                "x": 960.0,
+                "y": -92.0,
+                "w": 81.5,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Linaus1903",
+              "rect": {
+                "x": 1006.75,
+                "y": -60.0,
+                "w": 78.71875,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "fatihakyuz11",
+              "rect": {
+                "x": 983.375,
+                "y": -28.0,
+                "w": 84.671875,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "BotRix",
+              "rect": {
+                "x": 1006.75,
+                "y": 4.0,
+                "w": 44.125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "BoSS_078",
+              "rect": {
+                "x": 1006.75,
+                "y": 57.0,
+                "w": 68.4375,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "the_zeynn",
+              "rect": {
+                "x": 960.0,
+                "y": 89.0,
+                "w": 70.578125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "BotRix",
+              "rect": {
+                "x": 1006.75,
+                "y": 121.0,
+                "w": 44.125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "BotRix",
+              "rect": {
+                "x": 1006.75,
+                "y": 218.0,
+                "w": 44.125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Baller_Los",
+              "rect": {
+                "x": 960.0,
+                "y": 293.0,
+                "w": 70.5,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "lorenzo_784",
+              "rect": {
+                "x": 983.375,
+                "y": 325.0,
+                "w": 84.3125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "BotRix",
+              "rect": {
+                "x": 1006.75,
+                "y": 357.0,
+                "w": 44.125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "mango53",
+              "rect": {
+                "x": 1030.125,
+                "y": 432.0,
+                "w": 64.8125,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Cagrii41",
+              "rect": {
+                "x": 1053.5,
+                "y": 464.0,
+                "w": 55.65625,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "ESREFTEK53",
+              "rect": {
+                "x": 1006.75,
+                "y": 496.0,
+                "w": 89.25,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "Linaus1903",
+              "rect": {
+                "x": 1006.75,
+                "y": 528.0,
+                "w": 78.71875,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "inline font-bold truncate",
+              "label": "fexadine",
+              "rect": {
+                "x": 983.375,
+                "y": 560.0,
+                "w": 59.234375,
+                "h": 21.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-surface text-surface-onSurface bg-transparent disabled:bg-transparent gap-(--edge-spacing-sm) h-[calc(1em*(18/13)+12px)] px-1.25 text-[length:var(--chatroom-font-size,14px)]",
+              "label": "",
+              "rect": {
+                "x": 970.0,
+                "y": 626.0,
+                "w": 29.375,
+                "h": 31.375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest text-base leading-none size-9",
+              "label": "",
+              "rect": {
+                "x": 1218.0,
+                "y": 623.0,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group relative box-border flex shrink-0 grow-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded font-semibold ring-0 transition-all focus-visible:outline-hidden active:scale-[0.95] disabled:pointer-events-none [&_svg]:size-[1em] state-layer bg-transparent text-white [&_svg]:fill-current lg:data-[state=open]:bg-surface-bg-highest data-[state=active]:bg-surface-bg-highest text-sm leading-none size-9",
+              "label": "",
+              "rect": {
+                "x": 1141.84375,
+                "y": 672.0,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "send-message-button",
+              "cls": "group inline-flex gap-1.5 items-center justify-center rounded font-semibold box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 focus-visible:outline-focusLight state-layer-inverse bg-brand-bg-default text-brand-fg-default [&_svg]:fill-current focus-visible:bg-kick-voltGreen-150 px-3 py-1.5 text-sm",
+              "label": "Gönder",
+              "rect": {
+                "x": 1185.84375,
+                "y": 674.0,
+                "w": 74.15625,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "group inline-flex items-center justify-center rounded-(--edge-radius-sm) font-(--edge-font-weight-semiBold) box-border relative transition-all betterhover:active:scale-[0.98] disabled:pointer-events-none select-none whitespace-nowrap [&_svg]:size-[1em] outline-transparent outline-2 outline-offset-2 disabled:text-disabled-onSurface focus-visible:outline-focusLight state-layer-surface bg-secondary-base text-secondary-onSecondary [&_svg]:fill-current focus-visible:bg-secondary-base disabled:bg-disabled-base h-9 px-(--edge-spacing-md) text-(length:--edge-typography-body-font-size-sm) leading-(--edge-typography-body-lineHeight-sm) gap-(--edge-spacing-sm)",
+              "label": "Tümünü temizle",
+              "rect": {
+                "x": 1155.828125,
+                "y": 40.0,
+                "w": 124.171875,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "onetrust-pc-btn-handler",
+              "cls": "",
+              "label": "Cookie Settings, Opens the preference center dialog",
+              "rect": {
+                "x": 836.34375,
+                "y": 645.6953125,
+                "w": 125.0,
+                "h": 41.609375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "onetrust-accept-btn-handler",
+              "cls": "",
+              "label": "Accept All Cookies",
+              "rect": {
+                "x": 978.84375,
+                "y": 645.6953125,
+                "w": 143.0,
+                "h": 41.609375
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon",
+              "label": "Close",
+              "rect": {
+                "x": 1226.0,
+                "y": 644.0,
+                "w": 44.0,
+                "h": 44.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "session": "267094E15E2F1DFA56D81D56E0B1B70B",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://m.stripe.network/inner.html#url=https%3A%2F%2Fkick.com%2Frammus53&title=Rammus53%20Live%20Stream%20-%20Watch%20Live%20on%20KICK&referrer=&muid=NA&sid=NA&version=6&preview=false&__shared_params__[version]=basil",
+          "title": "StripeM-Inner",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "B9E4055E04A3DDE32F02405BBBC293D3",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "870EFFA7F7E6EA8778CE9AE8367F47C4",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "2FEF1228AAD3EAC617C9606083FD652D",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "4B829796A1DCB0C79BECBAEC4D6BBDD5",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  }
+]

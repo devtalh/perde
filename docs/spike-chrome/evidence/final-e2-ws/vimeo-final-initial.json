@@ -1,0 +1,25 @@
+{
+  "session": "6C45987D4DE34B48035B603C13E1B7E8",
+  "contextId": 1.0,
+  "result": {
+    "result": {
+      "type": "object",
+      "value": {
+        "url": "https://vimeo.com/76979871",
+        "title": "The New Vimeo Player (You Know, For Videos)",
+        "visibility": "visible",
+        "youtubeAd": false,
+        "gates": {
+          "challenge": true,
+          "consent": false,
+          "login": false,
+          "age": false
+        },
+        "signals": [],
+        "media": [],
+        "frames": [],
+        "controls": []
+      }
+    }
+  }
+}

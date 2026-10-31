@@ -1,0 +1,46 @@
+{
+  "id": "final-e1-h-memory",
+  "chromePlusJavaWorkingSetBytes": {
+    "meanMiB": 1623.56484375,
+    "maxMiB": 1624.05078125
+  },
+  "bridgePrivateBytes": {
+    "meanMiB": 65.151171875,
+    "maxMiB": 65.17578125
+  },
+  "processTypes": [
+    "browser",
+    "crashpad utility",
+    "extension renderer",
+    "GPU",
+    "network",
+    "renderer",
+    "utility"
+  ],
+  "point": "dizi-failed-no-extension",
+  "chromePlusJavaPrivateBytes": {
+    "meanMiB": 1554.700390625,
+    "maxMiB": 1555.48046875
+  },
+  "chromeWorkingSetBytes": {
+    "meanMiB": 1095.482421875,
+    "maxMiB": 1095.6640625
+  },
+  "bridgeWorkingSetBytes": {
+    "meanMiB": 83.275,
+    "maxMiB": 83.2890625
+  },
+  "chromePrivateBytes": {
+    "meanMiB": 899.30234375,
+    "maxMiB": 900.0390625
+  },
+  "count": 10,
+  "javaPrivateBytes": {
+    "meanMiB": 655.398046875,
+    "maxMiB": 655.91015625
+  },
+  "javaWorkingSetBytes": {
+    "meanMiB": 528.082421875,
+    "maxMiB": 528.625
+  }
+}

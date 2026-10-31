@@ -1,0 +1,2193 @@
+[
+  {
+    "session": "221AD506AF6598ABD1E0FECF2DA22099",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "80C6EBC4541C272472FFDE7D03029457",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://supervisor.ext-twitch.tv/supervisor/v1/index.html",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [
+            {
+              "src": "https://fan32s7u7xeqzws5t8luilm1r8db4y.ext-twitch.tv/fan32s7u7xeqzws5t8luilm1r8db4y/0.0.4/49897f150c150ed829efa5249b510620/index.html",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 318.0,
+                "h": 500.0
+              }
+            }
+          ],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "694806E560C1F7C2E5F34C018B4F3F8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "5C2D123F0B83A472A97466FF3A9D52A1",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "694806E560C1F7C2E5F34C018B4F3F8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "2B3D4BBBBBEA1C0AC60E5CF2875D7260",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "80C6EBC4541C272472FFDE7D03029457",
+    "contextId": 5.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://fan32s7u7xeqzws5t8luilm1r8db4y.ext-twitch.tv/fan32s7u7xeqzws5t8luilm1r8db4y/0.0.4/49897f150c150ed829efa5249b510620/index.html?redacted",
+          "title": "BotRix",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "custom-button selected",
+              "label": "Ranking",
+              "rect": {
+                "x": 7.90625,
+                "y": 58.0,
+                "w": 95.390625,
+                "h": 27.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "custom-button",
+              "label": "Rewards",
+              "rect": {
+                "x": 111.296875,
+                "y": 58.0,
+                "w": 95.390625,
+                "h": 27.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "custom-button",
+              "label": "Profile",
+              "rect": {
+                "x": 214.6875,
+                "y": 58.0,
+                "w": 95.390625,
+                "h": 27.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "session": "694806E560C1F7C2E5F34C018B4F3F8C",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "123E85A26F60DC30FD91A7C7E2109D71",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "7D5B2D5850ED435A646607463828E2DD",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "B9E4055E04A3DDE32F02405BBBC293D3",
+    "contextId": 6.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://lek1fox29tmiic9wrq8lbwm68cqhow.ext-twitch.tv/lek1fox29tmiic9wrq8lbwm68cqhow/0.0.2/a00ad228f1179dbe10777aa5be460793/index.html?redacted",
+          "title": "Parrot - Extension",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "App_search__+nw27 App_noTerm__6xhoD",
+              "label": "",
+              "rect": {
+                "x": 4.0,
+                "y": 4.0,
+                "w": 52.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 50.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 104.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 158.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 212.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 266.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 320.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 374.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 428.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 482.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 536.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 590.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 644.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 698.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 752.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 806.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 860.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 914.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 968.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1022.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1076.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1130.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1184.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1238.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1292.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1346.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1400.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1454.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1508.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1562.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1616.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1670.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1724.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1778.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1832.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1886.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1940.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 1994.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2048.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2102.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2156.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2210.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2264.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2318.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2372.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2426.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2480.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2534.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2588.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2642.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2696.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2750.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2804.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2858.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2912.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 2966.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3020.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3074.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3128.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3182.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3236.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3290.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3344.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3398.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3452.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3506.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3560.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3614.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3668.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3722.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3776.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3830.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3884.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3938.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 3992.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4046.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4100.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4154.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4208.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4262.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4316.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4370.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4424.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4478.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4532.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4586.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4640.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ClipListItem_fav__AIH-A",
+              "label": "",
+              "rect": {
+                "x": 265.0,
+                "y": 4694.0,
+                "w": 30.0,
+                "h": 26.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "session": "B9E4055E04A3DDE32F02405BBBC293D3",
+    "contextId": 2.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://supervisor.ext-twitch.tv/supervisor/v1/index.html",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [
+            {
+              "src": "https://lek1fox29tmiic9wrq8lbwm68cqhow.ext-twitch.tv/lek1fox29tmiic9wrq8lbwm68cqhow/0.0.2/a00ad228f1179dbe10777aa5be460793/index.html",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 318.0,
+                "h": 430.0
+              }
+            }
+          ],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "870EFFA7F7E6EA8778CE9AE8367F47C4",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  },
+  {
+    "session": "2FEF1228AAD3EAC617C9606083FD652D",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://s.amazon-adsystem.com/iui3?redacted",
+          "title": "iui3 (1×1)",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "A6BD62B9AF163A2F2292FF3A7701D06E",
+    "contextId": 1.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://www.twitch.tv/poinemaia",
+          "title": "PoineMaia - Twitch",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [
+            {
+              "tag": "VIDEO",
+              "ready": 4.0,
+              "time": 10.257227,
+              "duration": null,
+              "paused": false,
+              "ended": false,
+              "muted": true,
+              "volume": 0.0,
+              "width": 1280.0,
+              "height": 720.0,
+              "src": "",
+              "error": null
+            }
+          ],
+          "frames": [
+            {
+              "src": "https://supervisor.ext-twitch.tv/supervisor/v1/index.html",
+              "rect": {
+                "x": 261.0,
+                "y": 971.171875,
+                "w": 318.0,
+                "h": 500.0
+              }
+            },
+            {
+              "src": "https://supervisor.ext-twitch.tv/supervisor/v1/index.html",
+              "rect": {
+                "x": 601.0,
+                "y": 971.171875,
+                "w": 318.0,
+                "h": 430.0
+              }
+            },
+            {
+              "src": "https://aax-eu.amazon-adsystem.com/s/iu3",
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.0,
+                "h": 0.0
+              }
+            },
+            {
+              "src": "https://s.amazon-adsystem.com/iui3",
+              "rect": {
+                "x": 0.0,
+                "y": 719.0,
+                "w": 1.0,
+                "h": 1.0
+              }
+            }
+          ],
+          "controls": [
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX",
+              "label": "İçeriğe gidiş menüsü (Alt+P)",
+              "rect": {
+                "x": -10000.0,
+                "y": -15.5,
+                "w": 1.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Diğer Seçenekler",
+              "rect": {
+                "x": 109.828125,
+                "y": 9.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 ivGBcN InjectLayout-sc-1i43xsx-0 bRowwC tw-combo-input__button-icon tw-combo-input__button-icon--large",
+              "label": "Arama Düğmesi",
+              "rect": {
+                "x": 781.078125,
+                "y": 7.0,
+                "w": 36.0,
+                "h": 36.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Prime teklifler",
+              "rect": {
+                "x": 1005.296875,
+                "y": 9.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX",
+              "label": "Oturum Aç",
+              "rect": {
+                "x": 1045.296875,
+                "y": 9.0,
+                "w": 100.78125,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl",
+              "label": "Kayıt ol",
+              "rect": {
+                "x": 1154.078125,
+                "y": 9.0,
+                "w": 77.921875,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "Kullanıcı Menüsü",
+              "rect": {
+                "x": 1240.0,
+                "y": 9.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Kullanıcı Menüsü",
+              "rect": {
+                "x": 1240.0,
+                "y": 9.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Yan gezinti çubuğunu daralt",
+              "rect": {
+                "x": 184.0,
+                "y": 58.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreLink-sc-16kq0mq-0 hiVvkP tw-link",
+              "label": "Daha Fazla Göster",
+              "rect": {
+                "x": 12.0,
+                "y": 741.578125,
+                "w": 121.359375,
+                "h": 23.796875
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 fvjDUd",
+              "label": "PoineMaia kanalını takip et",
+              "rect": {
+                "x": 446.46875,
+                "y": 454.0,
+                "w": 105.921875,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX InjectLayout-sc-1i43xsx-0",
+              "label": "Abonelik Hediye Edin",
+              "rect": {
+                "x": 560.390625,
+                "y": 454.0,
+                "w": 213.328125,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX InjectLayout-sc-1i43xsx-0",
+              "label": "Abone Ol",
+              "rect": {
+                "x": 781.71875,
+                "y": 454.0,
+                "w": 132.28125,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl ScButtonIcon-sc-9yap0r-0 lnIUQQ",
+              "label": "Paylaş",
+              "rect": {
+                "x": 860.0,
+                "y": 511.59375,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Daha fazla",
+              "rect": {
+                "x": 892.0,
+                "y": 511.59375,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 fvjDUd",
+              "label": " kanalını takip et",
+              "rect": {
+                "x": 868.0,
+                "y": 794.171875,
+                "w": 48.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX InjectLayout-sc-1i43xsx-0",
+              "label": "Abone Ol",
+              "rect": {
+                "x": 884.0,
+                "y": 876.171875,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Uzantıyı Kapat",
+              "rect": {
+                "x": 515.0,
+                "y": 1471.171875,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Daha Fazla Bilgi",
+              "rect": {
+                "x": 547.0,
+                "y": 1471.171875,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Uzantıyı Kapat",
+              "rect": {
+                "x": 855.0,
+                "y": 1401.171875,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Daha Fazla Bilgi",
+              "rect": {
+                "x": 887.0,
+                "y": 1401.171875,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Duraklat (boşluk/k)",
+              "rect": {
+                "x": 248.0,
+                "y": 403.75,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Sesi aç (m)",
+              "rect": {
+                "x": 280.0,
+                "y": 403.75,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Ayarlar",
+              "rect": {
+                "x": 836.0,
+                "y": 403.75,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Tiyatro modu (alt+t)",
+              "rect": {
+                "x": 868.0,
+                "y": 403.75,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Tam ekran (f)",
+              "rect": {
+                "x": 900.0,
+                "y": 403.75,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Sohbeti Daralt",
+              "rect": {
+                "x": 950.0,
+                "y": 53.5,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Topluluk",
+              "rect": {
+                "x": 1241.0,
+                "y": 53.5,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScInteractableBase-sc-ofisyf-0 ScInteractableDefault-sc-ofisyf-1 bPDFbr iTnOTE tw-interactable",
+              "label": "En İyi Hediyeciler Liderlik Sıralamasını genişlet",
+              "rect": {
+                "x": 941.0,
+                "y": 90.0,
+                "w": 340.0,
+                "h": 35.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 cNBIIJ",
+              "label": "Oturum Aç",
+              "rect": {
+                "x": 1135.609375,
+                "y": 156.0,
+                "w": 90.390625,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 foaenL ScButtonIcon-sc-9yap0r-0 cLnwrX",
+              "label": "Bu mesajı kapat",
+              "rect": {
+                "x": 1230.0,
+                "y": 156.0,
+                "w": 24.0,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 957.0,
+                "y": 127.0,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 978.0,
+                "y": 127.0,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 999.0,
+                "y": 127.0,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "chat-line__username",
+              "label": "PHALANKS666",
+              "rect": {
+                "x": 1020.0,
+                "y": 129.0,
+                "w": 105.421875,
+                "h": 17.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+              "label": "@PHALANKS666 kişisine yanıt vermek için tıklayın.",
+              "rect": {
+                "x": 1228.0,
+                "y": 112.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 957.0,
+                "y": 179.0,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "chat-line__username",
+              "label": "alparslan1o71",
+              "rect": {
+                "x": 978.0,
+                "y": 181.0,
+                "w": 93.203125,
+                "h": 17.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+              "label": "@alparslan1o71 kişisine yanıt vermek için tıklayın.",
+              "rect": {
+                "x": 1228.0,
+                "y": 164.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 957.0,
+                "y": 209.0,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "chat-line__username",
+              "label": "erenhoca",
+              "rect": {
+                "x": 978.0,
+                "y": 211.0,
+                "w": 64.484375,
+                "h": 17.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+              "label": "@erenhoca kişisine yanıt vermek için tıklayın.",
+              "rect": {
+                "x": 1228.0,
+                "y": 194.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 957.0,
+                "y": 258.59375,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "chat-line__username",
+              "label": "srnypgl",
+              "rect": {
+                "x": 978.0,
+                "y": 260.59375,
+                "w": 51.75,
+                "h": 17.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+              "label": "@srnypgl kişisine yanıt vermek için tıklayın.",
+              "rect": {
+                "x": 1228.0,
+                "y": 224.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 957.0,
+                "y": 288.59375,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 978.0,
+                "y": 288.59375,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "chat-line__username",
+              "label": "abdulkadiirrr",
+              "rect": {
+                "x": 999.0,
+                "y": 290.59375,
+                "w": 88.375,
+                "h": 17.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+              "label": "@abdulkadiirrr kişisine yanıt vermek için tıklayın.",
+              "rect": {
+                "x": 1228.0,
+                "y": 273.59375,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 957.0,
+                "y": 340.59375,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "chat-line__username",
+              "label": "ivankemall",
+              "rect": {
+                "x": 978.0,
+                "y": 342.59375,
+                "w": 73.328125,
+                "h": 17.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+              "label": "@ivankemall kişisine yanıt vermek için tıklayın.",
+              "rect": {
+                "x": 1228.0,
+                "y": 325.59375,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 957.0,
+                "y": 370.59375,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 978.0,
+                "y": 370.59375,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "chat-line__username",
+              "label": "omerggomer",
+              "rect": {
+                "x": 999.0,
+                "y": 372.59375,
+                "w": 88.265625,
+                "h": 17.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+              "label": "@omerggomer kişisine yanıt vermek için tıklayın.",
+              "rect": {
+                "x": 1228.0,
+                "y": 355.59375,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "",
+              "label": "",
+              "rect": {
+                "x": 957.0,
+                "y": 428.59375,
+                "w": 21.0,
+                "h": 22.0
+              }
+            },
+            {
+              "tag": "SPAN",
+              "id": "",
+              "cls": "chat-line__username",
+              "label": "thee2660",
+              "rect": {
+                "x": 978.0,
+                "y": 430.59375,
+                "w": 68.015625,
+                "h": 17.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn InjectLayout-sc-1i43xsx-0",
+              "label": "@thee2660 kişisine yanıt vermek için tıklayın.",
+              "rect": {
+                "x": 1228.0,
+                "y": 413.59375,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 cNBIIJ",
+              "label": "Göster",
+              "rect": {
+                "x": 1197.6875,
+                "y": 538.0,
+                "w": 67.3125,
+                "h": 24.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Kapat",
+              "rect": {
+                "x": 1233.0,
+                "y": 481.40625,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl ScButtonIcon-sc-9yap0r-0 lnIUQQ",
+              "label": "Cheer",
+              "rect": {
+                "x": 1205.0,
+                "y": 579.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "İfade seçici",
+              "rect": {
+                "x": 1237.0,
+                "y": 579.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 FISKx",
+              "label": "Bit ve Sadakat Puanı bakiyesi",
+              "rect": {
+                "x": 949.0,
+                "y": 623.0,
+                "w": 106.6875,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 eBQIRH ScButtonIcon-sc-9yap0r-0 jcYIUn",
+              "label": "Sohbet ayarları",
+              "rect": {
+                "x": 1160.375,
+                "y": 623.0,
+                "w": 32.0,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl",
+              "label": "Sohbet mesajı gönder",
+              "rect": {
+                "x": 1196.375,
+                "y": 623.0,
+                "w": 76.625,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 iQpwXl InjectLayout-sc-1i43xsx-0 gbZxxf",
+              "label": "Kaydol",
+              "rect": {
+                "x": 853.421875,
+                "y": 676.0,
+                "w": 74.046875,
+                "h": 32.0
+              }
+            },
+            {
+              "tag": "BUTTON",
+              "id": "",
+              "cls": "ScCoreButton-sc-ocjdkq-0 jRpFkX",
+              "label": "Kapat",
+              "rect": {
+                "x": 618.0,
+                "y": 1361.0,
+                "w": 67.640625,
+                "h": 32.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "session": "9C70B3E7D664BC745028AC4213BEC44E",
+    "contextId": 2.0,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "url": "https://aax-eu.amazon-adsystem.com/s/iu3?redacted",
+          "title": "",
+          "visibility": "visible",
+          "gates": {
+            "challenge": false,
+            "consent": false,
+            "login": false,
+            "age": false
+          },
+          "signals": [],
+          "media": [],
+          "frames": [],
+          "controls": []
+        }
+      }
+    }
+  },
+  {
+    "session": "4B829796A1DCB0C79BECBAEC4D6BBDD5",
+    "error": "Response status code does not indicate success: 500 (Internal Server Error)."
+  }
+]

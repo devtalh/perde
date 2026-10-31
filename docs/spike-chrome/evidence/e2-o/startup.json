@@ -1,0 +1,65 @@
+{
+  "id": "e2-o",
+  "pid": 13540,
+  "startupMs": 1542.9937,
+  "mode": "offscreen",
+  "version": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/156.0.8078.80",
+    "revision": "@fb096c0011f9d50f0a264a9376420cdea9c421e3",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "jsVersion": "15.6.75.27"
+  },
+  "snapshot": {
+    "processes": [
+      {
+        "pid": 43168,
+        "cpuMs": 15.625
+      },
+      {
+        "pid": 49936,
+        "cpuMs": 609.375
+      },
+      {
+        "pid": 50128,
+        "cpuMs": 187.5
+      },
+      {
+        "pid": 13540,
+        "cpuMs": 781.25
+      },
+      {
+        "pid": 44660,
+        "cpuMs": 78.125
+      },
+      {
+        "pid": 43560,
+        "cpuMs": 15.625
+      },
+      {
+        "pid": 24216,
+        "cpuMs": 62.5
+      },
+      {
+        "pid": 15688,
+        "cpuMs": 46.875
+      },
+      {
+        "pid": 50300,
+        "cpuMs": 359.375
+      },
+      {
+        "pid": 22428,
+        "cpuMs": 109.375
+      },
+      {
+        "pid": 45196,
+        "cpuMs": 15.625
+      }
+    ],
+    "chromeCpuMs": 2281.25,
+    "javaCpuMs": 23671.875,
+    "javaPid": 42788
+  },
+  "profile": "run\\chrome-spike\\e2-o\\profile-2334a3ae-30de-4407-9c38-c4101f5eb9bd"
+}

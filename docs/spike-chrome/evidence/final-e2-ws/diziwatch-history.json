@@ -1,0 +1,61 @@
+{
+  "currentIndex": 6.0,
+  "entries": [
+    {
+      "id": 8.0,
+      "url": "about:blank",
+      "userTypedURL": "about:blank",
+      "title": "",
+      "transitionType": "auto_toplevel"
+    },
+    {
+      "id": 17.0,
+      "url": "https://example.org/",
+      "userTypedURL": "https://example.org/",
+      "title": "",
+      "transitionType": "typed"
+    },
+    {
+      "id": 19.0,
+      "url": "https://www.youtube.com/watch?redacted",
+      "userTypedURL": "https://www.youtube.com/watch?redacted",
+      "title": "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster) - YouTube",
+      "transitionType": "typed"
+    },
+    {
+      "id": 21.0,
+      "url": "https://vimeo.com/76979871",
+      "userTypedURL": "https://vimeo.com/76979871",
+      "title": "The New Vimeo Player (You Know, For Videos)",
+      "transitionType": "typed"
+    },
+    {
+      "id": 23.0,
+      "url": "https://www.dailymotion.com/video/xbsj7ry",
+      "userTypedURL": "https://www.dailymotion.com/video/xbsj7ry",
+      "title": "Trendyol Süper Lig: Fenerbahçe: 1 - Göztepe: 0 (İlk yarı) | Ajansspor | IHA - Dailymotion Video",
+      "transitionType": "typed"
+    },
+    {
+      "id": 27.0,
+      "url": "https://vimeo.com/76979871",
+      "userTypedURL": "https://vimeo.com/76979871",
+      "title": "The New Vimeo Player (You Know, For Videos) | Videos & Movies on Vimeo",
+      "transitionType": "typed"
+    },
+    {
+      "id": 29.0,
+      "url": "https://www.dailymotion.com/video/xbsj7ry",
+      "userTypedURL": "https://www.dailymotion.com/video/xbsj7ry",
+      "title": "Trendyol Süper Lig: Fenerbahçe: 1 - Göztepe: 0 (İlk yarı) | Ajansspor | IHA - Dailymotion Video",
+      "transitionType": "typed"
+    },
+    {
+      "id": 31.0,
+      "url": "https://diziwatch.app/dizi/horror-collector/sezon-1/bolum-4",
+      "userTypedURL": "https://diziwatch.app/dizi/horror-collector/sezon-1/bolum-4",
+      "title": "HORROR COLLECTOR 1.Sezon 4. Bölüm izle – diziwatch",
+      "transitionType": "typed"
+    }
+  ]
+}
