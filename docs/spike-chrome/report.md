@@ -4,7 +4,7 @@
 
 Prefer **E2, pinned official Chrome for Testing**, for the next prototype: portable isolated binary, reproducible version selection and working unpacked-extension launch flag. E1 also works, including extension installation over a debugging pipe, but its update cadence belongs to the user. This sample does not establish an intrinsic memory advantage for either build.
 
-Branch `spike/chrome-cdp`, based on main `35b22fb` (merged F3-2). Measurements: 2026-10-31 UTC, extending into 2026-11-01 Europe/Istanbul. Product code, dependencies, SPEC and AGENTS unchanged. No game/server launch or merge.
+Branch `spike/chrome-cdp`, based on main `35b22fb` (merged F3-2), [PR #11](https://github.com/devtalh/perde/pull/11). Measurements: 2026-10-31 UTC, extending into 2026-11-01 Europe/Istanbul. Product code, dependencies, SPEC and AGENTS unchanged. No game/server launch or merge.
 
 ## Environment and reproduction
 
