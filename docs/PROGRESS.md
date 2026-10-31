@@ -5,8 +5,9 @@ This is the handoff point between Codex sessions and accounts: the next session 
 
 ## Current state
 - Phase 1B: **GO** (decided 2026-10-31 by Talha and Claude).
-- Last merged task: F1B-3 render-mod compatibility and feasibility report, [PR #4](https://github.com/devtalh/perde/pull/4), main `7c4da6c`.
-- Phase 1A: F1A-1/2/3/4 complete on `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5), pending review. Restart/two-client F2, survival mine/drop/removal and final build/isolation checks passed. No merge and no Phase 2 work.
+- Last merged task: Phase 1A, [PR #5](https://github.com/devtalh/perde/pull/5), main `5eb1773`; merge confirmed through GitHub and origin/main on 2026-10-31.
+- F2-1: implementation on `feat/f2-1-browser-manager`; build/unit tests pass, runtime verification in progress. Not done until the full singleplayer matrix and dedicated server checks pass.
+- Next task after F2-1: F2-2 browser navigation security (LEA-185).
 - Confirmed Minecraft version: 26.2 (Fabric API 0.161.0+26.2, MCEF 26.2 build)
 
 ## Task log
@@ -21,6 +22,14 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### F2-1 - Real browser manager and Perde screen rendering
+- Branch / PR: `feat/f2-1-browser-manager`, PR pending.
+- Status: partial (verification in progress)
+- What changed: client-only tracked loaded screens, rectangle-distance nearest selection with 48/52 range and 4-block switching hysteresis, one managed browser at 1280x720/30 fps, non-blocking initialization, existing-browser URL reload, lifecycle cleanup and non-owning live texture bridge. Localized placeholders and bounded 16-character owner/allowed-player names including safe payload writes. Spike preserved.
+- Verification: initial `gradlew.bat build --console=plain --warning-mode all` passed in 7s. Selection/rectangle and long-name regression tests added. Real Fabric 26.2 lifecycle/camera/render sources inspected locally. Linear LEA-193 and Notion hub read; repository SPEC/current task supersede the older hub. Linear field-notes tool still returns `Tool get_agent_context not found`.
+- Left: dedicated server, singleplayer acceptance a-g, missing-MCEF runtime check, screenshot/memory evidence, final build/diff and PR.
+- Risks: navigation security deferred explicitly to F2-2; spike is a separate development-only test browser. Known upstream AWT/native GLFW diagnostics remain open.
 
 ### F1A-4 - Completion: restart evidence, survival mining and final verification
 - Branch / PR: `feat/f1a-skeleton`, [PR #5](https://github.com/devtalh/perde/pull/5), pending review; mark ready only after latest-head CI passes, never merge in this task.

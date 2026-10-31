@@ -4,6 +4,8 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import io.github.devtalh.perde.block.PerdeBlock;
 import io.github.devtalh.perde.block.PerdeBlockEntity;
+import io.github.devtalh.perde.client.browser.BrowserTexture;
+import io.github.devtalh.perde.client.browser.PerdeBrowserManager;
 import io.github.devtalh.perde.screen.ScreenGeometry;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.renderer.SubmitNodeCollector;
@@ -32,19 +34,18 @@ public final class PerdeBlockEntityRenderer implements BlockEntityRenderer<Perde
         ScreenGeometry.Rectangle rectangle;
         List<FormattedCharSequence> lines = List.of();
         float textScale;
+        long browserTicket = -1;
     }
 
     @Override public State createRenderState() { return new State(); }
 
     private static ScreenGeometry.Rectangle rectangle(PerdeBlockEntity entity) {
-        Direction facing = entity.getBlockState().getValue(PerdeBlock.FACING);
-        var pos = entity.getBlockPos();
-        return ScreenGeometry.rectangle(pos.getX(), pos.getY(), pos.getZ(), facing.getStepX(), facing.getStepZ(), entity.screenState());
+        return PerdeBrowserManager.rectangle(entity);
     }
 
     /** 26.2 has no BE render-AABB override: the vanilla global renderer path bypasses source-block section culling. */
     @Override public boolean shouldRenderOffScreen() { return true; }
-    @Override public int getViewDistance() { return 48; }
+    @Override public int getViewDistance() { return 52; }
     @Override public boolean shouldRender(PerdeBlockEntity entity, Vec3 camera) {
         var rect = rectangle(entity);
         var pos = entity.getBlockPos();
@@ -57,9 +58,10 @@ public final class PerdeBlockEntityRenderer implements BlockEntityRenderer<Perde
     @Override public void extractRenderState(PerdeBlockEntity entity, State state, float partialTick, Vec3 camera, ModelFeatureRenderer.CrumblingOverlay breakProgress) {
         BlockEntityRenderer.super.extractRenderState(entity, state, partialTick, camera, breakProgress);
         state.rectangle = rectangle(entity);
+        state.browserTicket = PerdeBrowserManager.INSTANCE.frameTicket(entity);
         // Fixed readable glyph scale; long URLs wrap and scale down to stay inside the rectangle.
         float scale = (float) Math.min(1.0 / 32, state.rectangle.height() / 24);
-        Component text = entity.screenState().url().isEmpty() ? Component.translatable("perde.ui.no_page") : Component.literal(entity.screenState().url());
+        Component text = Component.translatable(PerdeBrowserManager.INSTANCE.statusKey(entity));
         List<FormattedCharSequence> lines;
         do {
             lines = font.split(text, Math.max(1, (int) ((state.rectangle.width() - 0.125) / scale)));
@@ -76,12 +78,17 @@ public final class PerdeBlockEntityRenderer implements BlockEntityRenderer<Perde
         poses.translate(rect.x() - state.blockPos.getX(), rect.y() - state.blockPos.getY(), rect.z() - state.blockPos.getZ());
         poses.mulPose(Axis.YP.rotation((float) Math.atan2(rect.frontX(), rect.frontZ())));
         float half = (float) rect.width() / 2, height = (float) rect.height();
-        collector.submitCustomGeometry(poses, RenderTypes.text(TEXTURE), (pose, vertices) -> {
+        boolean live = PerdeBrowserManager.INSTANCE.isCurrentFrame(state.browserTicket);
+        collector.submitCustomGeometry(poses, RenderTypes.text(live ? BrowserTexture.ID : TEXTURE), (pose, vertices) -> {
             vertices.addVertex(pose, -half, 0, 0).setColor(-1).setUv(0, 1).setLight(LightCoordsUtil.FULL_BRIGHT);
             vertices.addVertex(pose, half, 0, 0).setColor(-1).setUv(1, 1).setLight(LightCoordsUtil.FULL_BRIGHT);
             vertices.addVertex(pose, half, height, 0).setColor(-1).setUv(1, 0).setLight(LightCoordsUtil.FULL_BRIGHT);
             vertices.addVertex(pose, -half, height, 0).setColor(-1).setUv(0, 0).setLight(LightCoordsUtil.FULL_BRIGHT);
         });
+        if (live) {
+            poses.popPose();
+            return;
+        }
         poses.translate(0, height / 2, 0.003);
         poses.scale(state.textScale, -state.textScale, state.textScale);
         for (int i = 0; i < state.lines.size(); i++) {

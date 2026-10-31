@@ -11,6 +11,21 @@ import java.util.UUID;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ScreenStateTest {
+    @Test void truncatesEveryPlayerNameBeforePersistenceOrPayloadWriting() {
+        UUID id = new UUID(1, 2);
+        String longName = "1234567890123456extra";
+        Map<UUID, String> source = new LinkedHashMap<>(Map.of(id, longName));
+        ScreenState state = new ScreenState("", false, 0, 0, 1, 4, 2.25, 0, 0,
+                id, longName, AccessMode.SELECTED, source);
+        assertEquals("1234567890123456", state.ownerName());
+        assertEquals("1234567890123456", state.allowedPlayers().get(id));
+        assertEquals(longName, source.get(id));
+        assertEquals("1234567890123456", state.withOwner(id, longName).ownerName());
+        assertEquals("1234567890123456", state.withAllowedPlayer(id, longName).allowedPlayers().get(id));
+        assertEquals("", ScreenState.boundedPlayerName(""));
+        assertEquals("Player", ScreenState.boundedPlayerName("Player"));
+    }
+
     @ParameterizedTest @ValueSource(strings = {"https://example.com", "http://localhost:25570/a?q=x#b", "HTTPS://example.com"})
     void acceptsHttpUrls(String url) { assertEquals(url, ScreenState.validateUrl("  " + url + "  ")); }
 

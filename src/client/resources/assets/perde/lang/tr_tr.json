@@ -37,5 +37,9 @@
   "perde.access.owner_only": "Sadece ben",
   "perde.access.selected": "Seçtiklerim",
   "perde.access.everyone": "Herkes",
-  "perde.ui.invalid_name": "Geçerli bir oyuncu adı gir."
+  "perde.ui.invalid_name": "Geçerli bir oyuncu adı gir.",
+  "perde.browser.loading": "Yükleniyor",
+  "perde.browser.missing": "MCEF eksik",
+  "perde.browser.inactive": "Etkin değil (başka ekran veya çok uzak)",
+  "perde.browser.failed": "Tarayıcı hatası (yeniden denemek için URL değiştir)"
 }
