@@ -40,3 +40,5 @@ $env:CEF_ARCHIVE_FORMAT = 'zip'
 
 $script:depotTools = Join-Path $ws 'depot_tools'
 if (Test-Path $depotTools) { $env:PATH = $depotTools + ';' + $env:PATH }
+# Once depot_tools is bootstrapped, keep it fixed (no network self-update on every gclient call).
+if (Test-Path (Join-Path $depotTools 'python3.bat')) { $env:DEPOT_TOOLS_UPDATE = '0' }
