@@ -32,7 +32,9 @@ param(
     [string]$CefBranch = '7680',
     [string]$CefCommit = '82195616d8405e6081a0d90924707b82aa9e4141',
     # Extra GN args appended after the official ones (only for documented fallbacks).
-    [string]$ExtraGnDefines = ''
+    [string]$ExtraGnDefines = '',
+    # Build stage: number of failed steps before ninja/siso stops (0 = keep going, report all failures).
+    [int]$BuildFailureLimit = 1
 )
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'cef-env.ps1') -Workspace $Workspace -ExtraGnDefines $ExtraGnDefines
@@ -66,7 +68,8 @@ if ($Stage -eq 'sources') {
         '--no-update', '--no-depot-tools-update', '--force-build',
         '--build-target=cefsimple', '--build-log-file',
         '--minimal-distrib', '--minimal-distrib-only',
-        '--no-distrib-docs', '--no-distrib-archive', '--force-distrib'
+        '--no-distrib-docs', '--no-distrib-archive', '--force-distrib',
+        "--build-failure-limit=$BuildFailureLimit"
     )
 }
 
