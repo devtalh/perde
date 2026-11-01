@@ -4,7 +4,8 @@ Every Codex task MUST update this file before finishing (in the same PR).
 This is the handoff point between Codex sessions and accounts: the next session starts from here.
 
 ## Current state
-- Phase 3: **F3-2 done, (f) deferred to LEA-200 (codecs)** (LEA-197), `feat/f3-2-sync-engine`, [PR #10](https://github.com/devtalh/perde/pull/10). Current build: **296 tests pass**. Identity guard ignores housekeeping, real ID changes restore server URL. Late runs: entry->ready **5.007/2.838 s**, ready->stable **9.056/4.342 s**, **0 same-video guard reloads**. The <1.5 s goal was missed and explicitly accepted by Talha as a buffering constraint. Five metadata-only codec probes complete. [Report](phase3/F3-2-report.md). Ready after final-head CI; do not merge.
+- CODEC-1 (LEA-200): **partial**, `feat/codec-build` from main `35b22fb`. Stage 0 plan, MCEF inventory and re-download analysis done ([plan](codec-build/plan.md)); packaging/install/restore scripts done and tested on a mock instance ([tools/codec-pack](../tools/codec-pack/README.md)). Chromium/CEF source sync in `D:\cef` is in progress but slowed to a near stop by the internet connection (see task log). No CEF build yet, so no in-game codec test yet. Exact resume steps: [progress notes](codec-build/progress-notes.md).
+- Phase 3: **F3-2 merged** (main `35b22fb`), (f) deferred to LEA-200 (codecs) (LEA-197), `feat/f3-2-sync-engine`, [PR #10](https://github.com/devtalh/perde/pull/10). Current build: **296 tests pass**. Identity guard ignores housekeeping, real ID changes restore server URL. Late runs: entry->ready **5.007/2.838 s**, ready->stable **9.056/4.342 s**, **0 same-video guard reloads**. The <1.5 s goal was missed and explicitly accepted by Talha as a buffering constraint. Five metadata-only codec probes complete. [Report](phase3/F3-2-report.md). Ready after final-head CI; do not merge.
 - Phase 3: **F3-1 merged**, [PR #9](https://github.com/devtalh/perde/pull/9), main `a326147`, confirmed 2026-10-31 before F3-2. [Report](phase3/F3-1-report.md) retains its historical pre-merge status.
 - Phase 2: **merged**, [PR #8](https://github.com/devtalh/perde/pull/8), main `5e8fbd8`, confirmed 2026-10-31. [Phase 2 report](phase2/F2-report.md).
 - Phase 1B: **GO** (decided by Talha and Claude).
@@ -23,6 +24,15 @@ Newest first. Format:
 - Not done / left for next task:
 - Known issues / risks:
 ```
+
+### CODEC-1 - CEF 146 with proprietary codecs for MCEF (LEA-200)
+- Branch / PR: `feat/codec-build` from main `35b22fb`. Unattended overnight session (Claude Code), 2026-11-01.
+- Status: **partial (in progress)**. Updated as stages complete; see [progress notes](codec-build/progress-notes.md) for the live log.
+- What changed so far: [docs/codec-build/plan.md](codec-build/plan.md) (target CEF 146.0.10+g8219561+chromium-146.0.7680.179 verified against gradle.properties and the installed build_meta.json; CEF commit `82195616` on branch 7680; official automate-git/GN args; prerequisites; MCEF/jcefmaven re-download rule), [mcef-original-inventory.csv](codec-build/mcef-original-inventory.csv) (241 files, sizes, SHA-256), `tools/codec-build/` (workspace-isolated automate-git wrapper, shared env, resumable sync), `tools/codec-pack/` (pack, install, status and restore scripts + TR/EN README), `.gitignore` guards against codec binaries.
+- Key finding: jcefmaven only checks `install.lock` + `build_meta.json` release tag/platform (no hashes); if that check fails it deletes the whole `jcef` folder and reinstalls stock natives. Replacing runtime files and leaving those two files untouched is therefore restart-safe.
+- Verified: prerequisites (VS Build Tools 17.14.44 with MSVC 14.44, ATL/MFC; SDK 10.0.26100.7705; dbghelp; 322 GB free on D:; 31 GB RAM). Pack/install/status/restore scripts exercised on a mock instance in D:\cef\mock (only shared files replaced, jcef.dll and extras skipped, hashes verified, re-install keeps original hashes, version mismatch rejected, restore verified).
+- Not done yet: source sync completion, build, Stage 3 in-game tests, report.
+- Known issues / risks: the internet connection dropped from ~8 MB/s to ~0.1 MB/s and then to near zero after ~20 GB (looks like ISP shaping); gclient fetches fail with connection resets and retry. No system settings were changed. Codec binaries must never be committed or uploaded.
 
 ### F3-2 - Client browser playback sync (LEA-197)
 - Branch / PR: `feat/f3-2-sync-engine`, from main `a326147`; [PR #10](https://github.com/devtalh/perde/pull/10). Identity checkpoint `03877b2` passed CI; final head must also pass before ready. No merge.
