@@ -32,6 +32,15 @@ $env:CIPD_CACHE_DIR = Join-Path $ws 'cache\cipd'
 $env:DEPOT_TOOLS_METRICS = '0'
 $env:DEPOT_TOOLS_WIN_TOOLCHAIN = '0'
 $env:GYP_MSVS_VERSION = '2022'
+# Chromium's vs_toolchain.py only probes %ProgramFiles%\Microsoft Visual Studio\2022\<edition>;
+# VS 2022 Build Tools install under Program Files (x86). vs2022_install is its documented override.
+if (-not $env:vs2022_install) {
+    $vswhere = Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio\Installer\vswhere.exe'
+    if (Test-Path $vswhere) {
+        $vsPath = & $vswhere -products * -version '[17.0,18.0)' -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -latest -property installationPath
+        if ($vsPath) { $env:vs2022_install = $vsPath.Trim() }
+    }
+}
 $env:PYTHONUNBUFFERED = '1'
 # Official CEF Windows x64 GN_DEFINES (chromiumembedded.github.io/cef/automated_build_setup)
 # plus proprietary codecs for H.264/AAC.
