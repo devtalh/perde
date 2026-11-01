@@ -13,7 +13,7 @@
     5. run run-automate.ps1 -Stage sources (copies src\cef, branch config).
   Re-running is safe.
 #>
-param([string]$Workspace = 'D:\cef', [int]$Jobs = 4, [int]$Attempts = 6)
+param([string]$Workspace = 'D:\cef', [int]$Jobs = 4, [int]$Attempts = 6, [int]$PauseSeconds = 120)
 $ErrorActionPreference = 'Stop'
 . (Join-Path $PSScriptRoot 'cef-env.ps1') -Workspace $Workspace
 
@@ -27,6 +27,8 @@ function Invoke-Retried([string]$label, [scriptblock]$block) {
         & $block
         if ($LASTEXITCODE -eq 0) { return }
         Write-Output "[$((Get-Date).ToString('s'))] $label failed with $LASTEXITCODE"
+        # Give a flaky connection time to recover instead of hammering the servers.
+        if ($i -lt $Attempts) { Start-Sleep -Seconds $PauseSeconds }
     }
     throw "$label failed after $Attempts attempts"
 }
