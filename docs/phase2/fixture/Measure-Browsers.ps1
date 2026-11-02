@@ -2,7 +2,7 @@ param([Parameter(Mandatory)][string]$Stage)
 $ErrorActionPreference = 'Stop'
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../../..')).Path
 $clients = @(Get-CimInstance Win32_Process -Filter "Name='java.exe'" | Where-Object {
-    $_.Name -eq 'java.exe' -and $_.CommandLine.Contains($repoRoot, [StringComparison]::OrdinalIgnoreCase) -and
+    $_.Name -eq 'java.exe' -and $_.CommandLine.IndexOf($repoRoot, [StringComparison]::OrdinalIgnoreCase) -ge 0 -and
     $_.CommandLine.Contains('net.fabricmc.devlaunchinjector.Main') -and $_.CommandLine.Contains('phase2-probe') -and
     $_.CommandLine.Contains('--username Player1')
 })
