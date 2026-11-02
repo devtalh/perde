@@ -7,7 +7,7 @@ $ErrorActionPreference = 'Stop'
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot '../../..')).Path
 $candidates = @(Get-CimInstance Win32_Process -Filter "Name='java.exe' OR Name='javaw.exe'" | Where-Object {
     $_.Name -match '^javaw?\.exe$' -and
-    $_.CommandLine.Contains($repoRoot, [StringComparison]::OrdinalIgnoreCase) -and
+    $_.CommandLine.IndexOf($repoRoot, [StringComparison]::OrdinalIgnoreCase) -ge 0 -and
     $_.CommandLine.Contains('net.fabricmc.devlaunchinjector.Main') -and
     $_.CommandLine.Contains('-Dfabric.addMods=') -and
     $_.CommandLine.Contains('phase2-probe') -and
@@ -17,5 +17,6 @@ if ($candidates.Count -ne 1) { throw "Expected exactly one repository F2-1 fixtu
 $target = Join-Path $repoRoot $(if ($Player -eq 'Player2') { 'run/client2/phase2-command.txt' } else { 'run/phase2-command.txt' })
 $fields = @([guid]::NewGuid().ToString('N'), $Action) + $Values
 [IO.File]::WriteAllText("$target.next", ($fields -join "`t"), [Text.UTF8Encoding]::new($false))
-[IO.File]::Move("$target.next", $target, $true)
+# Atomic replace that also works on Windows PowerShell 5.1 (.NET Framework has no Move overwrite overload).
+if (Test-Path $target) { [IO.File]::Replace("$target.next", $target, [NullString]::Value) } else { [IO.File]::Move("$target.next", $target) }
 Write-Output "Queued $Action for verified repository DLI PID $($candidates[0].ProcessId)."
